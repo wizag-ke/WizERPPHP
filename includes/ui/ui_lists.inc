@@ -1892,11 +1892,44 @@ function yesno_list_cells($label, $name, $selected_id=null, $name_yes="", $name_
 	echo "</td>\n";
 }
 
+// yesno_list_row(_("Is Closed:"), 'closed', null, "", "", false);
+// yesno_list_cells(null, 'closed', null, "", "", false);
+// echo yesno_list('closed', null, null, null, false);
+// array_selector('closed', null, $items, array( 
+// 											'select_submit'=> $submit_on_change,
+// 											'async' => false ) 
+// 											);
+
+
 function yesno_list_row($label, $name, $selected_id=null, $name_yes="", $name_no="", $submit_on_change=false)
 {
 	echo "<tr><td class='label'>$label</td>";
 	yesno_list_cells(null, $name, $selected_id, $name_yes, $name_no, $submit_on_change);
 	echo "</tr>\n";
+}
+
+function modules_list_cells($label, $name, $selected_id=null)
+{
+	if ($label != null)
+		echo "<td>$label</td>\n";
+	echo "<td>";
+	echo modules_list($name, $selected_id, null);
+	echo "</td>\n";
+}
+
+function modules_list($name, $selected_id=null, $submit_on_change=false)
+{
+	$items = array();
+
+	$items['Purchase Order Entry'] = 'Purchase Order Entry';
+	$items['Payments to Suppliers'] = 'Payments to Suppliers';
+	$items['Supplier Credit Notes'] = 'Supplier Credit Notes';
+	$items['Supplier Invoices'] = 'Supplier Invoices';
+
+	return array_selector($name, $selected_id, $items, 
+		array( 
+			'select_submit'=> $submit_on_change,
+			'async' => false ) );
 }
 
 //------------------------------------------------------------------------------------------------

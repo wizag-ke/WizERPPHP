@@ -22,6 +22,8 @@ class setup_app extends application
 			"admin/users.php?", 'SA_USERS', MENU_SETTINGS);
 		$this->add_lapp_function(0, _("&Access Setup"),
 			"admin/security_roles.php?", 'SA_SECROLES', MENU_SETTINGS);
+		$this->add_lapp_function(0, _("&Approvals"),
+			"admin/approvals.php?", 'SA_SECROLES', MENU_SETTINGS);
 		$this->add_lapp_function(0, _("&Display Setup"),
 			"admin/display_prefs.php?", 'SA_SETUPDISPLAY', MENU_SETTINGS);
 		$this->add_lapp_function(0, _("Transaction &References"),

@@ -50,7 +50,9 @@ function send_css($css = '')
 {
 	global $css_files;
 
-	css_files_ensure_init();
+	// css_files_ensure_init();
+
+	add_css_file('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
 
 	foreach ($css_files as $css_file)
 	{
