@@ -20,9 +20,20 @@ add_js_file('login.js');
 include($path_to_root . "/includes/page/header.inc");
 page_header(_("Logout"), true, false, '');
 
+// echo "<table width='100%' border='0'>
+//   <tr>
+// 	<td align='center'><img src='$path_to_root/themes/default/images/erp.png' alt='FrontAccounting' width='100' height='50' onload='fixPNG(this)' ></td>
+// 	<td align='center'><img src='$path_to_root/themes/default/images/erp.png' alt='FrontAccounting' width='100' height='50' onload='fixPNG(this)' ></td>
+//   </tr>
+//   <tr>
+//     <td>&nbsp;</td>
+//   </tr>
+//   <tr>
+//     <td><div align='center'><font size=2>";
 echo "<table width='100%' border='0'>
   <tr>
-	<td align='center'><img src='$path_to_root/themes/default/images/erp.png' alt='FrontAccounting' width='100' height='50' onload='fixPNG(this)' ></td>
+	<td align='center'><img src='$path_to_root/themes/default/images/erp.png' alt='FrontAccounting' width='100' height='50'></td>
+	<td align='center'><img src='$path_to_root/themes/default/images/erp.png' alt='FrontAccounting' width='100' height='50' ></td>
   </tr>
   <tr>
     <td>&nbsp;</td>

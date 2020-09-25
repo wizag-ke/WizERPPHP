@@ -88,7 +88,8 @@
 				echo "<ul>\n";
 				$logo = "$path_to_root/themes/".user_theme()."/images/wizag.png";
 				if (file_exists($logo))
-					echo "<li><img src='$logo' height='30' border='0' onload='fixPNG(this)' alt=''></li>\n";				
+					// echo "<li><img src='$logo' height='30' border='0' onload='fixPNG(this)' alt=''></li>\n";				
+					echo "<li><img src='$logo' height='30' border='0' alt=''></li>\n";				
 				else
 				{
 					echo "  <li><a href='$path_to_root/admin/display_prefs.php?'>" . _("Preferences") . "</a></li>\n";

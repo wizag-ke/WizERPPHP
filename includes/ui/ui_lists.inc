@@ -1914,7 +1914,7 @@ function modules_list_cells($label, $name, $selected_id=null)
 		echo "<td>$label</td>\n";
 	echo "<td>";
 	echo modules_list($name, $selected_id, null);
-	echo "</td>\n";
+	echo "</td>";
 }
 
 function modules_list($name, $selected_id=null, $submit_on_change=false)
@@ -2754,4 +2754,47 @@ function collations_list_row($label, $name, $selected_id=null)
 	echo array_selector($name, $selected_id, $supported_collations, 
 		array('select_submit'=> false) );
 	echo "</td></tr>\n";
+}
+
+function module_select_list($label = null, $name = null)
+{
+	echo'<div class="form-group">';
+    echo'<label for="exampleFormControlSelect1">'.$label.'</label>';
+    echo'<select class="form-control col-sm-12" name = "'.$name.'" id="exampleFormControlSelect1">';
+    echo'  <option>Workflow 1</option>';
+    echo'  <option>Workflow 2</option>';
+    echo'  <option>Workflow 3</option>';
+    echo'  <option>Workflow 4</option>';
+    echo'  <option>Workflow 5</option>';
+    echo'</select>';
+  	echo'</div>';
+}
+
+function user_select_list($label = null, $name = null, $form_row = null)
+{
+	echo '<div class = "form-row">';
+	echo '<div class="form-group col-sm-11">';
+	echo '<label for="exampleFormControlSelect1">'.$label.'</label>';
+    echo '<select class="col-sm-12 form-control" name = "'.$name.'" id="'. $name .'">';
+	foreach (users_list() as $key => $value) {
+		echo '<option value = "'. $key . '">'. $value . '</option>';
+	}
+	echo '</select>';
+	echo '</div>';
+	echo '<div class="form-group col-sm-1 text-right">';
+	boostrap_add_button('add', 'btn-primary');
+	echo '</div>';
+	echo '</div>';
+}
+
+function users_list()
+{
+	$result = get_users(check_value('show_inactive'));
+	$user_details = [];
+
+	while ($myrow = db_fetch($result)) 
+	{
+		$user_details[$myrow['user_id']] = $myrow['real_name'];
+	}
+	return $user_details;
 }

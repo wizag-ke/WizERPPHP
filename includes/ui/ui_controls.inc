@@ -691,3 +691,84 @@ function page_modified($status = true)
 	} else
 		add_js_source($js);
 }
+
+
+function start_bootstrap_panel()
+{
+	echo '<div class="panel panel-info">';
+	echo '<div class="panel-heading">Create Workflow</div>';
+	echo '<div class="panel-body">';
+}
+
+function start_boostrap_card($header, $header_background = null, $text_color = null)
+{
+	echo '<div class="card">';
+ 	echo '<div class="'. $text_color . ' card-header ' . $header_background . '">';
+    echo $header;
+  	echo '</div>';
+  	echo '<div class="card-body">';
+    // <h5 class="card-title">Special title treatment</h5>
+    // <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    // <a href="#" class="btn btn-primary">Go somewhere</a>
+}
+
+function end_bootstrap_card()
+{
+	echo '</div>';
+	echo '</div>';
+}
+
+function start_bootstrap_form()
+{
+	echo '<form action="welcome_get.php" method="get" class = "form-horizontal">';
+}
+
+function end_bootstrap_form()
+{
+	echo '</form>';
+}
+
+function end_bootstrap_div()
+{
+	echo '</div>';
+}
+
+
+
+function boostrap_submit_button($label, $background_type)
+{
+	echo '<div class="form-group text-right">';
+	echo '	<button type="button" class="btn '.$background_type.'">';
+	echo $label;
+	echo '	</button>';
+	echo '</div>';
+}
+
+function boostrap_add_button($label, $background_type)
+{
+	echo '	<button id = "addUser" type="button" style = "margin-top: 4.3vh;" class="btn btn-sm '.$background_type.'">';
+	echo $label;
+	echo '	</button>';
+}
+
+function bootstrap_table()
+{
+	echo '<table id = "approver_table" class="table mt-5">';
+	echo ' <thead class="thead-dark">';
+	echo '<tr>';
+	echo '<th scope="col">Order</th>';
+	echo '<th scope="col">Last</th>';
+	echo '</tr>';
+	echo '</thead>';
+	echo '<tbody>';
+	echo '<tr>';
+	echo '<td>1</td>';
+	echo '<td>Otto</td>';
+	echo '</tr>';
+	echo '<tr>';
+	echo '<td>Jacob</td>';
+	echo '<td>Thornton</td>';
+	echo '</tr>';
+	echo '</tbody>';
+	echo '</table>';
+}
