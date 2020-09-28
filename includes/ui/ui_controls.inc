@@ -718,9 +718,9 @@ function end_bootstrap_card()
 	echo '</div>';
 }
 
-function start_bootstrap_form()
+function start_bootstrap_form($id)
 {
-	echo '<form action="welcome_get.php" method="get" class = "form-horizontal">';
+	echo '<form id = "' . $id . '" class = "form-horizontal">';
 }
 
 function end_bootstrap_form()
@@ -738,7 +738,7 @@ function end_bootstrap_div()
 function boostrap_submit_button($label, $background_type)
 {
 	echo '<div class="form-group text-right">';
-	echo '	<button type="button" class="btn '.$background_type.'">';
+	echo '	<button type="submit" class="btn '.$background_type.'">';
 	echo $label;
 	echo '	</button>';
 	echo '</div>';
@@ -756,19 +756,25 @@ function bootstrap_table()
 	echo '<table id = "approver_table" class="table mt-5">';
 	echo ' <thead class="thead-dark">';
 	echo '<tr>';
-	echo '<th scope="col">Order</th>';
-	echo '<th scope="col">Last</th>';
+	// echo '<th scope="col">Order</th>';
+	echo '<th scope="col">Name</th>';
+	echo '<th scope="col"></th>';
 	echo '</tr>';
 	echo '</thead>';
 	echo '<tbody>';
-	echo '<tr>';
-	echo '<td>1</td>';
-	echo '<td>Otto</td>';
-	echo '</tr>';
-	echo '<tr>';
-	echo '<td>Jacob</td>';
-	echo '<td>Thornton</td>';
-	echo '</tr>';
 	echo '</tbody>';
 	echo '</table>';
 }
+
+function error_div()
+{
+	echo '<div id = "error_div" class="">';
+	echo '</div>';
+}
+
+function array_form_input($name)
+{
+	echo '<input id = "' . $name . '" name="' . $name . '[]" type="hidden" />';
+}
+
+

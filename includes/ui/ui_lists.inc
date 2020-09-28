@@ -2760,12 +2760,11 @@ function module_select_list($label = null, $name = null)
 {
 	echo'<div class="form-group">';
     echo'<label for="exampleFormControlSelect1">'.$label.'</label>';
-    echo'<select class="form-control col-sm-12" name = "'.$name.'" id="exampleFormControlSelect1">';
-    echo'  <option>Workflow 1</option>';
-    echo'  <option>Workflow 2</option>';
-    echo'  <option>Workflow 3</option>';
-    echo'  <option>Workflow 4</option>';
-    echo'  <option>Workflow 5</option>';
+	echo'<select class="form-control col-sm-12" name = "'.$name.'" id= "'.$name.'">';
+	echo '<option disabled selected value>select workflow</option>';
+    echo'  <option value = "po_entry_items">Purchase Order Entry</option>';
+    echo'  <option value = "supplier_payment">Payments to Suppliers</option>';
+    echo'  <option value = "supplier_invoice">Supplier Invoices</option>';
     echo'</select>';
   	echo'</div>';
 }
@@ -2775,7 +2774,8 @@ function user_select_list($label = null, $name = null, $form_row = null)
 	echo '<div class = "form-row">';
 	echo '<div class="form-group col-sm-11">';
 	echo '<label for="exampleFormControlSelect1">'.$label.'</label>';
-    echo '<select class="col-sm-12 form-control" name = "'.$name.'" id="'. $name .'">';
+	echo '<select class="col-sm-12 form-control" name = "'.$name.'" id="'. $name .'">';
+	echo '<option disabled selected value>select an approver</option>';
 	foreach (users_list() as $key => $value) {
 		echo '<option value = "'. $key . '">'. $value . '</option>';
 	}
