@@ -2280,3 +2280,13 @@ INSERT INTO `0_workorders` VALUES
 ('1', '001/2019', 'DEF', '2', '201', '2019-05-05', '0', '2019-05-05', '2019-05-05', '2', '1', '1', '0'),
 ('2', '002/2019', 'DEF', '5', '201', '2019-05-07', '2', '2019-05-27', '2019-05-07', '0', '0', '1', '0'),
 ('3', '003/2019', 'DEF', '5', '201', '2019-05-07', '2', '2019-05-27', '0000-00-00', '0', '0', '0', '0');
+
+
+DROP TABLE IF EXISTS `0_workflows`;
+
+CREATE TABLE `0_workflows` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `module` varchar(60) NOT NULL DEFAULT '',
+  `approver_ids` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB;

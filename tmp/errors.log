@@ -2498,3 +2498,647 @@
 [28-Sep-2020 13:32:59 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
 [28-Sep-2020 13:33:56 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
 [28-Sep-2020 13:34:43 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 14:28:06 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 14:28:10 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 14:28:10 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 14:28:11 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 14:31:18 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 14:31:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:21:[before upgrade] include(../config_db.php): failed to open stream: No such file or directory
+[28-Sep-2020 14:31:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:21:[before upgrade] include(): Failed opening '../config_db.php' for inclusion (include_path='.;C:/laragon/etc/php/pear')
+[28-Sep-2020 14:31:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:33:[before upgrade] mysqli_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO)
+[28-Sep-2020 14:31:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:35:[before upgrade] mysqli_select_db() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:31:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:127:[before upgrade] mysqli_num_rows() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:31:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:286:[before upgrade] mysqli_set_charset() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:19 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:19 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:21:[before upgrade] include(./config_db.php): failed to open stream: No such file or directory
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:21:[before upgrade] include(): Failed opening './config_db.php' for inclusion (include_path='.;C:/laragon/etc/php/pear')
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:33:[before upgrade] mysqli_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO)
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:35:[before upgrade] mysqli_select_db() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:127:[before upgrade] mysqli_num_rows() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:286:[before upgrade] mysqli_set_charset() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:31:28 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:32:37 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 14:32:40 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 14:32:40 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 14:32:42 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 14:32:42 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 14:35:45 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 14:35:45 Europe/Berlin] 0:admin:connect_db_mysqli.inc:21:[before upgrade] include(./config_db.php): failed to open stream: No such file or directory
+[28-Sep-2020 14:35:45 Europe/Berlin] 0:admin:connect_db_mysqli.inc:21:[before upgrade] include(): Failed opening './config_db.php' for inclusion (include_path='.;C:/laragon/etc/php/pear')
+[28-Sep-2020 14:35:45 Europe/Berlin] 0:admin:connect_db_mysqli.inc:33:[before upgrade] mysqli_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO)
+[28-Sep-2020 14:35:45 Europe/Berlin] 0:admin:connect_db_mysqli.inc:35:[before upgrade] mysqli_select_db() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:45 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:45 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:45 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:45 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:45 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:45 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:45 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:35:45 Europe/Berlin] 0:admin:connect_db_mysqli.inc:127:[before upgrade] mysqli_num_rows() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:35:45 Europe/Berlin] 0:admin:connect_db_mysqli.inc:286:[before upgrade] mysqli_set_charset() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:45 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:45 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:35:46 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:38:43 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 14:38:45 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 14:38:45 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 14:38:48 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 14:53:43 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 14:53:43 Europe/Berlin] 0:admin:connect_db_mysqli.inc:21:[before upgrade] include(./config_db.php): failed to open stream: No such file or directory
+[28-Sep-2020 14:53:43 Europe/Berlin] 0:admin:connect_db_mysqli.inc:21:[before upgrade] include(): Failed opening './config_db.php' for inclusion (include_path='.;C:/laragon/etc/php/pear')
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:33:[before upgrade] mysqli_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO)
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:35:[before upgrade] mysqli_select_db() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:127:[before upgrade] mysqli_num_rows() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:286:[before upgrade] mysqli_set_charset() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:53:44 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:56:29 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 14:56:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:21:[before upgrade] include(./config_db.php): failed to open stream: No such file or directory
+[28-Sep-2020 14:56:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:21:[before upgrade] include(): Failed opening './config_db.php' for inclusion (include_path='.;C:/laragon/etc/php/pear')
+[28-Sep-2020 14:56:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:33:[before upgrade] mysqli_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO)
+[28-Sep-2020 14:56:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:35:[before upgrade] mysqli_select_db() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:127:[before upgrade] mysqli_num_rows() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:286:[before upgrade] mysqli_set_charset() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:56:30 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:59:29 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:21:[before upgrade] include(./config_db.php): failed to open stream: No such file or directory
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:21:[before upgrade] include(): Failed opening './config_db.php' for inclusion (include_path='.;C:/laragon/etc/php/pear')
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:33:[before upgrade] mysqli_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO)
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:35:[before upgrade] mysqli_select_db() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:127:[before upgrade] mysqli_num_rows() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:286:[before upgrade] mysqli_set_charset() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 14:59:29 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 15:11:34 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:11:36 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:11:36 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:11:38 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:12:51 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:17:59 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:17:59 Europe/Berlin] 0:admin:header.inc:147: Unhandled exception [0]: syntax error, unexpected 'UTF' (T_STRING), expecting ',' or ';'.
+[28-Sep-2020 15:18:16 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:20:33 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:23:12 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:25:12 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:25:17 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:25:19 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:25:25 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:26:51 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:27:49 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:28:46 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:29:18 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:35:33 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:36:04 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:36:14 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:36:43 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:38:02 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:39:44 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:40:53 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:41:24 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:41:53 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:42:08 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:42:40 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:42:57 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:43:12 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:45:28 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:45:50 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:46:45 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:47:44 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:48:07 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:48:40 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:50:38 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:51:12 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:51:47 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:52:22 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:53:59 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:54:39 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:55:42 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:56:07 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:56:53 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:57:37 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:58:01 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:58:37 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 15:58:59 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:00:21 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:35:41 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:37:23 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:37:27 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:37:49 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:39:34 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:39:38 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:39:38 Europe/Berlin] <b>DATABASE ERROR :</b> could not add approval workflow<br>error code : 1054<br>error message : Unknown column 'modules' in 'field list'<br>sql that failed was : INSERT INTO 0_workflows (modules, approver_ids) VALUES ('Module Name', 'Approver Name')<br><br><br>
+[28-Sep-2020 16:43:33 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:43:36 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:43:41 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:45:38 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:45:47 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:47:02 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:47:04 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:47:07 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:47:23 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:47:27 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:47:32 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:47:35 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:49:02 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:49:04 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:49:19 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:49:21 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:51:04 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:51:05 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:51:12 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:51:52 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:51:55 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:55:46 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:55:48 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:56:57 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:21:[before upgrade] include(./config_db.php): failed to open stream: No such file or directory
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:21:[before upgrade] include(): Failed opening './config_db.php' for inclusion (include_path='.;C:/laragon/etc/php/pear')
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:33:[before upgrade] mysqli_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO)
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:35:[before upgrade] mysqli_select_db() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:127:[before upgrade] mysqli_num_rows() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:286:[before upgrade] mysqli_set_charset() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 16:56:57 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 16:56:58 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 16:56:58 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 16:56:58 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 16:56:58 Europe/Berlin] 0:admin:connect_db_mysqli.inc:127:[before upgrade] mysqli_num_rows() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 16:56:58 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 16:58:01 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:58:07 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:58:10 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:58:16 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:58:47 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:59:13 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:59:16 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:59:18 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:59:33 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:59:33 Europe/Berlin] <b>DATABASE ERROR :</b> could not add approval workflow<br>error code : 1406<br>error message : Data too long for column 'approver_ids' at row 1<br>sql that failed was : INSERT INTO workflows (module, approver_ids) VALUES ('po_entry_items', 'a:3:{i:0;s:5:&quot;admin&quot;;i:1;s:5:&quot;felix&quot;;i:2;s:5:&quot;allan&quot;;}')<br><br><br>
+[28-Sep-2020 16:59:46 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 16:59:46 Europe/Berlin] <b>DATABASE ERROR :</b> could not add approval workflow<br>error code : 1406<br>error message : Data too long for column 'approver_ids' at row 1<br>sql that failed was : INSERT INTO workflows (module, approver_ids) VALUES ('po_entry_items', 'a:3:{i:0;s:5:&quot;admin&quot;;i:1;s:5:&quot;felix&quot;;i:2;s:5:&quot;allan&quot;;}')<br><br><br>
+[28-Sep-2020 17:03:17 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:21:[before upgrade] include(./config_db.php): failed to open stream: No such file or directory
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:21:[before upgrade] include(): Failed opening './config_db.php' for inclusion (include_path='.;C:/laragon/etc/php/pear')
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:33:[before upgrade] mysqli_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO)
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:35:[before upgrade] mysqli_select_db() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:127:[before upgrade] mysqli_num_rows() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:286:[before upgrade] mysqli_set_charset() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[28-Sep-2020 17:03:18 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[28-Sep-2020 17:04:21 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 17:04:23 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 17:04:25 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 17:04:34 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 17:04:36 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 17:04:39 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 17:04:41 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 17:04:42 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 17:04:44 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 17:04:44 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 17:04:44 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 17:04:44 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 17:04:47 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 17:04:49 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 17:04:53 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 17:04:55 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 17:04:56 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 17:04:59 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[28-Sep-2020 17:05:16 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.

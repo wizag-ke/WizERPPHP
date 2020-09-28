@@ -772,6 +772,12 @@ function error_div()
 	echo '</div>';
 }
 
+function success_div()
+{
+	echo '<div id = "success_div" class="">';
+	echo '</div>';
+}
+
 function array_form_input($name)
 {
 	echo '<input id = "' . $name . '" name="' . $name . '[]" type="hidden" />';

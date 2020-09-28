@@ -1923,3 +1923,14 @@ CREATE TABLE `0_workorders` (
 ) ENGINE=InnoDB;
 
 -- Data of table `0_workorders` --
+
+
+DROP TABLE IF EXISTS `0_workflows`;
+
+CREATE TABLE `0_workflows` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `module` varchar(60) NOT NULL DEFAULT '',
+  `approver_ids` varchar(60) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB;
+

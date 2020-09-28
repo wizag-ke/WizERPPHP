@@ -14,6 +14,7 @@ page(_($help_context = "Approvals Setup"));
 
 start_boostrap_card('Create Approval Workflow', 'bg-light', null);
 error_div();
+success_div();
 start_bootstrap_form("approval_form");
 module_select_list('Select Module', 'module_name');
 user_select_list('Select approvers from first to last', 'user_id');
@@ -81,27 +82,23 @@ $test = "Hello";
     }
 
     $("#approval_form").submit(function(e) {
-
         e.preventDefault();
         var form = $(this);
-
         var module_name = $('#module_name').val();
         var approvers_array = approvers;
-
-        // var url = form.attr('action');
         var url = "post_approvals.php";
         $.ajax({
             type: "POST",
             url: url,
-            // data: form.serialize(),
+            dataType: 'json',
             data: {module_name: module_name, approvers_array: approvers_array},
             success: function(data)
             {
-                // console.log(data);
-                var result = JSON.parse(data);
+                var result = JSON.parse(JSON.stringify(data));
+                console.log(result);
                 if(result.status === "failure")
                 {
-                    console.log(result);
+                    $( "#error_div" ).empty();
                     $( "#error_div" ).addClass( "alert alert-danger" );
                     var errName = $("#error_div");
                     errName.html(result.message);
@@ -109,7 +106,11 @@ $test = "Hello";
                 }
                 else 
                 {
-                    console.log(result);
+                    $( "#success_div" ).empty();
+                    $( "#success_div" ).addClass( "alert alert-success" );
+                    var errName = $("#success_div");
+                    errName.html(result.message);
+                    $("#success_div").show().delay(5000).fadeOut();
                 }
             }
             });
