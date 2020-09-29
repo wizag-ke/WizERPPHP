@@ -734,6 +734,9 @@ function file_row($label, $name, $id = "")
  	'supplier' - supplier id
  	'branch' - branch_code
 */
+
+// ref_cells(_("#:"), 'OrderNumber', '',null, '', true);
+
 function ref_cells($label, $name, $title=null, $init=null, $params=null, $submit_on_change=false, $type=null, $context=null)
 {
 	global $Ajax, $Refs;

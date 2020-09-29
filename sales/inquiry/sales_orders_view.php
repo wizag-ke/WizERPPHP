@@ -70,6 +70,8 @@ else
 	$_SESSION['page_title'] = _($help_context = "Search All Sales Quotations");
 }
 
+
+
 $js = "";
 if ($SysPrefs->use_popup_windows)
 	$js .= get_js_open_window(900, 600);
@@ -79,8 +81,10 @@ page($_SESSION['page_title'], false, false, "", $js);
 //---------------------------------------------------------------------------------------------
 //	Query format functions
 //
+
 function check_overdue($row)
 {
+
 	global $trans_type;
 	if ($trans_type == ST_SALESQUOTE)
 		return (date1_greater_date2(Today(), sql2date($row['delivery_date'])));
@@ -212,7 +216,6 @@ if (get_post('_OrderNumber_changed') || get_post('_OrderReference_changed')) // 
 }
 
 start_form();
-
 start_table(TABLESTYLE_NOBORDER);
 start_row();
 ref_cells(_("#:"), 'OrderNumber', '',null, '', true);
@@ -278,8 +281,12 @@ else
 		_("Delivery To"), 
 		_("Quote Total") => array('type'=>'amount', 'ord'=>''),
 		'Type' => 'skip',
-		_("Currency") => array('align'=>'center')
+		_("Currency") => array('align'=>'center'),
+		_("Status"),
+		_("Approved By"),
 	);
+
+
 if ($_POST['order_view_mode'] == 'OutstandingOnly') {
 	array_append($cols, array(
 		array('insert'=>true, 'fun'=>'edit_link'),

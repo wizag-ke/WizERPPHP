@@ -289,6 +289,19 @@ function check_page_security($page_security)
 	GET start variable and/or some value stored in session variable.
 	Before the call $page_security should be set to default page_security value.
 */
+
+// set_page_security( @$_POST['order_view_mode'],
+// 	array(	'OutstandingOnly' => 'SA_SALESDELIVERY',
+// 			'InvoiceTemplates' => 'SA_SALESINVOICE',
+// 			'DeliveryTemplates' => 'SA_SALESDELIVERY',
+// 			'PrepaidOrders' => 'SA_SALESINVOICE'),
+// 	array(	'OutstandingOnly' => 'SA_SALESDELIVERY',
+// 			'InvoiceTemplates' => 'SA_SALESINVOICE',
+// 			'DeliveryTemplates' => 'SA_SALESDELIVERY',
+// 			'PrepaidOrders' => 'SA_SALESINVOICE')
+// );
+
+
 function set_page_security($value=null, $trans = array(), $gtrans = array())
 {
 	global $page_security;

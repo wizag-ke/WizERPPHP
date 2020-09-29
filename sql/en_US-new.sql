@@ -1174,6 +1174,8 @@ CREATE TABLE `0_sales_orders` (
   `total` double NOT NULL DEFAULT '0',
   `prep_amount` double NOT NULL DEFAULT '0',
   `alloc` double NOT NULL DEFAULT '0',
+  `approval_status` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `current_approver` varchar(100) NOT NULL DEFAULT '', 
   PRIMARY KEY (`trans_type`,`order_no`)
 ) ENGINE=InnoDB;
 
