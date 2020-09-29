@@ -42,7 +42,6 @@ if(empty($_POST['approvers_array']))
 
 if($server_results["status"] === "success")
 {
-    // serialize([Array]);
     $modules = $_POST['module_name'];
     $approvers = serialize($_POST['approvers_array']);
     store_workflow($modules, $approvers);

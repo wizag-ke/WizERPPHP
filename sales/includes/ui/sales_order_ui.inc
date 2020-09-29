@@ -135,9 +135,12 @@ function get_customer_details_to_order(&$order, $customer_id, $branch_id)
 
 //---------------------------------------------------------------------------------
 
+// $title = _("Sales Quotation Items");
+// $order = new Cart(ST_SALESQUOTE, array(0));
+// display_order_summary($orderitems, $_SESSION['Items'], true);
 function display_order_summary($title, &$order, $editable_items=false)
 {
-
+	// display_heading(_("Sales Quotation Items"));
 	display_heading($title);
 
     div_start('items_table');
@@ -572,7 +575,6 @@ function display_delivery_details(&$order)
 
 	div_start('delivery');	
 
-
 	if ($order->payment_terms['cash_sale']) {	// Direct payment sale
 		$Ajax->activate('items_table');
 		display_heading(_('Cash payment'));
@@ -623,6 +625,7 @@ function display_delivery_details(&$order)
 			$Ajax->activate('items_table');
 
 
+		// date_row(Valid until, 'delivery_date', _('Enter Valid until Date'));
 		date_row($delname, 'delivery_date',
 			$order->trans_type==ST_SALESORDER ?  _('Enter requested day of delivery') 
 				: $order->trans_type==ST_SALESQUOTE ? _('Enter Valid until Date') : '');

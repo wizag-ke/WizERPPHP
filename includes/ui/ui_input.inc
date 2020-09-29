@@ -114,6 +114,7 @@ function hidden($name, $value=null, $echo=true)
 	else
 		return $ret;
 }
+
 /*
 	Universal submit form button.
 	$atype - type of submit:
@@ -132,6 +133,9 @@ function hidden($name, $value=null, $echo=true)
 	$atype can contain also multiply type selectors separated by space, 
 	however make sense only combination of 'process' and one of defualt/selector/cancel
 */
+
+
+// submit('ProcessOrder', "Place Quotation", true, $title, $async, $icon);
 function submit($name, $value, $echo=true, $title=false, $atype=false, $icon=false)
 {
 	global $path_to_root;
@@ -160,7 +164,7 @@ function submit($name, $value, $echo=true, $title=false, $atype=false, $icon=fal
 
 				case 'nonajax':
 				case 'download':
-					$atype = false;
+				$atype = false;
 			}
 		}
 	}
@@ -187,9 +191,12 @@ function submit_center($name, $value, $echo=true, $title=false, $async=false, $i
 	if ($echo) echo "</center>";
 }
 
+// submit_center_first('ProcessOrder', "Place Quotation",
 function submit_center_first($name, $value, $title=false, $async=false, $icon=false)
 {
 	echo "<center>";
+
+	// submit('ProcessOrder', "Place Quotation", true, $title, $async, $icon);
 	submit($name, $value, true, $title, $async, $icon);
 	echo "&nbsp;";
 }
@@ -682,6 +689,8 @@ function date_cells($label, $name, $title = null, $check=null, $inc_days=0,
 	echo "</td>\n";
 	$Ajax->addUpdate($name, $name, $_POST[$name]);
 }
+
+		// date_row(Valid until, 'delivery_date', _('Enter Valid until Date'));
 
 function date_row($label, $name, $title=null, $check=null, $inc_days=0, $inc_months=0, 
 	$inc_years=0, $params=null, $submit_on_change=false)

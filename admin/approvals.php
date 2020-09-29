@@ -24,8 +24,6 @@ boostrap_submit_button('Save', 'btn-success');
 end_bootstrap_form();
 end_bootstrap_card();
 
-$test = "Hello";
-
 ?>
 
 <script>

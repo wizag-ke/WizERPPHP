@@ -564,8 +564,8 @@ function handle_update_item()
 {
 	if ($_POST['UpdateItem'] != '' && check_item_data()) {
 		$_SESSION['Items']->update_cart_item($_POST['LineNo'],
-		 input_num('qty'), input_num('price'),
-		 input_num('Disc') / 100, $_POST['item_description'] );
+		input_num('qty'), input_num('price'),
+		input_num('Disc') / 100, $_POST['item_description'] );
 	}
 	page_modified();
   line_start_focus();
@@ -605,7 +605,6 @@ function  handle_cancel_order()
 {
 	global $path_to_root, $Ajax;
 
-
 	if ($_SESSION['Items']->trans_type == ST_CUSTDELIVERY) {
 		display_notification(_("Direct delivery entry has been cancelled as requested."), 1);
 		submenu_option(_("Enter a New Sales Delivery"),	"/sales/sales_order_entry.php?NewDelivery=1");
@@ -643,6 +642,8 @@ function  handle_cancel_order()
 
 //--------------------------------------------------------------------------------
 
+
+// create_cart(ST_SALESQUOTE, 0);
 function create_cart($type, $trans_no)
 { 
 	global $Refs, $SysPrefs;
@@ -677,6 +678,8 @@ function create_cart($type, $trans_no)
 		}
 		$_SESSION['Items'] = $doc;
 	} else
+
+		// $_SESSION['Items'] = new Cart(ST_SALESQUOTE, array(0));
 		$_SESSION['Items'] = new Cart($type, array($trans_no));
 	copy_from_cart();
 }
@@ -701,6 +704,7 @@ if (isset($_POST['CancelItemChanges'])) {
 }
 
 //--------------------------------------------------------------------------------
+
 if ($_SESSION['Items']->fixed_asset)
 	check_db_has_disposable_fixed_assets(_("There are no fixed assets defined in the system."));
 else
@@ -743,6 +747,10 @@ $customer_error = display_order_header($_SESSION['Items'], !$_SESSION['Items']->
 if ($customer_error == "") {
 	start_table(TABLESTYLE, "width='80%'", 10);
 	echo "<tr><td>";
+
+	// $orderitems = _("Sales Quotation Items");
+	// $_SESSION['Items'] = new Cart(ST_SALESQUOTE, array(0));
+
 	display_order_summary($orderitems, $_SESSION['Items'], true);
 	echo "</td></tr>";
 	echo "<tr><td>";
@@ -752,8 +760,12 @@ if ($customer_error == "") {
 
 	if ($_SESSION['Items']->trans_no == 0) {
 
+		// submit_center_first('ProcessOrder', "Place Quotation",
 		submit_center_first('ProcessOrder', $porder,
-		    _('Check entered data and save document'), 'default');
+			_('Check entered data and save document'), 'default');
+		
+		// submit_center_last('CancelOrder', Cancel Quotation,
+		// 	_('Cancels document entry or removes sales order when editing an old document'));
 		submit_center_last('CancelOrder', $cancelorder,
 	   		_('Cancels document entry or removes sales order when editing an old document'));
 		submit_js_confirm('CancelOrder', _('You are about to void this Document.\nDo you want to continue?'));

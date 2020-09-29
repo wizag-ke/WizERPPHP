@@ -783,4 +783,32 @@ function array_form_input($name)
 	echo '<input id = "' . $name . '" name="' . $name . '[]" type="hidden" />';
 }
 
+function bootstrap_table_all_workflows($id, $column1 = null, $column2 = null, $column3 = null)
+{
+	echo '<table id = "' . $id . '" class="table mt-5">';
+	echo '<thead class="thead-dark">';
+	echo '<tr>';
+	echo '<th scope="col">'. $column1 .'</th>';
+	echo '<th scope="col">'. $column2 .'</th>';
+	echo '<th scope="col">'. $column3 .'</th>';
+	echo '</tr>';
+	echo '</thead>';
+	echo '<tbody>';
+	foreach(get_workflows() as $row)
+	{
+		echo '<tr>';
+		echo '<td>'. $row['module'] .'</td>';
+		echo '<td>';
+		foreach (unserialize($row['approver_ids']) as $row)
+		{
+			echo $row;
+			echo "<br>";
+		}
+		echo '</td>';
+		echo '</tr>';
+	}
+	echo '</tbody>';
+	echo '</table>';
+}
+
 
