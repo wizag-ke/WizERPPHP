@@ -278,14 +278,17 @@ else
 		_("Cust Order Ref"),
 		_("Quote Date") => 'date',
 		_("Valid until") =>array('type'=>'date', 'ord'=>''),
+		// _("Current Approver"),
+		// _("Status"),
 		_("Delivery To"), 
 		_("Quote Total") => array('type'=>'amount', 'ord'=>''),
 		'Type' => 'skip',
 		_("Currency") => array('align'=>'center'),
-		_("Status"),
-		_("Approved By"),
+		// _("Test"),
 	);
 
+	// var_dump($trans_type);
+	// return;
 
 if ($_POST['order_view_mode'] == 'OutstandingOnly') {
 	array_append($cols, array(
@@ -322,9 +325,12 @@ if ($_POST['order_view_mode'] == 'OutstandingOnly') {
 
 
 $table =& new_db_pager('orders_tbl', $sql, $cols);
+// var_dump($table);
+// return;
 $table->set_marker('check_overdue', _("Marked items are overdue."));
 
 $table->width = "80%";
+
 
 display_db_pager($table);
 submit_center('Update', _("Update"), true, '', null);

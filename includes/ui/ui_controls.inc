@@ -766,6 +766,13 @@ function bootstrap_table()
 	echo '</table>';
 }
 
+function error_div_with_class($message, $class)
+{
+	echo '<div id = "error_div" class="'. $class .'">';
+	echo $message;
+	echo '</div>';
+}
+
 function error_div()
 {
 	echo '<div id = "error_div" class="">';

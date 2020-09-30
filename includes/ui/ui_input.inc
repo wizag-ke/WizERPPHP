@@ -516,6 +516,30 @@ function label_row($label, $value, $params="", $params2="", $leftfill=0, $id=nul
 	echo "</tr>\n";
 }
 
+function label_approval_cells($label, $value, $params="", $params2="", $id=null)
+{
+	if ($label != null)
+		echo "<td class='tableheader2'>$label</td>\n";
+	label_cell($value, $params2, $id);
+}
+
+
+// label_approval_row(_("Status"), get_approval_status($_GET['trans_type'], $_GET['trans_no']), "class='tableheader2'", "colspan=3");
+function label_approval_row($label, $value, $params="", $params2="", $leftfill=0, $id=null)
+{
+	echo "<tr>";
+	if ($params == "")
+	{
+		echo "<td class='label'>$label</td>";
+		$label = null;
+	}	
+	label_approval_cells($label, $value, $params, $params2, $id);
+	if ($leftfill!=0)
+		//   echo "<td colspan=$leftfill></td>";
+		  echo "<td>This thing</td>";
+	echo "</tr>\n";
+}
+
 function text_input($name, $value=null, $size='', $max='', $title='', $params='')
 {
 	if ($value === null)

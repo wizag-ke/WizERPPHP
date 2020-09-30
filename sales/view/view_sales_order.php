@@ -98,6 +98,8 @@ label_row(_("Telephone"), $_SESSION['View']->phone, "class='tableheader2'", "col
 label_row(_("E-mail"), "<a href='mailto:" . $_SESSION['View']->email . "'>" . $_SESSION['View']->email . "</a>",
 	"class='tableheader2'", "colspan=3");
 label_row(_("Comments"), nl2br($_SESSION['View']->Comments), "class='tableheader2'", "colspan=3");
+// label_approval_row(_("Status"), get_approval_status($_GET['trans_type'], $_GET['trans_no']), "class='tableheader2'", "colspan=3");
+echo("<tr><td class='tableheader2'>". _("Status") ."</td><td colspan='2'>". get_approval_status($_GET['trans_type'], $_GET['trans_no']) ."</td><td><a class='btn btn-info btn-sm' href='".$path_to_root."/sales/approvals/approve_quotation.php?trans_type=". $_GET['trans_type'] ."&trans_no=". $_GET['trans_no'] ."' role='button'>Approve</a></td>");
 end_table();
 
 if ($_GET['trans_type'] != ST_SALESQUOTE)

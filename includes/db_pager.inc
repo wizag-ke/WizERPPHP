@@ -377,6 +377,9 @@ class db_pager {
 		global $Ajax;
 		
 		$page = find_submit($this->name.'_page_', false);
+
+	
+
 		$sort = find_submit($this->name.'_sort_', true);
 		if ($page) {
 			$this->change_page($page);
@@ -485,17 +488,25 @@ function &new_db_pager($name, $sql, $coldef, $table = null, $key = null, $page_l
 
     if (isset($_SESSION[$name]) &&
 		 ($_SERVER['REQUEST_METHOD'] == 'GET' || $_SESSION[$name]->sql != $sql)) {
+
+		
 		unset($_SESSION[$name]); // kill pager if sql has changed
 	}
 	if (!isset($_SESSION[$name])) {
-	    $_SESSION[$name] = new db_pager($sql, $name, $table, $page_len);
+
+		$_SESSION[$name] = new db_pager($sql, $name, $table, $page_len);
 		$_SESSION[$name]->main_tbl = $table;
 		$_SESSION[$name]->key = $key;
 		$_SESSION[$name]->set_sql($sql);
 		$_SESSION[$name]->set_columns($coldef);
+		// var_dump($_SESSION[$name]);
+		// return;
 	}
 	
 	return  $_SESSION[$name];
+
+	// var_dump($coldef);
+	// return;
 
 }
 //

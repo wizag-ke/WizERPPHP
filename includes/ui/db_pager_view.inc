@@ -34,7 +34,6 @@ function navi_button_cell($name, $value, $enabled=true, $align='left') {
 	label_cell(navi_button($name, $value, $enabled), "align='$align'");
 }
 
-
 //-----------------------------------------------------------------------------
 //
 //    Sql paged table view. Call this function inside form.
@@ -149,6 +148,9 @@ function display_db_pager(&$pager) {
 	    end_row();
 	}
 	//end of while loop
+
+	// var_dump($pager);
+	// return;
 
 	if($pager->footer_fun) {	// if set footer handler
 		start_row("class='{$pager->footer_class}'");

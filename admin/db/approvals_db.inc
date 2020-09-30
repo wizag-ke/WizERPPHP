@@ -19,3 +19,21 @@ function get_workflows()
     }
     return $workflows;
 }
+
+function get_workflows_by_module_name($module)
+{
+    // $sql = "SELECT * FROM ".TB_PREF."workflows";
+
+    $sql = "SELECT * FROM ".TB_PREF."workflows WHERE module = '". $module ."' LIMIT 1";
+
+    $result = db_query($sql, "could not get users");
+    $workflows = [];
+	while ($myrow = db_fetch($result)) 
+	{
+        $workflows[] = $myrow;
+    }
+    
+    // var_dump ($workflows);
+    // return;
+    return $workflows;
+}

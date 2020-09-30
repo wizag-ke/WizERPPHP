@@ -3545,3 +3545,423 @@
 [29-Sep-2020 16:41:07 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
 [29-Sep-2020 16:41:59 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
 [29-Sep-2020 16:42:31 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:20:06 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:20:15 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:20:26 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:20:28 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:20:28 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:20:29 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:20:37 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:20:46 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:20:49 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:20:57 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:21:01 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:21:12 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:21:20 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:43:02 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:43:06 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:43:06 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:43:06 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:43:06 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:43:39 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:44:25 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:48:03 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:48:03 Europe/Berlin] 0:admin:sales_orders_view.php:327: Unhandled exception [0]: Call to a member function set_marker() on null.
+[30-Sep-2020 07:48:17 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:48:17 Europe/Berlin] 0:admin:sales_orders_view.php:327: Unhandled exception [0]: Call to a member function set_marker() on null.
+[30-Sep-2020 07:49:22 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:49:41 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:49:41 Europe/Berlin] 0:admin:sales_orders_view.php:327: Unhandled exception [0]: Call to a member function set_marker() on null.
+[30-Sep-2020 07:50:22 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:50:22 Europe/Berlin] 0:admin:sales_orders_view.php:327: Unhandled exception [0]: Call to a member function set_marker() on null.
+[30-Sep-2020 07:50:32 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:50:32 Europe/Berlin] 0:admin:sales_orders_view.php:327: Unhandled exception [0]: Call to a member function set_marker() on null.
+[30-Sep-2020 07:50:59 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:50:59 Europe/Berlin] 0:admin:sales_orders_view.php:327: Unhandled exception [0]: Call to a member function set_marker() on null.
+[30-Sep-2020 07:52:18 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:52:18 Europe/Berlin] 0:admin:sales_orders_view.php:327: Unhandled exception [0]: Call to a member function set_marker() on null.
+[30-Sep-2020 07:52:19 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:52:19 Europe/Berlin] 0:admin:sales_orders_view.php:327: Unhandled exception [0]: Call to a member function set_marker() on null.
+[30-Sep-2020 07:52:44 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:52:44 Europe/Berlin] 0:admin:sales_orders_view.php:327: Unhandled exception [0]: Call to a member function set_marker() on null.
+[30-Sep-2020 07:53:22 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:53:44 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:53:44 Europe/Berlin] 0:admin:sales_orders_view.php:327: Unhandled exception [0]: Call to a member function set_marker() on null.
+[30-Sep-2020 07:53:45 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:53:45 Europe/Berlin] 0:admin:sales_orders_view.php:327: Unhandled exception [0]: Call to a member function set_marker() on null.
+[30-Sep-2020 07:55:05 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:55:05 Europe/Berlin] 0:admin:sales_orders_view.php:328: Unhandled exception [0]: Call to a member function set_marker() on null.
+[30-Sep-2020 07:55:59 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:55:59 Europe/Berlin] 0:admin:sales_orders_view.php:328: Unhandled exception [0]: Call to a member function set_marker() on null.
+[30-Sep-2020 07:58:47 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 07:58:47 Europe/Berlin] 0:admin:sales_orders_view.php:328: Unhandled exception [0]: Call to a member function set_marker() on null.
+[30-Sep-2020 08:00:59 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:01:38 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:02:18 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:02:18 Europe/Berlin] 0:admin:sales_orders_view.php:330: Unhandled exception [0]: Call to a member function set_marker() on null.
+[30-Sep-2020 08:02:28 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:02:28 Europe/Berlin] 0:admin:sales_orders_view.php:330: Unhandled exception [0]: Call to a member function set_marker() on null.
+[30-Sep-2020 08:07:01 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:07:01 Europe/Berlin] 0:admin:sales_orders_view.php:330: Unhandled exception [0]: Call to a member function set_marker() on null.
+[30-Sep-2020 08:07:25 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:07:25 Europe/Berlin] 0:admin:sales_orders_view.php:330: Unhandled exception [0]: Call to a member function set_marker() on null.
+[30-Sep-2020 08:08:18 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:08:18 Europe/Berlin] 0:admin:sales_orders_view.php:330: Unhandled exception [0]: Call to a member function set_marker() on null.
+[30-Sep-2020 08:08:55 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:08:55 Europe/Berlin] 0:admin:sales_orders_view.php:330: Unhandled exception [0]: Call to a member function set_marker() on null.
+[30-Sep-2020 08:09:36 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:09:36 Europe/Berlin] 0:admin:current_user.inc:320: A non-numeric value encountered
+[30-Sep-2020 08:13:31 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:13:31 Europe/Berlin] 0:admin:sales_orders_view.php:330: Unhandled exception [0]: Call to a member function set_marker() on null.
+[30-Sep-2020 08:13:45 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:13:45 Europe/Berlin] 0:admin:sales_orders_view.php:330: Unhandled exception [0]: Call to a member function set_marker() on null.
+[30-Sep-2020 08:13:54 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:13:54 Europe/Berlin] 0:admin:sales_orders_view.php:330: Unhandled exception [0]: Call to a member function set_marker() on null.
+[30-Sep-2020 08:14:27 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:14:28 Europe/Berlin] 0:admin:current_user.inc:320: A non-numeric value encountered
+[30-Sep-2020 08:14:41 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:14:41 Europe/Berlin] 0:admin:sales_orders_view.php:330: Unhandled exception [0]: Call to a member function set_marker() on null.
+[30-Sep-2020 08:20:44 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:20:44 Europe/Berlin] 0:admin:sales_orders_view.php:330: Unhandled exception [0]: Call to a member function set_marker() on null.
+[30-Sep-2020 08:22:54 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:23:52 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:25:41 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:25:41 Europe/Berlin] 0:admin:db_pager_view.inc:46: Unhandled exception [0]: Cannot use object of type db_pager as array.
+[30-Sep-2020 08:25:49 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:26:04 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:27:11 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:28:05 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:31:41 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:34:02 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:46:38 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:46:42 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:46:42 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:46:42 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:46:42 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:48:50 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:49:46 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:49:47 Europe/Berlin] 0:admin:current_user.inc:320: A non-numeric value encountered
+[30-Sep-2020 08:50:46 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:50:46 Europe/Berlin] 0:admin:current_user.inc:320: A non-numeric value encountered
+[30-Sep-2020 08:52:05 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:52:05 Europe/Berlin] 0:admin:current_user.inc:320: A non-numeric value encountered
+[30-Sep-2020 08:52:59 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:55:19 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:55:33 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:55:35 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 08:57:09 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:01:15 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:04:00 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:04:04 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:04:57 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:04:59 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:06:00 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:09:27 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:12:35 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:12:37 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:18:40 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:18:40 Europe/Berlin] 0:admin:sales_order_db.inc:650:[before upgrade] Unhandled exception [0]: syntax error, unexpected 'approval_status' (T_STRING).
+[30-Sep-2020 09:18:50 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:18:50 Europe/Berlin] 0:admin:sales_order_db.inc:650:[before upgrade] Unhandled exception [0]: syntax error, unexpected 'approval_status' (T_STRING).
+[30-Sep-2020 09:18:50 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:18:51 Europe/Berlin] 0:admin:sales_order_db.inc:650:[before upgrade] Unhandled exception [0]: syntax error, unexpected 'approval_status' (T_STRING).
+[30-Sep-2020 09:18:58 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:19:00 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:19:11 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:23:46 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:23:50 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:23:54 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:24:07 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:24:07 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:24:23 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:28:35 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:28:50 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:29:23 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:29:38 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:31:28 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:33:13 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:33:14 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:33:48 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:33:50 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:34:09 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:39:41 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:39:42 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:40:12 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:40:29 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:40:30 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:40:48 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:41:05 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:41:05 Europe/Berlin] 0:admin:sales_order_db.inc:654:[before upgrade] Unhandled exception [0]: syntax error, unexpected 'WHERE' (T_STRING).
+[30-Sep-2020 09:41:41 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:45:44 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:45:44 Europe/Berlin] 0:admin:sales_order_db.inc:664:[before upgrade] Unhandled exception [0]: syntax error, unexpected 'if' (T_IF).
+[30-Sep-2020 09:46:00 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:46:26 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:52:57 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:54:54 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:55:11 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:58:14 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:58:14 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:58:15 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 09:58:46 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:00:45 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:05:39 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:06:11 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:07:01 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:07:36 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:08:06 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:09:05 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:09:40 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:09:41 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:09:42 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:10:27 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:11:14 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:11:47 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:14:01 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:14:29 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:15:29 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:15:41 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:15:58 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:16:08 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:17:14 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:21:52 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:22:07 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:22:36 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:30:18 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:30:58 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:31:56 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:32:02 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:33:17 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:33:19 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:34:03 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:34:05 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:34:33 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:34:36 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:34:39 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:34:53 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:36:43 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:37:07 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:39:24 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:39:29 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:39:31 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:40:04 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:40:05 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:40:05 Europe/Berlin] 0:admin:approve_quotation.php:32: Unhandled exception [0]: Function name must be a string.
+[30-Sep-2020 10:40:47 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:40:56 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:40:58 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:40:58 Europe/Berlin] 0:admin:approve_quotation.php:32: Unhandled exception [0]: Function name must be a string.
+[30-Sep-2020 10:41:03 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:41:03 Europe/Berlin] 0:admin:approve_quotation.php:32: Unhandled exception [0]: Function name must be a string.
+[30-Sep-2020 10:41:04 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:41:04 Europe/Berlin] 0:admin:approve_quotation.php:32: Unhandled exception [0]: Function name must be a string.
+[30-Sep-2020 10:41:04 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:41:04 Europe/Berlin] 0:admin:approve_quotation.php:32: Unhandled exception [0]: Function name must be a string.
+[30-Sep-2020 10:41:41 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:41:46 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:41:48 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:41:49 Europe/Berlin] 0:admin:approve_quotation.php:32: Unhandled exception [0]: Function name must be a string.
+[30-Sep-2020 10:44:24 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:44:26 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:44:26 Europe/Berlin] 0:admin:approve_quotation.php:32: Unhandled exception [0]: Function name must be a string.
+[30-Sep-2020 10:45:05 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:45:05 Europe/Berlin] 0:admin:approve_quotation.php:33: Unhandled exception [0]: Function name must be a string.
+[30-Sep-2020 10:45:05 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:45:05 Europe/Berlin] 0:admin:approve_quotation.php:33: Unhandled exception [0]: Function name must be a string.
+[30-Sep-2020 10:45:06 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:45:06 Europe/Berlin] 0:admin:approve_quotation.php:33: Unhandled exception [0]: Function name must be a string.
+[30-Sep-2020 10:45:06 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:45:06 Europe/Berlin] 0:admin:approve_quotation.php:33: Unhandled exception [0]: Function name must be a string.
+[30-Sep-2020 10:45:06 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:45:06 Europe/Berlin] 0:admin:approve_quotation.php:33: Unhandled exception [0]: Function name must be a string.
+[30-Sep-2020 10:45:07 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:45:07 Europe/Berlin] 0:admin:approve_quotation.php:33: Unhandled exception [0]: Function name must be a string.
+[30-Sep-2020 10:45:32 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:45:34 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:45:36 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:45:51 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:45:52 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:45:54 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:45:54 Europe/Berlin] 0:admin:approve_quotation.php:32: Unhandled exception [0]: Function name must be a string.
+[30-Sep-2020 10:47:06 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:50:34 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:50:39 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:50:44 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:51:29 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:51:36 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:59:24 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 10:59:25 Europe/Berlin] 0:admin:approve_quotation.php:37: Object of class sys_prefs could not be converted to string
+[30-Sep-2020 10:59:25 Europe/Berlin] 0:admin:approve_quotation.php:37: Object of class language could not be converted to string
+[30-Sep-2020 10:59:25 Europe/Berlin] 0:admin:approve_quotation.php:37: Object of class current_user could not be converted to string
+[30-Sep-2020 10:59:25 Europe/Berlin] 0:admin:approve_quotation.php:37: Object of class front_accounting could not be converted to string
+[30-Sep-2020 10:59:25 Europe/Berlin] 0:admin:approve_quotation.php:37: Object of class __PHP_Incomplete_Class could not be converted to string
+[30-Sep-2020 10:59:25 Europe/Berlin] 0:admin:approve_quotation.php:37: Object of class __PHP_Incomplete_Class could not be converted to string
+[30-Sep-2020 10:59:25 Europe/Berlin] 0:admin:approve_quotation.php:37: Object of class __PHP_Incomplete_Class could not be converted to string
+[30-Sep-2020 11:00:34 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:01:25 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:02:18 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:02:55 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:03:08 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:03:22 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:03:44 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:05:36 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:05:37 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:07:23 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:09:31 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:09:49 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:10:03 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:29:04 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:29:08 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:29:08 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:29:08 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:29:08 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:30:20 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:31:46 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:32:09 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:32:31 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:32:53 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:32:54 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:33:19 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:33:36 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:33:38 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:34:06 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:42:09 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:47:25 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:47:40 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:47:51 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:49:08 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:49:38 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:52:37 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:52:39 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:52:52 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:52:53 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:52:54 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:53:11 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:56:23 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 11:57:39 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 12:01:09 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 12:05:33 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 12:05:54 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 12:06:02 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 12:07:15 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 12:07:35 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 12:16:30 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 12:16:34 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 12:17:00 Europe/Berlin] 0:admin:connect_db_mysqli.inc:33:[before upgrade] mysqli_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.
+
+[30-Sep-2020 12:17:00 Europe/Berlin] 0:admin:connect_db_mysqli.inc:33:[before upgrade] mysqli_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.
+
+[30-Sep-2020 12:17:01 Europe/Berlin] 0:admin:connect_db_mysqli.inc:35:[before upgrade] mysqli_select_db() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:01 Europe/Berlin] 0:admin:connect_db_mysqli.inc:35:[before upgrade] mysqli_select_db() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:01 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:01 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:01 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:01 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:01 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:01 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:01 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:01 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:01 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:01 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:01 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:01 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:01 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[30-Sep-2020 12:17:01 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[30-Sep-2020 12:17:01 Europe/Berlin] 0:admin:connect_db_mysqli.inc:127:[before upgrade] mysqli_num_rows() expects parameter 1 to be mysqli_result, null given
+[30-Sep-2020 12:17:01 Europe/Berlin] 0:admin:connect_db_mysqli.inc:127:[before upgrade] mysqli_num_rows() expects parameter 1 to be mysqli_result, null given
+[30-Sep-2020 12:17:01 Europe/Berlin] 0:admin:connect_db_mysqli.inc:286:[before upgrade] mysqli_set_charset() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:01 Europe/Berlin] 0:admin:connect_db_mysqli.inc:286:[before upgrade] mysqli_set_charset() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:01 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:01 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:01 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:01 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:01 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:02 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:02 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:02 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:02 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:02 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:03 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 12:17:04 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:04 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:04 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:04 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:04 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:04 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[30-Sep-2020 12:17:04 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:04 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:04 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:06 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[30-Sep-2020 12:17:07 Europe/Berlin] 0:admin:connect_db_mysqli.inc:33:[before upgrade] mysqli_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.
+
+[30-Sep-2020 12:17:07 Europe/Berlin] 0:admin:connect_db_mysqli.inc:35:[before upgrade] mysqli_select_db() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:07 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:07 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:07 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:07 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:07 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:07 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:07 Europe/Berlin] 0:admin:connect_db_mysqli.inc:110:[before upgrade] mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given
+[30-Sep-2020 12:17:07 Europe/Berlin] 0:admin:connect_db_mysqli.inc:127:[before upgrade] mysqli_num_rows() expects parameter 1 to be mysqli_result, null given
+[30-Sep-2020 12:17:07 Europe/Berlin] 0:admin:connect_db_mysqli.inc:286:[before upgrade] mysqli_set_charset() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:07 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:17:07 Europe/Berlin] 0:admin:connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, boolean given
+[30-Sep-2020 12:18:11 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 12:18:16 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 12:18:18 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 12:18:19 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 12:18:19 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 12:18:20 Europe/Berlin] <b>DATABASE ERROR :</b> Could not retrieve last order detail<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND trans_type = )' at line 2<br>sql that failed was : SELECT approval_status
+	FROM 0_sales_orders WHERE (order_no =  AND trans_type = )<br><br><br>
+[30-Sep-2020 12:18:30 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 12:18:33 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 12:18:41 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 12:21:57 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 12:22:13 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[30-Sep-2020 12:23:30 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.

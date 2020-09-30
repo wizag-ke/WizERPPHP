@@ -643,3 +643,51 @@ function last_sales_order_detail($order, $field)
         return $row[0];
 }
 
+function get_approval_status($trans_type, $trans_no)
+{
+	$sql = "SELECT approval_status
+	FROM ".TB_PREF."sales_orders ".
+	"WHERE (order_no = ". $trans_no ." AND trans_type = ". $trans_type .")";
+
+	$result=db_query($sql, "Could not retrieve last order detail");
+
+	while ($myrow = db_fetch($result)) 
+	{
+		$approval_status = $myrow['approval_status'];
+
+		if($approval_status == 0)
+		{
+			return "awaiting approval";
+		}
+		elseif($approval_status == 1)
+		{
+			return "approved";
+		}
+    }
+}
+
+function get_current_approver($trans_type, $trans_no)
+{
+	$sql = "SELECT current_approver
+	FROM ".TB_PREF."sales_orders ".
+	"WHERE (order_no = ". $trans_no ." AND trans_type = ". $trans_type .")";
+
+	$result=db_query($sql, "Could not retrieve last order detail");
+
+	while ($myrow = db_fetch($result)) 
+	{
+		$approval_status = $myrow['current_approver'];
+
+		return $approval_status;
+
+		// if($approval_status == 0)
+		// {
+		// 	return "awaiting approval";
+		// }
+		// elseif($approval_status == 1)
+		// {
+		// 	return "approved";
+		// }
+    }
+}
+
