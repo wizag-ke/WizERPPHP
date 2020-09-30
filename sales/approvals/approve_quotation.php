@@ -58,7 +58,19 @@ if($key === false)
     exit();
 }
 
-$approval_status =  get_approval_status($_GET['trans_type'], $_GET['trans_no']);
+$approval_status = get_approval_status($_GET['trans_type'], $_GET['trans_no']);
 $last_approved_by =  get_current_approver($_GET['trans_type'], $_GET['trans_no']);
 
 var_dump($approval_status . "-" . $last_approved_by);
+
+
+
+
+
+
+
+function get_next_approver()
+{
+    // Current approver id
+    
+}
