@@ -136,15 +136,47 @@ function send_email($next_user_id)
         // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
         // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 
-        $body = 'Hi '. $user_name .',' . 
-                '<br>' .
-                '<p>Please follow the link below and approve the quotation</p>' .
-                '<br>' .
-                '<a class="btn btn-info" href="'. $quotation_url .'">View</a>' .
-                '<br>' .
-                // '<strong>Regards,</strong>' .
-                '<br>' .
-                '<h3>WizERP</h3>';
+        $body = 
+
+        '<html lang="en">' .
+        '<style>' .
+            'body {' .
+                'font-family:"Geneva, Tahoma, sans-serif";' .
+                'background-color: #f8f8ff;' .
+            '}' .
+            '.header {' .
+                'font-size: 1.5rem;' .
+            '}' .
+            'a:link, a:visited {' .
+                'background-color:lightskyblue;' .
+                'color: white;' .
+                'padding: 14px 25px;' .
+                'text-align: center;' .
+                'text-decoration: none;' .
+                'display: inline-block;' .
+            '}' .
+            'a:hover, a:active {' .
+                'background-color: #216894;' .
+            '}' .
+        '</style>' .
+        '<body>' .
+            '<div class="header">' .
+                'Hi '. $user_name .',' . 
+            '</div>' .
+            '<p>Please follow the link below and approve the quotation</p>' .
+            '<a class="btn btn-info" href="'. $quotation_url .'">View</a>' .
+        '</body>' .
+        '</html>';
+
+        // $body = 'Hi '. $user_name .',' . 
+        //         '<br>' .
+        //         '<p>Please follow the link below and approve the quotation</p>' .
+        //         '<br>' .
+        //         '<a class="btn btn-info" href="'. $quotation_url .'">View</a>' .
+        //         '<br>' .
+        //         // '<strong>Regards,</strong>' .
+        //         '<br>' .
+        //         '<h3>WizERP</h3>';
 
 
         // Content
@@ -159,4 +191,6 @@ function send_email($next_user_id)
         error_div_with_class("Message could not be sent. Mailer Error: {$mail->ErrorInfo}","alert alert-danger");
     }
 }
+
+
 
