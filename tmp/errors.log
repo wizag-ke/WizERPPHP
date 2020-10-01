@@ -4106,3 +4106,114 @@
 [01-Oct-2020 09:22:07 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
 [01-Oct-2020 09:22:11 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
 [01-Oct-2020 09:22:33 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:30:11 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:30:50 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:31:31 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:31:56 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:32:33 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:33:03 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:34:21 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:34:40 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:38:56 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:41:08 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:41:21 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:42:07 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:42:25 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:42:51 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:44:07 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:44:52 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:49:16 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:49:42 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:50:00 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:50:22 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:02:25 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:02:29 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:02:29 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:02:29 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:02:29 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:02:29 Europe/Berlin] <b>DATABASE ERROR :</b> Could not retrieve last order detail<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND trans_type = 32)' at line 2<br>sql that failed was : SELECT approval_status
+	FROM 0_sales_orders WHERE (order_no =  AND trans_type = 32)<br><br><br>
+[01-Oct-2020 10:03:11 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:03:11 Europe/Berlin] <b>DATABASE ERROR :</b> Could not retrieve last order detail<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND trans_type = 32)' at line 2<br>sql that failed was : SELECT approval_status
+	FROM 0_sales_orders WHERE (order_no =  AND trans_type = 32)<br><br><br>
+[01-Oct-2020 10:03:12 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:03:12 Europe/Berlin] <b>DATABASE ERROR :</b> Could not retrieve last order detail<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND trans_type = 32)' at line 2<br>sql that failed was : SELECT approval_status
+	FROM 0_sales_orders WHERE (order_no =  AND trans_type = 32)<br><br><br>
+[01-Oct-2020 10:03:12 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:03:12 Europe/Berlin] <b>DATABASE ERROR :</b> Could not retrieve last order detail<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND trans_type = 32)' at line 2<br>sql that failed was : SELECT approval_status
+	FROM 0_sales_orders WHERE (order_no =  AND trans_type = 32)<br><br><br>
+[01-Oct-2020 10:03:24 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:03:24 Europe/Berlin] <b>DATABASE ERROR :</b> Could not retrieve last order detail<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND trans_type = 32)' at line 2<br>sql that failed was : SELECT approval_status
+	FROM 0_sales_orders WHERE (order_no =  AND trans_type = 32)<br><br><br>
+[01-Oct-2020 10:03:25 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:03:25 Europe/Berlin] <b>DATABASE ERROR :</b> Could not retrieve last order detail<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND trans_type = 32)' at line 2<br>sql that failed was : SELECT approval_status
+	FROM 0_sales_orders WHERE (order_no =  AND trans_type = 32)<br><br><br>
+[01-Oct-2020 10:03:25 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:03:25 Europe/Berlin] <b>DATABASE ERROR :</b> Could not retrieve last order detail<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND trans_type = 32)' at line 2<br>sql that failed was : SELECT approval_status
+	FROM 0_sales_orders WHERE (order_no =  AND trans_type = 32)<br><br><br>
+[01-Oct-2020 10:03:36 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:03:45 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:04:05 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:04:09 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:04:26 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:04:51 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:06:45 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:14:52 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:14:52 Europe/Berlin] 0:admin:approve_quotation.php:50: Use of undefined constant get_next_approver - assumed 'get_next_approver' (this will throw an Error in a future version of PHP)
+[01-Oct-2020 10:15:06 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:15:42 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:15:52 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:18:01 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:20:54 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:20:57 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:20:57 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:20:57 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:20:57 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:21:32 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:21:55 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:33:40 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:33:43 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:33:43 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:33:43 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:33:43 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:33:44 Europe/Berlin] <b>DATABASE ERROR :</b> Could not retrieve last order detail<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND trans_type = 32)' at line 2<br>sql that failed was : SELECT approval_status
+	FROM 0_sales_orders WHERE (order_no =  AND trans_type = 32)<br><br><br>
+[01-Oct-2020 10:33:49 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:33:51 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:34:04 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:38:15 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:44:40 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:44:40 Europe/Berlin] 0:admin:sales_order_db.inc:685: Unhandled exception [0]: Too few arguments to function save_approval(), 0 passed in C:\laragon\www\WizERPPHP\sales\approvals\approve_quotation.php on line 56 and exactly 2 expected.
+[01-Oct-2020 10:46:18 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:47:54 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:50:04 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 10:50:04 Europe/Berlin] 0:admin:connect_db_mysqli.inc:68: mysqli_query(): Empty query
+[01-Oct-2020 10:50:55 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 11:41:46 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 11:41:48 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 11:41:48 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 11:41:48 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 11:41:48 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 11:41:49 Europe/Berlin] <b>DATABASE ERROR :</b> Could not retrieve last order detail<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND trans_type = 32)' at line 2<br>sql that failed was : SELECT approval_status
+	FROM 0_sales_orders WHERE (order_no =  AND trans_type = 32)<br><br><br>
+[01-Oct-2020 11:42:02 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 11:42:02 Europe/Berlin] <b>DATABASE ERROR :</b> Could not retrieve last order detail<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND trans_type = 32)' at line 2<br>sql that failed was : SELECT approval_status
+	FROM 0_sales_orders WHERE (order_no =  AND trans_type = 32)<br><br><br>
+[01-Oct-2020 11:42:02 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 11:42:02 Europe/Berlin] <b>DATABASE ERROR :</b> Could not retrieve last order detail<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND trans_type = 32)' at line 2<br>sql that failed was : SELECT approval_status
+	FROM 0_sales_orders WHERE (order_no =  AND trans_type = 32)<br><br><br>
+[01-Oct-2020 11:42:13 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 11:42:16 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 11:42:16 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 11:42:26 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 11:42:29 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 11:42:31 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 11:42:36 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 11:44:34 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 11:44:43 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 11:45:32 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 11:48:21 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 11:48:42 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 11:48:54 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 11:49:20 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 11:49:24 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.

@@ -1,46 +1,22 @@
 <?php
-/**********************************************************************
-    Copyright (C) FrontAccounting, LLC.
-	Released under the terms of the GNU General Public License, GPL, 
-	as published by the Free Software Foundation, either version 3 
-	of the License, or (at your option) any later version.
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
-    See the License here <http://www.gnu.org/licenses/gpl-3.0.html>.
-***********************************************************************/
-//-----------------------------------------------------------------------------
-//
-//	Entry/Modify Sales Quotations
-//	Entry/Modify Sales Order
-//	Entry Direct Delivery
-//	Entry Direct Invoice
-//
 
 $path_to_root = "../..";
 $page_security = 'SA_SALESORDER';
 
 include_once($path_to_root . "/includes/session.inc");
-// include_once($path_to_root . "/includes/date_functions.inc");
-// include_once($path_to_root . "/admin/db/approvals_db.inc");
 include_once($path_to_root . "/includes/ui.inc");
 include_once($path_to_root . "/admin/db/company_db.inc");
 include_once($path_to_root . "/admin/db/users_db.inc");
 include_once($path_to_root . "/admin/db/approvals_db.inc");
 
 // Import PHPMailer classes into the global namespace
-// These must be at the top of your script, not inside a function
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-// Load Composer's autoloader
-// require $path_to_root . 'vendor/autoload.php';
 require $path_to_root . '/vendor/autoload.php';
 
 page(_($help_context = "Quotation Approval"));
-
-// echo ($_GET['trans_type'] . "_" . $_GET['trans_no']);
 
 // Get logged in user's user_id
 $id = $_SESSION["wa_current_user"]->user;
@@ -48,15 +24,10 @@ $user = get_user($id);
 $user_id = $user['user_id'];
 
 // Get approval process for quotations
-
 $approvers_array = [];
 foreach(get_workflows_by_module_name('po_entry_items') as $row)
 {
     $approvers_array = unserialize($row['approver_ids']);
-    // foreach (unserialize($row['approver_ids']) as $row)
-    // {
-        // echo $row;
-    // }
 }
 
 // Check if user exists in approvers array
@@ -70,17 +41,34 @@ if($key === false)
 
 $approval_status = get_approval_status($_GET['trans_type'], $_GET['trans_no']);
 $last_approved_by =  get_current_approver($_GET['trans_type'], $_GET['trans_no']);
-if(get_next_approver() === 0)
+
+$logged_in_user_login = $user['user_id'];
+if($logged_in_user_login === get_next_approver())
 {
-    var_dump("Fully Approved");
+    $save_approval = save_approval($logged_in_user_login, $_GET['trans_type'], $_GET['trans_no']);  
+    if(!$save_approval)
+    {
+        var_dump("Not Saved");
+        exit();
+    }
+    else 
+    {
+        error_div_with_class("Approval Saved","alert alert-success");
+    }
+    if(get_next_approver() === 0)
+    {
+        var_dump("Fully Approved");
+    }
+    else
+    {
+        send_email(get_next_approver());
+    }
 }
 else
 {
-    var_dump("Send email to next approver");
-    send_email(get_next_approver());
+    error_div_with_class("You are not the current approver","alert alert-danger");
+    exit();
 }
-
-// send_email();
 
 function get_next_approver()
 {
@@ -88,6 +76,17 @@ function get_next_approver()
     global $last_approved_by;
     // Get index of current approver
     global $approvers_array;
+    if(empty($last_approved_by))
+    {
+        $next_approver_key = 0;
+        $next_approver = $approvers_array[$next_approver_key];
+        if($next_approver == NULL)
+        {
+            return 0;
+        }
+        return $next_approver; 
+    }
+
     $key = array_search($last_approved_by, $approvers_array);
     // Index of next approver
     $next_approver_key = $key + 1;
@@ -102,18 +101,15 @@ function get_next_approver()
 
 function send_email($next_user_id)
 {
-    // global $user;
     $user = get_user_by_login($next_user_id);
-    // var_dump($user);
-    // exit();
-    // $user_id = $user['user_id'];
     $user_name = $user['real_name'];
+    $quotation_url = 'http://'. $_SERVER['HTTP_HOST'] .'/sales/view/view_sales_order.php?trans_no='. $_GET['trans_no'] .'&trans_type='. $_GET['trans_type'] .'';
     // Instantiation and passing `true` enables exceptions
     $mail = new PHPMailer(true);
 
     try {
         //Server settings
-        $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
+        // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
         $mail->isSMTP();                                            // Send using SMTP
         $mail->Host       = 'smtp.mailtrap.io';                    // Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
@@ -134,13 +130,15 @@ function send_email($next_user_id)
         // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
         // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 
-        $body = '<strong>Hi</strong> '. $user_name .',' . 
+        $body = 'Hi '. $user_name .',' . 
                 '<br>' .
                 '<p>Please follow the link below and approve the quotation</p>' .
                 '<br>' .
-                '<strong>Regards,</strong>' .
+                '<a class="btn btn-info" href="'. $quotation_url .'">View</a>' .
                 '<br>' .
-                '<h3>Felix Mwaniki</h3>';
+                // '<strong>Regards,</strong>' .
+                '<br>' .
+                '<h3>WizERP</h3>';
 
 
         // Content
@@ -150,8 +148,8 @@ function send_email($next_user_id)
         $mail->AltBody = strip_tags($body);
 
         $mail->send();
-        echo 'Message has been sent';
+        error_div_with_class("Message has been sent","alert alert-success");
     } catch (Exception $e) {
-        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        error_div_with_class("Message could not be sent. Mailer Error: {$mail->ErrorInfo}","alert alert-danger");
     }
 }

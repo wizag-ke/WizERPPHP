@@ -679,15 +679,14 @@ function get_current_approver($trans_type, $trans_no)
 	{
 		$approval_status = $myrow['current_approver'];
 		return $approval_status;
-
-		// if($approval_status == 0)
-		// {
-		// 	return "awaiting approval";
-		// }
-		// elseif($approval_status == 1)
-		// {
-		// 	return "approved";
-		// }
     }
 }
+
+function save_approval($approver, $trans_type, $order_no)
+{
+	$sql = "UPDATE ".TB_PREF."sales_orders SET current_approver = '". $approver ."' WHERE (trans_type = ". $trans_type ." AND order_no = ". $order_no .")";
+	$result=db_query($sql, "Could not retrieve last order detail");
+	// var_dump($result);
+	return $result;
+} 
 
