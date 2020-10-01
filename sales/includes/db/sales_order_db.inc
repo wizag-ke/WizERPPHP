@@ -649,7 +649,7 @@ function get_approval_status($trans_type, $trans_no)
 	FROM ".TB_PREF."sales_orders ".
 	"WHERE (order_no = ". $trans_no ." AND trans_type = ". $trans_type .")";
 
-	$result=db_query($sql, "Could not retrieve last order detail");
+	$result=db_query($sql, "Could not retrieve approval status");
 
 	while ($myrow = db_fetch($result)) 
 	{
@@ -672,8 +672,7 @@ function get_current_approver($trans_type, $trans_no)
 	FROM ".TB_PREF."sales_orders ".
 	"WHERE (order_no = ". $trans_no ." AND trans_type = ". $trans_type .")";
 
-
-	$result=db_query($sql, "Could not retrieve last order detail");
+	$result=db_query($sql, "Could not retrieve current approver");
 	
 	while ($myrow = db_fetch($result)) 
 	{
@@ -685,8 +684,7 @@ function get_current_approver($trans_type, $trans_no)
 function save_approval($approver, $trans_type, $order_no)
 {
 	$sql = "UPDATE ".TB_PREF."sales_orders SET current_approver = '". $approver ."' WHERE (trans_type = ". $trans_type ." AND order_no = ". $order_no .")";
-	$result=db_query($sql, "Could not retrieve last order detail");
-	// var_dump($result);
+	$result=db_query($sql, "Could not save approval");
 	return $result;
 } 
 
