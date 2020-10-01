@@ -43,6 +43,15 @@ if(empty($_POST['approvers_array']))
 if($server_results["status"] === "success")
 {
     $modules = $_POST['module_name'];
+
+    if(get_workflows_by_module_name($modules))
+    {
+        $server_results["status"] = "failure";
+        $server_results["message"] = "This workflow already exists";  
+        $JSON_data = json_encode($server_results, JSON_HEX_APOS | JSON_HEX_QUOT );
+        echo $JSON_data;
+        return;   
+    }
     $approvers = serialize($_POST['approvers_array']);
     store_workflow($modules, $approvers);
     $JSON_data = json_encode($server_results, JSON_HEX_APOS | JSON_HEX_QUOT );

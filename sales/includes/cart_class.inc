@@ -334,10 +334,16 @@ class Cart
 				$ret = write_sales_delivery($this, $policy); break;
 			case ST_SALESORDER:
 			case ST_SALESQUOTE:
-				if ($this->trans_no==0)	// new document
+				if ($this->trans_no==0)
+				{
+					// new document
 					$ret = add_sales_order($this);
+					echo ("sales order added");
+				}	
 				else
+				{
 					$ret = update_sales_order($this);
+				}
 		}
 
 		commit_transaction();

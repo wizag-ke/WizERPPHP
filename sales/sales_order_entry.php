@@ -1,4 +1,7 @@
 <?php
+
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\PHPMailer;
 /**********************************************************************
     Copyright (C) FrontAccounting, LLC.
 	Released under the terms of the GNU General Public License, GPL, 
@@ -27,6 +30,10 @@ include_once($path_to_root . "/sales/includes/ui/sales_order_ui.inc");
 include_once($path_to_root . "/sales/includes/sales_db.inc");
 include_once($path_to_root . "/sales/includes/db/sales_types_db.inc");
 include_once($path_to_root . "/reporting/includes/reporting.inc");
+include_once($path_to_root . "/admin/db/users_db.inc");
+include_once($path_to_root . "/includes/ui.inc");
+include_once($path_to_root . "/admin/db/approvals_db.inc");
+require $path_to_root . '/vendor/autoload.php';
 
 set_page_security( @$_SESSION['Items']->trans_type,
 	array(	ST_SALESORDER=>'SA_SALESORDER',
@@ -502,6 +509,7 @@ if (isset($_POST['ProcessOrder']) && can_process()) {
 		} elseif ($trans_type == ST_SALESORDER) {
 			meta_forward($_SERVER['PHP_SELF'], "AddedID=$trans_no");
 		} elseif ($trans_type == ST_SALESQUOTE) {
+			send_email_to_first_approver($trans_type, $trans_no);
 			meta_forward($_SERVER['PHP_SELF'], "AddedQU=$trans_no");
 		} elseif ($trans_type == ST_SALESINVOICE) {
 			meta_forward($_SERVER['PHP_SELF'], "AddedDI=$trans_no&Type=$so_type");
@@ -587,6 +595,8 @@ function handle_delete_item($line_no)
 
 function handle_new_item()
 {
+
+	// var_dump("handle new item");
 
 	if (!check_item_data()) {
 			return;
@@ -682,6 +692,76 @@ function create_cart($type, $trans_no)
 		// $_SESSION['Items'] = new Cart(ST_SALESQUOTE, array(0));
 		$_SESSION['Items'] = new Cart($type, array($trans_no));
 	copy_from_cart();
+}
+
+
+
+
+function send_email_to_first_approver($trans_type, $trans_no)
+{
+
+	$approvers_array = [];
+	if(!get_workflows_by_module_name('sales_quotation'))
+	{
+		error_div_with_class("No approval workflow set for this module","alert alert-danger");
+		exit();
+	}
+	foreach(get_workflows_by_module_name('sales_quotation') as $row)
+	{
+		$approvers_array = unserialize($row['approver_ids']);
+	}
+
+    $user = get_user_by_login($approvers_array[0]);
+    $user_name = $user['real_name'];
+    $quotation_url = 'http://'. $_SERVER['HTTP_HOST'] .'/sales/view/view_sales_order.php?trans_no='. $trans_no .'&trans_type='. $trans_type .'';
+    // Instantiation and passing `true` enables exceptions
+    $mail = new PHPMailer(true);
+
+    try {
+        //Server settings
+        // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
+        $mail->isSMTP();                                            // Send using SMTP
+        $mail->Host       = 'smtp.mailtrap.io';                    // Set the SMTP server to send through
+        $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+        $mail->Username   = 'fd962e5260b749';                     // SMTP username
+        $mail->Password   = '2588ea6d8b6aec';                               // SMTP password
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+        $mail->Port       = 25 or 465 or 587 or 2525;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+
+        //Recipients
+        $mail->setFrom('from@example.com', 'Mailer');
+        $mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
+        $mail->addAddress('ellen@example.com');               // Name is optional
+        $mail->addReplyTo('info@example.com', 'Information');
+        $mail->addCC('cc@example.com');
+        $mail->addBCC('bcc@example.com');
+
+        // Attachments
+        // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+        // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+
+        $body = 'Hi '. $user_name .',' . 
+                '<br>' .
+                '<p>Please follow the link below and approve the quotation</p>' .
+                '<br>' .
+                '<a class="btn btn-info" href="'. $quotation_url .'">View</a>' .
+                '<br>' .
+                // '<strong>Regards,</strong>' .
+                '<br>' .
+                '<h3>WizERP</h3>';
+
+
+        // Content
+        $mail->isHTML(true);                                  // Set email format to HTML
+        $mail->Subject = 'Here is the subject';
+        $mail->Body    = $body;
+        $mail->AltBody = strip_tags($body);
+
+        $mail->send();
+        error_div_with_class("Message has been sent","alert alert-success");
+    } catch (Exception $e) {
+        error_div_with_class("Message could not be sent. Mailer Error: {$mail->ErrorInfo}","alert alert-danger");
+    }
 }
 
 //--------------------------------------------------------------------------------

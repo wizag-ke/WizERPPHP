@@ -14,6 +14,10 @@ function add_sales_order(&$order)
 {
 	global $SysPrefs, $path_to_root, $Refs;
 
+	// var_dump(1);
+	// return 1;
+	// exit();
+
 	begin_transaction();
 	hook_db_prewrite($order, $order->trans_type);
 	$order_no = get_next_trans_no($order->trans_type);
@@ -687,4 +691,14 @@ function save_approval($approver, $trans_type, $order_no)
 	$result=db_query($sql, "Could not save approval");
 	return $result;
 } 
+
+function set_approval_complete_quotation($trans_type, $trans_no)
+{
+
+	$sql = "UPDATE ".TB_PREF."sales_orders SET approval_status = '1' WHERE (trans_type = ". $trans_type ." AND order_no = ". $trans_no .")";
+	// var_dump($sql);
+	// return;
+	$result=db_query($sql, "Could not finalize approval");
+	return $result;
+}
 

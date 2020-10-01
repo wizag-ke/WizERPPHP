@@ -25,7 +25,12 @@ $user_id = $user['user_id'];
 
 // Get approval process for quotations
 $approvers_array = [];
-foreach(get_workflows_by_module_name('po_entry_items') as $row)
+if(!get_workflows_by_module_name('sales_quotation'))
+{
+    error_div_with_class("No approval workflow set for this module","alert alert-danger");
+    exit();
+}
+foreach(get_workflows_by_module_name('sales_quotation') as $row)
 {
     $approvers_array = unserialize($row['approver_ids']);
 }
@@ -43,7 +48,7 @@ $approval_status = get_approval_status($_GET['trans_type'], $_GET['trans_no']);
 $last_approved_by =  get_current_approver($_GET['trans_type'], $_GET['trans_no']);
 
 $logged_in_user_login = $user['user_id'];
-if($logged_in_user_login === get_next_approver())
+if($logged_in_user_login === get_next_approver($last_approved_by))
 {
     $save_approval = save_approval($logged_in_user_login, $_GET['trans_type'], $_GET['trans_no']);  
     if(!$save_approval)
@@ -54,14 +59,17 @@ if($logged_in_user_login === get_next_approver())
     else 
     {
         error_div_with_class("Approval Saved","alert alert-success");
+        $last_approved_by =  get_current_approver($_GET['trans_type'], $_GET['trans_no']);
     }
-    if(get_next_approver() === 0)
+    if(get_next_approver($last_approved_by) === 0)
     {
-        var_dump("Fully Approved");
+        error_div_with_class("Approval Saved","alert alert-success");
+        error_div_with_class("Quotation is now fully approved","alert alert-success");
+        set_approval_complete_quotation($_GET['trans_type'], $_GET['trans_no']);
     }
     else
     {
-        send_email(get_next_approver());
+        send_email(get_next_approver($last_approved_by));
     }
 }
 else
@@ -70,10 +78,8 @@ else
     exit();
 }
 
-function get_next_approver()
+function get_next_approver($last_approved_by)
 {
-    // Current approver id
-    global $last_approved_by;
     // Get index of current approver
     global $approvers_array;
     if(empty($last_approved_by))
@@ -153,3 +159,4 @@ function send_email($next_user_id)
         error_div_with_class("Message could not be sent. Mailer Error: {$mail->ErrorInfo}","alert alert-danger");
     }
 }
+

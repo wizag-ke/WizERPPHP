@@ -93,7 +93,6 @@ end_bootstrap_card();
             success: function(data)
             {
                 var result = JSON.parse(JSON.stringify(data));
-                console.log(result);
                 if(result.status === "failure")
                 {
                     $( "#error_div" ).empty();
@@ -108,7 +107,10 @@ end_bootstrap_card();
                     $( "#success_div" ).addClass( "alert alert-success" );
                     var errName = $("#success_div");
                     errName.html(result.message);
-                    $("#success_div").show().delay(5000).fadeOut();
+                    $("#success_div").show().delay(3000).fadeOut();
+                    $("#approver_table").remove();
+                    approvers = [];
+                    setTimeout(function(){ window.location.href = "approvals.php"; }, 3000);
                 }
             }
             });

@@ -2763,6 +2763,7 @@ function module_select_list($label = null, $name = null)
 	echo'<select class="form-control col-sm-12" name = "'.$name.'" id= "'.$name.'">';
 	echo '<option disabled selected value>select workflow</option>';
     echo'  <option value = "po_entry_items">Purchase Order Entry</option>';
+    echo'  <option value = "sales_quotation">Sales Quotation</option>';
     echo'  <option value = "supplier_payment">Payments to Suppliers</option>';
     echo'  <option value = "supplier_invoice">Supplier Invoices</option>';
     echo'</select>';
