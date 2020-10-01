@@ -672,12 +672,12 @@ function get_current_approver($trans_type, $trans_no)
 	FROM ".TB_PREF."sales_orders ".
 	"WHERE (order_no = ". $trans_no ." AND trans_type = ". $trans_type .")";
 
-	$result=db_query($sql, "Could not retrieve last order detail");
 
+	$result=db_query($sql, "Could not retrieve last order detail");
+	
 	while ($myrow = db_fetch($result)) 
 	{
 		$approval_status = $myrow['current_approver'];
-
 		return $approval_status;
 
 		// if($approval_status == 0)

@@ -3965,3 +3965,144 @@
 [30-Sep-2020 12:21:57 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
 [30-Sep-2020 12:22:13 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
 [30-Sep-2020 12:23:30 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:39:23 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:39:35 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:39:35 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:39:35 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:39:35 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:40:45 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:40:55 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:40:59 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:41:10 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:41:17 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:41:21 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:41:27 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:41:29 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:41:32 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:41:33 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:41:35 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:41:38 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:41:39 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:41:44 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:41:44 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:41:49 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:41:51 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:41:53 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:46:15 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:46:16 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:46:59 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:47:01 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:47:23 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:47:24 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:47:49 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:47:51 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:47:54 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:48:11 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:48:42 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:49:49 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:49:51 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:50:08 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:50:08 Europe/Berlin] 0:admin:approve_quotation.php:43: Invalid argument supplied for foreach()
+[01-Oct-2020 07:51:23 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:51:23 Europe/Berlin] <b>DATABASE ERROR :</b> Could not retrieve last order detail<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'return ;
+	FROM 0_sales_orders WHERE (order_no = 3 AND trans_type = 32)' at line 3<br>sql that failed was : SELECT current_approver
+
+	return ;
+	FROM 0_sales_orders WHERE (order_no = 3 AND trans_type = 32)<br><br><br>
+[01-Oct-2020 07:51:24 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:51:24 Europe/Berlin] <b>DATABASE ERROR :</b> Could not retrieve last order detail<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'return ;
+	FROM 0_sales_orders WHERE (order_no = 3 AND trans_type = 32)' at line 3<br>sql that failed was : SELECT current_approver
+
+	return ;
+	FROM 0_sales_orders WHERE (order_no = 3 AND trans_type = 32)<br><br><br>
+[01-Oct-2020 07:51:25 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:51:25 Europe/Berlin] <b>DATABASE ERROR :</b> Could not retrieve last order detail<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'return ;
+	FROM 0_sales_orders WHERE (order_no = 3 AND trans_type = 32)' at line 3<br>sql that failed was : SELECT current_approver
+
+	return ;
+	FROM 0_sales_orders WHERE (order_no = 3 AND trans_type = 32)<br><br><br>
+[01-Oct-2020 07:51:42 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:52:41 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:52:51 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:53:21 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:55:02 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:55:34 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:55:57 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:55:58 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:56:10 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:57:26 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:57:26 Europe/Berlin] 0:admin:approve_quotation.php:70: array_search() expects parameter 2 to be array, null given
+[01-Oct-2020 07:57:44 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 07:57:44 Europe/Berlin] 0:admin:approve_quotation.php:70: array_search() expects parameter 2 to be array, null given
+[01-Oct-2020 07:57:58 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:00:29 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:00:49 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:01:04 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:01:05 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:01:05 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:01:06 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:01:20 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:01:35 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:01:48 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:01:59 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:02:00 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:02:01 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:02:13 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:02:37 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:02:38 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:02:38 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:02:39 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:02:39 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:02:46 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:03:27 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:03:28 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:03:29 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:03:37 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:04:26 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:04:42 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:11:51 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:12:05 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:47:11 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:47:13 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:47:13 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:47:13 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:47:13 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:47:18 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:47:20 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:47:20 Europe/Berlin] 0:admin:approve_quotation.php:38: require(vendor/autoload.php): failed to open stream: No such file or directory
+[01-Oct-2020 08:47:35 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:47:35 Europe/Berlin] 0:admin:approve_quotation.php:38: require(vendor/autoload.php): failed to open stream: No such file or directory
+[01-Oct-2020 08:49:25 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:49:25 Europe/Berlin] 0:admin:approve_quotation.php:38: require(../..vendor/autoload.php): failed to open stream: No such file or directory
+[01-Oct-2020 08:49:27 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:49:27 Europe/Berlin] 0:admin:approve_quotation.php:38: require(../..vendor/autoload.php): failed to open stream: No such file or directory
+[01-Oct-2020 08:51:10 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:51:44 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:51:50 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:57:04 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 08:57:04 Europe/Berlin] 0:admin:approve_quotation.php:137: Unhandled exception [0]: Function name must be a string.
+[01-Oct-2020 08:57:48 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:04:21 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:10:16 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:13:04 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:13:04 Europe/Berlin] 0:admin:approve_quotation.php:103: Unhandled exception [0]: Too few arguments to function send_email(), 0 passed in C:\laragon\www\WizERPPHP\sales\approvals\approve_quotation.php on line 83 and exactly 1 expected.
+[01-Oct-2020 09:13:33 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:14:33 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:15:37 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:16:28 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:16:47 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:18:14 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:18:17 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:18:33 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:18:42 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:18:42 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:18:45 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:18:59 Europe/Berlin] 4 Domain file "../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:19:51 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:20:06 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:21:16 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:22:03 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:22:04 Europe/Berlin] 4 Domain file "./lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:22:07 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:22:11 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
+[01-Oct-2020 09:22:33 Europe/Berlin] 4 Domain file "../../lang/C/LC_MESSAGES/C.po" not found.
