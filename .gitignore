@@ -1,4 +1,5 @@
-tmp/errors.log
+tmp/
 company/0/js_cache/
 company/0/pdf_files
-tmp\errors.log
+
+tmp/errors.log

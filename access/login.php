@@ -71,6 +71,9 @@ function defaultCompany()
 
 	echo "<body id='loginscreen' $onload>\n";
 
+	echo '<div class="page-container">';
+	echo '<div class="content-wrap"';
+
 	// echo "<table class='titletext'><tr><td>$title</td></tr></table>\n";
 	
 	div_start('_page_body');
@@ -161,7 +164,26 @@ function defaultCompany()
 	echo "<script src='$path_to_root/themes/$def_theme/bootstrap.min.js'></script>\n";
 	echo "<script src='$path_to_root/themes/$def_theme/jquery-3.5.1.slim.min.js'></script>\n";
 	echo "<script src='$path_to_root/themes/$def_theme/popper.min.js'></script>\n";
-    div_end();
+	div_end();
+	echo '</div>';
+	
+
+	echo '<footer class="footer-2"  id="footer">';
+	echo '<div class="vd_bottom ">';
+	echo '<div class="container">';
+	echo '<div class="row">';
+	echo '<div class="col-xs-12 mx-auto">';
+	echo '<div class="copyright text-center">';
+	echo '<p>Copyright &copy;2020 Wizag. All Rights Reserved</p>';
+	echo '</div>';
+	echo '</div>';
+	echo '</div>';
+	echo '</div>';
+	echo '</div>';
+	echo '</footer>';
+	echo '</div>';
+
+
 	// echo "<table class='bottomBar'>\n";
 	// echo "<tr>";
 	// if (isset($_SESSION['wa_current_user'])) 

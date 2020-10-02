@@ -18,7 +18,7 @@ function page_footer($no_menu=false, $is_index=false)
 
 	include_once($path_to_root."/themes/".user_theme()."/renderer.php");
 	$rend = new renderer();
-	$rend->menu_footer($no_menu, $is_index);
+	// $rend->menu_footer($no_menu, $is_index);
 
 	$edits = "editors = ".$Ajax->php2js($Editors).";";
 	$Ajax->addScript('editors', $edits);
@@ -28,13 +28,16 @@ function page_footer($no_menu=false, $is_index=false)
 		_validate = " . $Ajax->php2js($Validate).";
 		var $edits
 	</script>";
-	echo '<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>';
+
+	echo "<script src='$path_to_root/themes/default/bootstrap.min.js'></script>\n";
 	br();
-	echo '<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>';
+	echo "<script src='$path_to_root/themes/default/jquery-3.5.1.slim.min.js'></script>\n";
 	br();
-	echo '<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>';
-	   
-	
+	echo "<script src='$path_to_root/themes/default/popper.min.js'></script>\n";
+	// echo '<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>';
+	// echo '<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>';
+	// echo '<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>';
+
 	add_user_js_data();
 	echo "\n<script type=\"text/javascript\"><!--\n";
 
