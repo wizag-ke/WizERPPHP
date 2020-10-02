@@ -723,8 +723,8 @@ function send_email_to_first_approver($trans_type, $trans_no)
         $mail->isSMTP();                                            // Send using SMTP
         $mail->Host       = 'smtp.mailtrap.io';                    // Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-        $mail->Username   = 'fd962e5260b749';                     // SMTP username
-        $mail->Password   = '2588ea6d8b6aec';                               // SMTP password
+        $mail->Username   = 'c71cc067f63c7c';                     // SMTP username
+        $mail->Password   = '366fb31c070103';                               // SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
         $mail->Port       = 25 or 465 or 587 or 2525;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
@@ -753,7 +753,7 @@ function send_email_to_first_approver($trans_type, $trans_no)
 
         // Content
         $mail->isHTML(true);                                  // Set email format to HTML
-        $mail->Subject = 'Here is the subject';
+        $mail->Subject = 'Quotation approval';
         $mail->Body    = $body;
         $mail->AltBody = strip_tags($body);
 
