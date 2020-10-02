@@ -101,7 +101,8 @@
 				}	
 				echo "</ul>\n";
 				$indicator = "$path_to_root/themes/".user_theme(). "/images/ajax-loader.gif";
-				echo "<h1>$SysPrefs->power_by $version<span style='padding-left:300px;'><img id='ajaxmark' src='$indicator' align='center' style='visibility:hidden;'></span></h1>\n";
+				// echo "<h1>$SysPrefs->power_by $version<span style='padding-left:300px;'><img id='ajaxmark' src='$indicator' align='center' style='visibility:hidden;'></span></h1>\n";
+				echo "<h1>$SysPrefs->power_by<span style='padding-left:300px;'><img id='ajaxmark' src='$indicator' align='center' style='visibility:hidden;'></span></h1>\n";
 				echo "</div>\n"; // header
 				echo "<ul id='saturday'>\n"; // horizontal menu
 				foreach($applications as $app)
