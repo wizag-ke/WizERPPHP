@@ -52,7 +52,8 @@ function send_css($css = '')
 
 	// css_files_ensure_init();
 
-	add_css_file('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+	// add_css_file('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+	add_css_file($path_to_root.'/themes/default/bootstrap.min.css');
 
 	foreach ($css_files as $css_file)
 	{

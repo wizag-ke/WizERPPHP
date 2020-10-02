@@ -29,6 +29,22 @@ tr, td, th {
 	line-height: 30px;
 }
 
+.page-container {
+	position: relative;
+	min-height: 90vh;
+}
+  
+.content-wrap {
+	padding-bottom: 2.5rem;    /* Footer height */
+}
+  
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 2.5rem;            /* Footer height */
+}
+
 table {
 	text-align: left;
 }
@@ -46,23 +62,23 @@ select {
 	/* max-width: 230px; */
 	width: 100%;
 	border-radius: 3px;
-	border: 1px solid #178ab4;
+	border: 1px solid #33b5e5;
 }
 
 input[type=password] {
 	width: 100%;
 	border-radius: 3px;
-	border: 1px solid #178ab4;
+	border: 1px solid #33b5e5;
 }
 
 input[type=text] {
 	width: 100%;
 	border-radius: 3px;
-	border: 1px solid #178ab4;
+	border: 1px solid #33b5e5;
 }
 
 .login-button {
-	background-color: #178ab4 !important;
+	background-color: #33b5e5 !important;
 	color: white !important;
 	font-weight: bold !important;
 }
@@ -155,6 +171,10 @@ button img, span {
 	padding: 2px;
 	color: #00cc00;
 	font-weight: bolder;
+}
+
+.logout-img {
+	width: 40% !important;
 }
 
 .logoutBar {
@@ -415,7 +435,8 @@ table.tablestyle_inner td {
 
 .label {
 	/* background-color: #efefef; */
-	color: #178ab4;
+	color: #33b5e5;
+	font-weight: bold;
 }
 
 #loginscreen {
