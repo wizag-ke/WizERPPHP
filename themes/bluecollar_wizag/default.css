@@ -340,9 +340,9 @@ table.tablestyle_inner td {
 
 .login {
   width: 350px;
-  border-left: 12px solid #367cb5;
+  /* border-left: 12px solid #367cb5; */
   border-collapse: collapse;
-  background-color: #eeeeee;
+  /* background-color: #eeeeee; */
 }
 .login td {
   border-collapse: collapse;

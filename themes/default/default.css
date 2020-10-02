@@ -25,8 +25,8 @@ body {
 }
 
 tr, td, th {
-	font-size: 11px;
-	line-height: 19px;
+	font-size: 15px;
+	line-height: 30px;
 }
 
 table {
@@ -43,8 +43,35 @@ input, select {
 }
 
 select {
-    max-width: 230px;
+	/* max-width: 230px; */
+	width: 100%;
+	border-radius: 3px;
+	border: 1px solid #178ab4;
 }
+
+input[type=password] {
+	width: 100%;
+	border-radius: 3px;
+	border: 1px solid #178ab4;
+}
+
+input[type=text] {
+	width: 100%;
+	border-radius: 3px;
+	border: 1px solid #178ab4;
+}
+
+.login-button {
+	background-color: #178ab4 !important;
+	color: white !important;
+	font-weight: bold !important;
+}
+
+.login-button:hover {
+	/* background-color: #4CAF50 !important; */
+	filter: brightness(85%) !important;
+	color: white !important;
+  }
 
 option.inactive {
 	text-decoration: line-through;
@@ -387,8 +414,8 @@ table.tablestyle_inner td {
 }
 
 .label {
-	background-color: #efefef;
-	color: black;
+	/* background-color: #efefef; */
+	color: #178ab4;
 }
 
 #loginscreen {
@@ -396,15 +423,15 @@ table.tablestyle_inner td {
 }
 
 .login {
-	width: 350px;
-	border-left: 12px solid #367cb5;
+	width: 100%;
+	/* border-left: 12px solid #367cb5; */
 	border-collapse: collapse;
-	background-color: #eeeeee;
+	/* background-color: #eeeeee; */
 }
-.login td {
+/* .login td {
 	border-collapse: collapse;
 	border: 1px solid #cccccc;
-}
+} */
 
 .amount {
 	font-family: Verdana, Arial, Helvetica;
