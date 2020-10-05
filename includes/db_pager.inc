@@ -484,6 +484,11 @@ class db_pager {
 //  during display, but can be used in format handlers for 'spec' and 'insert' 
 //	type columns.
 
+
+
+
+
+// new_db_pager('orders_tbl', select from, table collumns)
 function &new_db_pager($name, $sql, $coldef, $table = null, $key = null, $page_len = 0)  {
 
     if (isset($_SESSION[$name]) &&
@@ -495,11 +500,27 @@ function &new_db_pager($name, $sql, $coldef, $table = null, $key = null, $page_l
 	if (!isset($_SESSION[$name])) {
 
 		$_SESSION[$name] = new db_pager($sql, $name, $table, $page_len);
+
+		// null
 		$_SESSION[$name]->main_tbl = $table;
+		// null
 		$_SESSION[$name]->key = $key;
 		$_SESSION[$name]->set_sql($sql);
 		$_SESSION[$name]->set_columns($coldef);
-		// var_dump($_SESSION[$name]);
+		// foreach($_SESSION[$name] as $key => $value)
+		// {
+		// 	if(is_array($value))
+		// 	{
+		// 		foreach($value as $key1 => $value1)
+		// 		{
+		// 			echo($key1 . ' => ' . $value1);
+		// 			br();
+		// 		}
+		// 	}
+		// 	echo($key . ' => ' . $value);
+		// 	br();
+		// }
+		// exit();
 		// return;
 	}
 	

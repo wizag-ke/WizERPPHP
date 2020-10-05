@@ -29,6 +29,7 @@ set_page_security( @$_POST['order_view_mode'],
 			'PrepaidOrders' => 'SA_SALESINVOICE')
 );
 
+
 if (get_post('type'))
 	$trans_type = $_POST['type'];
 elseif (isset($_GET['type']) && $_GET['type'] == ST_SALESQUOTE)
@@ -70,7 +71,7 @@ else
 	$_SESSION['page_title'] = _($help_context = "Search All Sales Quotations");
 }
 
-
+// view_session_variables();
 
 $js = "";
 if ($SysPrefs->use_popup_windows)
@@ -186,12 +187,22 @@ function invoice_prep_link($row)
 		"/sales/customer_invoice.php?InvoicePrepayments=" .$row['order_no'], ICON_DOC) : '';
 }
 
+
+// var_dump($Ajax);
+
 $id = find_submit('_chgtpl');
 if ($id != -1)
 {
 	sales_order_set_template($id, check_value('chgtpl'.$id));
 	$Ajax->activate('orders_tbl');
 }
+
+// foreach($Ajax as $key => $value)
+// 	{
+// 		echo ($key . " => " . $value);
+// 		br();
+// 	}
+// exit();
 
 if (isset($_POST['Update']) && isset($_POST['last'])) {
 	foreach($_POST['last'] as $id => $value)
@@ -322,7 +333,6 @@ if ($_POST['order_view_mode'] == 'OutstandingOnly') {
 					array('insert'=>true, 'fun'=>'dispatch_link'),
 					array('insert'=>true, 'fun'=>'prt_link')));
 };
-
 
 $table =& new_db_pager('orders_tbl', $sql, $cols);
 // var_dump($table);
