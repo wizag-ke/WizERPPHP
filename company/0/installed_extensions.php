@@ -177,15 +177,6 @@ $installed_extensions = array (
     'active' => false,
     'path' => 'themes/studio',
   ),
-  25 => 
-  array (
-    'name' => 'Dated Stock Sheet',
-    'package' => 'rep_dated_stock',
-    'version' => '2.4.0-1',
-    'type' => 'extension',
-    'active' => 1,
-    'path' => 'modules/rep_dated_stock',
-  ),
   26 => 
   array (
     'package' => 'FrontHrm',
@@ -196,52 +187,7 @@ $installed_extensions = array (
     'path' => 'modules/FrontHrm',
     'active' => 0,
   ),
-  27 => 
-  array (
-    'name' => 'Requisitions',
-    'package' => 'requisitions',
-    'version' => '2.4.0-3',
-    'type' => 'extension',
-    'active' => 1,
-    'path' => 'modules/requisitions',
-  ),
-  28 => 
-  array (
-    'name' => 'Bank Statement w/ Reconcile',
-    'package' => 'rep_statement_reconcile',
-    'version' => '2.4.0-1',
-    'type' => 'extension',
-    'active' => 1,
-    'path' => 'modules/rep_statement_reconcile',
-  ),
-  29 => 
-  array (
-    'name' => 'Annual balance breakdown report',
-    'package' => 'rep_annual_balance_breakdown',
-    'version' => '2.4.0-4',
-    'type' => 'extension',
-    'active' => 1,
-    'path' => 'modules/rep_annual_balance_breakdown',
-  ),
-  30 => 
-  array (
-    'name' => 'Import Transactions',
-    'package' => 'import_transactions',
-    'version' => '2.4.0-6',
-    'type' => 'extension',
-    'active' => 1,
-    'path' => 'modules/import_transactions',
-  ),
-  31 => 
-  array (
-    'name' => 'Report Generator',
-    'package' => 'repgen',
-    'version' => '2.4.0-4',
-    'type' => 'extension',
-    'active' => 1,
-    'path' => 'modules/repgen',
-  ),
-  32 => 
+  33 => 
   array (
     'package' => 'customers_import',
     'name' => 'customers_import',
