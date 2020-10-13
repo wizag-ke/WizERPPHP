@@ -1,0 +1,323 @@
+*ItemCode,ItemName,PurchasesDescription,PurchasesUnitPrice,PurchasesAccount,PurchasesTaxRate,SalesDescription,SalesUnitPrice,SalesAccount,SalesTaxRate,InventoryAssetAccount,CostOfGoodsSoldAccount
+Accountancy,Accountancy,Accountancy,0,401,No Tax,,,,,,
+HFBC001,Bank Charges,,,,,Bank Charges,0,404,Zero Rated Sales,,
+HFCH01,EABCL Vital 350 SC-1Litre,EABCL Vital 350 SC-1Litre,27,,Tax on Purchases,,0,,,632,301
+HFCH02,Afribat 69WP 10Kg,Afribat 69WP 10Kg,12.5,,Tax on Purchases,,0,,,632,301
+HFCH03,Agromax 720WP 1kg,Agromax 720WP 1kg,11,,Tax on Purchases,,0,,,632,301
+HFCH04,Amino Gold 20Ltr,Amino Gold 20Ltr,280,,Tax on Purchases,,0,,,632,301
+HFCH05,Agrigrow Highmax 24-24-18 5ltrs,Agrigrow Highmax 24-24-18 5ltrs,8,,Tax on Purchases,,0,,,632,301
+HFCH06,Aligator 1 L,Aligator 1 L,28,,Tax on Purchases,"Elgon-28
+Amiran-30",0,,,632,301
+HFCH07,Calmag 25 ltrs,Calmag 25 ltrs,6.5,,Tax on Purchases,,0,,,632,301
+HFCH08,ARIMA 30SC 1LT PACK,ARIMA 30SC 1LT PACK,155,,Tax on Purchases,155 USD PER LITRE-AMIRAN,0,,,632,301
+HFCH09,IMPULSE,IMPULSE,64,,Tax on Purchases,64 USD/LITRE-AMIRAN,0,,,632,301
+HFCH10,Chorus 1Kg,Chorus 1Kg,55,,Tax on Purchases,,0,,,632,301
+HFCH11,SOLVIT 175 EW 1LT PACK,SOLVIT 175 EW 1LT PACK,70,,Tax on Purchases,,0,,,632,301
+HFCH12,Climate 1Ltr,Climate 1Ltr,45,,Tax on Purchases,,0,,,632,301
+HFCH13,Delegate,Delegate,438,,Tax on Purchases,,0,,,632,301
+HFCH14,Dipnoy 60VER2 Rose Dipping,Dipnoy 60VER2 Rose Dipping,115,,Tax on Purchases,,0,,,632,301
+HFCH15,Dolphin 260WDG,Dolphin 260WDG,35,,Tax on Purchases,,0,,,632,301
+HFCH16,Drench 20 Litres,Drench 20 Litres,11,,Zero Rated Purchases,,0,,,632,301
+HFCH17,Evade 80 Wp:5kg,Evade 80 Wp:5kg,4.5,,Tax on Purchases,,0,,,632,301
+HFCH18,EVIK 500SP,EVIK 500SP,48,,Tax on Purchases,,0,,,632,301
+HFCH19,Fortune Aza 1L,Fortune Aza 1L,19,,Tax on Purchases,,0,,,632,301
+HFCH20,Borax,Borax,1.1,,Tax on Purchases,,0,,,632,301
+HFCH21,Ferroactive 6% Iron,Ferroactive 6% Iron,6.25,,Tax on Purchases,,0,,,632,301
+HFCH22,Flonex 15 SC 1LT,Flonex 15 SC 1LT,75,,Tax on Purchases,,0,,,632,301
+HFCH23,Fonium 1Kg,Fonium 1Kg,8.5,,Tax on Purchases,,0,,,632,301
+HFCH24,Splendid,Splendid,0,,Tax on Purchases,,0,,,632,301
+HFCH25,Hinder 1KG,Hinder 1KG,39,,Tax on Purchases,,0,,,632,301
+HFCH26,Ignite Acumin 25Ltr,Ignite Acumin 25Ltr,5.5,,Tax on Purchases,,0,,,632,301
+HFCH27,Ippon 500 SC,Ippon 500 SC,25,,Tax on Purchases,,0,,,632,301
+HFCH28,Knockout 1Ltr,Knockout 1Ltr,27,,Tax on Purchases,,0,,,632,301
+HFCH29,Manco Flo 5ltr,Manco Flo 5ltr,8,,Tax on Purchases,,0,,,632,301
+HFCH30,Matco 2.5kg,Matco 2.5kg,10,,Tax on Purchases,,0,,,632,301
+HFCH31,Matric 50SC 1lt,Matric 50SC 1lt,40,,Tax on Purchases,,0,,,632,301
+HFCH32,Meltatox 385 EC,Meltatox 385 EC,30,,Tax on Purchases,,0,,,632,301
+HFCH33,Merit 1 Litre,Merit 1 Litre,80,,Tax on Purchases,,0,,,632,301
+HFCH34,MITEKING 1LTR,MITEKING 1LTR,16,,Tax on Purchases,,0,,,632,301
+HFCH35,Microthiole,Microthiole,2.5,,Tax on Purchases,,0,,,632,301
+HFCH36,Mix Drip Combi 5 Ltr,Mix Drip Combi 5 Ltr,0,,Tax on Purchases,,0,,,632,301
+HFCH37,Mortar 22 Wp,Mortar 22 Wp,14,,Tax on Purchases,,0,,,632,301
+HFCH38,Mite Sweep 1Ltr,Mite Sweep 1Ltr,23,,Tax on Purchases,,0,,,632,301
+HFCH39,Nimbecidine 5Lts,Nimbecidine 5Lts,10,,Tax on Purchases,,0,,,632,301
+HFCH40,Nimrod,Nimrod 1Litre,25,,Tax on Purchases,25 USD PER LITRE-NIMROD,0,,,632,301
+HFCH41,Oshothane Plus WDg 5Kg,Oshothane Plus WDg 5Kg,27.5,,Tax on Purchases,,0,,,632,301
+HFCH42,Piranah 200SC,Piranah 200SC,40,,Tax on Purchases,,0,,,632,301
+HFCH43,IProde 500SC 1Lt,IProde 500SC 1Lt,22,,Tax on Purchases,,0,,,632,301
+HFCH44,PYRIMEC 1KG,PYRIMEC 1KG,21,,Tax on Purchases,,0,,,632,301
+HFCH45,Revus 1Lts,Revus 1Lts,75,,Tax on Purchases,,0,,,632,301
+HFCH46,Ringo,Ringo,80,,Tax on Purchases,,0,,,632,301
+HFCH47,Rova 1ltr,Rova 1ltr,10.5,,Tax on Purchases,,0,,,632,301
+HFCH48,Rova 75 WP Kg,Rova 75 WP Kg,10.5,,Tax on Purchases,,0,,,632,301
+HFCH49,Spirox,Spirox,55,,Zero Rated Purchases,,0,,,632,301
+HFCH50,Splendor 500EC 1Ltr,Splendor 500EC 1Ltr,40,,Tax on Purchases,,0,,,632,301
+HFCH51,Strobine Extra 1Lt,Strobine Extra 1Lt,85,,Tax on Purchases,,0,,,632,301
+HFCH52,Sulfolac 80% WG -25Kg,Sulfolac 80% WG -25Kg,2.7,,Tax on Purchases,,0,,,632,301
+HFCH53,Sword,Sword,45,,Tax on Purchases,,0,,,632,301
+HFCH54,Tog 10-10Ltr,Tog 10-10Ltr,7.5,,Tax on Purchases,,0,,,632,301
+HFCH55,Tog 6,Tog 6,10,,Tax on Purchases,,0,,,632,301
+HFCH56,Zodiac 50 WDG 1Kg,Zodiac 50 WDG 1Kg,42,,Tax on Purchases,,0,,,632,301
+HFCH57,Tyfos 20L,Tyfos 20L,11,,Tax on Purchases,,0,,,632,301
+HFCH58,AGRILAX 1KG,AGRILAX 1KG,9.5,,Tax on Purchases,,0,,,632,301
+HFCH59,Monument 400EC 1Lt,Monument 400EC 1Lt,28,,Tax on Purchases,,0,,,632,301
+HFCH60,Plantoc 1Ltr,Plantoc 1Ltr,10,,Tax on Purchases,,0,,,632,301
+HFCH61,Switch 62.5 WG,Switch 62.5 WG,94,,Tax on Purchases,,0,,,632,301
+HFCH62,Lotus 75 %,Lotus 75 %,12,,Tax on Purchases,,0,,,632,301
+HFCH63,Sustain,Sustain,14,,Tax on Purchases,,0,,,632,301
+HFCH64,Cliff 10 SE,Cliff 10 SE,18,,Tax on Purchases,,0,,,632,301
+HFCH65,Camel Plus,Camel Plus,35,,Tax on Purchases,,0,,,632,301
+HFCH66,Proffesor-K,Proffesor-K,11,,Tax on Purchases,,0,,,632,301
+HFCH67,Biomin F,Biomin F,18,,Tax on Purchases,,0,,,632,301
+HFCH68,Afifen 10.8 % EG,Afifen 10.8 % EG,34,,Tax on Purchases,,0,,,632,301
+HFCH69,Mastercop 60 SC,Mastercop 60 SC,25,,Tax on Purchases,,0,,,632,301
+HFCH70,Super U Trichoderma,Super U Trichoderma,0,,Tax on Purchases,,0,,,632,301
+HFCH71,Avengelus Super C,Avengelus Super C,0,,Tax on Purchases,,0,,,632,301
+HFCH72,Avengelus Basic,Avengelus Basic,0,,Tax on Purchases,,0,,,632,301
+HFCH73,Prominent,Prominent,10,,Tax on Purchases,,0,,,632,301
+HFCH74,Boron,Boron,2.3,,Zero Rated Purchases,,0,,,632,302
+HFCH75,Hicure,Hicure,28,,Tax on Purchases,Hicure,0,,,632,301
+HFCH76,Contest,Contest,65,,Tax on Purchases,EACBL 65 USD/LITRE,0,,,632,301
+HFCH77,Myriad,Myriad,14,,Zero Rated Purchases,Myriad,0,,,632,301
+HFCH78,Reason,Reason,9.5,,Zero Rated Purchases,Reason,0,,,632,301
+HFFA01,Lamination Machine A4,Lamination Machine,"8,910.00",710,Tax on Purchases,,,,,,
+HFFA02,Lamination Pouch A4,Lamination Pouch A4,930,420,Tax on Purchases,,,,,,
+HFFE001,Souvenir 25kg,Souvenir 25kg,62.5,,Zero Rated Purchases,,0,,,633,302
+HFFE002,Neptune Onion Seed,Neptune Onion Seed,"20,500.00",,Zero Rated Purchases,,0,,,633,302
+HFFE003,Citric Acid,Citric Acid,1.5,,Zero Rated Purchases,,0,,,633,302
+HFFE004,Sulphuruc Acid,Sulphuruc Acid,0.36,,Zero Rated Purchases,,0,,,633,302
+HFFE005,Oligo Nila Premium 25Kg,Oligo Nila Premium 25Kg,162.5,,Zero Rated Purchases,,0,,,633,302
+HFFE006,MKP,MKP,0,,Zero Rated Purchases,,0,,,633,302
+HFFE007,MKP China,MKP China,1.4,,Zero Rated Purchases,,0,,,633,302
+HFFE008,Aluminium Sulphate,Aluminium Sulphate,0.38,,Zero Rated Purchases,,0,,,633,302
+HFFE009,Sulphur Gold 25Kg,Sulphur Gold 25Kg,62.5,,Zero Rated Purchases,,0,,,633,302
+HFFE010,Calcium Nitrate,Calcium Nitrate,0.4,,Zero Rated Purchases,,0,,,633,302
+HFFE011,Copper Sulphate Granules,Copper Sulphate Granules,3.5,,Zero Rated Purchases,,0,,,633,302
+HFFE012,Manganese Sulphate,Manganese Sulphate,1.15,,Zero Rated Purchases,,0,,,633,302
+HFFE013,Zinc Sulphate,Zinc Sulphate,6.61,,Zero Rated Purchases,,0,,,633,302
+HFFE014,Magnesium Sulphate,Magnesium Sulphate,0.25,,Zero Rated Purchases,,0,,,633,302
+HFFE015,Mon Potassium Phospphate,Mon Potassium Phospphate,1.4,,Zero Rated Purchases,,0,,,633,302
+HFFE016,Mono Ammonium Phosphate,Mono Ammonium Phosphate,0.87,,Zero Rated Purchases,,0,,,633,302
+HFFE017,NPK 0-52-34 M K P 25Kgs,NPK 0-52-34 M K P 25Kgs,1.55,,Zero Rated Purchases,,0,,,633,302
+HFFE018,Potassium Nitrate 25Kg,Potassium Nitrate 25Kg,0.92,,Zero Rated Purchases,,0,,,633,302
+HFFE019,CropNutrient Silicon Foliar Fertilizer 500Ml,CropNutrient Silicon Foliar Fertilizer 500Ml,400,,Zero Rated Purchases,,0,,,633,302
+HFFE020,EACBL Trufert Humi,Trufert Humi,0,,Zero Rated Purchases,,0,,,633,302
+,,,,,,,,,,,
+ROSES VARIETIES,,,,,,,,,,,
+HFFL01,"Athena,42cm,0 Boxes,0 Stems Per Box","Athena,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Athena,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL02,"Athena,52cm,0 Boxes,0 Stems Per Box","Athena,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Athena,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL04,"Athena,72cm,0 Boxes,0 Stems Per Box","Athena,72cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Athena,72cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL05,"Bellerose,42cm,0 Boxes,0 Stems Per Box","Bellerose,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Bellerose,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL06,"Bellerose,52cm,0 Boxes,0 Stems Per Box","Bellerose,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Bellerose,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL10,"Carise,52cm,0 Boxes,0 Stems Per Box","Carise,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Carise,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL101,"Top Gear,42cm,0 Boxes,0 Stems Per Box","Top Gear,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Top Gear,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL102,"Top Gear,52cm,0 Boxes,0 Stems Per Box","Top Gear,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Top Gear,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL17,"Copa Cabana,42cm,0 Boxes,0 Stems Per Box","Copa Cabana,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Copa Cabana,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL18,"Copa Cabana,52cm,0 Boxes,0 Stems Per Box","Copa Cabana,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Copa Cabana,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL21,"Event,42cm,0 Boxes,0 Stems Per Box","Event,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Event,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL30,"High & Magic,52cm,0 Boxes,0 Stems Per Box","High & Magic,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"High & Magic,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL38,"Jumilla,52cm,0 Boxes,0 Stems Per Box","Jumilla,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Jumilla,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL42,"Kingsday,52cm,0 Boxes,0 Stems Per Box","Kingsday,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Kingsday,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL45,"Labelle,42cm,0 Boxes,0 Stems Per Box","Labelle,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Labelle,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL46,"Labelle,52cm,0 Boxes,0 Stems Per Box","Labelle,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Labelle,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL49,"Lampion,42cm,0 Boxes,0 Stems Per Box","Lampion,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Lampion,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL50,"Lampion,52cm,0 Boxes,0 Stems Per Box","Lampion,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Lampion,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL53,"Madam Cerice,42cm,0 Boxes,0 Stems Per Box","Madam Cerice,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Madam Cerice,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL54,"Madam Cerice,52cm,0 Boxes,0 Stems Per Box","Madam Cerice,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Madam Cerice,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL55,"Madam Cerice,62cm,0 Boxes,0 Stems Per Box","Madam Cerice,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Madam Cerice,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL57,"Madam Red,42cm,0 Boxes,0 Stems Per Box","Madam Red,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Madam Red,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL58,"Madam Red,52cm,0 Boxes,0 Stems Per Box","Madam Red,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Madam Red,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL59,"Madam Red,62cm,0 Boxes,0 Stems Per Box","Madam Red,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Madam Red,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL60,"Madam Red,72cm,0 Boxes,0 Stems Per Box","Madam Red,72cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Madam Red,72cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL73,"Movie Star,42cm,0 Boxes,0 Stems Per Box","Movie Star,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Movie Star,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL74,"Movie Star,52cm,0 Boxes,0 Stems Per Box","Movie Star,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Movie Star,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL81,"Nightingale,42cm,0 Boxes,0 Stems Per Box","Nightingale,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Nightingale,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL82,"Nightingale,52cm,0 Boxes,0 Stems Per Box","Nightingale,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Nightingale,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFL89,"Revival,42cm,0 Boxes,0 Stems Per Box","Revival,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Revival,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
+HFFLO01,"Athena,42cm,0 Boxes,0 Stems Per Box","Athena,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Athena,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO02,"Athena,52cm,0 Boxes,0 Stems Per Box","Athena,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Athena,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO03,"Athena,62cm,0 Boxes,0 Stems Per Box","Athena,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Athena,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO04,"Athena,72cm,0 Boxes,0 Stems Per Box","Athena,72cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Athena,72cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO05,"Bellerose,42cm,0 Boxes,0 Stems Per Box","Bellerose,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Bellerose,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO06,"Bellerose,52cm,0 Boxes,0 Stems Per Box","Bellerose,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Bellerose,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO07,"Bellerose,62cm,0 Boxes,0 Stems Per Box","Bellerose,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Bellerose,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO08,"Bellerose,72cm,0 Boxes,0 Stems Per Box","Bellerose,72cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Bellerose,72cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO09,"Carise,42cm,0 Boxes,0 Stems Per Box","Carise,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Carise,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO10,"Carise,52cm,0 Boxes,0 Stems Per Box","Carise,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Carise,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO100,"Sunny Confidential,72cm,0 Boxes,0 Stems Per Box","Sunny Confidential,72cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Sunny Confidential,72cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO101,"Top Gear,42cm,0 Boxes,0 Stems Per Box","Top Gear,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Top Gear,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO102,"Top Gear,52cm,0 Boxes,0 Stems Per Box","Top Gear,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Top Gear,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO103,"Top Gear,62cm,0 Boxes,0 Stems Per Box","Top Gear,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Top Gear,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO104,"Top Gear,72cm,0 Boxes,0 Stems Per Box","Top Gear,72cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Top Gear,72cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO11,"Carise,62cm,0 Boxes,0 Stems Per Box","Carise,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Carise,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO12,"Carise,72cm,0 Boxes,0 Stems Per Box","Carise,72cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Carise,72cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO13,"Carodanal,42cm,0 Boxes,0 Stems Per Box","Carodanal,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Carodanal,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO14,"Carodanal,52cm,0 Boxes,0 Stems Per Box","Carodanal,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Carodanal,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO15,"Carodanal,62cm,0 Boxes,0 Stems Per Box","Carodanal,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Carodanal,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO16,"Carodanal,72cm,0 Boxes,0 Stems Per Box","Carodanal,72cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Carodanal,72cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO17,"Copa Cabana,42cm,0 Boxes,0 Stems Per Box","Copa Cabana,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Copa Cabana,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO18,"Copa Cabana,52cm,0 Boxes,0 Stems Per Box","Copa Cabana,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Copa Cabana,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO19,"Copa Cabana,62cm,0 Boxes,0 Stems Per Box","Copa Cabana,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Copa Cabana,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO20,"Copa Cabana,72cm,0 Boxes,0 Stems Per Box","Copa Cabana,72cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Copa Cabana,72cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO21,"Event,42cm,0 Boxes,0 Stems Per Box","Event,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Event,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO22,"Event,52cm,0 Boxes,0 Stems Per Box","Event,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Event,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO23,"Event,62cm,0 Boxes,0 Stems Per Box","Event,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Event,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO24,"Event,72cm,0 Boxes,0 Stems Per Box","Event,72cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Event,72cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO25,"Golden Tower,42cm,0 Boxes,0 Stems Per Box","Golden Tower,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Golden Tower,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO26,"Golden Tower,52cm,0 Boxes,0 Stems Per Box","Golden Tower,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Golden Tower,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO27,"Golden Tower,62cm,0 Boxes,0 Stems Per Box","Golden Tower,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Golden Tower,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO28,"Golden Tower,72cm,0 Boxes,0 Stems Per Box","Golden Tower,72cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Golden Tower,72cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO29,"High & Magic,42cm,0 Boxes,0 Stems Per Box","High & Magic,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"High & Magic,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO30,"High & Magic,52cm,0 Boxes,0 Stems Per Box","High & Magic,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"High & Magic,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO31,"High & Magic,62cm,0 Boxes,0 Stems Per Box","High & Magic,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"High & Magic,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO32,"High & Magic,72cm,0 Boxes,0 Stems Per Box","High & Magic,72cm,0 Boxes,0 Stems Per Box",0,,No Tax,"High & Magic,72cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO33,"James Bond,42cm,0 Boxes,0 Stems Per Box","James Bond,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"James Bond,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO34,"James Bond,52cm,0 Boxes,0 Stems Per Box","James Bond,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"James Bond,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO35,"James Bond,62cm,0 Boxes,0 Stems Per Box","James Bond,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"James Bond,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO36,"James Bond,72cm,0 Boxes,0 Stems Per Box","James Bond,72cm,0 Boxes,0 Stems Per Box",0,,No Tax,"James Bond,72cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO37,"Jumilla,42cm,0 Boxes,0 Stems Per Box","Jumilla,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Jumilla,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO38,"Jumilla,52cm,0 Boxes,0 Stems Per Box","Jumilla,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Jumilla,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO39,"Jumilla,62cm,0 Boxes,0 Stems Per Box","Jumilla,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Jumilla,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO40,"Jumilla,72cm,0 Boxes,0 Stems Per Box","Jumilla,72cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Jumilla,72cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO41,"Kingsday,42cm,0 Boxes,0 Stems Per Box","Kingsday,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Kingsday,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO42,"Kingsday,52cm,0 Boxes,0 Stems Per Box","Kingsday,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Kingsday,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO43,"Kingsday,62cm,0 Boxes,0 Stems Per Box","Kingsday,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Kingsday,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO44,"Kingsday,72cm,0 Boxes,0 Stems Per Box","Kingsday,72cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Kingsday,72cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO45,"Labelle,42cm,0 Boxes,0 Stems Per Box","Labelle,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Labelle,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO46,"Labelle,52cm,0 Boxes,0 Stems Per Box","Labelle,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Labelle,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO47,"Labelle,62cm,0 Boxes,0 Stems Per Box","Labelle,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Labelle,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO48,"Labelle,72cm,0 Boxes,0 Stems Per Box","Labelle,72cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Labelle,72cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO49,"Lampion,42cm,0 Boxes,0 Stems Per Box","Lampion,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Lampion,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO50,"Lampion,52cm,0 Boxes,0 Stems Per Box","Lampion,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Lampion,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO51,"Lampion,62cm,0 Boxes,0 Stems Per Box","Lampion,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Lampion,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO52,"Lampion,72cm,0 Boxes,0 Stems Per Box","Lampion,72cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Lampion,72cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO53,"Madam Cerice,42cm,0 Boxes,0 Stems Per Box","Madam Cerice,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Madam Cerice,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO54,"Madam Cerice,52cm,0 Boxes,0 Stems Per Box","Madam Cerice,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Madam Cerice,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO55,"Madam Cerice,62cm,0 Boxes,0 Stems Per Box","Madam Cerice,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Madam Cerice,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO56,"Madam Cerice,72cm,0 Boxes,0 Stems Per Box","Madam Cerice,72cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Madam Cerice,72cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO57,"Madam Red,42cm,0 Boxes,0 Stems Per Box","Madam Red,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Madam Red,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO58,"Madam Red,52cm,0 Boxes,0 Stems Per Box","Madam Red,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Madam Red,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO59,"Madam Red,62cm,0 Boxes,0 Stems Per Box","Madam Red,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Madam Red,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO60,"Madam Red,72cm,0 Boxes,0 Stems Per Box","Madam Red,72cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Madam Red,72cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO61,"Mixed Bouquet,42cm,0 Boxes,0 Stems Per Box","Mixed Bouquet,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Mixed Bouquet,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO62,"Mixed Bouquet,52cm,0 Boxes,0 Stems Per Box","Mixed Bouquet,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Mixed Bouquet,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO63,"Mixed Bouquet,62cm,0 Boxes,0 Stems Per Box","Mixed Bouquet,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Mixed Bouquet,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO64,"Mixed Bouquet,72cm,0 Boxes,0 Stems Per Box","Mixed Bouquet,72cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Mixed Bouquet,72cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO65,"Mixed Varieties,42cm,0 Boxes,0 Stems Per Box","Mixed Varieties,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Mixed Varieties,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO66,"Mixed Varieties,52cm,0 Boxes,0 Stems Per Box","Mixed Varieties,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Mixed Varieties,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO67,"Mixed Varieties,62cm,0 Boxes,0 Stems Per Box","Mixed Varieties,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Mixed Varieties,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO68,"Mixed Varieties,72cm,0 Boxes,0 Stems Per Box","Mixed Varieties,72cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Mixed Varieties,72cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO69,"Moonwalk,42cm,0 Boxes,0 Stems Per Box","Moonwalk,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Moonwalk,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO70,"Moonwalk,52cm,0 Boxes,0 Stems Per Box","Moonwalk,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Moonwalk,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO71,"Moonwalk,62cm,0 Boxes,0 Stems Per Box","Moonwalk,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Moonwalk,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO72,"Moonwalk,72cm,0 Boxes,0 Stems Per Box","Moonwalk,72cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Moonwalk,72cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO73,"Movie Star,42cm,0 Boxes,0 Stems Per Box","Movie Star,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Movie Star,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO74,"Movie Star,52cm,0 Boxes,0 Stems Per Box","Movie Star,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Movie Star,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO75,"Movie Star,62cm,0 Boxes,0 Stems Per Box","Movie Star,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Movie Star,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO76,"Movie Star,72cm,0 Boxes,0 Stems Per Box","Movie Star,72cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Movie Star,72cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO77,"Mult Red,42cm,0 Boxes,0 Stems Per Box","Mult Red,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Mult Red,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO78,"Mult Red,52cm,0 Boxes,0 Stems Per Box","Mult Red,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Mult Red,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO79,"Mult Red,62cm,0 Boxes,0 Stems Per Box","Mult Red,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Mult Red,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO80,"Mult Red,72cm,0 Boxes,0 Stems Per Box","Mult Red,72cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Mult Red,72cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO81,"Nightingale,42cm,0 Boxes,0 Stems Per Box","Nightingale,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Nightingale,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO82,"Nightingale,52cm,0 Boxes,0 Stems Per Box","Nightingale,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Nightingale,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO83,"Nightingale,62cm,0 Boxes,0 Stems Per Box","Nightingale,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Nightingale,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO84,"Nightingale,72cm,0 Boxes,0 Stems Per Box","Nightingale,72cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Nightingale,72cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO85,"Previda,42cm,0 Boxes,0 Stems Per Box","Previda,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Previda,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO86,"Previda,52cm,0 Boxes,0 Stems Per Box","Previda,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Previda,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO87,"Previda,62cm,0 Boxes,0 Stems Per Box","Previda,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Previda,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO88,"Previda,72cm,0 Boxes,0 Stems Per Box","Previda,72cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Previda,72cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO89,"Revival,42cm,0 Boxes,0 Stems Per Box","Revival,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Revival,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO90,"Revival,52cm,0 Boxes,0 Stems Per Box","Revival,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Revival,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO91,"Revival,62cm,0 Boxes,0 Stems Per Box","Revival,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Revival,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO92,"Revival,72cm,0 Boxes,0 Stems Per Box","Revival,72cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Revival,72cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO93,"Rosa Mix,42cm,0 Boxes,0 Stems Per Box","Rosa Mix,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Rosa Mix,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO94,"Rosa Mix,52cm,0 Boxes,0 Stems Per Box","Rosa Mix,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Rosa Mix,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO95,"Rosa Mix,62cm,0 Boxes,0 Stems Per Box","Rosa Mix,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Rosa Mix,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO96,"Rosa Mix,72cm,0 Boxes,0 Stems Per Box","Rosa Mix,72cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Rosa Mix,72cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO97,"Sunny Confidential,42cm,0 Boxes,0 Stems Per Box","Sunny Confidential,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Sunny Confidential,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO98,"Sunny Confidential,52cm,0 Boxes,0 Stems Per Box","Sunny Confidential,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Sunny Confidential,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+HFFLO99,"Sunny Confidential,62cm,0 Boxes,0 Stems Per Box","Sunny Confidential,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Sunny Confidential,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
+,,,,,,,,,,,
+HFOTHER001,Fuel,Fuel,0,417,Tax on Fuel,,,,,,
+HFPM01,Flower Food,Flower Food,3.28,,Zero Rated Purchases,,0,,,634,303
+HFPM02,Afri Label Florescent K09-Yellow,Afri Label Florescent K09-Yellow,0,,Tax on Purchases,,0,,,634,303
+HFPM03,Afri Label Florescent K09-Green,Afri Label Florescent K09-Green,0,,Tax on Purchases,,0,,,634,303
+HFPM04,Afri Label Florescent K09-Blue,Afri Label Florescent K09-Blue,0,,Tax on Purchases,,0,,,634,303
+HFPM05,Afri Label Florescent K09-Orange,Afri Label Florescent K09-Orange,0,,Tax on Purchases,,0,,,634,303
+HFPM06,Afri Label Florescent K09-Red,Afri Label Florescent K09-Red,0,,Tax on Purchases,,0,,,634,303
+HFPM07,Pepeo Self Adhesive Label C09,Pepeo Self Adhesive Label C09,0,,Tax on Purchases,,0,,,634,303
+HFPM08,Thermal Transfer Ribbon 110x300,Thermal Transfer Ribbon 110x300,"3,870.00",,Tax on Purchases,,0,,,634,303
+HFPM09,Box Thermal Label Rolls,Box Thermal Label Rolls,0,,Tax on Purchases,,0,,,634,303
+HFPM10,Heritage Soliq STD Boxes(Generic) Size 975x315x200,Heritage Soliq STD Boxes(Generic) Size 975x315x200,0,,Tax on Purchases,,0,,,634,303
+HFPM11,Heritage Soliq STD Boxes(Generic) Size 990x330x200,Heritage Soliq STD Boxes(Generic) Size 990x330x200,0,,Tax on Purchases,,0,,,634,303
+HFPM12,Bopp Plain 50x30x12,Bopp Plain 50x30x12,0,,Tax on Purchases,,0,,,634,303
+HFPM13,Zein Box(100x39x25),Zein Box(100x39x25),0,,Tax on Purchases,,0,,,634,303
+HFPM14,Brown SFK 6 (pcs),Brown SFK 6 (pcs),2,,Tax on Purchases,,0,,,634,303
+HFPM15,Clear Sleeves 50x30x12,Clear Sleeves 50x30x12,2.34,,Tax on Purchases,,0,,,634,303
+HFPM16,Clear Sleeves 60x30x12,Clear Sleeves 60x30x12,2.7,,Tax on Purchases,,0,,,634,303
+HFPM17,Clear Sleeves 40x30x12,Clear Sleeves 40x30x12,1.9,,Tax on Purchases,,0,,,634,303
+HFPM18,Standard Flower Boxes top and bottom,Standard Flower Boxes top and bottom,0,,Tax on Purchases,,0,,,634,303
+HFPM19,Flight Colors,Flight Colors,0,,Tax on Purchases,,0,,,634,303
+HFPM20,Heritage Sleeves 50x30x12,Heritage Sleeves 50x30x12,3.5,,Tax on Purchases,,0,,,634,303
+HFPM21,Printed Heritage Sleeve 60x30x12,Printed Heritage Sleeve 60x30x12,4.5,,Tax on Purchases,,0,,,634,303
+HFPM22,Printing Labels 4 Inch x 3 Inch,Printing Labels 4 Inch x 3 Inch,"2,300.00",,Tax on Purchases,"Elgon-KES 1.35 per piece
+Modern-KES 2,300 per roll",0,,,634,303
+HFPM23,Plain Label 70*99,Plain Label 70*99,0,,Tax on Purchases,,0,,,634,303
+HFPM24,Rubber Bands/Kg,Rubber Bands/Kg,380,,Tax on Purchases,,0,,,634,303
+HFPM25,Truck Seals,Truck Seals,27,,Tax on Purchases,,0,,,634,303
+HFPM26,Printed Standard Flower Boxes 5Ply Top and Bottom,Printed Standard Flower Boxes 5Ply Top and Bottom,1.5,,Tax on Purchases,,0,,,634,303
+HFPM27,Strapping roll,Strapping roll,"2,520.00",,Tax on Purchases,,0,,,634,303
+HFPM28,Thermal Roll,Thermal Roll,0,,Tax on Purchases,,0,,,634,303
+HFPM29,White Flute Green Size 200,White Flute Green Size 200,0,,Tax on Purchases,,0,,,634,303
+HFPM30,White SFK Size 6 (Pcs),White SFK Size 6 (Pcs),3.9,,Tax on Purchases,,0,,,634,303
+HFPM31,ZIMBOX(Flower Flow) Box,ZIMBOX(Flower Flow) Box,0,,Tax on Purchases,,0,,,634,303
+HFPM32,"Printed ZIM BOXES 100X39X25, 5Ply Top and Bottom","Printed ZIM BOXES 100X39X25, 5Ply Top and Bottom",2.4,,Tax on Purchases,,0,,,634,303
+HFPM33,Heritage Flowers Soliq ZIM Bot size 985X375X245MM,Heritage Flowers Soliq ZIM Bot size 985X375X245MM,0,,Tax on Purchases,,0,,,634,303
+HFPM34,Zim Boxes Size 100x39x25 Top 3Ply Bottom 5Ply,Zim Boxes Size 100x39x25 Top 3Ply Bottom 5Ply,2.5,,Tax on Purchases,,0,,,634,303
+HFPM35,Heritage Flowers Soliq ZIM Tops size 1000x390x250,Heritage Flowers Soliq ZIM Tops size 1000x390x250,0,,Tax on Purchases,,0,,,634,303
+HFPM36,Clear Tapes 12mm X 50mm,Clear Tapes 12mm X 50mm,12.5,,Tax on Purchases,,0,,,634,303
+HFPM37,Clear Sleeves 70x30x12,Clear Sleeves 70x30x12,2.9,,Tax on Purchases,Clear Sleeves 70x30x12,0,,,634,303
+HFPM38,Zim Box Top & Bottom 5 Ply White 2 Color Printed,"Top 5 Ply White 2 color Printed-101x47x20cm 
+Bottom 5 Ply Brown-98.5x47.5x19.5cm",210,,Tax on Purchases,Positive Packaging Price-227 KES,0,,,634,303
+HFPPE01,Red Dust Coats,Red Dust Coats,985,,Tax on Purchases,,0,,,636,305
+HFPPE02,PVC Hand Gloves,PVC Hand Gloves,320,,Tax on Purchases,,0,,,636,305
+HFPPE03,Cold Store/Pack house Gloves,Cold Store/Pack house Gloves,0,,Tax on Purchases,,0,,,636,305
+HFPPE04,Spray Suits,Spray Suits,"2,850.00",,Tax on Purchases,,0,,,636,305
+HFPPE05,Googles,Googles,250,,Tax on Purchases,,0,,,636,305
+HFPPE06,Respiratory Catridges,Respiratory Catridges,"3,850.00",,Tax on Purchases,,0,,,636,305
+HFPPE07,Leather Gloves,Leather Gloves,425,,Tax on Purchases,,0,,,636,305
+HFPPE08,Dust Masks,Dust Masks,5,,Tax on Purchases,,0,,,636,305
+HFSE001,Victoria Seeds,Victoria,"4,900.00",315,Tax on Purchases,Victoria,0,,,,
+HFSE002,Serenade Seeds,Serenade Seeds,"6,402.00",315,Tax on Purchases,Serenade Seeds,0,,,,
+HFSE003,Habanero Seeds,Habanero Seeds,"6,605.00",315,Tax on Purchases,Habanero Seeds,0,,,,
+HFST01,A5 Hard Cover 200 Pgs,A5 Hard Cover 200 Pgs,65,,Tax on Purchases,,0,,,635,421
+HFST02,A6 Pocket Note Books,A6 Pocket Note Books,36,,Tax on Purchases,,0,,,635,421
+HFST03,Canon BK GL 490 BK,Canon BK GL 490 BK,"1,800.00",,Tax on Purchases,,0,,,635,421
+HFST04,Kangaroo Stapler DS-435,Kangaroo Stapler DS-435,0,,Tax on Purchases,,0,,,635,421
+HFST05,Envelopes A5,Envelopes A5,3,,Tax on Purchases,,0,,,635,421
+HFST06,Envelopes A4,Envelopes A4,4,,Tax on Purchases,,0,,,635,421
+HFST07,Box File,Box File,150,,Tax on Purchases,,0,,,635,421
+HFST08,Highlighter Pen,Highlighter Pen,72,,Tax on Purchases,,0,,,635,421
+HFST09,Hp Ink Cartridge,Hp Ink Cartridge,0,,Tax on Purchases,,0,,,635,421
+HFST10,HP Toner W200A,HP Toner W200A,0,,Tax on Purchases,,0,,,635,421
+HFST11,Office Calculators,Office Calculators,0,,Tax on Purchases,,0,,,635,421
+HFST12,Kangaroo Paper Punch,Kangaroo Paper Punch,250,,Tax on Purchases,,0,,,635,421
+HFST13,Printing Papers,Printing Papers,0,,Tax on Purchases,,0,,,635,421
+HFST14,2 Quire Book Counter,2 Quire Book Counter,0,,Tax on Purchases,,0,,,635,421
+HFST15,Stapler HD 45,Stapler HD 45,0,,Tax on Purchases,,0,,,635,421
+HFST16,Staple pins 24/6,Staple pins 24/6,117,,Tax on Purchases,,0,,,635,421
+HFST17,Staple pins 73/12,Staple pins 73/12,"1,030.00",,Tax on Purchases,,0,,,635,421
+HFST18,GRN Books,GRN Books,0,,Tax on Purchases,,0,,,635,421
+HFST19,Permanent Mark Pens,Permanent Mark Pens,0,,Tax on Purchases,,0,,,635,421
+HFST20,Biro Pens,Biro Pens,7,,Tax on Purchases,,0,,,635,421
+HFST21,Stores Requisition Books,Stores Requisition Books,0,,Tax on Purchases,,0,,,635,421
+Security Services,Security Services,Security Services,0,416,Tax on Purchases,,,,,,
+Total Boxes,Total Boxes-,,,,,Total Boxes,0,,,,
+Total Stems,Total Stems-,,,,,Total Stems,0,,,,
+XERO,XERO,XERO,0,431,No Tax,,,,,,
+XX,NONE,"Madame Red 50cm,0 Boxes,0 Stems Per Box.",0,,,"Madame Red 50cm,0 Boxes,0 Stems Per Box.",0,200,,630,300
+XXX,None,"Madam Red 42cm,0 Boxes,0 Stems Per Box.",0,,Tax Exempt,"Madam Red 42cm,0 Boxes,0 Stems Per Box.",0,200,,630,300
+XXX.,NONE,Splendid,"1,000.00",,Tax on Purchases,Splendid,0,,,630,301
+XXX..,NONE,Flower Test,0,,Tax on Purchases,Flower Test,100,200,Zero Rated Sales,630,300
+XXXX,NONE,"Madame Red 60cm,0 Boxes,0 Stems Per Box.",0,,Tax Exempt,"Madame Red 60cm,0 Boxes,0 Stems Per Box.",0,200,,630,300

@@ -6,7 +6,7 @@
 	FA extension system documentation.
 */
 
-$next_extension_id = 21; // unique id for next installed extension
+$next_extension_id = 33; // unique id for next installed extension
 
 $installed_extensions = array (
   1 => 
@@ -180,7 +180,62 @@ $installed_extensions = array (
     'active' => false,
     'path' => 'themes/studio',
   ),
-  20 => 
+  25 => 
+  array (
+    'name' => 'Dated Stock Sheet',
+    'package' => 'rep_dated_stock',
+    'version' => '2.4.0-1',
+    'type' => 'extension',
+    'active' => false,
+    'path' => 'modules/rep_dated_stock',
+  ),
+  26 => 
+  array (
+    'package' => 'FrontHrm',
+    'name' => 'FrontHrm',
+    'version' => '-',
+    'available' => '',
+    'type' => 'extension',
+    'path' => 'modules/FrontHrm',
+    'active' => false,
+  ),
+  27 => 
+  array (
+    'name' => 'Requisitions',
+    'package' => 'requisitions',
+    'version' => '2.4.0-3',
+    'type' => 'extension',
+    'active' => false,
+    'path' => 'modules/requisitions',
+  ),
+  28 => 
+  array (
+    'name' => 'Bank Statement w/ Reconcile',
+    'package' => 'rep_statement_reconcile',
+    'version' => '2.4.0-1',
+    'type' => 'extension',
+    'active' => false,
+    'path' => 'modules/rep_statement_reconcile',
+  ),
+  29 => 
+  array (
+    'name' => 'Annual balance breakdown report',
+    'package' => 'rep_annual_balance_breakdown',
+    'version' => '2.4.0-4',
+    'type' => 'extension',
+    'active' => false,
+    'path' => 'modules/rep_annual_balance_breakdown',
+  ),
+  30 => 
+  array (
+    'name' => 'Import Transactions',
+    'package' => 'import_transactions',
+    'version' => '2.4.0-6',
+    'type' => 'extension',
+    'active' => false,
+    'path' => 'modules/import_transactions',
+  ),
+  31 => 
   array (
     'name' => 'Report Generator',
     'package' => 'repgen',
@@ -188,5 +243,15 @@ $installed_extensions = array (
     'type' => 'extension',
     'active' => false,
     'path' => 'modules/repgen',
+  ),
+  32 => 
+  array (
+    'package' => 'customers_import',
+    'name' => 'customers_import',
+    'version' => '-',
+    'available' => '',
+    'type' => 'extension',
+    'path' => 'modules/customers_import',
+    'active' => false,
   ),
 );

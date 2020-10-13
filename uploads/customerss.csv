@@ -1,0 +1,10 @@
+debtor_no,name,debtor_ref,address,tax_id,curr_code,sales_type,dimension_id,dimension2_id,credit_status,payment_terms,discount,pymt_discount,credit_limit,notes,inactive,BankAccountName,Website,SkypeName
+1,Donald Easter LLC,Donald Easter,N/A,123456789,USD,1,0,0,1,4,0,0,1000,,0,,,
+2,MoneyMaker Ltd.,MoneyMaker,N/A,54354333,EUR,1,1,0,1,1,0,0,1000,,0,,,
+3,asdfasdf,asdfsdf,asdf,asdf,asd,1,1,0,1,1,0,0,1000,,0,,,
+4,fasdfds,dsafdsdf,fds,fas,fsd,1,1,0,1,1,0,0,1000,,0,,,
+5,asqwr,wre,we,qwre,wqr,1,1,0,1,1,0,0,1000,,0,,,
+6,dsgfdf,dfs,dfg,dsfd,dfs,1,1,0,1,1,0,0,1000,,0,,,
+7,dsg,ghjghj,jghf,rrty,tyu,1,1,0,1,1,0,0,1000,,0,,,
+8,wqreew,fds,s,gfhj,yu,1,1,0,1,1,0,0,1000,,0,,,
+9,qwre,asdfsdf,s,sadf,s,1,1,0,1,1,0,0,1000,,0,,,
