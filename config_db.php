@@ -25,13 +25,13 @@ $tb_pref_counter = 1;
 $db_connections = array (
   0 => 
   array (
-    'name' => 'Sifa',
+    'name' => 'Laragon Company Limited',
     'host' => 'localhost',
     'port' => '3306',
     'dbname' => 'wizerp',
     'collation' => 'utf8_xx',
     'tbpref' => '0_',
-    'dbuser' => 'debian-sys-maint',
-    'dbpassword' => 'tJt1f7eQvxt4alzw',
+    'dbuser' => 'root',
+    'dbpassword' => '',
   ),
 );
