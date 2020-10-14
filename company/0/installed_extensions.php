@@ -177,13 +177,33 @@ $installed_extensions = array (
     'active' => false,
     'path' => 'themes/studio',
   ),
-  20 => 
+  26 => 
   array (
-    'name' => 'Report Generator',
-    'package' => 'repgen',
-    'version' => '2.4.0-4',
+    'package' => 'FrontHrm',
+    'name' => 'FrontHrm',
+    'version' => '-',
+    'available' => '',
     'type' => 'extension',
-    'active' => false,
-    'path' => 'modules/repgen',
+    'path' => 'modules/FrontHrm',
+    'active' => 0,
+  ),
+  33 => 
+  array (
+    'package' => 'customers_import',
+    'name' => 'customers_import',
+    'version' => '-',
+    'available' => '',
+    'type' => 'extension',
+    'path' => 'modules/customers_import',
+    'active' => 1,
+  ),
+  34 => 
+  array (
+    'name' => 'Inventory Items CSV Import',
+    'package' => 'import_items',
+    'version' => '2.4.0-3',
+    'type' => 'extension',
+    'active' => 1,
+    'path' => 'modules/import_items',
   ),
 );

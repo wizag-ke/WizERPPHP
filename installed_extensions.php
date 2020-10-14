@@ -6,7 +6,7 @@
 	FA extension system documentation.
 */
 
-$next_extension_id = 21; // unique id for next installed extension
+$next_extension_id = 35; // unique id for next installed extension
 
 $installed_extensions = array (
   1 => 
@@ -180,13 +180,33 @@ $installed_extensions = array (
     'active' => false,
     'path' => 'themes/studio',
   ),
-  20 => 
+  26 => 
   array (
-    'name' => 'Report Generator',
-    'package' => 'repgen',
-    'version' => '2.4.0-4',
+    'package' => 'FrontHrm',
+    'name' => 'FrontHrm',
+    'version' => '-',
+    'available' => '',
+    'type' => 'extension',
+    'path' => 'modules/FrontHrm',
+    'active' => false,
+  ),
+  33 => 
+  array (
+    'package' => 'customers_import',
+    'name' => 'customers_import',
+    'version' => '-',
+    'available' => '',
+    'type' => 'extension',
+    'path' => 'modules/customers_import',
+    'active' => false,
+  ),
+  34 => 
+  array (
+    'name' => 'Inventory Items CSV Import',
+    'package' => 'import_items',
+    'version' => '2.4.0-3',
     'type' => 'extension',
     'active' => false,
-    'path' => 'modules/repgen',
+    'path' => 'modules/import_items',
   ),
 );

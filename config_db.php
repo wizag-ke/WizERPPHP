@@ -25,7 +25,7 @@ $tb_pref_counter = 1;
 $db_connections = array (
   0 => 
   array (
-    'name' => 'TestCompany',
+    'name' => 'Laragon Company Limited',
     'host' => 'localhost',
     'port' => '3306',
     'dbname' => 'wizerp',

@@ -9,6 +9,10 @@
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
     See the License here <http://www.gnu.org/licenses/gpl-3.0.html>.
 ***********************************************************************/
+function say_hello()
+{
+	var_dump("Say Hello");
+}
 
 function add_customer($CustName, $cust_ref, $address, $tax_id, $curr_code,
 	$dimension_id, $dimension2_id, $credit_status, $payment_terms, $discount, $pymt_discount, 

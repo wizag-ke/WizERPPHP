@@ -359,6 +359,16 @@ function html_cleanup(&$parms)
 	reset($parms); // needed for direct key() usage later throughout the sources
 }
 
+function view_session_variables()
+{
+	foreach($_SESSION as $key => $value)
+	{
+		echo ($key . " => " . $value);
+		br();
+	}
+	exit();
+}
+
 //============================================================================
 //
 //
