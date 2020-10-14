@@ -234,7 +234,7 @@ function customer_settings($selected_id)
 	text_row(_("Customer Short Name:"), 'cust_ref', null, 30, 30);
 	textarea_row(_("Address:"), 'address', $_POST['address'], 35, 5);
 
-	text_row(_("GSTNo:"), 'tax_id', null, 40, 40);
+	text_row(_("Tax Number:"), 'tax_id', null, 40, 40);
 
 
 	if (!$selected_id || is_new_customer($selected_id) || (!key_in_foreign_table($selected_id, 'debtor_trans', 'debtor_no') &&

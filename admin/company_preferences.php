@@ -233,7 +233,7 @@ email_row_ex(_("Email Address:"), 'email', 50, 55);
 email_row_ex(_("BCC Address for all outgoing mails:"), 'bcc_email', 50, 55);
 
 text_row_ex(_("Official Company Number:"), 'coy_no', 25);
-text_row_ex(_("GSTNo:"), 'gst_no', 25);
+text_row_ex(_("Tax Number:"), 'gst_no', 25);
 currencies_list_row(_("Home Currency:"), 'curr_default', $_POST['curr_default']);
 
 label_row(_("Company Logo:"), $_POST['coy_logo']);
