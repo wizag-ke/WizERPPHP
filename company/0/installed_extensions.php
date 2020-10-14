@@ -203,7 +203,17 @@ $installed_extensions = array (
     'package' => 'import_items',
     'version' => '2.4.0-3',
     'type' => 'extension',
-    'active' => 1,
+    'active' => 0,
     'path' => 'modules/import_items',
+  ),
+  35 => 
+  array (
+    'package' => 'additional_fields',
+    'name' => 'additional_fields',
+    'version' => '-',
+    'available' => '',
+    'type' => 'extension',
+    'path' => 'modules/additional_fields',
+    'active' => 1,
   ),
 );
