@@ -6,7 +6,7 @@
 	FA extension system documentation.
 */
 
-$next_extension_id = 34; // unique id for next installed extension
+$next_extension_id = 35; // unique id for next installed extension
 
 $installed_extensions = array (
   1 => 
@@ -199,5 +199,14 @@ $installed_extensions = array (
     'type' => 'extension',
     'path' => 'modules/customers_import',
     'active' => false,
+  ),
+  34 => 
+  array (
+    'name' => 'Inventory Items CSV Import',
+    'package' => 'import_items',
+    'version' => '2.4.0-3',
+    'type' => 'extension',
+    'active' => false,
+    'path' => 'modules/import_items',
   ),
 );

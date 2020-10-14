@@ -197,4 +197,13 @@ $installed_extensions = array (
     'path' => 'modules/customers_import',
     'active' => 1,
   ),
+  34 => 
+  array (
+    'name' => 'Inventory Items CSV Import',
+    'package' => 'import_items',
+    'version' => '2.4.0-3',
+    'type' => 'extension',
+    'active' => 1,
+    'path' => 'modules/import_items',
+  ),
 );

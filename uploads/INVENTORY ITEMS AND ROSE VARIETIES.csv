@@ -80,10 +80,10 @@ HFCH75,Hicure,Hicure,28,,Tax on Purchases,Hicure,0,,,632,301
 HFCH76,Contest,Contest,65,,Tax on Purchases,EACBL 65 USD/LITRE,0,,,632,301
 HFCH77,Myriad,Myriad,14,,Zero Rated Purchases,Myriad,0,,,632,301
 HFCH78,Reason,Reason,9.5,,Zero Rated Purchases,Reason,0,,,632,301
-HFFA01,Lamination Machine A4,Lamination Machine,"8,910.00",710,Tax on Purchases,,,,,,
+HFFA01,Lamination Machine A4,Lamination Machine,8910,710,Tax on Purchases,,,,,,
 HFFA02,Lamination Pouch A4,Lamination Pouch A4,930,420,Tax on Purchases,,,,,,
 HFFE001,Souvenir 25kg,Souvenir 25kg,62.5,,Zero Rated Purchases,,0,,,633,302
-HFFE002,Neptune Onion Seed,Neptune Onion Seed,"20,500.00",,Zero Rated Purchases,,0,,,633,302
+HFFE002,Neptune Onion Seed,Neptune Onion Seed,20500,,Zero Rated Purchases,,0,,,633,302
 HFFE003,Citric Acid,Citric Acid,1.5,,Zero Rated Purchases,,0,,,633,302
 HFFE004,Sulphuruc Acid,Sulphuruc Acid,0.36,,Zero Rated Purchases,,0,,,633,302
 HFFE005,Oligo Nila Premium 25Kg,Oligo Nila Premium 25Kg,162.5,,Zero Rated Purchases,,0,,,633,302
@@ -102,7 +102,6 @@ HFFE017,NPK 0-52-34 M K P 25Kgs,NPK 0-52-34 M K P 25Kgs,1.55,,Zero Rated Purchas
 HFFE018,Potassium Nitrate 25Kg,Potassium Nitrate 25Kg,0.92,,Zero Rated Purchases,,0,,,633,302
 HFFE019,CropNutrient Silicon Foliar Fertilizer 500Ml,CropNutrient Silicon Foliar Fertilizer 500Ml,400,,Zero Rated Purchases,,0,,,633,302
 HFFE020,EACBL Trufert Humi,Trufert Humi,0,,Zero Rated Purchases,,0,,,633,302
-,,,,,,,,,,,
 ROSES VARIETIES,,,,,,,,,,,
 HFFL01,"Athena,42cm,0 Boxes,0 Stems Per Box","Athena,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Athena,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
 HFFL02,"Athena,52cm,0 Boxes,0 Stems Per Box","Athena,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Athena,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,631,312
@@ -238,7 +237,6 @@ HFFLO96,"Rosa Mix,72cm,0 Boxes,0 Stems Per Box","Rosa Mix,72cm,0 Boxes,0 Stems P
 HFFLO97,"Sunny Confidential,42cm,0 Boxes,0 Stems Per Box","Sunny Confidential,42cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Sunny Confidential,42cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
 HFFLO98,"Sunny Confidential,52cm,0 Boxes,0 Stems Per Box","Sunny Confidential,52cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Sunny Confidential,52cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
 HFFLO99,"Sunny Confidential,62cm,0 Boxes,0 Stems Per Box","Sunny Confidential,62cm,0 Boxes,0 Stems Per Box",0,,No Tax,"Sunny Confidential,62cm,0 Boxes,0 Stems Per Box",0,200,Zero Rated Sales,,
-,,,,,,,,,,,
 HFOTHER001,Fuel,Fuel,0,417,Tax on Fuel,,,,,,
 HFPM01,Flower Food,Flower Food,3.28,,Zero Rated Purchases,,0,,,634,303
 HFPM02,Afri Label Florescent K09-Yellow,Afri Label Florescent K09-Yellow,0,,Tax on Purchases,,0,,,634,303
@@ -247,7 +245,7 @@ HFPM04,Afri Label Florescent K09-Blue,Afri Label Florescent K09-Blue,0,,Tax on P
 HFPM05,Afri Label Florescent K09-Orange,Afri Label Florescent K09-Orange,0,,Tax on Purchases,,0,,,634,303
 HFPM06,Afri Label Florescent K09-Red,Afri Label Florescent K09-Red,0,,Tax on Purchases,,0,,,634,303
 HFPM07,Pepeo Self Adhesive Label C09,Pepeo Self Adhesive Label C09,0,,Tax on Purchases,,0,,,634,303
-HFPM08,Thermal Transfer Ribbon 110x300,Thermal Transfer Ribbon 110x300,"3,870.00",,Tax on Purchases,,0,,,634,303
+HFPM08,Thermal Transfer Ribbon 110x300,Thermal Transfer Ribbon 110x300,3870,,Tax on Purchases,,0,,,634,303
 HFPM09,Box Thermal Label Rolls,Box Thermal Label Rolls,0,,Tax on Purchases,,0,,,634,303
 HFPM10,Heritage Soliq STD Boxes(Generic) Size 975x315x200,Heritage Soliq STD Boxes(Generic) Size 975x315x200,0,,Tax on Purchases,,0,,,634,303
 HFPM11,Heritage Soliq STD Boxes(Generic) Size 990x330x200,Heritage Soliq STD Boxes(Generic) Size 990x330x200,0,,Tax on Purchases,,0,,,634,303
@@ -261,13 +259,13 @@ HFPM18,Standard Flower Boxes top and bottom,Standard Flower Boxes top and bottom
 HFPM19,Flight Colors,Flight Colors,0,,Tax on Purchases,,0,,,634,303
 HFPM20,Heritage Sleeves 50x30x12,Heritage Sleeves 50x30x12,3.5,,Tax on Purchases,,0,,,634,303
 HFPM21,Printed Heritage Sleeve 60x30x12,Printed Heritage Sleeve 60x30x12,4.5,,Tax on Purchases,,0,,,634,303
-HFPM22,Printing Labels 4 Inch x 3 Inch,Printing Labels 4 Inch x 3 Inch,"2,300.00",,Tax on Purchases,"Elgon-KES 1.35 per piece
+HFPM22,Printing Labels 4 Inch x 3 Inch,Printing Labels 4 Inch x 3 Inch,2300,,Tax on Purchases,"Elgon-KES 1.35 per piece
 Modern-KES 2,300 per roll",0,,,634,303
 HFPM23,Plain Label 70*99,Plain Label 70*99,0,,Tax on Purchases,,0,,,634,303
 HFPM24,Rubber Bands/Kg,Rubber Bands/Kg,380,,Tax on Purchases,,0,,,634,303
 HFPM25,Truck Seals,Truck Seals,27,,Tax on Purchases,,0,,,634,303
 HFPM26,Printed Standard Flower Boxes 5Ply Top and Bottom,Printed Standard Flower Boxes 5Ply Top and Bottom,1.5,,Tax on Purchases,,0,,,634,303
-HFPM27,Strapping roll,Strapping roll,"2,520.00",,Tax on Purchases,,0,,,634,303
+HFPM27,Strapping roll,Strapping roll,2520,,Tax on Purchases,,0,,,634,303
 HFPM28,Thermal Roll,Thermal Roll,0,,Tax on Purchases,,0,,,634,303
 HFPM29,White Flute Green Size 200,White Flute Green Size 200,0,,Tax on Purchases,,0,,,634,303
 HFPM30,White SFK Size 6 (Pcs),White SFK Size 6 (Pcs),3.9,,Tax on Purchases,,0,,,634,303
@@ -283,17 +281,17 @@ Bottom 5 Ply Brown-98.5x47.5x19.5cm",210,,Tax on Purchases,Positive Packaging Pr
 HFPPE01,Red Dust Coats,Red Dust Coats,985,,Tax on Purchases,,0,,,636,305
 HFPPE02,PVC Hand Gloves,PVC Hand Gloves,320,,Tax on Purchases,,0,,,636,305
 HFPPE03,Cold Store/Pack house Gloves,Cold Store/Pack house Gloves,0,,Tax on Purchases,,0,,,636,305
-HFPPE04,Spray Suits,Spray Suits,"2,850.00",,Tax on Purchases,,0,,,636,305
+HFPPE04,Spray Suits,Spray Suits,2850,,Tax on Purchases,,0,,,636,305
 HFPPE05,Googles,Googles,250,,Tax on Purchases,,0,,,636,305
-HFPPE06,Respiratory Catridges,Respiratory Catridges,"3,850.00",,Tax on Purchases,,0,,,636,305
+HFPPE06,Respiratory Catridges,Respiratory Catridges,3850,,Tax on Purchases,,0,,,636,305
 HFPPE07,Leather Gloves,Leather Gloves,425,,Tax on Purchases,,0,,,636,305
 HFPPE08,Dust Masks,Dust Masks,5,,Tax on Purchases,,0,,,636,305
-HFSE001,Victoria Seeds,Victoria,"4,900.00",315,Tax on Purchases,Victoria,0,,,,
-HFSE002,Serenade Seeds,Serenade Seeds,"6,402.00",315,Tax on Purchases,Serenade Seeds,0,,,,
-HFSE003,Habanero Seeds,Habanero Seeds,"6,605.00",315,Tax on Purchases,Habanero Seeds,0,,,,
+HFSE001,Victoria Seeds,Victoria,4900,315,Tax on Purchases,Victoria,0,,,,
+HFSE002,Serenade Seeds,Serenade Seeds,6402,315,Tax on Purchases,Serenade Seeds,0,,,,
+HFSE003,Habanero Seeds,Habanero Seeds,6605,315,Tax on Purchases,Habanero Seeds,0,,,,
 HFST01,A5 Hard Cover 200 Pgs,A5 Hard Cover 200 Pgs,65,,Tax on Purchases,,0,,,635,421
 HFST02,A6 Pocket Note Books,A6 Pocket Note Books,36,,Tax on Purchases,,0,,,635,421
-HFST03,Canon BK GL 490 BK,Canon BK GL 490 BK,"1,800.00",,Tax on Purchases,,0,,,635,421
+HFST03,Canon BK GL 490 BK,Canon BK GL 490 BK,1800,,Tax on Purchases,,0,,,635,421
 HFST04,Kangaroo Stapler DS-435,Kangaroo Stapler DS-435,0,,Tax on Purchases,,0,,,635,421
 HFST05,Envelopes A5,Envelopes A5,3,,Tax on Purchases,,0,,,635,421
 HFST06,Envelopes A4,Envelopes A4,4,,Tax on Purchases,,0,,,635,421
@@ -307,7 +305,7 @@ HFST13,Printing Papers,Printing Papers,0,,Tax on Purchases,,0,,,635,421
 HFST14,2 Quire Book Counter,2 Quire Book Counter,0,,Tax on Purchases,,0,,,635,421
 HFST15,Stapler HD 45,Stapler HD 45,0,,Tax on Purchases,,0,,,635,421
 HFST16,Staple pins 24/6,Staple pins 24/6,117,,Tax on Purchases,,0,,,635,421
-HFST17,Staple pins 73/12,Staple pins 73/12,"1,030.00",,Tax on Purchases,,0,,,635,421
+HFST17,Staple pins 73/12,Staple pins 73/12,1030,,Tax on Purchases,,0,,,635,421
 HFST18,GRN Books,GRN Books,0,,Tax on Purchases,,0,,,635,421
 HFST19,Permanent Mark Pens,Permanent Mark Pens,0,,Tax on Purchases,,0,,,635,421
 HFST20,Biro Pens,Biro Pens,7,,Tax on Purchases,,0,,,635,421
@@ -318,6 +316,6 @@ Total Stems,Total Stems-,,,,,Total Stems,0,,,,
 XERO,XERO,XERO,0,431,No Tax,,,,,,
 XX,NONE,"Madame Red 50cm,0 Boxes,0 Stems Per Box.",0,,,"Madame Red 50cm,0 Boxes,0 Stems Per Box.",0,200,,630,300
 XXX,None,"Madam Red 42cm,0 Boxes,0 Stems Per Box.",0,,Tax Exempt,"Madam Red 42cm,0 Boxes,0 Stems Per Box.",0,200,,630,300
-XXX.,NONE,Splendid,"1,000.00",,Tax on Purchases,Splendid,0,,,630,301
+XXX.,NONE,Splendid,1000,,Tax on Purchases,Splendid,0,,,630,301
 XXX..,NONE,Flower Test,0,,Tax on Purchases,Flower Test,100,200,Zero Rated Sales,630,300
 XXXX,NONE,"Madame Red 60cm,0 Boxes,0 Stems Per Box.",0,,Tax Exempt,"Madame Red 60cm,0 Boxes,0 Stems Per Box.",0,200,,630,300
