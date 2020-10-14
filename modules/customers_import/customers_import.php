@@ -39,7 +39,7 @@ $customers = csv_to_array($path_to_root . "/uploads/customers.csv");
 print_r($customers[0]);
 $customer_name = $customers[0]['ContactName'];
 $address = $customers[0]['Address'];
-$taxNo = $customers[0]['TaxNumber'];
+$taxNo = $customers[0]['Tax Number'];
 
 if(isset($taxNo))
 {
