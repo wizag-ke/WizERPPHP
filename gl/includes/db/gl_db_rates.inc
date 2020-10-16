@@ -60,6 +60,9 @@ function get_last_exchange_rate($curr_code, $date_)
 
 function update_exchange_rate($curr_code, $date_, $buy_rate, $sell_rate)
 {
+
+	// is_company_currency -> gets the company currency from the preferences
+	
 	if (is_company_currency($curr_code))
 		display_db_error("Exchange rates cannot be set for company currency", "", true);
 			
