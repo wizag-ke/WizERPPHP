@@ -4,3 +4,4 @@ company/0/pdf_files
 config_db.php
 config.php
 tmp/errors.log
+tmp/faillog.php
