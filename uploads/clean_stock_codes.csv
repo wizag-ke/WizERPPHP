@@ -1,0 +1,318 @@
+id,item_code,stock_id,description,category_id,quantity,is_foreign,inactive
+11,Accountancy,Accountancy,Accountancy,1,1,1,0
+12,HFBC001,HFBC001,Bank Charges,1,1,1,0
+13,HFCH01,HFCH01,EABCL Vital 350 SC-1Litre,1,1,1,0
+14,HFCH02,HFCH02,Afribat 69WP 10Kg,1,1,1,0
+15,HFCH03,HFCH03,Agromax 720WP 1kg,1,1,1,0
+16,HFCH04,HFCH04,Amino Gold 20Ltr,1,1,1,0
+17,HFCH05,HFCH05,Agrigrow Highmax 24-24-18 5ltrs,1,1,1,0
+18,HFCH06,HFCH06,Aligator 1 L,1,1,1,0
+19,HFCH07,HFCH07,Calmag 25 ltrs,1,1,1,0
+20,HFCH08,HFCH08,ARIMA 30SC 1LT PACK,1,1,1,0
+21,HFCH09,HFCH09,IMPULSE,1,1,1,0
+22,HFCH10,HFCH10,Chorus 1Kg,1,1,1,0
+23,HFCH11,HFCH11,SOLVIT 175 EW 1LT PACK,1,1,1,0
+24,HFCH12,HFCH12,Climate 1Ltr,1,1,1,0
+25,HFCH13,HFCH13,Delegate,1,1,1,0
+26,HFCH14,HFCH14,Dipnoy 60VER2 Rose Dipping,1,1,1,0
+27,HFCH15,HFCH15,Dolphin 260WDG,1,1,1,0
+28,HFCH16,HFCH16,Drench 20 Litres,1,1,1,0
+29,HFCH17,HFCH17,Evade 80 Wp:5kg,1,1,1,0
+30,HFCH18,HFCH18,EVIK 500SP,1,1,1,0
+31,HFCH19,HFCH19,Fortune Aza 1L,1,1,1,0
+32,HFCH20,HFCH20,Borax,1,1,1,0
+33,HFCH21,HFCH21,Ferroactive 6% Iron,1,1,1,0
+34,HFCH22,HFCH22,Flonex 15 SC 1LT,1,1,1,0
+35,HFCH23,HFCH23,Fonium 1Kg,1,1,1,0
+36,HFCH24,HFCH24,Splendid,1,1,1,0
+37,HFCH25,HFCH25,Hinder 1KG,1,1,1,0
+38,HFCH26,HFCH26,Ignite Acumin 25Ltr,1,1,1,0
+39,HFCH27,HFCH27,Ippon 500 SC,1,1,1,0
+40,HFCH28,HFCH28,Knockout 1Ltr,1,1,1,0
+41,HFCH29,HFCH29,Manco Flo 5ltr,1,1,1,0
+42,HFCH30,HFCH30,Matco 2.5kg,1,1,1,0
+43,HFCH31,HFCH31,Matric 50SC 1lt,1,1,1,0
+44,HFCH32,HFCH32,Meltatox 385 EC,1,1,1,0
+45,HFCH33,HFCH33,Merit 1 Litre,1,1,1,0
+46,HFCH34,HFCH34,MITEKING 1LTR,1,1,1,0
+47,HFCH35,HFCH35,Microthiole,1,1,1,0
+48,HFCH36,HFCH36,Mix Drip Combi 5 Ltr,1,1,1,0
+49,HFCH37,HFCH37,Mortar 22 Wp,1,1,1,0
+50,HFCH38,HFCH38,Mite Sweep 1Ltr,1,1,1,0
+51,HFCH39,HFCH39,Nimbecidine 5Lts,1,1,1,0
+52,HFCH40,HFCH40,Nimrod,1,1,1,0
+53,HFCH41,HFCH41,Oshothane Plus WDg 5Kg,1,1,1,0
+54,HFCH42,HFCH42,Piranah 200SC,1,1,1,0
+55,HFCH43,HFCH43,IProde 500SC 1Lt,1,1,1,0
+56,HFCH44,HFCH44,PYRIMEC 1KG,1,1,1,0
+57,HFCH45,HFCH45,Revus 1Lts,1,1,1,0
+58,HFCH46,HFCH46,Ringo,1,1,1,0
+59,HFCH47,HFCH47,Rova 1ltr,1,1,1,0
+60,HFCH48,HFCH48,Rova 75 WP Kg,1,1,1,0
+61,HFCH49,HFCH49,Spirox,1,1,1,0
+62,HFCH50,HFCH50,Splendor 500EC 1Ltr,1,1,1,0
+63,HFCH51,HFCH51,Strobine Extra 1Lt,1,1,1,0
+64,HFCH52,HFCH52,Sulfolac 80% WG -25Kg,1,1,1,0
+65,HFCH53,HFCH53,Sword,1,1,1,0
+66,HFCH54,HFCH54,Tog 10-10Ltr,1,1,1,0
+67,HFCH55,HFCH55,Tog 6,1,1,1,0
+68,HFCH56,HFCH56,Zodiac 50 WDG 1Kg,1,1,1,0
+69,HFCH57,HFCH57,Tyfos 20L,1,1,1,0
+70,HFCH58,HFCH58,AGRILAX 1KG,1,1,1,0
+71,HFCH59,HFCH59,Monument 400EC 1Lt,1,1,1,0
+72,HFCH60,HFCH60,Plantoc 1Ltr,1,1,1,0
+73,HFCH61,HFCH61,Switch 62.5 WG,1,1,1,0
+74,HFCH62,HFCH62,Lotus 75 %,1,1,1,0
+75,HFCH63,HFCH63,Sustain,1,1,1,0
+76,HFCH64,HFCH64,Cliff 10 SE,1,1,1,0
+77,HFCH65,HFCH65,Camel Plus,1,1,1,0
+78,HFCH66,HFCH66,Proffesor-K,1,1,1,0
+79,HFCH67,HFCH67,Biomin F,1,1,1,0
+80,HFCH68,HFCH68,Afifen 10.8 % EG,1,1,1,0
+81,HFCH69,HFCH69,Mastercop 60 SC,1,1,1,0
+82,HFCH70,HFCH70,Super U Trichoderma,1,1,1,0
+83,HFCH71,HFCH71,Avengelus Super C,1,1,1,0
+84,HFCH72,HFCH72,Avengelus Basic,1,1,1,0
+85,HFCH73,HFCH73,Prominent,1,1,1,0
+86,HFCH74,HFCH74,Boron,1,1,1,0
+87,HFCH75,HFCH75,Hicure,1,1,1,0
+88,HFCH76,HFCH76,Contest,1,1,1,0
+89,HFCH77,HFCH77,Myriad,1,1,1,0
+90,HFCH78,HFCH78,Reason,1,1,1,0
+91,HFFA01,HFFA01,Lamination Machine A4,1,1,1,0
+92,HFFA02,HFFA02,Lamination Pouch A4,1,1,1,0
+93,HFFE001,HFFE001,Souvenir 25kg,1,1,1,0
+94,HFFE002,HFFE002,Neptune Onion Seed,1,1,1,0
+95,HFFE003,HFFE003,Citric Acid,1,1,1,0
+96,HFFE004,HFFE004,Sulphuruc Acid,1,1,1,0
+97,HFFE005,HFFE005,Oligo Nila Premium 25Kg,1,1,1,0
+98,HFFE006,HFFE006,MKP,1,1,1,0
+99,HFFE007,HFFE007,MKP China,1,1,1,0
+100,HFFE008,HFFE008,Aluminium Sulphate,1,1,1,0
+101,HFFE009,HFFE009,Sulphur Gold 25Kg,1,1,1,0
+102,HFFE010,HFFE010,Calcium Nitrate,1,1,1,0
+103,HFFE011,HFFE011,Copper Sulphate Granules,1,1,1,0
+104,HFFE012,HFFE012,Manganese Sulphate,1,1,1,0
+105,HFFE013,HFFE013,Zinc Sulphate,1,1,1,0
+106,HFFE014,HFFE014,Magnesium Sulphate,1,1,1,0
+107,HFFE015,HFFE015,Mon Potassium Phospphate,1,1,1,0
+108,HFFE016,HFFE016,Mono Ammonium Phosphate,1,1,1,0
+109,HFFE017,HFFE017,NPK 0-52-34 M K P 25Kgs,1,1,1,0
+110,HFFE018,HFFE018,Potassium Nitrate 25Kg,1,1,1,0
+111,HFFE019,HFFE019,CropNutrient Silicon Foliar Fertilizer 500Ml,1,1,1,0
+112,HFFE020,HFFE020,EACBL Trufert Humi,1,1,1,0
+113,ROSES VARIETIES,ROSES VARIETIES,,1,1,1,0
+114,HFFL01,HFFL01,"Athena,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+115,HFFL02,HFFL02,"Athena,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+116,HFFL04,HFFL04,"Athena,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+117,HFFL05,HFFL05,"Bellerose,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+118,HFFL06,HFFL06,"Bellerose,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+119,HFFL10,HFFL10,"Carise,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+120,HFFL101,HFFL101,"Top Gear,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+121,HFFL102,HFFL102,"Top Gear,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+122,HFFL17,HFFL17,"Copa Cabana,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+123,HFFL18,HFFL18,"Copa Cabana,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+124,HFFL21,HFFL21,"Event,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+125,HFFL30,HFFL30,"High & Magic,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+126,HFFL38,HFFL38,"Jumilla,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+127,HFFL42,HFFL42,"Kingsday,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+128,HFFL45,HFFL45,"Labelle,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+129,HFFL46,HFFL46,"Labelle,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+130,HFFL49,HFFL49,"Lampion,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+131,HFFL50,HFFL50,"Lampion,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+132,HFFL53,HFFL53,"Madam Cerice,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+133,HFFL54,HFFL54,"Madam Cerice,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+134,HFFL55,HFFL55,"Madam Cerice,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+135,HFFL57,HFFL57,"Madam Red,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+136,HFFL58,HFFL58,"Madam Red,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+137,HFFL59,HFFL59,"Madam Red,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+138,HFFL60,HFFL60,"Madam Red,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+139,HFFL73,HFFL73,"Movie Star,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+140,HFFL74,HFFL74,"Movie Star,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+141,HFFL81,HFFL81,"Nightingale,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+142,HFFL82,HFFL82,"Nightingale,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+143,HFFL89,HFFL89,"Revival,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+144,HFFLO01,HFFLO01,"Athena,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+145,HFFLO02,HFFLO02,"Athena,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+146,HFFLO03,HFFLO03,"Athena,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+147,HFFLO04,HFFLO04,"Athena,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+148,HFFLO05,HFFLO05,"Bellerose,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+149,HFFLO06,HFFLO06,"Bellerose,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+150,HFFLO07,HFFLO07,"Bellerose,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+151,HFFLO08,HFFLO08,"Bellerose,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+152,HFFLO09,HFFLO09,"Carise,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+153,HFFLO10,HFFLO10,"Carise,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+154,HFFLO100,HFFLO100,"Sunny Confidential,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+155,HFFLO101,HFFLO101,"Top Gear,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+156,HFFLO102,HFFLO102,"Top Gear,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+157,HFFLO103,HFFLO103,"Top Gear,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+158,HFFLO104,HFFLO104,"Top Gear,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+159,HFFLO11,HFFLO11,"Carise,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+160,HFFLO12,HFFLO12,"Carise,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+161,HFFLO13,HFFLO13,"Carodanal,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+162,HFFLO14,HFFLO14,"Carodanal,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+163,HFFLO15,HFFLO15,"Carodanal,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+164,HFFLO16,HFFLO16,"Carodanal,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+165,HFFLO17,HFFLO17,"Copa Cabana,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+166,HFFLO18,HFFLO18,"Copa Cabana,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+167,HFFLO19,HFFLO19,"Copa Cabana,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+168,HFFLO20,HFFLO20,"Copa Cabana,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+169,HFFLO21,HFFLO21,"Event,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+170,HFFLO22,HFFLO22,"Event,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+171,HFFLO23,HFFLO23,"Event,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+172,HFFLO24,HFFLO24,"Event,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+173,HFFLO25,HFFLO25,"Golden Tower,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+174,HFFLO26,HFFLO26,"Golden Tower,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+175,HFFLO27,HFFLO27,"Golden Tower,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+176,HFFLO28,HFFLO28,"Golden Tower,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+177,HFFLO29,HFFLO29,"High & Magic,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+178,HFFLO30,HFFLO30,"High & Magic,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+179,HFFLO31,HFFLO31,"High & Magic,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+180,HFFLO32,HFFLO32,"High & Magic,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+181,HFFLO33,HFFLO33,"James Bond,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+182,HFFLO34,HFFLO34,"James Bond,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+183,HFFLO35,HFFLO35,"James Bond,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+184,HFFLO36,HFFLO36,"James Bond,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+185,HFFLO37,HFFLO37,"Jumilla,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+186,HFFLO38,HFFLO38,"Jumilla,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+187,HFFLO39,HFFLO39,"Jumilla,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+188,HFFLO40,HFFLO40,"Jumilla,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+189,HFFLO41,HFFLO41,"Kingsday,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+190,HFFLO42,HFFLO42,"Kingsday,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+191,HFFLO43,HFFLO43,"Kingsday,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+192,HFFLO44,HFFLO44,"Kingsday,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+193,HFFLO45,HFFLO45,"Labelle,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+194,HFFLO46,HFFLO46,"Labelle,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+195,HFFLO47,HFFLO47,"Labelle,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+196,HFFLO48,HFFLO48,"Labelle,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+197,HFFLO49,HFFLO49,"Lampion,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+198,HFFLO50,HFFLO50,"Lampion,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+199,HFFLO51,HFFLO51,"Lampion,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+200,HFFLO52,HFFLO52,"Lampion,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+201,HFFLO53,HFFLO53,"Madam Cerice,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+202,HFFLO54,HFFLO54,"Madam Cerice,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+203,HFFLO55,HFFLO55,"Madam Cerice,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+204,HFFLO56,HFFLO56,"Madam Cerice,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+205,HFFLO57,HFFLO57,"Madam Red,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+206,HFFLO58,HFFLO58,"Madam Red,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+207,HFFLO59,HFFLO59,"Madam Red,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+208,HFFLO60,HFFLO60,"Madam Red,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+209,HFFLO61,HFFLO61,"Mixed Bouquet,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+210,HFFLO62,HFFLO62,"Mixed Bouquet,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+211,HFFLO63,HFFLO63,"Mixed Bouquet,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+212,HFFLO64,HFFLO64,"Mixed Bouquet,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+213,HFFLO65,HFFLO65,"Mixed Varieties,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+214,HFFLO66,HFFLO66,"Mixed Varieties,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+215,HFFLO67,HFFLO67,"Mixed Varieties,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+216,HFFLO68,HFFLO68,"Mixed Varieties,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+217,HFFLO69,HFFLO69,"Moonwalk,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+218,HFFLO70,HFFLO70,"Moonwalk,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+219,HFFLO71,HFFLO71,"Moonwalk,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+220,HFFLO72,HFFLO72,"Moonwalk,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+221,HFFLO73,HFFLO73,"Movie Star,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+222,HFFLO74,HFFLO74,"Movie Star,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+223,HFFLO75,HFFLO75,"Movie Star,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+224,HFFLO76,HFFLO76,"Movie Star,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+225,HFFLO77,HFFLO77,"Mult Red,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+226,HFFLO78,HFFLO78,"Mult Red,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+227,HFFLO79,HFFLO79,"Mult Red,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+228,HFFLO80,HFFLO80,"Mult Red,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+229,HFFLO81,HFFLO81,"Nightingale,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+230,HFFLO82,HFFLO82,"Nightingale,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+231,HFFLO83,HFFLO83,"Nightingale,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+232,HFFLO84,HFFLO84,"Nightingale,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+233,HFFLO85,HFFLO85,"Previda,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+234,HFFLO86,HFFLO86,"Previda,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+235,HFFLO87,HFFLO87,"Previda,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+236,HFFLO88,HFFLO88,"Previda,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+237,HFFLO89,HFFLO89,"Revival,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+238,HFFLO90,HFFLO90,"Revival,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+239,HFFLO91,HFFLO91,"Revival,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+240,HFFLO92,HFFLO92,"Revival,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+241,HFFLO93,HFFLO93,"Rosa Mix,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+242,HFFLO94,HFFLO94,"Rosa Mix,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+243,HFFLO95,HFFLO95,"Rosa Mix,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+244,HFFLO96,HFFLO96,"Rosa Mix,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+245,HFFLO97,HFFLO97,"Sunny Confidential,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+246,HFFLO98,HFFLO98,"Sunny Confidential,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+247,HFFLO99,HFFLO99,"Sunny Confidential,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+248,HFOTHER001,HFOTHER001,Fuel,1,1,1,0
+249,HFPM01,HFPM01,Flower Food,1,1,1,0
+250,HFPM02,HFPM02,Afri Label Florescent K09-Yellow,1,1,1,0
+251,HFPM03,HFPM03,Afri Label Florescent K09-Green,1,1,1,0
+252,HFPM04,HFPM04,Afri Label Florescent K09-Blue,1,1,1,0
+253,HFPM05,HFPM05,Afri Label Florescent K09-Orange,1,1,1,0
+254,HFPM06,HFPM06,Afri Label Florescent K09-Red,1,1,1,0
+255,HFPM07,HFPM07,Pepeo Self Adhesive Label C09,1,1,1,0
+256,HFPM08,HFPM08,Thermal Transfer Ribbon 110x300,1,1,1,0
+257,HFPM09,HFPM09,Box Thermal Label Rolls,1,1,1,0
+258,HFPM10,HFPM10,Heritage Soliq STD Boxes(Generic) Size 975x315x200,1,1,1,0
+259,HFPM11,HFPM11,Heritage Soliq STD Boxes(Generic) Size 990x330x200,1,1,1,0
+260,HFPM12,HFPM12,Bopp Plain 50x30x12,1,1,1,0
+261,HFPM13,HFPM13,Zein Box(100x39x25),1,1,1,0
+262,HFPM14,HFPM14,Brown SFK 6 (pcs),1,1,1,0
+263,HFPM15,HFPM15,Clear Sleeves 50x30x12,1,1,1,0
+264,HFPM16,HFPM16,Clear Sleeves 60x30x12,1,1,1,0
+265,HFPM17,HFPM17,Clear Sleeves 40x30x12,1,1,1,0
+266,HFPM18,HFPM18,Standard Flower Boxes top and bottom,1,1,1,0
+267,HFPM19,HFPM19,Flight Colors,1,1,1,0
+268,HFPM20,HFPM20,Heritage Sleeves 50x30x12,1,1,1,0
+269,HFPM21,HFPM21,Printed Heritage Sleeve 60x30x12,1,1,1,0
+270,HFPM22,HFPM22,Printing Labels 4 Inch x 3 Inch,1,1,1,0
+271,HFPM23,HFPM23,Plain Label 70*99,1,1,1,0
+272,HFPM24,HFPM24,Rubber Bands/Kg,1,1,1,0
+273,HFPM25,HFPM25,Truck Seals,1,1,1,0
+274,HFPM26,HFPM26,Printed Standard Flower Boxes 5Ply Top and Bottom,1,1,1,0
+275,HFPM27,HFPM27,Strapping roll,1,1,1,0
+276,HFPM28,HFPM28,Thermal Roll,1,1,1,0
+277,HFPM29,HFPM29,White Flute Green Size 200,1,1,1,0
+278,HFPM30,HFPM30,White SFK Size 6 (Pcs),1,1,1,0
+279,HFPM31,HFPM31,ZIMBOX(Flower Flow) Box,1,1,1,0
+280,HFPM32,HFPM32,"Printed ZIM BOXES 100X39X25, 5Ply Top and Bottom",1,1,1,0
+281,HFPM33,HFPM33,Heritage Flowers Soliq ZIM Bot size 985X375X245MM,1,1,1,0
+282,HFPM34,HFPM34,Zim Boxes Size 100x39x25 Top 3Ply Bottom 5Ply,1,1,1,0
+283,HFPM35,HFPM35,Heritage Flowers Soliq ZIM Tops size 1000x390x250,1,1,1,0
+284,HFPM36,HFPM36,Clear Tapes 12mm X 50mm,1,1,1,0
+285,HFPM37,HFPM37,Clear Sleeves 70x30x12,1,1,1,0
+286,HFPM38,HFPM38,Zim Box Top & Bottom 5 Ply White 2 Color Printed,1,1,1,0
+287,HFPPE01,HFPPE01,Red Dust Coats,1,1,1,0
+288,HFPPE02,HFPPE02,PVC Hand Gloves,1,1,1,0
+289,HFPPE03,HFPPE03,Cold Store/Pack house Gloves,1,1,1,0
+290,HFPPE04,HFPPE04,Spray Suits,1,1,1,0
+291,HFPPE05,HFPPE05,Googles,1,1,1,0
+292,HFPPE06,HFPPE06,Respiratory Catridges,1,1,1,0
+293,HFPPE07,HFPPE07,Leather Gloves,1,1,1,0
+294,HFPPE08,HFPPE08,Dust Masks,1,1,1,0
+295,HFSE001,HFSE001,Victoria Seeds,1,1,1,0
+296,HFSE002,HFSE002,Serenade Seeds,1,1,1,0
+297,HFSE003,HFSE003,Habanero Seeds,1,1,1,0
+298,HFST01,HFST01,A5 Hard Cover 200 Pgs,1,1,1,0
+299,HFST02,HFST02,A6 Pocket Note Books,1,1,1,0
+300,HFST03,HFST03,Canon BK GL 490 BK,1,1,1,0
+301,HFST04,HFST04,Kangaroo Stapler DS-435,1,1,1,0
+302,HFST05,HFST05,Envelopes A5,1,1,1,0
+303,HFST06,HFST06,Envelopes A4,1,1,1,0
+304,HFST07,HFST07,Box File,1,1,1,0
+305,HFST08,HFST08,Highlighter Pen,1,1,1,0
+306,HFST09,HFST09,Hp Ink Cartridge,1,1,1,0
+307,HFST10,HFST10,HP Toner W200A,1,1,1,0
+308,HFST11,HFST11,Office Calculators,1,1,1,0
+309,HFST12,HFST12,Kangaroo Paper Punch,1,1,1,0
+310,HFST13,HFST13,Printing Papers,1,1,1,0
+311,HFST14,HFST14,2 Quire Book Counter,1,1,1,0
+312,HFST15,HFST15,Stapler HD 45,1,1,1,0
+313,HFST16,HFST16,Staple pins 24/6,1,1,1,0
+314,HFST17,HFST17,Staple pins 73/12,1,1,1,0
+315,HFST18,HFST18,GRN Books,1,1,1,0
+316,HFST19,HFST19,Permanent Mark Pens,1,1,1,0
+317,HFST20,HFST20,Biro Pens,1,1,1,0
+318,HFST21,HFST21,Stores Requisition Books,1,1,1,0
+319,Security Services,Security Services,Security Services,1,1,1,0
+320,Total Boxes,Total Boxes,Total Boxes-,1,1,1,0
+321,Total Stems,Total Stems,Total Stems-,1,1,1,0
+322,XERO,XERO,XERO,1,1,1,0
+323,XX,XX,NONE,1,1,1,0
+324,XXX,XXX,None,1,1,1,0
+325,XXX.,XXX.,NONE,1,1,1,0
+326,XXX..,XXX..,NONE,1,1,1,0
+327,XXXX,XXXX,NONE,1,1,1,0
