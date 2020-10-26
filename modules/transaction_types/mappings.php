@@ -19,9 +19,6 @@ include_once($path_to_root . "/includes/constants/constants.php");
 
 simple_page_mode();
 
-
-var_dump($Mode);
-
 add_access_extensions();
 
 include_once($path_to_root . "/modules/transaction_types/includes/transaction_types_db.inc");
@@ -34,8 +31,54 @@ if ($Mode=='ADD_ITEM')
     add_mapping($_POST['module'], $_POST['transaction_id']);
 }
 
+if ($Mode=='UPDATE_ITEM')
+{
+    update_mapping($selected_id, $_POST['module'], $_POST['transaction_id']);
+    display_notification(_('Selected transaction type has been updated'));
+    $Mode = 'RESET';
+}
+
+if ($Mode == 'Delete')
+{
+    delete_mapping($selected_id);
+    display_notification(_('Selected mapping has been deleted'));
+    $Mode = 'RESET';
+}
+
+
+
+$result = get_all_mappings();
+
 start_form();
+
+start_table(TABLESTYLE);
+
+$th = array (_('Module'), _('Transaction type'),'', '');
+table_header($th);
+
+while ($myrow = db_fetch($result))
+{
+	label_cell($myrow["module"], "nowrap");
+	label_cell($myrow["transaction_description"], "nowrap");
+ 	edit_button_cell("Edit".$myrow['id'], _("Edit"));
+ 	delete_button_cell("Delete".$myrow['id'], _("Delete"));
+	end_row();
+}
+
+end_table(1);
+
 start_outer_table(TABLESTYLE2);
+
+if ($selected_id != -1)
+{
+ 	if ($Mode == 'Edit') {
+		$myrow = get_mapping($selected_id);
+
+		$_POST['module']  = $myrow["module"];
+		$_POST['transaction_id']  = $myrow["transaction_id"];
+	}
+	hidden('selected_id', $selected_id);
+}
 
 table_section(1);
 table_section_title(_("Decimal Places"));

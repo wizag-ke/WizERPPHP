@@ -45,7 +45,7 @@ function get_transaction_type($id)
     LEFT JOIN ".TB_PREF."chart_master as acc2 on trans.cr_ac=acc2.account_code
     WHERE trans.id=".db_escape($id);
 
-	$result = db_query($sql, "could not get POS definition");
+	$result = db_query($sql, "could not get transaction type");
 	return db_fetch($result);
 }
 
@@ -101,6 +101,62 @@ function add_mapping($module, $transaction_id)
 
     if (db_query($sql,"Unable to save mapping."))
     display_notification(_('Mapping type added'));
+}
+
+
+/**
+  * Gets all mappings from the database.
+  */
+
+function get_all_mappings()
+{
+    $sql = "SELECT maps.*, trans.description as transaction_description FROM "
+    .TB_PREF."module_transaction_type as maps 
+    LEFT JOIN ".TB_PREF."transaction_types as trans on maps.transaction_id=trans.id ";
+	return db_query($sql, "could not get all trasaction types");
+}
+
+/**
+ * Updates mapping from the database
+ * 
+ * Called from the mappings.php
+ */
+function update_mapping($id, $module, $transaction_id)
+{
+    $sql = "UPDATE ".TB_PREF."module_transaction_type SET module=".db_escape($module)
+    .",transaction_id=".db_escape($transaction_id)
+    ." WHERE id = ".db_escape($id);
+
+    db_query($sql, "could not update mapping");
+}
+
+/**
+ * Gets a single mapping from the database
+ * 
+ */
+function get_mapping($id)
+{
+    $sql = "SELECT maps.*, trans.description as transaction_description FROM "
+    .TB_PREF."module_transaction_type as maps " .
+    "LEFT JOIN ".TB_PREF."transaction_types as trans on maps.transaction_id=trans.id  " .
+    "WHERE maps.id=".db_escape($id);
+
+	$result = db_query($sql, "could not get mapping");
+	return db_fetch($result);
+}
+
+/**
+ * Deletes a mapping
+ * 
+ * Called fro mappings.php
+ * 
+ * @param string
+ */
+
+function delete_mapping($id)
+{
+    $sql="DELETE FROM ".TB_PREF."module_transaction_type WHERE id=".db_escape($id);
+	db_query($sql,"The mapping could not be deleted");
 }
 
 
