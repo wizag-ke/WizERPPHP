@@ -1,0 +1,9 @@
+Package: item_inquiry
+Version: 2.4
+Name: Item Inquiry
+Description: For demo, how to create an extension in FrontAccounting.
+Author: flpages
+Maintenance: flpages
+Homepage: https//www.flpages.com
+Type: extension
+InstallPath: modules/item_inquiry
