@@ -28,5 +28,6 @@ Get familiar with getReportObject
 info() -> important for creating reports
 font() -> changing report font
 
-
 $rep = new FrontReport()
+
+View the app names in applications folder

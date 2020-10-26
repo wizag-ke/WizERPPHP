@@ -187,16 +187,6 @@ $installed_extensions = array (
     'path' => 'modules/FrontHrm',
     'active' => 0,
   ),
-  33 => 
-  array (
-    'package' => 'customers_import',
-    'name' => 'customers_import',
-    'version' => '-',
-    'available' => '',
-    'type' => 'extension',
-    'path' => 'modules/customers_import',
-    'active' => 1,
-  ),
   34 => 
   array (
     'name' => 'Inventory Items CSV Import',
@@ -206,14 +196,24 @@ $installed_extensions = array (
     'active' => 0,
     'path' => 'modules/import_items',
   ),
-  35 => 
+  36 => 
   array (
-    'package' => 'additional_fields',
-    'name' => 'additional_fields',
+    'package' => 'item_inquiry',
+    'name' => 'Item Inquiry',
+    'version' => '2.4',
+    'available' => '',
+    'type' => 'extension',
+    'path' => 'modules/item_inquiry',
+    'active' => 1,
+  ),
+  37 => 
+  array (
+    'package' => 'transaction_types',
+    'name' => 'transaction_types',
     'version' => '-',
     'available' => '',
     'type' => 'extension',
-    'path' => 'modules/additional_fields',
-    'active' => 1,
+    'path' => 'modules/transaction_types',
+    'active' => 0,
   ),
 );

@@ -1,4 +1,5 @@
 <?php
+define ('SS_TRANSACTIONTYPE', 100<<8);
 
 class hooks_transaction_types extends hooks {
 	var $module_name = 'transaction_types'; 
@@ -10,46 +11,39 @@ class hooks_transaction_types extends hooks {
 		global $path_to_root;
 
 		switch($app->id) {
-			case 'orders':
-				$app->add_rapp_function(2, _('Customers Import'), 
-					$path_to_root.'/modules/customers_import/customers_import.php', 'SA_OPEN');
+			case 'GL':
+				$app->add_rapp_function(2, _('Add Transaction Type'), 
+					$path_to_root.'/modules/transaction_types/transaction_types.php', 'SS_TRANSACTIONTYPE');
 		}
-    }
+	}
+	
+	function install_access()
+	{
+		$security_sections[SS_TRANSACTIONTYPE] =	_("Add Transaction Type");
+
+		$security_areas['SS_TRANSACTIONTYPE'] = array(SS_ITEMINQ|101, _("Add Transaction Type"));
+
+		return array($security_areas, $security_sections);
+	}
     
     function activate_extension($company, $check_only=true)
     {
         global $db_connections;
 
         $updates = array(
-            'update.sql' => array('customers_import')
+            'update.sql' => array('transaction_type')
         );
+
+        return $this->update_databases($company, $updates, $check_only);
+	}
+	
+	function deactivate_extension($company, $check_only=true) {
+        global $db_connections;
+
+        $updates = array('remove.sql' => array('inquiry'));
 
         return $this->update_databases($company, $updates, $check_only);
     }
 }
 
-
-
-// function deactivate_extension($company, $check_only=true)
-// {
-//     global $db_connections;
-
-//     $updates = array(
-//         'drop_dashboard_db.sql' => array('customers_import') // FIXME: just an ugly hack to clean database on deactivation
-//     );
-
-//     return $this->update_databases($company, $updates, $check_only);
-// }
-
-
-// function activate_extension($company, $check_only=true)
-// {
-//     global $db_connections;
-
-//     $updates = array(
-//         'update_dashboard_db.sql' => array('dashboard_widgets')
-//     );
-
-//     return $this->update_databases($company, $updates, $check_only);
-// }
 
