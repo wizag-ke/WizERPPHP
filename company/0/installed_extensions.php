@@ -214,6 +214,6 @@ $installed_extensions = array (
     'available' => '',
     'type' => 'extension',
     'path' => 'modules/transaction_types',
-    'active' => 0,
+    'active' => 1,
   ),
 );

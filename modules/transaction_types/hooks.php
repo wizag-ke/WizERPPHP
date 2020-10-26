@@ -21,7 +21,7 @@ class hooks_transaction_types extends hooks {
 	{
 		$security_sections[SS_TRANSACTIONTYPE] =	_("Add Transaction Type");
 
-		$security_areas['SS_TRANSACTIONTYPE'] = array(SS_ITEMINQ|101, _("Add Transaction Type"));
+		$security_areas['SS_TRANSACTIONTYPE'] = array(SS_TRANSACTIONTYPE|101, _("Add Transaction Type"));
 
 		return array($security_areas, $security_sections);
 	}
