@@ -63,6 +63,12 @@ function update_transaction_type($id, $code,$description,$dr_ac, $cr_ac, $module
     db_query($sql, "could not update transaction type");	
 }
 
+function delete_transaction_type($id)
+{
+	$sql="DELETE FROM ".TB_PREF."transaction_types WHERE id=".db_escape($id);
+	db_query($sql,"The transaction type could not be deleted");
+}
+
 
 // $sql = "insert into ". TB_PREF."transaction_types
 // (code,description,dr_ac, cr_ac, module) values

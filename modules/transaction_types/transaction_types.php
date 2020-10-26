@@ -28,6 +28,18 @@ page(_("Add Transaction Type"));
 // if (isset($_POST['add']) || isset($_POST['update'])) 
 // {
 
+if ($Mode == 'Delete')
+{
+	// if (key_in_foreign_table($selected_id, 'users', 'pos'))
+	// {
+	// 	display_error(_("Cannot delete this POS because it is used in users setup."));
+	// } else {
+		delete_transaction_type($selected_id);
+		display_notification(_('Selected transaction type has been deleted'));
+		$Mode = 'RESET';
+	// }
+}
+
 if ($Mode=='ADD_ITEM')
 {
     //initialise no input errors assumed initially before we test
