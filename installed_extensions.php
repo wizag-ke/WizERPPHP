@@ -6,7 +6,7 @@
 	FA extension system documentation.
 */
 
-$next_extension_id = 36; // unique id for next installed extension
+$next_extension_id = 38; // unique id for next installed extension
 
 $installed_extensions = array (
   1 => 
@@ -190,33 +190,24 @@ $installed_extensions = array (
     'path' => 'modules/FrontHrm',
     'active' => false,
   ),
-  33 => 
+  36 => 
   array (
-    'package' => 'customers_import',
-    'name' => 'customers_import',
+    'package' => 'item_inquiry',
+    'name' => 'Item Inquiry',
+    'version' => '2.4',
+    'available' => '',
+    'type' => 'extension',
+    'path' => 'modules/item_inquiry',
+    'active' => false,
+  ),
+  37 => 
+  array (
+    'package' => 'transaction_types',
+    'name' => 'transaction_types',
     'version' => '-',
     'available' => '',
     'type' => 'extension',
-    'path' => 'modules/customers_import',
-    'active' => false,
-  ),
-  34 => 
-  array (
-    'name' => 'Inventory Items CSV Import',
-    'package' => 'import_items',
-    'version' => '2.4.0-3',
-    'type' => 'extension',
-    'active' => false,
-    'path' => 'modules/import_items',
-  ),
-  35 => 
-  array (
-    'package' => 'additional_fields',
-    'name' => 'additional_fields',
-    'version' => '-',
-    'available' => '',
-    'type' => 'extension',
-    'path' => 'modules/additional_fields',
+    'path' => 'modules/transaction_types',
     'active' => false,
   ),
 );

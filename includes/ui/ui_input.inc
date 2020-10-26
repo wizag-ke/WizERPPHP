@@ -54,6 +54,13 @@ function simple_page_mode($numeric_id = true)
 {
 	global $Ajax, $Mode, $selected_id;
 
+	// var_dump("Ajax");
+	// var_dump($Ajax);
+	// var_dump("Mode");
+	// var_dump($Mode);
+	// var_dump("selected_id");
+	// var_dump($selected_id);
+
 	$default = $numeric_id ? -1 : '';
 	$selected_id = get_post('selected_id', $default);
 	foreach (array('ADD_ITEM', 'UPDATE_ITEM', 'RESET', 'CLONE') as $m) {
@@ -342,6 +349,7 @@ function delete_button_cell($name, $value, $title=false)
 	button_cell($name, $value, $title, ICON_DELETE);
 }
 
+// edit_button_cell("Edit".$myrow['id'], _("Edit"));
 function edit_button_cell($name, $value, $title=false)
 {
 	button_cell($name, $value, $title, ICON_EDIT);

@@ -695,8 +695,6 @@ function create_cart($type, $trans_no)
 }
 
 
-
-
 function send_email_to_first_approver($trans_type, $trans_no)
 {
 
@@ -740,15 +738,46 @@ function send_email_to_first_approver($trans_type, $trans_no)
         // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
         // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 
-        $body = 'Hi '. $user_name .',' . 
-                '<br>' .
-                '<p>Please follow the link below and approve the quotation</p>' .
-                '<br>' .
-                '<a class="btn btn-info" href="'. $quotation_url .'">View</a>' .
-                '<br>' .
-                // '<strong>Regards,</strong>' .
-                '<br>' .
-                '<h3>WizERP</h3>';
+        // $body = 'Hi '. $user_name .',' . 
+        //         '<br>' .
+        //         '<p>Please follow the link below and approve the quotation</p>' .
+        //         '<br>' .
+        //         '<a class="btn btn-info" href="'. $quotation_url .'">View</a>' .
+        //         '<br>' .
+        //         '<br>' .
+		// 		'<h3>WizERP</h3>';
+				
+		$body = 
+
+				'<html lang="en">' .
+				'<style>' .
+					'body {' .
+						'font-family:"Geneva, Tahoma, sans-serif";' .
+						'background-color: #f8f8ff;' .
+					'}' .
+					'.header {' .
+						'font-size: 1.5rem;' .
+					'}' .
+					'a:link, a:visited {' .
+						'background-color:lightskyblue;' .
+						'color: white;' .
+						'padding: 14px 25px;' .
+						'text-align: center;' .
+						'text-decoration: none;' .
+						'display: inline-block;' .
+					'}' .
+					'a:hover, a:active {' .
+						'background-color: #216894;' .
+					'}' .
+				'</style>' .
+				'<body>' .
+					'<div class="header">' .
+						'Hi '. $user_name .',' . 
+					'</div>' .
+					'<p>Please follow the link below and approve the quotation</p>' .
+					'<a class="btn btn-info" href="'. $quotation_url .'">View</a>' .
+				'</body>' .
+				'</html>';
 
 
         // Content
