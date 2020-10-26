@@ -267,7 +267,6 @@ function check_page_security($page_security)
 
 	if (!$_SESSION["wa_current_user"]->can_access_page($page_security))
 	{
-
 		echo "<center><br><br><br><b>";
 		echo _("The security settings on your account do not permit you to access this function");
 		echo "</b>";
