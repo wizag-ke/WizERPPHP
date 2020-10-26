@@ -190,15 +190,6 @@ $installed_extensions = array (
     'path' => 'modules/FrontHrm',
     'active' => false,
   ),
-  34 => 
-  array (
-    'name' => 'Inventory Items CSV Import',
-    'package' => 'import_items',
-    'version' => '2.4.0-3',
-    'type' => 'extension',
-    'active' => false,
-    'path' => 'modules/import_items',
-  ),
   36 => 
   array (
     'package' => 'item_inquiry',

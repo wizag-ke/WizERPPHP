@@ -76,6 +76,9 @@ while ($myrow = db_fetch($prices_list))
 end_table();
 echo "<br>";
 
+// if (isset($_POST['add_query']))
+//    add_item_inquiry($_POST['stock_id'],$_SESSION['desc'],$_SESSION['qoh']);
+
 // part 3  Save command button
 submit_center('add_query', _("Save Inquired Item"), true);
 
