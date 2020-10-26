@@ -80,40 +80,30 @@ function delete_transaction_type($id)
 
 
 /**
- * Retrieves all the transaction types and populates a combo box
- */
-function all_transaction_list_row($label, $name, $selected_id=null)
+  * Stores the mapping from mappings.php to the database.
+  *
+  * A *description*, that can span multiple lines, to go _in-depth_ into the details of this element
+  * and to provide some background information or textual references.
+  *
+  * @param string $myArgument With a *description* of this argument, these may also
+  *    span multiple lines.
+  *
+  * @return void
+  */
+
+function add_mapping($module, $transaction_id)
 {
-	echo "<tr><td class='label'>$label</td>";
-	all_transaction_list_cells(null, $name, $selected_id);
-	// all_transaction_list_cells(null, transaction_id, null);
-	echo "</tr>\n";
+    $sql = "insert into ". TB_PREF."module_transaction_type
+    (module,transaction_id) values
+     (". db_escape($module). "," .
+         db_escape($transaction_id).
+        ")";
+
+    if (db_query($sql,"Unable to save mapping."))
+    display_notification(_('Mapping type added'));
 }
 
-/**
- * Populates a combo box with a list of transactio types
- */
-function all_transaction_list_cells($label, $name, $selected_id=null)
-{
-    // var_dump("Label => " . $label . ", Name => " . $name . ", Selected => " . $selected_id);
 
-	if ($label != null)
-		echo "<td>$label</td>\n";
-	echo "<td>";
-	echo all_transaction_list($name, $selected_id);
-	// echo all_transaction_list(transaction_id, null);
-	echo "</td>\n";
-}
-
-/**
- * Populates a combo box with a list of transactio types
- */
-
-function all_transaction_list($name, $selected_id=null)
-{
-    $sql = "SELECT trans.id, trans.description FROM ".TB_PREF."transaction_types as trans";
-    return combo_input($name, $selected_id, $sql, 'trans.id', 'trans.description', array());
-}
 
 
 

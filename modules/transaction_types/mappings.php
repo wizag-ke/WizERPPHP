@@ -19,6 +19,9 @@ include_once($path_to_root . "/includes/constants/constants.php");
 
 simple_page_mode();
 
+
+var_dump($Mode);
+
 add_access_extensions();
 
 include_once($path_to_root . "/modules/transaction_types/includes/transaction_types_db.inc");
@@ -26,14 +29,19 @@ include_once($path_to_root . "/modules/transaction_types/includes/transaction_ui
 
 page(_("Add Transaction Type"));
 
+if ($Mode=='ADD_ITEM')
+{
+    add_mapping($_POST['module'], $_POST['transaction_id']);
+}
+
 start_form();
 start_outer_table(TABLESTYLE2);
 
 table_section(1);
 table_section_title(_("Decimal Places"));
 
+modules_list_row(_("Module:"), 'module', $_POST['module'], MODULES);
 all_transaction_list_row(_("Transaction Type:"), 'transaction_id', $_POST['transaction_id']);
-modules_list_row(_("Module:"), 'module', $_POST['selected_module'], MODULES);
 
 end_outer_table(1);
 submit_add_or_update_center($selected_id == -1, '', 'both');

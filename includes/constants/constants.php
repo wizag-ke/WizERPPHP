@@ -1,7 +1,7 @@
 <?php
 
 const MODULES = [
-    'Good received notes', 
-    'Credit notes',
-    'Debit notes',
+    'Good received notes' => 'Good received notes', 
+    'Credit notes' => 'Credit notes',
+    'Debit notes' => 'Debit notes',
 ];

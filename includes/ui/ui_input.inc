@@ -54,8 +54,6 @@ function simple_page_mode($numeric_id = true)
 {
 	global $Ajax, $Mode, $selected_id;
 
-	// var_dump("Ajax");
-	// var_dump($Ajax);
 	// var_dump("Mode");
 	// var_dump($Mode);
 	// var_dump("selected_id");
