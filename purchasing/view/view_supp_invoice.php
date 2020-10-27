@@ -36,6 +36,8 @@ $supp_trans = new supp_trans(ST_SUPPINVOICE);
 
 read_supp_invoice($trans_no, ST_SUPPINVOICE, $supp_trans);
 
+display_logo();
+
 $supplier_curr_code = get_supplier_currency($supp_trans->supplier_id);
 
 display_heading(_("SUPPLIER INVOICE") . " # " . $trans_no);
