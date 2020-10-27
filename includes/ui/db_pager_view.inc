@@ -41,12 +41,25 @@ function navi_button_cell($name, $value, $enabled=true, $align='left') {
 function display_db_pager(&$pager) {
     global	$path_to_root;
 
+
+	// foreach ($pager->columns as $column) 
+	// {
+	// 	print_r($column);
+	// 	print_r("<br>");
+	// }
+
+
 	$pager->select_records();
 
 	div_start("_{$pager->name}_span");
     $headers = array();
 
 	foreach($pager->columns as $num_col=>$col) {
+
+		// print_r("num_col: " . $num_col . "col: " . $col . "<br>");
+		// print_r("num_col: " . $num_col . "col head: " . $col['head'] . "<br>");
+
+		// print_r(get_post('show_inactive'));
 		// record status control column is displayed only when control checkbox is on
     	if (isset($col['head']) && ($col['type']!='inactive' || get_post('show_inactive'))) {
 			if (!isset($col['ord']))
@@ -62,6 +75,15 @@ function display_db_pager(&$pager) {
     /* show a table of records returned by the sql */
     start_table(TABLESTYLE, "width='$pager->width'");
     table_header($headers);
+
+
+	// foreach ($pager->header_fun as $column) 
+	// {
+	// 	print_r($column);
+	// 	print_r("<br>");
+	// }
+
+	// print_r($pager->header_fun);
 
 	if($pager->header_fun) {	// if set header handler
 		start_row("class='{$pager->header_class}'");
@@ -96,14 +118,22 @@ function display_db_pager(&$pager) {
 			alt_table_row_color($cc);
 	    foreach ($pager->columns as $k=>$col) {
 		   $coltype = $col['type'];
+		   
 		   $cell = isset($col['name']) ? $row[$col['name']] : '';
 
 		   if (isset($col['fun'])) { // use data input function if defined
-		    $fun = $col['fun']; 
+			$fun = $col['fun'];
+			
+			// print_r($fun);
+			// print_r("<br>");
+
 		    if (method_exists($pager, $fun)) { 
 				$cell = $pager->$fun($row, $cell);
-  			} elseif (function_exists($fun)) {
+				
+			} elseif (function_exists($fun)) {
 				$cell = $fun($row, $cell);
+				// print_r($cell);
+				// print_r("<br>");
 			} else
 				$cell = '';
 		   }
