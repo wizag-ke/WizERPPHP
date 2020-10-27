@@ -86,3 +86,10 @@ function edit_grn_summary(&$po)
 	end_outer_table(1);
 }
 
+function display_logo()
+{
+	echo("<div style='padding-left: 5%'>");
+	echo("Here we are at the beginning of time");
+	echo("</div>");
+}
+
