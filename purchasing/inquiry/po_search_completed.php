@@ -49,6 +49,7 @@ function receive_link($row)
 
 function prt_link($row)
 {
+
 	return print_document_link($row['order_no'], _("Print"), true, ST_PURCHORDER, ICON_PRINT);
 }
 

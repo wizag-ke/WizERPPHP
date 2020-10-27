@@ -31,6 +31,8 @@ $purchase_order = new purch_order;
 read_grn($_GET["trans_no"], $purchase_order);
 
 display_heading(_("Purchase Order Delivery") . " #" . $_GET['trans_no']);
+echo"What is this thing";
+
 echo "<BR>";
 display_grn_summary($purchase_order);
 
