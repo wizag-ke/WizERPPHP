@@ -88,8 +88,10 @@ function edit_grn_summary(&$po)
 
 function display_logo()
 {
-	echo("<div style='padding-left: 5%'>");
-	echo("Here we are at the beginning of time");
+	$myrow = get_company_prefs();
+	$filename = company_path()."/images/".clean_file_name($myrow["coy_logo"]);
+	echo("<div class='grn_logo'>");
+	echo("<img src=". $filename ." alt='logo-image'></img>");
 	echo("</div>");
 }
 
