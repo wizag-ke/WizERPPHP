@@ -1,20 +1,4 @@
-/*--------------------------------------------------\
-| default       |               | default.css       |
-|---------------------------------------------------|
-| For use with:                                     |
-| FrontAccounting 									|
-| http://FrontAccounting.com/  	            		|
-| by Joe Hunt Consulting                            |
-|---------------------------------------------------|
-| Developer:                                        |
-| Joe Hunt                                          |
-|                                                   |
-|---------------------------------------------------|
-| Note:                                             |
-| Changes can be made to this CSS that will be      |
-| reflected throughout FrontAccounting.             |
-|                                                   |
-\--------------------------------------------------*/
+/* Default css */
 
 body {
 	font-family: Verdana, Arial, Helvetica;

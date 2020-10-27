@@ -34,6 +34,7 @@ elseif (isset($_POST["trans_no"]))
 $supp_trans = new supp_trans(ST_SUPPCREDIT);
 
 read_supp_invoice($trans_no, ST_SUPPCREDIT, $supp_trans);
+display_logo();
 
 display_heading("<font color=red>" . _("SUPPLIER CREDIT NOTE") . " # " . $trans_no . "</font>");
 echo "<br>";

@@ -86,3 +86,12 @@ function edit_grn_summary(&$po)
 	end_outer_table(1);
 }
 
+function display_logo()
+{
+	$myrow = get_company_prefs();
+	$filename = company_path()."/images/".clean_file_name($myrow["coy_logo"]);
+	echo("<div class='grn_logo'>");
+	echo("<img src=". $filename ." alt='logo-image'></img>");
+	echo("</div>");
+}
+

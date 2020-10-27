@@ -17,6 +17,9 @@
 function print_document_link($doc_no, $link_text, $link=true, $type_no, 
 	$icon=false, $class='printlink', $id='', $email=0, $extra=0)
 {
+
+
+
 	global $path_to_root;
 	include_once($path_to_root . "/includes/types.inc");
 
@@ -139,6 +142,7 @@ function print_document_link($doc_no, $link_text, $link=true, $type_no,
 function print_link($link_text, $rep, $pars = array(), $dir = '', 
 	$icon=false, $class='printlink', $id='')
 {
+	// print_r("print_link");
 	global $path_to_root, $SysPrefs;
 
 	$url = $dir == '' ?  $path_to_root.'/reporting/prn_redirect.php?' : $dir;

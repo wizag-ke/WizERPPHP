@@ -30,7 +30,10 @@ if (!isset($_GET['trans_no']))
 $purchase_order = new purch_order;
 read_grn($_GET["trans_no"], $purchase_order);
 
+display_logo();
+
 display_heading(_("Purchase Order Delivery") . " #" . $_GET['trans_no']);
+
 echo "<BR>";
 display_grn_summary($purchase_order);
 
@@ -38,7 +41,7 @@ display_heading2(_("Line Details"));
 
 start_table(TABLESTYLE, "width='90%'");
 $th = array(_("Item Code"), _("Item Description"), _("Required by"), _("Quantity"),
-	_("Unit"), _("Price"), _("Line Total"), _("Quantity Invoiced"));
+	_("Unit"), _("Price"), _("Line Total"), _("Quantit Invoiced"));
 
 table_header($th);
 

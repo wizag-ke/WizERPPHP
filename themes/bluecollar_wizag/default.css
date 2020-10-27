@@ -1,20 +1,4 @@
-/*--------------------------------------------------\
-| exclusive     |               | default.css       |
-|---------------------------------------------------|
-| For use with:                                     |
-| FrontAccounting   				    |
-| http://FrontAccounting.com/          		    |
-| by Joe Hunt Consulting                            |
-|---------------------------------------------------|
-| Developer:                                        |
-| Joe Hunt                                          |
-|                                                   |
-|---------------------------------------------------|
-| Note:                                             |
-| Changes can be made to this CSS that will be      |
-| reflected throughout FrontAccounting.             |
-|                                                   |
-\--------------------------------------------------*/
+/* Bluecollar wizag */
 
 body {
   background-color: #FFFFFF;
@@ -812,4 +796,12 @@ ul#saturday li a.selected, ul#saturday li a.selected:hover {
   background: -webkit-linear-gradient(#1798b2 0%, #117185 100%);
   background: linear-gradient(#1798b2 0%, #117185 100%);
   border-right:1px solid #fff;
+}
+
+.grn_logo {
+  margin-left: 5%;
+}
+
+.grn_logo img {
+  width: 10%;
 }

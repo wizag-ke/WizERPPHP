@@ -10,7 +10,7 @@
     See the License here <http://www.gnu.org/licenses/gpl-3.0.html>.
 ***********************************************************************/
 //
-//	Controler part of database table pager with column sort.
+//	Controller part of database table pager with column sort.
 //	To display actual html object call display_db_pager($name) inside
 //  any form.
 //
@@ -81,6 +81,7 @@ class db_pager {
 		global $SysPrefs;
 
 		if ($sql != $this->sql) {
+
 		    $this->sql = $sql;
 		    $this->ready = false;
 
@@ -93,6 +94,7 @@ class db_pager {
 				else {
 					// parse the query
 					$parts = preg_split('/\sFROM\s/si', $sql, 2);
+					
 					if (count($parts) == 2) {
 						$this->select = $parts[0];
 						$sql = $parts[1];
@@ -237,9 +239,19 @@ class db_pager {
 	  	$this->last_page = ($page < $max) ? $max : null;
 	  	$this->first_page = ($page != 1) ? 1: null;
 	}
+
+
 	//
 	//	Set column definitions
 	//  $flds: array( fldname1, fldname2=>type,...)
+
+	/**
+	 * Sets the columns
+	 * 
+	 * This function sets the column names, the type of column e.g text, and the function(if it has a function)
+	 * 
+	 * @return array
+	 */
 	function set_columns($flds)
 	{
 		$this->columns = array();
@@ -247,6 +259,7 @@ class db_pager {
 			$flds = array($flds);
 		}
 		foreach ($flds as $colnum=>$coldef) {
+
 			if (is_string($colnum)) {	// 'colname'=>params
 			  	$h = $colnum;
 			  	$c = $coldef;
@@ -254,26 +267,32 @@ class db_pager {
 				if (is_array($coldef)) {
 					$h = '';
 					$c = $coldef;
+
+					
 				} else {
 					$h = $coldef;
 					$c = 'text';
 				}
 			}
+
 			if (is_string($c)) 			// params is simple column type
-			  	$c = array('type'=>$c);
+			$c = array('type'=>$c);
 
 			if (!isset($c['type']))
-			  	$c['type'] = 'text';
-
+			$c['type'] = 'text';
+			
 			switch($c['type']) {
 				case 'inactive': 
 					$this->inactive_ctrl = true;
-				case 'insert':
-				default:
-					$c['head'] = $h; break;
-				case 'skip':		// skip the column (no header)
-					unset($c['head']); break;
-	  		}
+					case 'insert':
+						default:
+						$c['head'] = $h; break;
+						case 'skip':		// skip the column (no header)
+							unset($c['head']); break;
+						}
+
+			// print_r($c);
+			// print_r('<br>');
 			$this->columns[] = $c;	
 		}
 	}
@@ -282,6 +301,10 @@ class db_pager {
 	// $count==false - for current page data retrieval 
 	// $count==true  - for total records count
 	//
+
+	/**
+	 * Generates an sql statement from the sql variables saved
+	 */
 	function _sql_gen($count=false) 
 	{
 		$select = $this->select;
@@ -332,13 +355,16 @@ class db_pager {
 	    $offset = ($this->curr_page - 1) * $page_len;
 
 	    $sql .= " LIMIT $offset, $page_len";
-
 		return $sql;
 		
 	}
 	//
 	//	Initialization after changing record set
 	//
+
+	/**
+	 * Sets the record count, the max page
+	 */
 	function _init() 
 	{
 		global $SysPrefs;
@@ -357,6 +383,9 @@ class db_pager {
 				// check if field names are set explicite in col def
 				// for all initially ordered columns
 			    foreach ($this->columns as $col) {
+					// print_r($col);
+					// print_r('<br>');
+
 		    	   	if (isset($col['ord']) && $col['ord'] != '' 
 						&&  !isset($col['name'])) {
 							display_warning("Result field names must be set
@@ -379,6 +408,7 @@ class db_pager {
 		$page = find_submit($this->name.'_page_', false);
 
 	
+		// print_r($page);
 
 		$sort = find_submit($this->name.'_sort_', true);
 		if ($page) {
@@ -491,6 +521,9 @@ class db_pager {
 // new_db_pager('orders_tbl', select from, table collumns)
 function &new_db_pager($name, $sql, $coldef, $table = null, $key = null, $page_len = 0)  {
 
+	// print_r("Inside db pager");
+	// print_r("<br>");
+
     if (isset($_SESSION[$name]) &&
 		 ($_SERVER['REQUEST_METHOD'] == 'GET' || $_SESSION[$name]->sql != $sql)) {
 
@@ -507,28 +540,11 @@ function &new_db_pager($name, $sql, $coldef, $table = null, $key = null, $page_l
 		$_SESSION[$name]->key = $key;
 		$_SESSION[$name]->set_sql($sql);
 		$_SESSION[$name]->set_columns($coldef);
-		// foreach($_SESSION[$name] as $key => $value)
-		// {
-		// 	if(is_array($value))
-		// 	{
-		// 		foreach($value as $key1 => $value1)
-		// 		{
-		// 			echo($key1 . ' => ' . $value1);
-		// 			br();
-		// 		}
-		// 	}
-		// 	echo($key . ' => ' . $value);
-		// 	br();
-		// }
-		// exit();
-		// return;
+
+		// print_r($_SESSION[$name]->columns);
+		// print_r("<br>");
 	}
-	
 	return  $_SESSION[$name];
-
-	// var_dump($coldef);
-	// return;
-
 }
 //
 //	Force pager initialization.
