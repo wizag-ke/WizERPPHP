@@ -18,7 +18,7 @@ body,td,th {
 
 /* Main */
 .fa-main {
-  width: 98%;
+  width: 99%;
   margin: 0 auto;
   text-align: left;
 }
@@ -149,7 +149,10 @@ h3 {
   padding-top: 1ex;
   padding-bottom: 1ex;
 }
-#header { margin: 0; }
+#header { 
+  margin: 0;
+  background-color: #1798b2; 
+}
 #header ul {clear: right; float: right; font-size: 11px; margin: 8px 10px 0 0; }
 #header li{ list-style: none; display: inline; margin: 0; }
 #header li a{ color: #045c97; text-decoration: none; padding: 0 0 0 16px; }
@@ -753,16 +756,16 @@ ul#saturday {
   width:auto;
   position:relative;
   display:block;
-  height:26px;
+  height:40px;
   font-size:14px;
   font-family: 'Open Sans', sans-serif;
-  border-bottom:4px solid #336666;
-  border-top:1px solid #C0E2D4;
-  background-color: #66665e;
-  background: -moz-linear-gradient(#66665e 0%, #45463d 100%);
+  /* border-bottom:4px solid #336666;
+  border-top:1px solid #C0E2D4; */
+  /* background-color: #66665e; */
+  /* background: -moz-linear-gradient(#66665e 0%, #45463d 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #66665e), color-stop(100%, #45463d));
   background: -webkit-linear-gradient(#66665e 0%, #45463d 100%);
-  background: linear-gradient(#66665e 0%, #45463d 100%);
+  background: linear-gradient(#66665e 0%, #45463d 100%); */
 }
 
 ul#saturday li {
@@ -777,10 +780,10 @@ ul#saturday li a {
   float:left;
   color: #fff;
   text-decoration:none;
-  padding:6px 20px 0 20px;
-  height:20px;
+  font-weight: bold;
+  padding:10px 20px 10px 20px;
   background-color: #1798b2;
-  border-right: 1px solid #fff;
+  /* border-right: 1px solid #fff; */
 }
 
 ul#saturday li a:hover {
@@ -795,7 +798,7 @@ ul#saturday li a.selected, ul#saturday li a.selected:hover {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1798b2), color-stop(100%, #117185));
   background: -webkit-linear-gradient(#1798b2 0%, #117185 100%);
   background: linear-gradient(#1798b2 0%, #117185 100%);
-  border-right:1px solid #fff;
+  /* border-right:1px solid #fff; */
 }
 
 .grn_logo {
