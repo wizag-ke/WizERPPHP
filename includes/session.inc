@@ -267,7 +267,6 @@ function check_page_security($page_security)
 
 	if (!$_SESSION["wa_current_user"]->can_access_page($page_security))
 	{
-
 		echo "<center><br><br><br><b>";
 		echo _("The security settings on your account do not permit you to access this function");
 		echo "</b>";
@@ -284,23 +283,6 @@ function check_page_security($page_security)
 	}
 
 }
-/*
-	Helper function for setting page security level depeding on 
-	GET start variable and/or some value stored in session variable.
-	Before the call $page_security should be set to default page_security value.
-*/
-
-// set_page_security( @$_POST['order_view_mode'],
-// 	array(	'OutstandingOnly' => 'SA_SALESDELIVERY',
-// 			'InvoiceTemplates' => 'SA_SALESINVOICE',
-// 			'DeliveryTemplates' => 'SA_SALESDELIVERY',
-// 			'PrepaidOrders' => 'SA_SALESINVOICE'),
-// 	array(	'OutstandingOnly' => 'SA_SALESDELIVERY',
-// 			'InvoiceTemplates' => 'SA_SALESINVOICE',
-// 			'DeliveryTemplates' => 'SA_SALESDELIVERY',
-// 			'PrepaidOrders' => 'SA_SALESINVOICE')
-// );
-
 
 function set_page_security($value=null, $trans = array(), $gtrans = array())
 {

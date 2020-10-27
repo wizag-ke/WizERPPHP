@@ -189,6 +189,7 @@ $opts = array(		// default options
 			$descr = $opts['format']==null ?  $contact_row[1] :
 				call_user_func($opts['format'], $contact_row, $pname);
 			$sel = '';
+
  		 	if (get_post($search_button) && ($txt == $value)) {
  		 		$selected_id[] = $value;
  		 	}
@@ -368,6 +369,7 @@ $opts = array(		// default options
 		$str = ($edit_entry!='' ? "<td>$edit_entry</td>" : '')."<td nowrap>$selector$img</td>";
 	else
 		$str = $edit_entry.$selector.$img;
+
 	return $str;
 }
 
@@ -2073,6 +2075,8 @@ function decseps_list_row($label, $name, $value=null)
 	echo "</td></tr>\n";
 }
 
+// function 
+
 function themes_list_row($label, $name, $value=null)
 {
 	global $path_to_root;
@@ -2799,3 +2803,4 @@ function users_list()
 	}
 	return $user_details;
 }
+

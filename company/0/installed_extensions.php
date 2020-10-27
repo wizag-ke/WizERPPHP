@@ -187,17 +187,7 @@ $installed_extensions = array (
     'path' => 'modules/FrontHrm',
     'active' => 0,
   ),
-  36 => 
-  array (
-    'package' => 'item_inquiry',
-    'name' => 'Item Inquiry',
-    'version' => '2.4',
-    'available' => '',
-    'type' => 'extension',
-    'path' => 'modules/item_inquiry',
-    'active' => 1,
-  ),
-  37 => 
+  39 => 
   array (
     'package' => 'transaction_types',
     'name' => 'transaction_types',

@@ -14,14 +14,18 @@ class hooks_transaction_types extends hooks {
 			case 'GL':
 				$app->add_rapp_function(2, _('Add Transaction Type'), 
 					$path_to_root.'/modules/transaction_types/transaction_types.php', 'SS_TRANSACTIONTYPE');
+				break;
+			case 'stock':
+				$app->add_rapp_function(2, _('Mappings'),
+				$path_to_root.'/modules/transaction_types/mappings.php', 'SS_TRANSACTIONTYPE');
 		}
 	}
 	
 	function install_access()
 	{
-		$security_sections[SS_TRANSACTIONTYPE] =	_("Add Transaction Type");
-
+		$security_sections[SS_TRANSACTIONTYPE] =	_("Transaction Types");
 		$security_areas['SS_TRANSACTIONTYPE'] = array(SS_TRANSACTIONTYPE|101, _("Add Transaction Type"));
+		$security_areas['SS_TRANSACTIONTYPEMAPPING'] = array(SS_TRANSACTIONTYPE|102, _("Add Transaction Type Mapping"));
 
 		return array($security_areas, $security_sections);
 	}
