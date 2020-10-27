@@ -316,6 +316,11 @@ if (isset($_POST['delete']) && strlen($_POST['delete']) > 1)
 
 function item_settings(&$stock_id, $new_item) 
 {
+
+	// var_dump($stock_id);
+	// print_r("<br>");
+	// print_r($new_item);
+	// print_r("<br>");
 	global $SysPrefs, $path_to_root, $page_nested, $depreciation_methods;
 
 	start_outer_table(TABLESTYLE2);
@@ -382,13 +387,15 @@ function item_settings(&$stock_id, $new_item)
 	$fresh_item = !isset($_POST['NewStockID']) || $new_item 
 		|| check_usage($_POST['stock_id'],false);
 
+
 	// show inactive item tax type in selector only if already set.
   item_tax_types_list_row(_("Item Tax Type:"), 'tax_type_id', null, !$new_item && item_type_inactive(get_post('tax_type_id')));
 
 	if (!get_post('fixed_asset'))
 		stock_item_types_list_row(_("Item Type:"), 'mb_flag', null, $fresh_item);
 
-	stock_units_list_row(_('Units of Measure:'), 'units', null, $fresh_item);
+	
+	stock_units_list_row(_('Units of Measure:'), 'units', null, $new_item);
 
 	check_row(_("Editable description:"), 'editable');
 
