@@ -5,3 +5,4 @@ config_db.php
 config.php
 tmp/errors.log
 tmp/faillog.php
+config.php
