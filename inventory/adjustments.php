@@ -36,6 +36,8 @@ if (isset($_GET['NewAdjustment'])) {
 }
 page($_SESSION['page_title'], false, false, "", $js);
 
+// print_r($_SESSION['page_title']);
+
 //-----------------------------------------------------------------------------------------------
 
 if (isset($_GET['AddedID'])) 
@@ -239,9 +241,11 @@ if (isset($_GET['NewAdjustment']) || !isset($_SESSION['adj_items']))
 start_form();
 
 if ($_SESSION['adj_items']->fixed_asset) {
+	// print_r("true");
 	$items_title = _("Disposal Items");
 	$button_title = _("Process Disposal");
 } else {
+	// print_r("false");
 	$items_title = _("Adjustment Items");
 	$button_title = _("Process Adjustment");
 }

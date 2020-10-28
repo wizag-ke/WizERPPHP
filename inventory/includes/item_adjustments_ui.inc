@@ -48,6 +48,12 @@ function display_adjustment_items($title, &$order)
 {
 	global $path_to_root;
 
+	// print_r($path_to_root);
+	// print_r("<br>");
+	// print_r($title);
+	// print_r("<br>");
+	// print_r($order);
+
 	display_heading($title);
     div_start('items_table');
 	start_table(TABLESTYLE, "width='80%'");
@@ -210,7 +216,7 @@ function adjustment_edit_item_controls(&$order, $line_no=-1)
 	}
 	else
 	{
-		submit_cells('AddItem', _("Add Item"), "colspan=2",
+		submit_cells('AddItem', _("Add"), "colspan=2",
 		    _('Add new item to document'), true);
 	}
 
