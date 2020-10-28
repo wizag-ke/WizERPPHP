@@ -26,6 +26,7 @@ include_once($path_to_root . "/admin/db/company_db.inc");
 include_once($path_to_root . "/inventory/includes/item_adjustments_ui.inc");
 include_once($path_to_root . "/inventory/includes/inventory_db.inc");
 include_once($path_to_root . "/modules/internal_grn/includes/internal_grn_types.inc");
+include_once($path_to_root . "/modules/internal_grn/includes/internal_grn_ui.inc");
 
 
 
@@ -255,18 +256,11 @@ print_r($_SESSION['internal_grn_items']);
 
 start_form();
 
-if ($_SESSION['internal_grn_items']->fixed_asset) {
-	// print_r("true");
-	$items_title = _("Disposal Items");
-	$button_title = _("Process Disposal");
-} else {
-	// print_r("false");
-	$items_title = _("Adjustment Items");
-	$button_title = _("Process Adjustment");
-}
 
+$items_title = _("Adjustment Items");
+$button_title = _("Process Adjustment");
 
-display_order_header($_SESSION['internal_grn_items']);
+display_internal_grn_header($_SESSION['internal_grn_items']);
 
 start_outer_table(TABLESTYLE, "width='70%'", 10);
 
