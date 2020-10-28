@@ -11,8 +11,8 @@
 ***********************************************************************/
 $page_security = 'SA_INVENTORYADJUSTMENT';
 $path_to_root = "..";
-include_once($path_to_root . "/includes/ui/items_cart.inc");
 
+include_once($path_to_root . "/includes/ui/items_cart.inc");
 include_once($path_to_root . "/includes/session.inc");
 
 include_once($path_to_root . "/includes/date_functions.inc");
@@ -141,8 +141,10 @@ function can_process()
 }
 
 //-------------------------------------------------------------------------------
+// print_r($_SESSION['adj_items']->line_items);
 
 if (isset($_POST['Process']) && can_process()){
+
 
   $fixed_asset = $_SESSION['adj_items']->fixed_asset; 
 
@@ -253,6 +255,8 @@ if ($_SESSION['adj_items']->fixed_asset) {
 display_order_header($_SESSION['adj_items']);
 
 start_outer_table(TABLESTYLE, "width='70%'", 10);
+
+print_r($_SESSION['adj_items']);
 
 display_adjustment_items($items_title, $_SESSION['adj_items']);
 adjustment_options_controls();

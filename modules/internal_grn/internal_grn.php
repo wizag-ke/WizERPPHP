@@ -13,14 +13,22 @@
 $page_security = 'SS_TRANSACTIONTYPE';
 
 $path_to_root = "../..";
+include_once($path_to_root . "/includes/ui/items_cart.inc");
 include_once($path_to_root . "/includes/session.inc");
 $js = "";
 if ($SysPrefs->use_popup_windows && $SysPrefs->use_popup_search)
     $js .= get_js_open_window(900, 500);
-    
+
+
 include_once($path_to_root . "/includes/ui.inc");
 include_once($path_to_root . "/includes/data_checks.inc");
 include_once($path_to_root . "/admin/db/company_db.inc");
+include_once($path_to_root . "/inventory/includes/item_adjustments_ui.inc");
+include_once($path_to_root . "/inventory/includes/inventory_db.inc");
+include_once($path_to_root . "/modules/internal_grn/includes/internal_grn_types.inc");
+
+
+
 
 simple_page_mode();
 
@@ -31,144 +39,244 @@ add_access_extensions();
 
 page(_("Add Transaction Type"), false, false, "", $js);
 
-// if ($Mode == 'Delete')
-// {
-//     delete_transaction_type($selected_id);
-//     display_notification(_('Selected transaction type has been deleted'));
-//     $Mode = 'RESET';
-// }
 
-// if ($Mode=='ADD_ITEM')
-// {
-//     //initialise no input errors assumed initially before we test
-//     $input_error = 0;
 
-//     if (strlen($_POST['transcation_code']) == 0) 
-//     {
-//         $input_error = 1;
-//         display_error(_("The transaction code field is empty."));
-//         set_focus('transcation_code');
-//     }
-//     if (strlen($_POST['description']) == 0) 
-//     {
-//         $input_error = 1;
-//         display_error(_("The description field is empty."));
-//         set_focus('description');
-//     }
-//     if (strlen($_POST['dr_ac']) == 0) 
-//     {
-//         $input_error = 1;
-//         display_error(_("The debit account field is empty."));
-//         set_focus('dr_ac');
-//     }
-//     if (strlen($_POST['cr_ac']) == 0) 
-//     {
-//         $input_error = 1;
-//         display_error(_("The credit account field is empty."));
-//         set_focus('cr_ac');
-//     }
-//     if (strlen($_POST['module']) == 0) 
-//     {
-//         $input_error = 1;
-//         display_error(_("The module field is empty."));
-//         set_focus('module');
-//     }
 
-//     if($input_error != 1)
-//     {
-//         add_transaction_type($_POST['transcation_code'], $_POST['description'], $_POST['dr_ac'], $_POST['cr_ac'], $_POST['module']);
-//     }
-// }
 
-// if ($Mode=='UPDATE_ITEM')
-// {
-//     //initialise no input errors assumed initially before we test
-//     $input_error = 0;
+//-----------------------------------------------------------------------------------------------
 
-//     if (strlen($_POST['transcation_code']) == 0) 
-//     {
-//         $input_error = 1;
-//         display_error(_("The transaction code field is empty."));
-//         set_focus('transcation_code');
-//     }
-//     if (strlen($_POST['description']) == 0) 
-//     {
-//         $input_error = 1;
-//         display_error(_("The description field is empty."));
-//         set_focus('description');
-//     }
-//     if (strlen($_POST['dr_ac']) == 0) 
-//     {
-//         $input_error = 1;
-//         display_error(_("The debit account field is empty."));
-//         set_focus('dr_ac');
-//     }
-//     if (strlen($_POST['cr_ac']) == 0) 
-//     {
-//         $input_error = 1;
-//         display_error(_("The credit account field is empty."));
-//         set_focus('cr_ac');
-//     }
-//     if (strlen($_POST['module']) == 0) 
-//     {
-//         $input_error = 1;
-//         display_error(_("The module field is empty."));
-//         set_focus('module');
-//     }
 
-//     if($input_error != 1)
-//     {
-//         update_transaction_type($selected_id, $_POST['transcation_code'], $_POST['description'], $_POST['dr_ac'], $_POST['cr_ac'], $_POST['module']);
-//         display_notification(_('Selected transaction type has been updated'));
-//         $Mode = 'RESET';
-//     }
-// }
 
-// $result = get_all_transaction_types();
+if (isset($_GET['AddedID'])) 
+{
+	$trans_no = $_GET['AddedID'];
+	$trans_type = ST_INVADJUST;
 
-// start_form();
+  $result = get_stock_adjustment_items($trans_no);
+  $row = db_fetch($result);
 
-// start_table(TABLESTYLE);
+  if (is_fixed_asset($row['mb_flag'])) {
+    display_notification_centered(_("Fixed Assets disposal has been processed"));
+    display_note(get_trans_view_str($trans_type, $trans_no, _("&View this disposal")));
 
-// $th = array (_('Transaction Code'), _('Description'), _('Debit Account'), _('Credit Account'), _('Module'), 
-// 	 '','');
-// table_header($th);
+    display_note(get_gl_view_str($trans_type, $trans_no, _("View the GL &Postings for this Disposal")), 1, 0);
+	  hyperlink_params($_SERVER['PHP_SELF'], _("Enter &Another Disposal"), "NewAdjustment=1&FixedAsset=1");
+  }
+  else {
+    display_notification_centered(_("Items adjustment has been processed"));
+    display_note(get_trans_view_str($trans_type, $trans_no, _("&View this adjustment")));
 
-// while ($myrow = db_fetch($result))
-// {
-// 	label_cell($myrow["code"], "nowrap");
-// 	label_cell($myrow["description"], "nowrap");
-// 	label_cell($myrow["debit"], "nowrap");
-// 	label_cell($myrow["credit"], "nowrap");
-// 	label_cell($myrow["module"], "nowrap");
-//  	edit_button_cell("Edit".$myrow['id'], _("Edit"));
-//  	delete_button_cell("Delete".$myrow['id'], _("Delete"));
-// 	end_row();
-// }
+    display_note(get_gl_view_str($trans_type, $trans_no, _("View the GL &Postings for this Adjustment")), 1, 0);
 
-// end_table(1);
-// start_table();
+	  hyperlink_params($_SERVER['PHP_SELF'], _("Enter &Another Adjustment"), "NewAdjustment=1");
+  }
 
-// if ($selected_id != -1)
-// {
-//  	if ($Mode == 'Edit') {
-// 		$myrow = get_transaction_type($selected_id);
+	hyperlink_params("$path_to_root/admin/attachments.php", _("Add an Attachment"), "filterType=$trans_type&trans_no=$trans_no");
 
-// 		$_POST['transcation_code']  = $myrow["code"];
-// 		$_POST['description']  = $myrow["description"];
-// 		$_POST['dr_ac']  = $myrow["dr_ac"];
-// 		$_POST['cr_ac']  = $myrow["cr_ac"];
-// 		$_POST['module']  = $myrow["module"];
-// 	}
-// 	hidden('selected_id', $selected_id);
-// }
+	display_footer_exit();
+}
+//--------------------------------------------------------------------------------------------------
 
-// text_row(_("Transaction Code:"), 'transcation_code', null, 50, 100);
-// text_row(_("Description:"), 'description', null, 50, 100);
-// gl_all_accounts_list_row(_("Debit Account:"), 'dr_ac', $_POST['dr_ac']);
-// gl_all_accounts_list_row(_("Credit Account:"), 'cr_ac', $_POST['cr_ac']);
-// text_row(_("Module:"), 'module', null, 50, 100);
-// end_table(1);
-// submit_add_or_update_center($selected_id == -1, '', 'both');
-// end_form();
+function line_start_focus() {
+  global 	$Ajax;
+
+  $Ajax->activate('items_table');
+  set_focus('_stock_id_edit');
+}
+//-----------------------------------------------------------------------------------------------
+
+function handle_new_order_grn()
+{
+
+
+    var_dump("handle_new_order");
+	if (isset($_SESSION['internal_grn_items']))
+	{
+		$_SESSION['internal_grn_items']->clear_items();
+		unset ($_SESSION['internal_grn_items']);
+	}
+
+    $_SESSION['internal_grn_items'] = new items_cart(ST_INTINVGRN);
+    // $_SESSION['adj_items']->fixed_asset = isset($_GET['FixedAsset']);
+	$_POST['AdjDate'] = new_doc_date();
+	if (!is_date_in_fiscalyear($_POST['AdjDate']))
+		$_POST['AdjDate'] = end_fiscalyear();
+	$_SESSION['internal_grn_items']->tran_date = $_POST['AdjDate'];	
+}
+
+//-----------------------------------------------------------------------------------------------
+
+function can_process()
+{
+	global $SysPrefs;
+
+	$adj = &$_SESSION['internal_grn_items'];
+
+	if (count($adj->line_items) == 0)	{
+		display_error(_("You must enter at least one non empty item line."));
+		set_focus('stock_id');
+		return false;
+	}
+
+	if (!check_reference($_POST['ref'], ST_INVADJUST))
+	{
+		set_focus('ref');
+		return false;
+	}
+
+	if (!is_date($_POST['AdjDate'])) 
+	{
+		display_error(_("The entered date for the adjustment is invalid."));
+		set_focus('AdjDate');
+		return false;
+	} 
+	elseif (!is_date_in_fiscalyear($_POST['AdjDate'])) 
+	{
+		display_error(_("The entered date is out of fiscal year or is closed for further data entry."));
+		set_focus('AdjDate');
+		return false;
+	}
+	elseif (!$SysPrefs->allow_negative_stock())
+	{
+		$low_stock = $adj->check_qoh($_POST['StockLocation'], $_POST['AdjDate']);
+
+		if ($low_stock)
+		{
+    		display_error(_("The adjustment cannot be processed because it would cause negative inventory balance for marked items as of document date or later."));
+			unset($_POST['Process']);
+			return false;
+		}
+	}
+	return true;
+}
+
+//-------------------------------------------------------------------------------
+// print_r($_SESSION['adj_items']->line_items);
+
+if (isset($_POST['Process']) && can_process()){
+
+
+  $fixed_asset = $_SESSION['internal_grn_items']->fixed_asset; 
+
+	$trans_no = add_stock_adjustment($_SESSION['adj_items']->line_items,
+		$_POST['StockLocation'], $_POST['AdjDate'],	$_POST['ref'], $_POST['memo_']);
+	new_doc_date($_POST['AdjDate']);
+	$_SESSION['internal_grn_items']->clear_items();
+	unset($_SESSION['internal_grn_items']);
+
+  if ($fixed_asset)
+   	meta_forward($_SERVER['PHP_SELF'], "AddedID=$trans_no&FixedAsset=1");
+  else
+   	meta_forward($_SERVER['PHP_SELF'], "AddedID=$trans_no");
+
+} /*end of process credit note */
+
+//-----------------------------------------------------------------------------------------------
+
+function check_item_data()
+{
+	if (input_num('qty') == 0)
+	{
+		display_error(_("The quantity entered is invalid."));
+		set_focus('qty');
+		return false;
+	}
+
+	if (!check_num('std_cost', 0))
+	{
+		display_error(_("The entered standard cost is negative or invalid."));
+		set_focus('std_cost');
+		return false;
+	}
+
+   	return true;
+}
+
+//-----------------------------------------------------------------------------------------------
+
+function handle_update_item()
+{
+	$id = $_POST['LineNo'];
+   	$_SESSION['internal_grn_items']->update_cart_item($id, input_num('qty'), 
+		input_num('std_cost'));
+	line_start_focus();
+}
+
+//-----------------------------------------------------------------------------------------------
+
+function handle_delete_item($id)
+{
+	$_SESSION['internal_grn_items']->remove_from_cart($id);
+	line_start_focus();
+}
+
+//-----------------------------------------------------------------------------------------------
+
+function handle_new_item()
+{
+	add_to_order($_SESSION['internal_grn_items'], $_POST['stock_id'], 
+	input_num('qty'), input_num('std_cost'));
+	line_start_focus();
+}
+
+// print
+
+//-----------------------------------------------------------------------------------------------
+$id = find_submit('Delete');
+if ($id != -1)
+	handle_delete_item($id);
+
+if (isset($_POST['AddItem']) && check_item_data()) {
+	handle_new_item();
+	unset($_POST['selected_id']);
+}
+if (isset($_POST['UpdateItem']) && check_item_data()) {
+	handle_update_item();
+	unset($_POST['selected_id']);
+}
+if (isset($_POST['CancelItemChanges'])) {
+	unset($_POST['selected_id']);
+	line_start_focus();
+}
+//-----------------------------------------------------------------------------------------------
+
+if (isset($_GET['NewAdjustment']) || !isset($_SESSION['internal_grn_items']))
+{
+
+	if (isset($_GET['FixedAsset']))
+		check_db_has_disposable_fixed_assets(_("There are no fixed assets defined in the system."));
+	else
+		check_db_has_costable_items(_("There are no inventory items defined in the system which can be adjusted (Purchased or Manufactured)."));
+
+	handle_new_order_grn();
+}
+
+print_r($_SESSION['internal_grn_items']);
+
+start_form();
+
+if ($_SESSION['internal_grn_items']->fixed_asset) {
+	// print_r("true");
+	$items_title = _("Disposal Items");
+	$button_title = _("Process Disposal");
+} else {
+	// print_r("false");
+	$items_title = _("Adjustment Items");
+	$button_title = _("Process Adjustment");
+}
+
+
+display_order_header($_SESSION['internal_grn_items']);
+
+start_outer_table(TABLESTYLE, "width='70%'", 10);
+
+display_adjustment_items($items_title, $_SESSION['internal_grn_items']);
+adjustment_options_controls();
+
+end_outer_table(1, false);
+
+submit_center_first('Update', _("Update"), '', null);
+submit_center_last('Process', $button_title, '', 'default');
+
+end_form();
 end_page();

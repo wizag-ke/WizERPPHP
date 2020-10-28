@@ -10,6 +10,7 @@
     See the License here <http://www.gnu.org/licenses/gpl-3.0.html>.
 ***********************************************************************/
 
+
 function add_stock_adjustment($items, $location, $date_, $reference, $memo_)
 {
 	global $SysPrefs, $path_to_root, $Refs;
@@ -20,7 +21,7 @@ function add_stock_adjustment($items, $location, $date_, $reference, $memo_)
 	$args->trans_no = 0;
 	hook_db_prewrite($args, ST_INVADJUST);
 
-	$adj_id = get_next_trans_no(ST_INVADJUST);
+	$adj_id = get_next_trans_no(ST_INVADJUST); // This is the trans number
 
 	if ($SysPrefs->loc_notification() == 1)
 	{
