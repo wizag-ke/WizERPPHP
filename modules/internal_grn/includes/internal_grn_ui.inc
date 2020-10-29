@@ -25,8 +25,8 @@ function display_internal_grn_header(&$order)
 	// error_log("ref row variable end");
 	// error_log("=========================================================");
 
-	ref_row(_("Reference:"), 'ref', '', $Refs->get_next(ST_INTINVGRN, null, array('location'=>get_post('StockLocation'), 'date'=>get_post('AdjDate'))),
-		 false, ST_INTINVGRN);
+	ref_row(_("Reference:"), 'ref', '', $Refs->get_next(ST_INVADJUST, null, array('location'=>get_post('StockLocation'), 'date'=>get_post('AdjDate'))),
+		 false, ST_INVADJUST);
 
 	end_outer_table(1); // outer table
 }

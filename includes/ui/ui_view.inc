@@ -138,7 +138,7 @@ function get_inventory_trans_view_str($type, $trans_no, $label="",
 
 	$viewer = "inventory/view/";
 
-	if ($type == ST_INVADJUST || ST_INTINVGRN)
+	if ($type == ST_INVADJUST)
 		$viewer .= "view_adjustment.php";
 	elseif ($type == ST_LOCTRANSFER)
 		$viewer .= "view_transfer.php";
@@ -148,6 +148,31 @@ function get_inventory_trans_view_str($type, $trans_no, $label="",
 
 	if ($label == "")
 		$label = $trans_no;
+
+	return viewer_link($label, $viewer, $class, $id,  $icon);
+}
+
+function get_internal_grn_view_str($type, $trans_no, $label="", 
+	$icon=false, $class='', $id='')
+{
+
+	error_log("***get_internal_grn_view_str***");
+
+	$viewer = "modules/internal_grn/includes/";
+
+	if ($type == ST_INTINVGRN)
+		$viewer .= "view_internal_grn.php";
+	else
+		return null;
+	$viewer .= "?trans_no=$trans_no";
+
+	if ($label == "")
+		$label = $trans_no;
+
+	error_log("***get_internal_grn_view_str viewer link***");
+	error_log($viewer);
+	
+	
 
 	return viewer_link($label, $viewer, $class, $id,  $icon);
 }
@@ -247,6 +272,10 @@ function get_trans_view_str($type, $trans_no, $label="", $icon=false,
 	error_log("3");
 	
 	$view_str = get_inventory_trans_view_str($type, $trans_no, $label, $icon, $class, $id);
+	if ($view_str != null)
+		return $view_str;
+
+	$view_str = get_internal_grn_view_str($type, $trans_no, $label, $icon, $class, $id);
 	if ($view_str != null)
 		return $view_str;
 

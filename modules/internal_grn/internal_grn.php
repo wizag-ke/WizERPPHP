@@ -51,12 +51,12 @@ if (isset($_GET['AddedID']))
   $result = get_internal_grn_items($trans_no);
   $row = db_fetch($result);
   
-		// error_log("=========================================================");
-		// error_log("AddedID isset start");
-		// error_log("row");
-		// error_log(print_r($row, TRUE));
-		// error_log("AddedID isset end");
-		// error_log("=========================================================");
+	error_log("=========================================================");
+	error_log("AddedID isset start");
+	error_log("ST_INTINVGRN");
+	error_log(ST_INTINVGRN);
+	error_log("AddedID isset end");
+	error_log("=========================================================");
 
   if (is_fixed_asset($row['mb_flag'])) {
     display_notification_centered(_("Fixed Assets disposal has been processed"));
@@ -74,7 +74,7 @@ if (isset($_GET['AddedID']))
 	  hyperlink_params($_SERVER['PHP_SELF'], _("Enter &Another Adjustment"), "NewAdjustment=1");
   }
 
-	hyperlink_params("$path_to_root/admin/attachments.php", _("Add an Attachment"), "filterType=$trans_type&trans_no=$trans_no");
+	// hyperlink_params("$path_to_root/admin/attachments.php", _("Add an Attachment"), "filterType=$trans_type&trans_no=$trans_no");
 
 	display_footer_exit();
 }
