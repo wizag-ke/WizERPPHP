@@ -1,3 +1,3 @@
 <?php
 
-define("ST_INTINVGRN", 18);
+define("ST_INTINVGRN", 100);

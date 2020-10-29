@@ -12,6 +12,8 @@
 include_once($path_to_root . "/includes/db/class.reflines_db.inc");
 include_once($path_to_root . "/admin/db/fiscalyears_db.inc");
 include_once($path_to_root . "/includes/types.inc");
+include_once($path_to_root . "/modules/internal_grn/includes/internal_grn_types.inc");
+
 //---------------------------------------------------------------------------------------------
 // 2.4 - further changes toward removing refs table introduced:
 //	. all transactions now have references stored in trans table.
@@ -42,6 +44,7 @@ $refline_options = array(
 
 	ST_LOCTRANSFER => array('date', 'location', 'user'),
 	ST_INVADJUST => array('date', 'location', 'user'),
+	ST_INTINVGRN => array('date', 'location', 'user'),
 
 	ST_PURCHORDER => array('date', 'location', 'supplier', 'user'),
 	ST_SUPPINVOICE => array('date', 'location', 'supplier', 'user'),
@@ -239,11 +242,36 @@ class references
 	function get_next($type, $line=null, $context=null) 
 	{
 
+		error_log("=========================================================");
+		error_log("References get_next variable start");
+		error_log("Type");
+		error_log($type);
+		error_log("Line");
+		error_log($line);
+		error_log("Context");
+		error_log(print_r($context, TRUE));
+		error_log("References get_next variable end");
+		error_log("=========================================================");
+
+
 		if (isset($line))
 			$refline = $this->reflines->get($line);
 		else {
 			$refs = $this->reflines->get_all("trans_type=".db_escape($type)." AND `default`");
 			$refline = db_fetch($refs);
+			
+			error_log("=========================================================");
+			error_log("References get_next else statement start");
+
+			// error_log("reflines");
+			// error_log(print_r($refs, TRUE));
+			error_log("refs");
+			error_log(print_r($refs, TRUE));
+			error_log("refline");
+			error_log(print_r($refline, TRUE));
+			error_log("References get_next else statement end");
+			error_log("=========================================================");
+			
 		}
 
 		if ($this->_legacy_line($refline))

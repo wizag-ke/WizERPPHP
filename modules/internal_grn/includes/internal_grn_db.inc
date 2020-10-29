@@ -56,12 +56,14 @@ function add_internal_grn($items, $location, $date_, $reference, $memo_)
 			$loc = calculate_reorder_level($location, $chg, $st_ids, $st_names, $st_num, $st_reorder); 
 		}
 
-		error_log("=========================================================");
-		error_log("add_stock_adjustment_item variable start");
-		error_log("Line items");
-		error_log(print_r($line_item, TRUE));
-		error_log("add_stock_adjustment_item variable end");
-		error_log("=========================================================");
+		// error_log("=========================================================");
+		// error_log("add_stock_adjustment_item variable start");
+		// error_log("Line items");
+		// error_log(print_r($line_item, TRUE));
+		// error_log("Reference for ref save");
+		// error_log($reference);
+		// error_log("add_stock_adjustment_item variable end");
+		// error_log("=========================================================");
 
 		// Inserts into the stock moves table, insert into gl_trans table not yet done
 		add_internal_grn_item($adj_id, $line_item->stock_id, $location, $date_, $reference,
@@ -199,4 +201,16 @@ function add_internal_grn_item($adj_id, $stock_id, $location, $date_, $reference
 		$grn_act = get_company_pref('default_loss_on_asset_disposal_act');
 		add_gl_trans_std_cost(ST_INTINVGRN, $adj_id, $date_, $grn_act, 0, 0, $memo_, ($standard_cost * -($quantity)));
     }
+}
+
+function get_internal_grn_items($trans_no)
+{
+	$result = get_stock_moves(ST_INTINVGRN, $trans_no);
+
+	if (db_num_rows($result) == 0)
+	{
+		return null;
+	}
+
+	return $result;
 }

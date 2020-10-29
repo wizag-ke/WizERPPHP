@@ -39,38 +39,45 @@ add_access_extensions();
 
 // include_once($path_to_root . "/modules/transaction_types/includes/transaction_types_db.inc");
 
-page(_("Add Transaction Type"), false, false, "", $js);
+page(_("Add Internal GRN"), false, false, "", $js);
 
 //-----------------------------------------------------------------------------------------------
 
-// if (isset($_GET['AddedID'])) 
-// {
-// 	$trans_no = $_GET['AddedID'];
-// 	$trans_type = ST_INVADJUST;
+if (isset($_GET['AddedID'])) 
+{
+	$trans_no = $_GET['AddedID'];
+	$trans_type = ST_INTINVGRN;
 
-//   $result = get_stock_adjustment_items($trans_no);
-//   $row = db_fetch($result);
+  $result = get_internal_grn_items($trans_no);
+  $row = db_fetch($result);
+  
+		// error_log("=========================================================");
+		// error_log("AddedID isset start");
+		// error_log("row");
+		// error_log(print_r($row, TRUE));
+		// error_log("AddedID isset end");
+		// error_log("=========================================================");
 
-//   if (is_fixed_asset($row['mb_flag'])) {
-//     display_notification_centered(_("Fixed Assets disposal has been processed"));
-//     display_note(get_trans_view_str($trans_type, $trans_no, _("&View this disposal")));
+  if (is_fixed_asset($row['mb_flag'])) {
+    display_notification_centered(_("Fixed Assets disposal has been processed"));
+    display_note(get_trans_view_str($trans_type, $trans_no, _("&View this disposal")));
 
-//     display_note(get_gl_view_str($trans_type, $trans_no, _("View the GL &Postings for this Disposal")), 1, 0);
-// 	  hyperlink_params($_SERVER['PHP_SELF'], _("Enter &Another Disposal"), "NewAdjustment=1&FixedAsset=1");
-//   }
-//   else {
-//     display_notification_centered(_("Items adjustment has been processed"));
-//     display_note(get_trans_view_str($trans_type, $trans_no, _("&View this adjustment")));
+    display_note(get_gl_view_str($trans_type, $trans_no, _("View the GL &Postings for this Disposal")), 1, 0);
+	  hyperlink_params($_SERVER['PHP_SELF'], _("Enter &Another Disposal"), "NewAdjustment=1&FixedAsset=1");
+  }
+  else {
+    display_notification_centered(_("Items adjustment has been processed"));
+    display_note(get_trans_view_str($trans_type, $trans_no, _("&View this adjustment")));
 
-//     display_note(get_gl_view_str($trans_type, $trans_no, _("View the GL &Postings for this Adjustment")), 1, 0);
+    display_note(get_gl_view_str($trans_type, $trans_no, _("View the GL &Postings for this Adjustment")), 1, 0);
 
-// 	  hyperlink_params($_SERVER['PHP_SELF'], _("Enter &Another Adjustment"), "NewAdjustment=1");
-//   }
+	  hyperlink_params($_SERVER['PHP_SELF'], _("Enter &Another Adjustment"), "NewAdjustment=1");
+  }
 
-// 	hyperlink_params("$path_to_root/admin/attachments.php", _("Add an Attachment"), "filterType=$trans_type&trans_no=$trans_no");
+	hyperlink_params("$path_to_root/admin/attachments.php", _("Add an Attachment"), "filterType=$trans_type&trans_no=$trans_no");
 
-// 	display_footer_exit();
-// }
+	display_footer_exit();
+}
 //--------------------------------------------------------------------------------------------------
 
 function line_start_focus() {
@@ -187,10 +194,10 @@ if (isset($_POST['Process']) && can_process()){
 	$_SESSION['internal_grn_items']->clear_items();
 	unset($_SESSION['internal_grn_items']);
 
-//   if ($fixed_asset)
-//    	meta_forward($_SERVER['PHP_SELF'], "AddedID=$trans_no&FixedAsset=1");
-//   else
-//    	meta_forward($_SERVER['PHP_SELF'], "AddedID=$trans_no");
+  if ($fixed_asset)
+   	meta_forward($_SERVER['PHP_SELF'], "AddedID=$trans_no&FixedAsset=1");
+  else
+   	meta_forward($_SERVER['PHP_SELF'], "AddedID=$trans_no");
 
 } /*end of process credit note */
 
@@ -287,7 +294,7 @@ if (isset($_GET['NewAdjustment']) || !isset($_SESSION['internal_grn_items']))
 start_form();
 
 
-$items_title = _("Adjustment Items");
+$items_title = _("Add GRN items");
 $button_title = _("Process Internal Grn");
 
 display_internal_grn_header($_SESSION['internal_grn_items']);
