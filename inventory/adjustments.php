@@ -42,6 +42,8 @@ page($_SESSION['page_title'], false, false, "", $js);
 
 if (isset($_GET['AddedID'])) 
 {
+	// print_r($_POST); 
+
 	$trans_no = $_GET['AddedID'];
 	$trans_type = ST_INVADJUST;
 
@@ -145,6 +147,7 @@ function can_process()
 
 if (isset($_POST['Process']) && can_process()){
 
+	// var_dump("Here");
 
   $fixed_asset = $_SESSION['adj_items']->fixed_asset; 
 
@@ -240,6 +243,9 @@ if (isset($_GET['NewAdjustment']) || !isset($_SESSION['adj_items']))
 }
 
 //-----------------------------------------------------------------------------------------------
+
+// print_r($_POST);
+
 start_form();
 
 if ($_SESSION['adj_items']->fixed_asset) {
@@ -256,7 +262,7 @@ display_order_header($_SESSION['adj_items']);
 
 start_outer_table(TABLESTYLE, "width='70%'", 10);
 
-print_r($_SESSION['adj_items']);
+// print_r($_SESSION['adj_items']);
 
 display_adjustment_items($items_title, $_SESSION['adj_items']);
 adjustment_options_controls();

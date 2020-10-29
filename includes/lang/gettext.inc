@@ -41,7 +41,7 @@ function get_text_init($managerType = GETTEXT_NATIVE) {
 }
 
 function raise_error($str) {
-	// error_log($str);
+	error_log($str);
 	return 1;
 }
 

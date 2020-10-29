@@ -89,8 +89,6 @@
 				$logo = "$path_to_root/themes/".user_theme()."/images/erp.png";
 				if (file_exists($logo))
 					echo "<li><img src='$logo' height='30' border='0' onload='fixPNG(this)' alt=''></li>\n";				
-					// echo "<li><img src='$logo' height='30' border='0' alt=''></li>\n";				
-					// echo "";
 				else
 				{
 					echo "  <li><a href='$path_to_root/admin/display_prefs.php?'>" . _("Preferences") . "</a></li>\n";
@@ -107,7 +105,6 @@
 
 				if(isset($client_logo))
 				{
-
 					echo "<h1><img src='$client_logo' height='30' border='0' onload='fixPNG(this)' alt=''></h1>\n";		
 				}
 

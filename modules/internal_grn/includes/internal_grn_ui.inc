@@ -4,7 +4,6 @@ function display_internal_grn_header(&$order)
 {
 	global $Refs;
 
-	print_r($Refs);
 	print_r("<br>");
 
 	start_outer_table(TABLESTYLE2, "width='70%'"); // outer table
