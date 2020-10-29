@@ -18,8 +18,8 @@ function get_supplier_trans_view_str($type, $trans_no, $label="", $icon=false,
 	$class='', $id='')
 {
 
-	error_log("get_supplier_trans_view_str type");
-	error_log($type);
+	// error_log("get_supplier_trans_view_str type");
+	// error_log($type);
 
 	$viewer = "purchasing/view/";
 	if ($type == ST_PURCHORDER)
@@ -134,7 +134,7 @@ function get_inventory_trans_view_str($type, $trans_no, $label="",
 	$icon=false, $class='', $id='')
 {
 
-	error_log("***get_inventory_trans_view_str***");
+	// error_log("***get_inventory_trans_view_str***");
 
 	$viewer = "inventory/view/";
 
@@ -156,7 +156,7 @@ function get_internal_grn_view_str($type, $trans_no, $label="",
 	$icon=false, $class='', $id='')
 {
 
-	error_log("***get_internal_grn_view_str***");
+	// error_log("***get_internal_grn_view_str***");
 
 	$viewer = "modules/internal_grn/includes/";
 
@@ -169,8 +169,8 @@ function get_internal_grn_view_str($type, $trans_no, $label="",
 	if ($label == "")
 		$label = $trans_no;
 
-	error_log("***get_internal_grn_view_str viewer link***");
-	error_log($viewer);
+	// error_log("***get_internal_grn_view_str viewer link***");
+	// error_log($viewer);
 	
 	
 
@@ -252,24 +252,24 @@ function get_trans_view_str($type, $trans_no, $label="", $icon=false,
 	$class='', $id='')
 {
 
-	error_log("***get_trans_view_str***");
+	// error_log("***get_trans_view_str***");
 	$view_str = get_customer_trans_view_str($type, $trans_no, $label, $icon, $class, $id);
 	if ($view_str != null)
 		return $view_str;
 
-	error_log("1");
+	// error_log("1");
 
 	$view_str = get_supplier_trans_view_str($type, $trans_no, $label, $icon, $class, $id);
 	if ($view_str != null)
 		return $view_str;
 
-	error_log("2");
+	// error_log("2");
 
 	$view_str = get_banking_trans_view_str($type, $trans_no, $label, $icon, $class, $id);
 	if ($view_str != null)
 		return $view_str;
 
-	error_log("3");
+	// error_log("3");
 	
 	$view_str = get_inventory_trans_view_str($type, $trans_no, $label, $icon, $class, $id);
 	if ($view_str != null)
@@ -279,13 +279,13 @@ function get_trans_view_str($type, $trans_no, $label="", $icon=false,
 	if ($view_str != null)
 		return $view_str;
 
-	error_log("4");
+	// error_log("4");
 	
 	$view_str = get_manufacturing_trans_view_str($type, $trans_no, $label, $icon, $class, $id);
 	if ($view_str != null)
 		return $view_str;
 
-	error_log("5");
+	// error_log("5");
 
 	$view_str = get_dimensions_trans_view_str($type, $trans_no, $label, $icon, $class, $id);
 	if ($view_str != null)

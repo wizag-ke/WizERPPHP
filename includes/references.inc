@@ -242,16 +242,16 @@ class references
 	function get_next($type, $line=null, $context=null) 
 	{
 
-		error_log("=========================================================");
-		error_log("References get_next variable start");
-		error_log("Type");
-		error_log($type);
-		error_log("Line");
-		error_log($line);
-		error_log("Context");
-		error_log(print_r($context, TRUE));
-		error_log("References get_next variable end");
-		error_log("=========================================================");
+		// error_log("=========================================================");
+		// error_log("References get_next variable start");
+		// error_log("Type");
+		// error_log($type);
+		// error_log("Line");
+		// error_log($line);
+		// error_log("Context");
+		// error_log(print_r($context, TRUE));
+		// error_log("References get_next variable end");
+		// error_log("=========================================================");
 
 
 		if (isset($line))
@@ -260,17 +260,17 @@ class references
 			$refs = $this->reflines->get_all("trans_type=".db_escape($type)." AND `default`");
 			$refline = db_fetch($refs);
 			
-			error_log("=========================================================");
-			error_log("References get_next else statement start");
+			// error_log("=========================================================");
+			// error_log("References get_next else statement start");
 
 			// error_log("reflines");
 			// error_log(print_r($refs, TRUE));
-			error_log("refs");
-			error_log(print_r($refs, TRUE));
-			error_log("refline");
-			error_log(print_r($refline, TRUE));
-			error_log("References get_next else statement end");
-			error_log("=========================================================");
+			// error_log("refs");
+			// error_log(print_r($refs, TRUE));
+			// error_log("refline");
+			// error_log(print_r($refline, TRUE));
+			// error_log("References get_next else statement end");
+			// error_log("=========================================================");
 			
 		}
 

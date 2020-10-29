@@ -28,31 +28,31 @@ function add_stock_adjustment($items, $location, $date_, $reference, $memo_)
 	
 	$args = (object)array_combine(array('items', 'location', 'date_', 'reference', 'memo_'), $args);
 	$args->trans_no = 0;
-	error_log("=========================================================");
-	error_log("func_get_args start");
-	error_log("Args");
-	error_log(print_r($args, TRUE));
+	// error_log("=========================================================");
+	// error_log("func_get_args start");
+	// error_log("Args");
+	// error_log(print_r($args, TRUE));
 
-	error_log("func_get_args end");
-	error_log("=========================================================");
+	// error_log("func_get_args end");
+	// error_log("=========================================================");
 	hook_db_prewrite($args, ST_INVADJUST);
 
 	$adj_id = get_next_trans_no(ST_INVADJUST); // This is the trans number
 
-	error_log("=========================================================");
-	error_log("get_next_trans_no start");
-	error_log("Adjustment ID");
-	error_log($adj_id);
-	error_log("get_next_trans_no end");
-	error_log("=========================================================");
+	// error_log("=========================================================");
+	// error_log("get_next_trans_no start");
+	// error_log("Adjustment ID");
+	// error_log($adj_id);
+	// error_log("get_next_trans_no end");
+	// error_log("=========================================================");
 
 	if ($SysPrefs->loc_notification() == 1)
 	{
-		error_log("=========================================================");
-		error_log("loc_notification start");
-		error_log("loc_notification is set");
-		error_log("loc_notification end");
-		error_log("=========================================================");
+		// error_log("=========================================================");
+		// error_log("loc_notification start");
+		// error_log("loc_notification is set");
+		// error_log("loc_notification end");
+		// error_log("=========================================================");
 
 		include_once($path_to_root . "/inventory/includes/inventory_db.inc");
 		$st_ids = array();
@@ -69,12 +69,12 @@ function add_stock_adjustment($items, $location, $date_, $reference, $memo_)
 			$loc = calculate_reorder_level($location, $chg, $st_ids, $st_names, $st_num, $st_reorder); 
 		}
 
-		error_log("=========================================================");
-		error_log("add_stock_adjustment_item variable start");
-		error_log("Line items");
-		error_log(print_r($line_item, TRUE));
-		error_log("add_stock_adjustment_item variable end");
-		error_log("=========================================================");
+		// error_log("=========================================================");
+		// error_log("add_stock_adjustment_item variable start");
+		// error_log("Line items");
+		// error_log(print_r($line_item, TRUE));
+		// error_log("add_stock_adjustment_item variable end");
+		// error_log("=========================================================");
 
 		// Inserts into the stock moves table, insert into gl_trans table not yet done
 		add_stock_adjustment_item($adj_id, $line_item->stock_id, $location, $date_, $reference,
@@ -84,12 +84,12 @@ function add_stock_adjustment($items, $location, $date_, $reference, $memo_)
 	add_comments(ST_INVADJUST, $adj_id, $date_, $memo_);
 
 	$Refs->save(ST_INVADJUST, $adj_id, $reference);
-	error_log("=========================================================");
-	error_log("add_stock_adjustment Refs start");
-	error_log("Refs");
-	error_log(print_r($Refs, TRUE));
-	error_log("add_stock_adjustment Refs end");
-	error_log("=========================================================");
+	// error_log("=========================================================");
+	// error_log("add_stock_adjustment Refs start");
+	// error_log("Refs");
+	// error_log(print_r($Refs, TRUE));
+	// error_log("add_stock_adjustment Refs end");
+	// error_log("=========================================================");
 
 	add_audit_trail(ST_INVADJUST, $adj_id, $date_);
 
@@ -132,12 +132,12 @@ function add_stock_adjustment_item($adj_id, $stock_id, $location, $date_, $refer
 {
 	$mb_flag = get_mb_flag($stock_id);
 
-	error_log("=========================================================");
-	error_log("add_stock_adjustment_item mb_flag start");
-	error_log("mb_flag");
-	error_log($mb_flag);
-	error_log("add_stock_adjustment_item mb_flag end");
-	error_log("=========================================================");
+	// error_log("=========================================================");
+	// error_log("add_stock_adjustment_item mb_flag start");
+	// error_log("mb_flag");
+	// error_log($mb_flag);
+	// error_log("add_stock_adjustment_item mb_flag end");
+	// error_log("=========================================================");
 
     if (is_service($mb_flag))
     {
@@ -153,26 +153,26 @@ function add_stock_adjustment_item($adj_id, $stock_id, $location, $date_, $refer
 		db_query($sql,"The inactive flag for the fixed asset could not be updated");
 	}
 
-	error_log("=========================================================");
-	error_log("add_stock_move variable start");
-	error_log("ST_INVADJUST");
-	error_log(ST_INVADJUST);
-	error_log("stock_id");
-	error_log($stock_id);
-	error_log("adj_id");
-	error_log($adj_id);
-	error_log("location");
-	error_log($location);
-	error_log("date_");
-	error_log($date_);
-	error_log("reference");
-	error_log($reference);
-	error_log("quantity");
-	error_log($quantity);
-	error_log("standard_cost");
-	error_log($standard_cost);
-	error_log("add_stock_move variable end");
-	error_log("=========================================================");
+	// error_log("=========================================================");
+	// error_log("add_stock_move variable start");
+	// error_log("ST_INVADJUST");
+	// error_log(ST_INVADJUST);
+	// error_log("stock_id");
+	// error_log($stock_id);
+	// error_log("adj_id");
+	// error_log($adj_id);
+	// error_log("location");
+	// error_log($location);
+	// error_log("date_");
+	// error_log($date_);
+	// error_log("reference");
+	// error_log($reference);
+	// error_log("quantity");
+	// error_log($quantity);
+	// error_log("standard_cost");
+	// error_log($standard_cost);
+	// error_log("add_stock_move variable end");
+	// error_log("=========================================================");
 
 
 	add_stock_move(ST_INVADJUST, $stock_id, $adj_id, $location,
@@ -183,10 +183,10 @@ function add_stock_adjustment_item($adj_id, $stock_id, $location, $date_, $refer
 
 	if (is_fixed_asset($mb_flag)) {
 
-		error_log("=========================================================");
-		error_log("is_fixed_asset start");
-		error_log("is_fixed_asset end");
-		error_log("=========================================================");
+		// error_log("=========================================================");
+		// error_log("is_fixed_asset start");
+		// error_log("is_fixed_asset end");
+		// error_log("=========================================================");
 
 		// get the initial value of the fixed assset.
 		$row = get_fixed_asset_move($stock_id, ST_SUPPRECEIVE);
@@ -200,18 +200,18 @@ function add_stock_adjustment_item($adj_id, $stock_id, $location, $date_, $refer
 		
 		$stock_gl_codes = get_stock_gl_code($stock_id);
 		
-		error_log("=========================================================");
-		error_log("add_gl_trans_std_cost start");
-		error_log("adjustment_account");
-		error_log($stock_gl_codes['adjustment_account']);
-		error_log("dimension_id");
-		error_log($stock_gl_codes['dimension_id']);
-		error_log("dimension2_id");
-		error_log($stock_gl_codes['dimension2_id']);
-		error_log("adj_value");
-		error_log($adj_value);
-		error_log("add_gl_trans_std_cost end");
-		error_log("=========================================================");
+		// error_log("=========================================================");
+		// error_log("add_gl_trans_std_cost start");
+		// error_log("adjustment_account");
+		// error_log($stock_gl_codes['adjustment_account']);
+		// error_log("dimension_id");
+		// error_log($stock_gl_codes['dimension_id']);
+		// error_log("dimension2_id");
+		// error_log($stock_gl_codes['dimension2_id']);
+		// error_log("adj_value");
+		// error_log($adj_value);
+		// error_log("add_gl_trans_std_cost end");
+		// error_log("=========================================================");
 		add_gl_trans_std_cost(ST_INVADJUST, $adj_id, $date_,
 			$stock_gl_codes['adjustment_account'], $stock_gl_codes['dimension_id'], $stock_gl_codes['dimension2_id'], $memo_, $adj_value  );
 

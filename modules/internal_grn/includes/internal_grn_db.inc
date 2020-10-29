@@ -15,31 +15,31 @@ function add_internal_grn($items, $location, $date_, $reference, $memo_)
 	
 	$args = (object)array_combine(array('items', 'location', 'date_', 'reference', 'memo_'), $args);
 	$args->trans_no = 0;
-	error_log("=========================================================");
-	error_log("func_get_args start");
-	error_log("Args");
-	error_log(print_r($args, TRUE));
+	// error_log("=========================================================");
+	// error_log("func_get_args start");
+	// error_log("Args");
+	// error_log(print_r($args, TRUE));
 
-	error_log("func_get_args end");
-	error_log("=========================================================");
+	// error_log("func_get_args end");
+	// error_log("=========================================================");
 	hook_db_prewrite($args, ST_INTINVGRN);
 
 	$adj_id = get_next_trans_no(ST_INTINVGRN); // This is the trans number
 
-	error_log("=========================================================");
-	error_log("get_next_trans_no start");
-	error_log("Adjustment ID");
-	error_log($adj_id);
-	error_log("get_next_trans_no end");
-	error_log("=========================================================");
+	// error_log("=========================================================");
+	// error_log("get_next_trans_no start");
+	// error_log("Adjustment ID");
+	// error_log($adj_id);
+	// error_log("get_next_trans_no end");
+	// error_log("=========================================================");
 
 	if ($SysPrefs->loc_notification() == 1)
 	{
-		error_log("=========================================================");
-		error_log("loc_notification start");
-		error_log("loc_notification is set");
-		error_log("loc_notification end");
-		error_log("=========================================================");
+		// error_log("=========================================================");
+		// error_log("loc_notification start");
+		// error_log("loc_notification is set");
+		// error_log("loc_notification end");
+		// error_log("=========================================================");
 
 		include_once($path_to_root . "/inventory/includes/inventory_db.inc");
 		$st_ids = array();
@@ -97,14 +97,14 @@ function add_internal_grn_item($adj_id, $stock_id, $location, $date_, $reference
 {
     $mb_flag = get_mb_flag($stock_id);
     
-    error_log("***add_internal_grn_item called ***");
+    // error_log("***add_internal_grn_item called ***");
 
-	error_log("=========================================================");
-	error_log("add_stock_adjustment_item mb_flag start");
-	error_log("mb_flag");
-	error_log($mb_flag);
-	error_log("add_stock_adjustment_item mb_flag end");
-	error_log("=========================================================");
+	// error_log("=========================================================");
+	// error_log("add_stock_adjustment_item mb_flag start");
+	// error_log("mb_flag");
+	// error_log($mb_flag);
+	// error_log("add_stock_adjustment_item mb_flag end");
+	// error_log("=========================================================");
 
     if (is_service($mb_flag))
     {
@@ -120,26 +120,26 @@ function add_internal_grn_item($adj_id, $stock_id, $location, $date_, $reference
 		db_query($sql,"The inactive flag for the fixed asset could not be updated");
 	}
 
-	error_log("=========================================================");
-	error_log("add_stock_move variable start");
-	error_log("ST_INTINVGRN");
-	error_log(ST_INTINVGRN);
-	error_log("stock_id");
-	error_log($stock_id);
-	error_log("adj_id");
-	error_log($adj_id);
-	error_log("location");
-	error_log($location);
-	error_log("date_");
-	error_log($date_);
-	error_log("reference");
-	error_log($reference);
-	error_log("quantity");
-	error_log($quantity);
-	error_log("standard_cost");
-	error_log($standard_cost);
-	error_log("add_stock_move variable end");
-	error_log("=========================================================");
+	// error_log("=========================================================");
+	// error_log("add_stock_move variable start");
+	// error_log("ST_INTINVGRN");
+	// error_log(ST_INTINVGRN);
+	// error_log("stock_id");
+	// error_log($stock_id);
+	// error_log("adj_id");
+	// error_log($adj_id);
+	// error_log("location");
+	// error_log($location);
+	// error_log("date_");
+	// error_log($date_);
+	// error_log("reference");
+	// error_log($reference);
+	// error_log("quantity");
+	// error_log($quantity);
+	// error_log("standard_cost");
+	// error_log($standard_cost);
+	// error_log("add_stock_move variable end");
+	// error_log("=========================================================");
 
 
     // exit();
@@ -152,10 +152,10 @@ function add_internal_grn_item($adj_id, $stock_id, $location, $date_, $reference
 
 	if (is_fixed_asset($mb_flag)) {
 
-		error_log("=========================================================");
-		error_log("is_fixed_asset start");
-		error_log("is_fixed_asset end");
-		error_log("=========================================================");
+		// error_log("=========================================================");
+		// error_log("is_fixed_asset start");
+		// error_log("is_fixed_asset end");
+		// error_log("=========================================================");
 
 		// get the initial value of the fixed assset.
 		$row = get_fixed_asset_move($stock_id, ST_SUPPRECEIVE);
@@ -169,22 +169,48 @@ function add_internal_grn_item($adj_id, $stock_id, $location, $date_, $reference
 		
 		$stock_gl_codes = get_stock_gl_code($stock_id);
 		
-		error_log("=========================================================");
-		error_log("add_gl_trans_std_cost start");
-		error_log("adjustment_account");
-		error_log($stock_gl_codes['adjustment_account']);
-		error_log("dimension_id");
-		error_log($stock_gl_codes['dimension_id']);
-		error_log("dimension2_id");
-		error_log($stock_gl_codes['dimension2_id']);
-		error_log("adj_value");
-		error_log($adj_value);
-		error_log("add_gl_trans_std_cost end");
-		error_log("=========================================================");
-		add_gl_trans_std_cost(ST_INTINVGRN, $adj_id, $date_,
-			$stock_gl_codes['adjustment_account'], $stock_gl_codes['dimension_id'], $stock_gl_codes['dimension2_id'], $memo_, $adj_value  );
+		// error_log("=========================================================");
+		// error_log("add_gl_trans_std_cost start");
+		// error_log("adjustment_account");
+		// error_log($stock_gl_codes['adjustment_account']);
+		// error_log("inventory_account");
+		// error_log($stock_gl_codes['inventory_account']);
+		// error_log("dimension_id");
+		// error_log($stock_gl_codes['dimension_id']);
+		// error_log("dimension2_id");
+		// error_log($stock_gl_codes['dimension2_id']);
+		// error_log("adj_value");
+		// error_log($adj_value);
+		// error_log("add_gl_trans_std_cost end");
+		// error_log("=========================================================");
 
-        add_gl_trans_std_cost(ST_INTINVGRN, $adj_id, $date_, $stock_gl_codes['inventory_account'], 0, 0, $memo_, $inv_value);
+		$result = get_all_mappings();
+		error_log("All mappings");
+		while ($myrow = db_fetch($result))
+		{
+			if($myrow['module'] === 'Internal GRN')
+			{
+				$mapping = get_mapping($myrow['id']);
+				$debit_account = $mapping['dr_ac'];
+				$credit_account = $mapping['cr_ac'];
+			}
+		}
+		// error_log("Debit: " . $debit_account . ", Credit: " . $credit_account);
+
+		
+		
+		$adjustment_account = isset($credit_account) ? $credit_account : $stock_gl_codes['adjustment_account'];
+		$inventory_account = isset($debit_account) ? $debit_account : $stock_gl_codes['inventory_account'];
+	
+
+
+
+		add_gl_trans_std_cost(ST_INTINVGRN, $adj_id, $date_, $adjustment_account, $stock_gl_codes['dimension_id'], $stock_gl_codes['dimension2_id'], $memo_, $adj_value  );
+		// add_gl_trans_std_cost(ST_INTINVGRN, $adj_id, $date_,
+		// 	$stock_gl_codes['adjustment_account'], $stock_gl_codes['dimension_id'], $stock_gl_codes['dimension2_id'], $memo_, $adj_value  );
+
+        add_gl_trans_std_cost(ST_INTINVGRN, $adj_id, $date_, $inventory_account, 0, 0, $memo_, $inv_value);
+        // add_gl_trans_std_cost(ST_INTINVGRN, $adj_id, $date_, $stock_gl_codes['inventory_account'], 0, 0, $memo_, $inv_value);
         
         // error_log("=========================================================");
 		// error_log("returned by add_gl start");

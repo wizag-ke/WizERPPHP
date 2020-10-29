@@ -28,6 +28,8 @@ include_once($path_to_root . "/inventory/includes/inventory_db.inc");
 include_once($path_to_root . "/modules/internal_grn/includes/internal_grn_types.inc");
 include_once($path_to_root . "/modules/internal_grn/includes/internal_grn_ui.inc");
 include_once($path_to_root . "/modules/internal_grn/includes/internal_grn_db.inc");
+include_once($path_to_root . "/modules/transaction_types/includes/transaction_types_db.inc");
+include_once($path_to_root . "/modules/transaction_types/includes/transaction_ui.inc");
 
 
 
@@ -43,6 +45,20 @@ page(_("Add Internal GRN"), false, false, "", $js);
 
 //-----------------------------------------------------------------------------------------------
 
+
+// $result = get_all_mappings();
+// error_log("All mappings");
+// while ($myrow = db_fetch($result))
+// {
+// 	if($myrow['module'] === 'Internal GRN')
+// 	{
+// 		$mapping = get_mapping($myrow['id']);
+// 		$debit_account = $mapping['dr_ac'];
+// 		$credit_account = $mapping['cr_ac'];
+// 		error_log("Debit: " . $debit_account . ", Credit: " . $credit_account);
+// 	}
+// }
+
 if (isset($_GET['AddedID'])) 
 {
 	$trans_no = $_GET['AddedID'];
@@ -51,12 +67,12 @@ if (isset($_GET['AddedID']))
   $result = get_internal_grn_items($trans_no);
   $row = db_fetch($result);
   
-	error_log("=========================================================");
-	error_log("AddedID isset start");
-	error_log("ST_INTINVGRN");
-	error_log(ST_INTINVGRN);
-	error_log("AddedID isset end");
-	error_log("=========================================================");
+	// error_log("=========================================================");
+	// error_log("AddedID isset start");
+	// error_log("ST_INTINVGRN");
+	// error_log(ST_INTINVGRN);
+	// error_log("AddedID isset end");
+	// error_log("=========================================================");
 
   if (is_fixed_asset($row['mb_flag'])) {
     display_notification_centered(_("Fixed Assets disposal has been processed"));
@@ -154,14 +170,14 @@ function can_process()
 }
 
 //-------------------------------------------------------------------------------
-error_log("=========================================================");
-error_log("Start of looping for statement");
-foreach($_POST as $key => $post)
-{
-	error_log($key . '=>' . $post);
-}
-error_log("End of looping for statement");
-error_log("=========================================================");
+// error_log("=========================================================");
+// error_log("Start of looping for statement");
+// foreach($_POST as $key => $post)
+// {
+// 	error_log($key . '=>' . $post);
+// }
+// error_log("End of looping for statement");
+// error_log("=========================================================");
 
 
 // if(isset($_POST['Process'])) {
@@ -170,20 +186,20 @@ error_log("=========================================================");
 
 if (isset($_POST['Process']) && can_process()){
 
-	error_log("=========================================================");
-	error_log("add_internal_grn variable start");
-	error_log("Line items");
-	error_log(print_r($_SESSION['internal_grn_items']->line_items, TRUE));
-	error_log("Stock location");
-	error_log(print_r($_POST['StockLocation'], TRUE));
-	error_log("Adjustment Date");
-	error_log(print_r($_POST['AdjDate'], TRUE));
-	error_log('ref');
-	error_log(print_r($_POST['ref'], TRUE));
-	error_log('memo');
-	error_log(print_r($_POST['memo_'], TRUE));
-	error_log("add_internal_grn variable end");
-	error_log("=========================================================");
+	// error_log("=========================================================");
+	// error_log("add_internal_grn variable start");
+	// error_log("Line items");
+	// error_log(print_r($_SESSION['internal_grn_items']->line_items, TRUE));
+	// error_log("Stock location");
+	// error_log(print_r($_POST['StockLocation'], TRUE));
+	// error_log("Adjustment Date");
+	// error_log(print_r($_POST['AdjDate'], TRUE));
+	// error_log('ref');
+	// error_log(print_r($_POST['ref'], TRUE));
+	// error_log('memo');
+	// error_log(print_r($_POST['memo_'], TRUE));
+	// error_log("add_internal_grn variable end");
+	// error_log("=========================================================");
 
   $fixed_asset = $_SESSION['internal_grn_items']->fixed_asset; 
 

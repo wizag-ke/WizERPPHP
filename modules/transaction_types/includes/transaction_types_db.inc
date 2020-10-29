@@ -136,7 +136,7 @@ function update_mapping($id, $module, $transaction_id)
  */
 function get_mapping($id)
 {
-    $sql = "SELECT maps.*, trans.description as transaction_description FROM "
+    $sql = "SELECT maps.*, trans.description as transaction_description, trans.dr_ac as dr_ac, trans.cr_ac as cr_ac FROM "
     .TB_PREF."module_transaction_type as maps " .
     "LEFT JOIN ".TB_PREF."transaction_types as trans on maps.transaction_id=trans.id  " .
     "WHERE maps.id=".db_escape($id);
