@@ -160,6 +160,15 @@ function delete_mapping($id)
 	db_query($sql,"The mapping could not be deleted");
 }
 
+/**
+ * Checks if a mapping exists in the database
+ * 
+ * It is used to prevent saving duplicate mappings in the database. Check its usage in the mappings.php
+ * 
+ * @param string
+ * 
+ * @return boolean
+ */
 function check_mappings_not_exist($module)
 {
     $all_mappings = get_all_mappings();
