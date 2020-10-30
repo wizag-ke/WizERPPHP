@@ -339,7 +339,10 @@ start_form();
 
 edit_grn_summary($_SESSION['PO'], true);
 display_heading(_("Items to Receive"));
-display_po_receive_items();
+if(!isset($_GET['AddedID']))
+{
+	display_po_receive_items();
+}
 
 echo '<br>';
 submit_center_first('Update', _("Update"), '', true);
