@@ -177,16 +177,6 @@ $installed_extensions = array (
     'active' => false,
     'path' => 'themes/studio',
   ),
-  45 => 
-  array (
-    'package' => 'item_inquiry',
-    'name' => 'Item Inquiry',
-    'version' => '2.4',
-    'available' => '',
-    'type' => 'extension',
-    'path' => 'modules/item_inquiry',
-    'active' => 1,
-  ),
   55 => 
   array (
     'package' => 'item_pack_conversion',
@@ -195,6 +185,26 @@ $installed_extensions = array (
     'available' => '',
     'type' => 'extension',
     'path' => 'modules/item_pack_conversion',
+    'active' => 1,
+  ),
+  56 => 
+  array (
+    'package' => 'transaction_types',
+    'name' => 'transaction_types',
+    'version' => '-',
+    'available' => '',
+    'type' => 'extension',
+    'path' => 'modules/transaction_types',
+    'active' => 1,
+  ),
+  57 => 
+  array (
+    'package' => 'internal_grn',
+    'name' => 'internal_grn',
+    'version' => '-',
+    'available' => '',
+    'type' => 'extension',
+    'path' => 'modules/internal_grn',
     'active' => 1,
   ),
 );

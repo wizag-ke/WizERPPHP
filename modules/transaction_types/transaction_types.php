@@ -29,7 +29,7 @@ add_access_extensions();
 
 include_once($path_to_root . "/modules/transaction_types/includes/transaction_types_db.inc");
 
-page(_("Add Transaction Type"), false, false, "", $js);
+page(_("Transaction Types"), false, false, "", $js);
 
 if ($Mode == 'Delete')
 {

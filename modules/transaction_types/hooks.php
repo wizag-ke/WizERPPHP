@@ -13,11 +13,11 @@ class hooks_transaction_types extends hooks {
 		switch($app->id) {
 			case 'GL':
 				$app->add_rapp_function(2, _('Add Transaction Type'), 
-					$path_to_root.'/modules/transaction_types/transaction_types.php', 'SS_TRANSACTIONTYPE');
+					$path_to_root.'/modules/transaction_types/transaction_types.php', 'SS_ADDTRANSACTIONTYPE');
 				break;
 			case 'stock':
 				$app->add_rapp_function(2, _('Mappings'),
-				$path_to_root.'/modules/transaction_types/mappings.php', 'SS_TRANSACTIONTYPE');
+				$path_to_root.'/modules/transaction_types/mappings.php', 'SS_TRANSACTIONTYPEMAPPING');
 		}
 	}
 	

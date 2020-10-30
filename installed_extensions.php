@@ -6,7 +6,7 @@
 	FA extension system documentation.
 */
 
-$next_extension_id = 56; // unique id for next installed extension
+$next_extension_id = 58; // unique id for next installed extension
 
 $installed_extensions = array (
   1 => 
@@ -180,16 +180,6 @@ $installed_extensions = array (
     'active' => false,
     'path' => 'themes/studio',
   ),
-  45 => 
-  array (
-    'package' => 'item_inquiry',
-    'name' => 'Item Inquiry',
-    'version' => '2.4',
-    'available' => '',
-    'type' => 'extension',
-    'path' => 'modules/item_inquiry',
-    'active' => false,
-  ),
   55 => 
   array (
     'package' => 'item_pack_conversion',
@@ -198,6 +188,26 @@ $installed_extensions = array (
     'available' => '',
     'type' => 'extension',
     'path' => 'modules/item_pack_conversion',
+    'active' => false,
+  ),
+  56 => 
+  array (
+    'package' => 'transaction_types',
+    'name' => 'transaction_types',
+    'version' => '-',
+    'available' => '',
+    'type' => 'extension',
+    'path' => 'modules/transaction_types',
+    'active' => false,
+  ),
+  57 => 
+  array (
+    'package' => 'internal_grn',
+    'name' => 'internal_grn',
+    'version' => '-',
+    'available' => '',
+    'type' => 'extension',
+    'path' => 'modules/internal_grn',
     'active' => false,
   ),
 );
