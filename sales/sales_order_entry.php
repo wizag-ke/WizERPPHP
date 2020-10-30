@@ -509,7 +509,7 @@ if (isset($_POST['ProcessOrder']) && can_process()) {
 		} elseif ($trans_type == ST_SALESORDER) {
 			meta_forward($_SERVER['PHP_SELF'], "AddedID=$trans_no");
 		} elseif ($trans_type == ST_SALESQUOTE) {
-			send_email_to_first_approver($trans_type, $trans_no);
+			// send_email_to_first_approver($trans_type, $trans_no);
 			meta_forward($_SERVER['PHP_SELF'], "AddedQU=$trans_no");
 		} elseif ($trans_type == ST_SALESINVOICE) {
 			meta_forward($_SERVER['PHP_SELF'], "AddedDI=$trans_no&Type=$so_type");
