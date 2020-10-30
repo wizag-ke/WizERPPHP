@@ -6,7 +6,7 @@
 	FA extension system documentation.
 */
 
-$next_extension_id = 44; // unique id for next installed extension
+$next_extension_id = 45; // unique id for next installed extension
 
 $installed_extensions = array (
   1 => 
@@ -210,7 +210,7 @@ $installed_extensions = array (
     'path' => 'modules/internal_grn',
     'active' => false,
   ),
-  43 => 
+  44 => 
   array (
     'package' => 'item_pack_conversion',
     'name' => 'item_pack_conversion',
