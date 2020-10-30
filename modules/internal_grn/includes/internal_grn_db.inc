@@ -147,8 +147,13 @@ function add_internal_grn_item($adj_id, $stock_id, $location, $date_, $reference
 	add_stock_move(ST_INTINVGRN, $stock_id, $adj_id, $location,
         $date_, $reference, $quantity, $standard_cost);
 
-	$inv_value = $standard_cost * $quantity;
-	$adj_value = $standard_cost * -($quantity);
+	$inv_value = $quantity;
+	$adj_value = $quantity;
+
+
+		
+	// $inv_value = $standard_cost * $quantity;
+	// $adj_value = $standard_cost * -($quantity);
 
 	if (is_fixed_asset($mb_flag)) {
 
@@ -163,8 +168,16 @@ function add_internal_grn_item($adj_id, $stock_id, $location, $date_, $reference
 		$adj_value = (-($row['price']) + $standard_cost) * $quantity;
 	}
 
-	if ($standard_cost > 0 || is_fixed_asset($mb_flag))
+	if ($standard_cost >= 0 || is_fixed_asset($mb_flag))
 	{
+		error_log("=========================================================");
+		error_log("add_stock_move start");
+		error_log("add_stock_move start");
+		error_log("inv_value");
+		error_log($inv_value);
+		error_log("adj_value");
+		error_log($adj_value);
+		error_log("=========================================================");
 
 		
 		$stock_gl_codes = get_stock_gl_code($stock_id);
@@ -205,11 +218,11 @@ function add_internal_grn_item($adj_id, $stock_id, $location, $date_, $reference
 
 
 
-		add_gl_trans_std_cost(ST_INTINVGRN, $adj_id, $date_, $adjustment_account, $stock_gl_codes['dimension_id'], $stock_gl_codes['dimension2_id'], $memo_, $adj_value  );
+		// add_gl_trans_std_cost(ST_INTINVGRN, $adj_id, $date_, $adjustment_account, $stock_gl_codes['dimension_id'], $stock_gl_codes['dimension2_id'], $memo_, $adj_value  );
 		// add_gl_trans_std_cost(ST_INTINVGRN, $adj_id, $date_,
 		// 	$stock_gl_codes['adjustment_account'], $stock_gl_codes['dimension_id'], $stock_gl_codes['dimension2_id'], $memo_, $adj_value  );
 
-        add_gl_trans_std_cost(ST_INTINVGRN, $adj_id, $date_, $inventory_account, 0, 0, $memo_, $inv_value);
+        // add_gl_trans_std_cost(ST_INTINVGRN, $adj_id, $date_, $inventory_account, 0, 0, $memo_, $inv_value);
         // add_gl_trans_std_cost(ST_INTINVGRN, $adj_id, $date_, $stock_gl_codes['inventory_account'], 0, 0, $memo_, $inv_value);
         
         // error_log("=========================================================");
