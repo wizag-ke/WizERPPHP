@@ -1,0 +1,135 @@
+id,item_code,stock_id,description,category_id,quantity,is_foreign,inactive
+1,HFFL01,HFFL01,"Athena,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+2,HFFL02,HFFL02,"Athena,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+3,HFFL04,HFFL04,"Athena,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+4,HFFL05,HFFL05,"Bellerose,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+5,HFFL06,HFFL06,"Bellerose,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+6,HFFL10,HFFL10,"Carise,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+7,HFFL101,HFFL101,"Top Gear,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+8,HFFL102,HFFL102,"Top Gear,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+9,HFFL17,HFFL17,"Copa Cabana,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+10,HFFL18,HFFL18,"Copa Cabana,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+11,HFFL21,HFFL21,"Event,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+12,HFFL30,HFFL30,"High & Magic,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+13,HFFL38,HFFL38,"Jumilla,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+14,HFFL42,HFFL42,"Kingsday,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+15,HFFL45,HFFL45,"Labelle,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+16,HFFL46,HFFL46,"Labelle,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+17,HFFL49,HFFL49,"Lampion,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+18,HFFL50,HFFL50,"Lampion,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+19,HFFL53,HFFL53,"Madam Cerice,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+20,HFFL54,HFFL54,"Madam Cerice,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+21,HFFL55,HFFL55,"Madam Cerice,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+22,HFFL57,HFFL57,"Madam Red,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+23,HFFL58,HFFL58,"Madam Red,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+24,HFFL59,HFFL59,"Madam Red,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+25,HFFL60,HFFL60,"Madam Red,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+26,HFFL73,HFFL73,"Movie Star,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+27,HFFL74,HFFL74,"Movie Star,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+28,HFFL81,HFFL81,"Nightingale,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+29,HFFL82,HFFL82,"Nightingale,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+30,HFFL89,HFFL89,"Revival,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+31,HFFLO01,HFFLO01,"Athena,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+32,HFFLO02,HFFLO02,"Athena,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+33,HFFLO03,HFFLO03,"Athena,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+34,HFFLO04,HFFLO04,"Athena,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+35,HFFLO05,HFFLO05,"Bellerose,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+36,HFFLO06,HFFLO06,"Bellerose,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+37,HFFLO07,HFFLO07,"Bellerose,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+38,HFFLO08,HFFLO08,"Bellerose,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+39,HFFLO09,HFFLO09,"Carise,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+40,HFFLO10,HFFLO10,"Carise,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+41,HFFLO100,HFFLO100,"Sunny Confidential,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+42,HFFLO101,HFFLO101,"Top Gear,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+43,HFFLO102,HFFLO102,"Top Gear,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+44,HFFLO103,HFFLO103,"Top Gear,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+45,HFFLO104,HFFLO104,"Top Gear,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+46,HFFLO11,HFFLO11,"Carise,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+47,HFFLO12,HFFLO12,"Carise,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+48,HFFLO13,HFFLO13,"Carodanal,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+49,HFFLO14,HFFLO14,"Carodanal,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+50,HFFLO15,HFFLO15,"Carodanal,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+51,HFFLO16,HFFLO16,"Carodanal,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+52,HFFLO17,HFFLO17,"Copa Cabana,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+53,HFFLO18,HFFLO18,"Copa Cabana,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+54,HFFLO19,HFFLO19,"Copa Cabana,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+55,HFFLO20,HFFLO20,"Copa Cabana,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+56,HFFLO21,HFFLO21,"Event,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+57,HFFLO22,HFFLO22,"Event,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+58,HFFLO23,HFFLO23,"Event,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+59,HFFLO24,HFFLO24,"Event,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+60,HFFLO25,HFFLO25,"Golden Tower,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+61,HFFLO26,HFFLO26,"Golden Tower,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+62,HFFLO27,HFFLO27,"Golden Tower,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+63,HFFLO28,HFFLO28,"Golden Tower,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+64,HFFLO29,HFFLO29,"High & Magic,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+65,HFFLO30,HFFLO30,"High & Magic,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+66,HFFLO31,HFFLO31,"High & Magic,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+67,HFFLO32,HFFLO32,"High & Magic,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+68,HFFLO33,HFFLO33,"James Bond,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+69,HFFLO34,HFFLO34,"James Bond,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+70,HFFLO35,HFFLO35,"James Bond,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+71,HFFLO36,HFFLO36,"James Bond,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+72,HFFLO37,HFFLO37,"Jumilla,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+73,HFFLO38,HFFLO38,"Jumilla,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+74,HFFLO39,HFFLO39,"Jumilla,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+75,HFFLO40,HFFLO40,"Jumilla,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+76,HFFLO41,HFFLO41,"Kingsday,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+77,HFFLO42,HFFLO42,"Kingsday,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+78,HFFLO43,HFFLO43,"Kingsday,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+79,HFFLO44,HFFLO44,"Kingsday,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+80,HFFLO45,HFFLO45,"Labelle,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+81,HFFLO46,HFFLO46,"Labelle,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+82,HFFLO47,HFFLO47,"Labelle,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+83,HFFLO48,HFFLO48,"Labelle,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+84,HFFLO49,HFFLO49,"Lampion,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+85,HFFLO50,HFFLO50,"Lampion,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+86,HFFLO51,HFFLO51,"Lampion,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+87,HFFLO52,HFFLO52,"Lampion,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+88,HFFLO53,HFFLO53,"Madam Cerice,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+89,HFFLO54,HFFLO54,"Madam Cerice,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+90,HFFLO55,HFFLO55,"Madam Cerice,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+91,HFFLO56,HFFLO56,"Madam Cerice,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+92,HFFLO57,HFFLO57,"Madam Red,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+93,HFFLO58,HFFLO58,"Madam Red,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+94,HFFLO59,HFFLO59,"Madam Red,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+95,HFFLO60,HFFLO60,"Madam Red,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+96,HFFLO61,HFFLO61,"Mixed Bouquet,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+97,HFFLO62,HFFLO62,"Mixed Bouquet,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+98,HFFLO63,HFFLO63,"Mixed Bouquet,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+99,HFFLO64,HFFLO64,"Mixed Bouquet,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+100,HFFLO65,HFFLO65,"Mixed Varieties,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+101,HFFLO66,HFFLO66,"Mixed Varieties,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+102,HFFLO67,HFFLO67,"Mixed Varieties,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+103,HFFLO68,HFFLO68,"Mixed Varieties,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+104,HFFLO69,HFFLO69,"Moonwalk,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+105,HFFLO70,HFFLO70,"Moonwalk,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+106,HFFLO71,HFFLO71,"Moonwalk,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+107,HFFLO72,HFFLO72,"Moonwalk,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+108,HFFLO73,HFFLO73,"Movie Star,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+109,HFFLO74,HFFLO74,"Movie Star,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+110,HFFLO75,HFFLO75,"Movie Star,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+111,HFFLO76,HFFLO76,"Movie Star,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+112,HFFLO77,HFFLO77,"Mult Red,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+113,HFFLO78,HFFLO78,"Mult Red,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+114,HFFLO79,HFFLO79,"Mult Red,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+115,HFFLO80,HFFLO80,"Mult Red,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+116,HFFLO81,HFFLO81,"Nightingale,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+117,HFFLO82,HFFLO82,"Nightingale,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+118,HFFLO83,HFFLO83,"Nightingale,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+119,HFFLO84,HFFLO84,"Nightingale,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+120,HFFLO85,HFFLO85,"Previda,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+121,HFFLO86,HFFLO86,"Previda,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+122,HFFLO87,HFFLO87,"Previda,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+123,HFFLO88,HFFLO88,"Previda,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+124,HFFLO89,HFFLO89,"Revival,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+125,HFFLO90,HFFLO90,"Revival,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+126,HFFLO91,HFFLO91,"Revival,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+127,HFFLO92,HFFLO92,"Revival,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+128,HFFLO93,HFFLO93,"Rosa Mix,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+129,HFFLO94,HFFLO94,"Rosa Mix,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+130,HFFLO95,HFFLO95,"Rosa Mix,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
+131,HFFLO96,HFFLO96,"Rosa Mix,72cm,0 Boxes,0 Stems Per Box",1,1,1,0
+132,HFFLO97,HFFLO97,"Sunny Confidential,42cm,0 Boxes,0 Stems Per Box",1,1,1,0
+133,HFFLO98,HFFLO98,"Sunny Confidential,52cm,0 Boxes,0 Stems Per Box",1,1,1,0
+134,HFFLO99,HFFLO99,"Sunny Confidential,62cm,0 Boxes,0 Stems Per Box",1,1,1,0
