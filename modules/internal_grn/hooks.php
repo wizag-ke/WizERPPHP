@@ -30,24 +30,24 @@ class hooks_internal_grn extends hooks {
 		return array($security_areas, $security_sections);
 	}
     
-    function activate_extension($company, $check_only=true)
-    {
-        global $db_connections;
+    // function activate_extension($company, $check_only=true)
+    // {
+    //     global $db_connections;
 
-        $updates = array(
-            'update.sql' => array('transaction_type')
-        );
+    //     $updates = array(
+    //         'update.sql' => array('transaction_type')
+    //     );
 
-        return $this->update_databases($company, $updates, $check_only);
-	}
+    //     return $this->update_databases($company, $updates, $check_only);
+	// }
 	
-	function deactivate_extension($company, $check_only=true) {
-        global $db_connections;
+	// function deactivate_extension($company, $check_only=true) {
+    //     global $db_connections;
 
-        $updates = array('remove.sql' => array('inquiry'));
+    //     $updates = array('remove.sql' => array('inquiry'));
 
-        return $this->update_databases($company, $updates, $check_only);
-    }
+    //     return $this->update_databases($company, $updates, $check_only);
+    // }
 }
 
 

@@ -26,9 +26,13 @@ include_once($path_to_root . "/modules/transaction_types/includes/transaction_ui
 
 page(_("Add Transaction Type"));
 
+
 if ($Mode=='ADD_ITEM')
 {
-    add_mapping($_POST['module'], $_POST['transaction_id']);
+	if(check_mappings_not_exist($_POST['module']))
+	{
+		add_mapping($_POST['module'], $_POST['transaction_id']);
+	}
 }
 
 if ($Mode=='UPDATE_ITEM')

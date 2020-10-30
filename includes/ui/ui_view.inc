@@ -17,6 +17,10 @@ include_once($path_to_root . "/includes/types.inc");
 function get_supplier_trans_view_str($type, $trans_no, $label="", $icon=false, 
 	$class='', $id='')
 {
+
+	// error_log("get_supplier_trans_view_str type");
+	// error_log($type);
+
 	$viewer = "purchasing/view/";
 	if ($type == ST_PURCHORDER)
 		$viewer .= "view_po.php";
@@ -129,6 +133,9 @@ function get_banking_trans_view_str($type, $trans_no, $label="",
 function get_inventory_trans_view_str($type, $trans_no, $label="", 
 	$icon=false, $class='', $id='')
 {
+
+	// error_log("***get_inventory_trans_view_str***");
+
 	$viewer = "inventory/view/";
 
 	if ($type == ST_INVADJUST)
@@ -141,6 +148,31 @@ function get_inventory_trans_view_str($type, $trans_no, $label="",
 
 	if ($label == "")
 		$label = $trans_no;
+
+	return viewer_link($label, $viewer, $class, $id,  $icon);
+}
+
+function get_internal_grn_view_str($type, $trans_no, $label="", 
+	$icon=false, $class='', $id='')
+{
+
+	// error_log("***get_internal_grn_view_str***");
+
+	$viewer = "modules/internal_grn/includes/";
+
+	if ($type == ST_INTINVGRN)
+		$viewer .= "view_internal_grn.php";
+	else
+		return null;
+	$viewer .= "?trans_no=$trans_no";
+
+	if ($label == "")
+		$label = $trans_no;
+
+	// error_log("***get_internal_grn_view_str viewer link***");
+	// error_log($viewer);
+	
+	
 
 	return viewer_link($label, $viewer, $class, $id,  $icon);
 }
@@ -219,25 +251,41 @@ function get_package_view_str($pkg, $label="", $icon=false, $class='', $id='')
 function get_trans_view_str($type, $trans_no, $label="", $icon=false, 
 	$class='', $id='')
 {
+
+	// error_log("***get_trans_view_str***");
 	$view_str = get_customer_trans_view_str($type, $trans_no, $label, $icon, $class, $id);
 	if ($view_str != null)
 		return $view_str;
+
+	// error_log("1");
 
 	$view_str = get_supplier_trans_view_str($type, $trans_no, $label, $icon, $class, $id);
 	if ($view_str != null)
 		return $view_str;
 
+	// error_log("2");
+
 	$view_str = get_banking_trans_view_str($type, $trans_no, $label, $icon, $class, $id);
 	if ($view_str != null)
 		return $view_str;
 
+	// error_log("3");
+	
 	$view_str = get_inventory_trans_view_str($type, $trans_no, $label, $icon, $class, $id);
 	if ($view_str != null)
 		return $view_str;
 
+	$view_str = get_internal_grn_view_str($type, $trans_no, $label, $icon, $class, $id);
+	if ($view_str != null)
+		return $view_str;
+
+	// error_log("4");
+	
 	$view_str = get_manufacturing_trans_view_str($type, $trans_no, $label, $icon, $class, $id);
 	if ($view_str != null)
 		return $view_str;
+
+	// error_log("5");
 
 	$view_str = get_dimensions_trans_view_str($type, $trans_no, $label, $icon, $class, $id);
 	if ($view_str != null)
