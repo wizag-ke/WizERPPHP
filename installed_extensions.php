@@ -6,7 +6,7 @@
 	FA extension system documentation.
 */
 
-$next_extension_id = 45; // unique id for next installed extension
+$next_extension_id = 56; // unique id for next installed extension
 
 $installed_extensions = array (
   1 => 
@@ -180,37 +180,17 @@ $installed_extensions = array (
     'active' => false,
     'path' => 'themes/studio',
   ),
-  26 => 
+  45 => 
   array (
-    'package' => 'FrontHrm',
-    'name' => 'FrontHrm',
-    'version' => '-',
+    'package' => 'item_inquiry',
+    'name' => 'Item Inquiry',
+    'version' => '2.4',
     'available' => '',
     'type' => 'extension',
-    'path' => 'modules/FrontHrm',
+    'path' => 'modules/item_inquiry',
     'active' => false,
   ),
-  39 => 
-  array (
-    'package' => 'transaction_types',
-    'name' => 'transaction_types',
-    'version' => '-',
-    'available' => '',
-    'type' => 'extension',
-    'path' => 'modules/transaction_types',
-    'active' => false,
-  ),
-  40 => 
-  array (
-    'package' => 'internal_grn',
-    'name' => 'internal_grn',
-    'version' => '-',
-    'available' => '',
-    'type' => 'extension',
-    'path' => 'modules/internal_grn',
-    'active' => false,
-  ),
-  44 => 
+  55 => 
   array (
     'package' => 'item_pack_conversion',
     'name' => 'item_pack_conversion',

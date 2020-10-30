@@ -1,7 +1,7 @@
 <?php
 define ('SS_ITEMPACKCONVERSION', 102<<8);
 
-class item_pack_conversion extends hooks {
+class hooks_item_pack_conversion extends hooks {
 	var $module_name = 'item_pack_conversion'; 
 
 	/*
@@ -13,8 +13,8 @@ class item_pack_conversion extends hooks {
 		switch($app->id) {
 			case 'stock':
 				$app->add_rapp_function(2, _('Item Pack Conversion'), 
-					$path_to_root.'/modules/item_pack_conversion/item_pack_conversion.php', 'SS_ITEMPACKCONVERSION');
-				break;
+					$path_to_root.'/modules/item_pack_conversion/item_pack_conversion.php', 'SA_ADDITEMPACKCONVERSION');
+				// break;
 			// case 'stock':
 			// 	$app->add_rapp_function(2, _('Mappings'),
 			// 	$path_to_root.'/modules/transaction_types/mappings.php', 'SS_TRANSACTIONTYPE');

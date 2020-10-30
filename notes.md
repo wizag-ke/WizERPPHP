@@ -52,3 +52,54 @@ View the app names in applications folder
 
   Fix default ref number in internal GRN
   on stock_movements.php show column of internal grn
+
+
+
+
+  <?php
+define ('SS_ITEMINQQQQ', 120<<8);
+
+class hooks_item_pack_conversion extends hooks {
+	var $module_name = 'item_pack_conversion';
+
+	/*
+		Install additonal menu options provided by module
+	*/
+	function install_options($app) {
+		global $path_to_root;
+
+		switch($app->id) {
+			case 'stock':
+				$app->add_rapp_function(1, _('Item Conversion'),
+					$path_to_root.'/modules/item_pack_conversion/item_pack_conversion.php', 'SA_ITEMINQQQQ');
+		}
+	}
+
+	function install_access()
+	{
+		$security_sections[SS_ITEMINQQQQ] =	_("Item Inquiry 111");
+
+		$security_areas['SA_ITEMINQQQQ'] = array(SS_ITEMINQQQQ|111, _("Item Inquiry 111"));
+
+		return array($security_areas, $security_sections);
+	}
+
+
+    // function activate_extension($company, $check_only=true) {
+    //     global $db_connections;
+
+    //     $updates = array( 'update.sql' => array('inquiry'));
+
+    //     return $this->update_databases($company, $updates, $check_only);
+    // }
+
+    // function deactivate_extension($company, $check_only=true) {
+    //     global $db_connections;
+
+    //     $updates = array('remove.sql' => array('inquiry'));
+
+    //     return $this->update_databases($company, $updates, $check_only);
+    // }
+
+
+}
