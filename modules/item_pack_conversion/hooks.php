@@ -14,10 +14,12 @@ class hooks_item_pack_conversion extends hooks {
 			case 'stock':
 				$app->add_rapp_function(2, _('Item Pack Conversion'), 
 					$path_to_root.'/modules/item_pack_conversion/item_pack_conversion.php', 'SA_ADDITEMPACKCONVERSION');
-				// break;
-			// case 'stock':
-			// 	$app->add_rapp_function(2, _('Mappings'),
-			// 	$path_to_root.'/modules/transaction_types/mappings.php', 'SS_TRANSACTIONTYPE');
+			case 'stock':
+				$app->add_rapp_function(2, _('UOM Master'),
+				$path_to_root.'/modules/item_pack_conversion/uom_master.php', 'SA_UOMMASTER');
+			case 'stock':
+				$app->add_rapp_function(2, _('UOM Stock Link'),
+				$path_to_root.'/modules/item_pack_conversion/uom_stock_link.php', 'SA_UOMSTOCKLINK');
 		}
 	}
 	
@@ -25,8 +27,9 @@ class hooks_item_pack_conversion extends hooks {
 	{
 		$security_sections[SS_ITEMPACKCONVERSION] =	_("Item Pack Conversion");
 		$security_areas['SA_ADDITEMPACKCONVERSION'] = array(SS_ITEMPACKCONVERSION|104, _("Add item pack conversion"));
+		$security_areas['SA_UOMMASTER'] = array(SS_ITEMPACKCONVERSION|105, _("View and Add to UOM Master"));
+		$security_areas['SA_UOMSTOCKLINK'] = array(SS_ITEMPACKCONVERSION|106, _("View and Add to UOM Stocklink"));
 		// $security_areas['SS_TRANSACTIONTYPEMAPPING'] = array(SS_TRANSACTIONTYPE|104, _("Add Transaction Type Mapping"));
-
 		return array($security_areas, $security_sections);
 	}
     

@@ -1,6 +1,6 @@
 <?php
 
-$page_security = 'SA_ADDITEMPACKCONVERSION';
+$page_security = 'SA_UOMMASTER';
 
 $path_to_root = "../..";
 include_once($path_to_root . "/includes/session.inc");
@@ -17,6 +17,6 @@ simple_page_mode();
 // part 2  must include this function for extension access levels.
 add_access_extensions();
 
-page(_("Add item Pack Conversion"), false, false, "", $js);
+page(_("UOM Master"), false, false, "", $js);
 
 end_page();
