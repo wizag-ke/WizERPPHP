@@ -207,4 +207,14 @@ $installed_extensions = array (
     'path' => 'modules/internal_grn',
     'active' => 1,
   ),
+  43 => 
+  array (
+    'package' => 'item_pack_conversion',
+    'name' => 'item_pack_conversion',
+    'version' => '-',
+    'available' => '',
+    'type' => 'extension',
+    'path' => 'modules/item_pack_conversion',
+    'active' => 1,
+  ),
 );

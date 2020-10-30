@@ -24,7 +24,7 @@ class hooks_transaction_types extends hooks {
 	function install_access()
 	{
 		$security_sections[SS_TRANSACTIONTYPE] =	_("Transaction Types");
-		$security_areas['SS_TRANSACTIONTYPE'] = array(SS_TRANSACTIONTYPE|101, _("Add Transaction Type"));
+		$security_areas['SS_ADDTRANSACTIONTYPE'] = array(SS_TRANSACTIONTYPE|101, _("Add Transaction Type"));
 		$security_areas['SS_TRANSACTIONTYPEMAPPING'] = array(SS_TRANSACTIONTYPE|102, _("Add Transaction Type Mapping"));
 
 		return array($security_areas, $security_sections);
