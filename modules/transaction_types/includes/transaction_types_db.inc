@@ -123,6 +123,7 @@ function get_all_mappings()
  */
 function update_mapping($id, $module, $transaction_id)
 {
+    
     $sql = "UPDATE ".TB_PREF."module_transaction_type SET module=".db_escape($module)
     .",transaction_id=".db_escape($transaction_id)
     ." WHERE id = ".db_escape($id);
@@ -157,6 +158,18 @@ function delete_mapping($id)
 {
     $sql="DELETE FROM ".TB_PREF."module_transaction_type WHERE id=".db_escape($id);
 	db_query($sql,"The mapping could not be deleted");
+}
+
+function check_mappings_not_exist($module)
+{
+    $all_mappings = get_all_mappings();
+    while ($myrow = db_fetch($all_mappings))
+    {
+        if($myrow["module"] === $module)
+        display_error(_("The selected mapping already exists. Please edit the existing one"));
+        return false;
+    }
+    return true;
 }
 
 
