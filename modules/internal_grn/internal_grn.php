@@ -9,46 +9,70 @@
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
     See the License here <http://www.gnu.org/licenses/gpl-3.0.html>.
 ***********************************************************************/
-$page_security = 'SA_INVENTORYADJUSTMENT';
-$path_to_root = "..";
+// Page 2: security
+$page_security = 'SS_TRANSACTIONTYPE';
 
+$path_to_root = "../..";
 include_once($path_to_root . "/includes/ui/items_cart.inc");
 include_once($path_to_root . "/includes/session.inc");
+$js = "";
+if ($SysPrefs->use_popup_windows && $SysPrefs->use_popup_search)
+    $js .= get_js_open_window(900, 500);
 
-include_once($path_to_root . "/includes/date_functions.inc");
+
+include_once($path_to_root . "/includes/ui.inc");
 include_once($path_to_root . "/includes/data_checks.inc");
-
-include_once($path_to_root . "/fixed_assets/includes/fixed_assets_db.inc");
+include_once($path_to_root . "/admin/db/company_db.inc");
 include_once($path_to_root . "/inventory/includes/item_adjustments_ui.inc");
 include_once($path_to_root . "/inventory/includes/inventory_db.inc");
-$js = "";
-if ($SysPrefs->use_popup_windows)
-	$js .= get_js_open_window(800, 500);
-if (user_use_date_picker())
-	$js .= get_js_date_picker();
-if (isset($_GET['NewAdjustment'])) {
-	if (isset($_GET['FixedAsset'])) {
-		$page_security = 'SA_ASSETDISPOSAL';
-		$_SESSION['page_title'] = _($help_context = "Fixed Assets Disposal");
-	} else {
-		$_SESSION['page_title'] = _($help_context = "Item Adjustments Note");
-	}
-}
-page($_SESSION['page_title'], false, false, "", $js);
+include_once($path_to_root . "/modules/internal_grn/includes/internal_grn_types.inc");
+include_once($path_to_root . "/modules/internal_grn/includes/internal_grn_ui.inc");
+include_once($path_to_root . "/modules/internal_grn/includes/internal_grn_db.inc");
+include_once($path_to_root . "/modules/transaction_types/includes/transaction_types_db.inc");
+include_once($path_to_root . "/modules/transaction_types/includes/transaction_ui.inc");
 
-// print_r($_SESSION['page_title']);
+
+
+
+simple_page_mode();
+
+// part 2  must include this function for extension access levels.
+add_access_extensions();
+
+// include_once($path_to_root . "/modules/transaction_types/includes/transaction_types_db.inc");
+
+page(_("Add Internal GRN"), false, false, "", $js);
 
 //-----------------------------------------------------------------------------------------------
 
+
+// $result = get_all_mappings();
+// error_log("All mappings");
+// while ($myrow = db_fetch($result))
+// {
+// 	if($myrow['module'] === 'Internal GRN')
+// 	{
+// 		$mapping = get_mapping($myrow['id']);
+// 		$debit_account = $mapping['dr_ac'];
+// 		$credit_account = $mapping['cr_ac'];
+// 		error_log("Debit: " . $debit_account . ", Credit: " . $credit_account);
+// 	}
+// }
+
 if (isset($_GET['AddedID'])) 
 {
-	// print_r($_POST); 
-
 	$trans_no = $_GET['AddedID'];
-	$trans_type = ST_INVADJUST;
+	$trans_type = ST_INTINVGRN;
 
-  $result = get_stock_adjustment_items($trans_no);
+  $result = get_internal_grn_items($trans_no);
   $row = db_fetch($result);
+  
+	// error_log("=========================================================");
+	// error_log("AddedID isset start");
+	// error_log("ST_INTINVGRN");
+	// error_log(ST_INTINVGRN);
+	// error_log("AddedID isset end");
+	// error_log("=========================================================");
 
   if (is_fixed_asset($row['mb_flag'])) {
     display_notification_centered(_("Fixed Assets disposal has been processed"));
@@ -61,12 +85,12 @@ if (isset($_GET['AddedID']))
     display_notification_centered(_("Items adjustment has been processed"));
     display_note(get_trans_view_str($trans_type, $trans_no, _("&View this adjustment")));
 
-    display_note(get_gl_view_str($trans_type, $trans_no, _("View the GL &Postings for this Adjustment")), 1, 0);
+    // display_note(get_gl_view_str($trans_type, $trans_no, _("View the GL &Postings for this Adjustment")), 1, 0);
 
 	  hyperlink_params($_SERVER['PHP_SELF'], _("Enter &Another Adjustment"), "NewAdjustment=1");
   }
 
-	hyperlink_params("$path_to_root/admin/attachments.php", _("Add an Attachment"), "filterType=$trans_type&trans_no=$trans_no");
+	// hyperlink_params("$path_to_root/admin/attachments.php", _("Add an Attachment"), "filterType=$trans_type&trans_no=$trans_no");
 
 	display_footer_exit();
 }
@@ -80,20 +104,23 @@ function line_start_focus() {
 }
 //-----------------------------------------------------------------------------------------------
 
-function handle_new_order()
+function handle_new_order_grn()
 {
-	if (isset($_SESSION['adj_items']))
+
+
+    // var_dump("handle_new_order");
+	if (isset($_SESSION['internal_grn_items']))
 	{
-		$_SESSION['adj_items']->clear_items();
-		unset ($_SESSION['adj_items']);
+		$_SESSION['internal_grn_items']->clear_items();
+		unset ($_SESSION['internal_grn_items']);
 	}
 
-    $_SESSION['adj_items'] = new items_cart(ST_INVADJUST);
-    $_SESSION['adj_items']->fixed_asset = isset($_GET['FixedAsset']);
+    $_SESSION['internal_grn_items'] = new items_cart(ST_INTINVGRN);
+    // $_SESSION['adj_items']->fixed_asset = isset($_GET['FixedAsset']);
 	$_POST['AdjDate'] = new_doc_date();
 	if (!is_date_in_fiscalyear($_POST['AdjDate']))
 		$_POST['AdjDate'] = end_fiscalyear();
-	$_SESSION['adj_items']->tran_date = $_POST['AdjDate'];	
+	$_SESSION['internal_grn_items']->tran_date = $_POST['AdjDate'];	
 }
 
 //-----------------------------------------------------------------------------------------------
@@ -102,7 +129,7 @@ function can_process()
 {
 	global $SysPrefs;
 
-	$adj = &$_SESSION['adj_items'];
+	$adj = &$_SESSION['internal_grn_items'];
 
 	if (count($adj->line_items) == 0)	{
 		display_error(_("You must enter at least one non empty item line."));
@@ -143,19 +170,45 @@ function can_process()
 }
 
 //-------------------------------------------------------------------------------
-// print_r($_SESSION['adj_items']->line_items);
+// error_log("=========================================================");
+// error_log("Start of looping for statement");
+// foreach($_POST as $key => $post)
+// {
+// 	error_log($key . '=>' . $post);
+// }
+// error_log("End of looping for statement");
+// error_log("=========================================================");
+
+
+// if(isset($_POST['Process'])) {
+	// print_r('Process set');
+// }
 
 if (isset($_POST['Process']) && can_process()){
 
-	// var_dump("Here");
+	// error_log("=========================================================");
+	// error_log("add_internal_grn variable start");
+	// error_log("Line items");
+	// error_log(print_r($_SESSION['internal_grn_items']->line_items, TRUE));
+	// error_log("Stock location");
+	// error_log(print_r($_POST['StockLocation'], TRUE));
+	// error_log("Adjustment Date");
+	// error_log(print_r($_POST['AdjDate'], TRUE));
+	// error_log('ref');
+	// error_log(print_r($_POST['ref'], TRUE));
+	// error_log('memo');
+	// error_log(print_r($_POST['memo_'], TRUE));
+	// error_log("add_internal_grn variable end");
+	// error_log("=========================================================");
 
-  $fixed_asset = $_SESSION['adj_items']->fixed_asset; 
+  $fixed_asset = $_SESSION['internal_grn_items']->fixed_asset; 
 
-	$trans_no = add_stock_adjustment($_SESSION['adj_items']->line_items,
+	$trans_no = add_internal_grn($_SESSION['internal_grn_items']->line_items,
 		$_POST['StockLocation'], $_POST['AdjDate'],	$_POST['ref'], $_POST['memo_']);
+
 	new_doc_date($_POST['AdjDate']);
-	$_SESSION['adj_items']->clear_items();
-	unset($_SESSION['adj_items']);
+	$_SESSION['internal_grn_items']->clear_items();
+	unset($_SESSION['internal_grn_items']);
 
   if ($fixed_asset)
    	meta_forward($_SERVER['PHP_SELF'], "AddedID=$trans_no&FixedAsset=1");
@@ -190,7 +243,7 @@ function check_item_data()
 function handle_update_item()
 {
 	$id = $_POST['LineNo'];
-   	$_SESSION['adj_items']->update_cart_item($id, input_num('qty'), 
+   	$_SESSION['internal_grn_items']->update_cart_item($id, input_num('qty'), 
 		input_num('std_cost'));
 	line_start_focus();
 }
@@ -199,7 +252,7 @@ function handle_update_item()
 
 function handle_delete_item($id)
 {
-	$_SESSION['adj_items']->remove_from_cart($id);
+	$_SESSION['internal_grn_items']->remove_from_cart($id);
 	line_start_focus();
 }
 
@@ -207,10 +260,12 @@ function handle_delete_item($id)
 
 function handle_new_item()
 {
-	add_to_order($_SESSION['adj_items'], $_POST['stock_id'], 
+	add_to_order($_SESSION['internal_grn_items'], $_POST['stock_id'], 
 	input_num('qty'), input_num('std_cost'));
 	line_start_focus();
 }
+
+// print
 
 //-----------------------------------------------------------------------------------------------
 $id = find_submit('Delete');
@@ -218,20 +273,28 @@ if ($id != -1)
 	handle_delete_item($id);
 
 if (isset($_POST['AddItem']) && check_item_data()) {
+	print_r(1);
 	handle_new_item();
 	unset($_POST['selected_id']);
 }
 if (isset($_POST['UpdateItem']) && check_item_data()) {
+	print_r(2);
+
 	handle_update_item();
 	unset($_POST['selected_id']);
 }
 if (isset($_POST['CancelItemChanges'])) {
+	print_r(3);
+
 	unset($_POST['selected_id']);
 	line_start_focus();
 }
+
+// error_log("Here we are");
+
 //-----------------------------------------------------------------------------------------------
 
-if (isset($_GET['NewAdjustment']) || !isset($_SESSION['adj_items']))
+if (isset($_GET['NewAdjustment']) || !isset($_SESSION['internal_grn_items']))
 {
 
 	if (isset($_GET['FixedAsset']))
@@ -239,32 +302,22 @@ if (isset($_GET['NewAdjustment']) || !isset($_SESSION['adj_items']))
 	else
 		check_db_has_costable_items(_("There are no inventory items defined in the system which can be adjusted (Purchased or Manufactured)."));
 
-	handle_new_order();
+	handle_new_order_grn();
 }
 
-//-----------------------------------------------------------------------------------------------
-
-// print_r($_POST);
+// print_r($_SESSION['internal_grn_items']);
 
 start_form();
 
-if ($_SESSION['adj_items']->fixed_asset) {
-	// print_r("true");
-	$items_title = _("Disposal Items");
-	$button_title = _("Process Disposal");
-} else {
-	// print_r("false");
-	$items_title = _("Adjustment Items");
-	$button_title = _("Process Adjustment");
-}
 
-display_order_header($_SESSION['adj_items']);
+$items_title = _("Add GRN items");
+$button_title = _("Process Internal Grn");
+
+display_internal_grn_header($_SESSION['internal_grn_items']);
 
 start_outer_table(TABLESTYLE, "width='70%'", 10);
 
-// print_r($_SESSION['adj_items']);
-
-display_adjustment_items($items_title, $_SESSION['adj_items']);
+display_adjustment_items($items_title, $_SESSION['internal_grn_items']);
 adjustment_options_controls();
 
 end_outer_table(1, false);
@@ -274,4 +327,3 @@ submit_center_last('Process', $button_title, '', 'default');
 
 end_form();
 end_page();
-

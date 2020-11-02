@@ -46,3 +46,9 @@ View the app names in applications folder
   *
   * @return void
   */
+
+
+  **Todo**
+
+  Fix default ref number in internal GRN
+  on stock_movements.php show column of internal grn

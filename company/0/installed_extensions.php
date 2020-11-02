@@ -197,4 +197,14 @@ $installed_extensions = array (
     'path' => 'modules/transaction_types',
     'active' => 1,
   ),
+  40 => 
+  array (
+    'package' => 'internal_grn',
+    'name' => 'internal_grn',
+    'version' => '-',
+    'available' => '',
+    'type' => 'extension',
+    'path' => 'modules/internal_grn',
+    'active' => 1,
+  ),
 );

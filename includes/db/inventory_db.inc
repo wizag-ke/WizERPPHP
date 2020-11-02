@@ -416,7 +416,11 @@ function add_stock_move($type, $stock_id, $trans_no, $location,
 		.db_escape($reference).", "
 		.db_escape($quantity).", ".db_escape($std_cost)."," .db_escape($price).")";
 
+
 	db_query($sql, "The stock movement record cannot be inserted");
+
+
+
 
 	return db_insert_id();
 }

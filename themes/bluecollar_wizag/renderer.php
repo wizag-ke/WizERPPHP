@@ -86,11 +86,9 @@
 				$himg = "<img src='$local_path_to_root/themes/".user_theme()."/images/help.gif' width='14' height='14' border='0' alt='"._('Help')."'>&nbsp;&nbsp;";
 				echo "<div id='header'>\n";
 				echo "<ul>\n";
-				$logo = "$path_to_root/themes/".user_theme()."/images/wizag.png";
+				$logo = "$path_to_root/themes/".user_theme()."/images/erp.png";
 				if (file_exists($logo))
-					// echo "<li><img src='$logo' height='30' border='0' onload='fixPNG(this)' alt=''></li>\n";				
-					// echo "<li><img src='$logo' height='30' border='0' alt=''></li>\n";				
-					echo "";
+					echo "<li><img src='$logo' height='30' border='0' onload='fixPNG(this)' alt=''></li>\n";				
 				else
 				{
 					echo "  <li><a href='$path_to_root/admin/display_prefs.php?'>" . _("Preferences") . "</a></li>\n";
@@ -102,8 +100,16 @@
 				}	
 				echo "</ul>\n";
 				$indicator = "$path_to_root/themes/".user_theme(). "/images/ajax-loader.gif";
+				
+				$client_logo = company_path() . "/images/" . $_SESSION['SysPrefs']->prefs['coy_logo'];
+
+				if(isset($client_logo))
+				{
+					echo "<h1><img src='$client_logo' height='30' border='0' onload='fixPNG(this)' alt=''></h1>\n";		
+				}
+
 				// echo "<h1>$SysPrefs->power_by $version<span style='padding-left:300px;'><img id='ajaxmark' src='$indicator' align='center' style='visibility:hidden;'></span></h1>\n";
-				echo "<h1><span style='padding-left:300px;'><img id='ajaxmark' src='$indicator' align='center' style='visibility:hidden;'></span></h1>\n";
+				// echo "<h1><span style='padding-left:300px;'><img id='ajaxmark' src='$indicator' align='center' style='visibility:hidden;'></span></h1>\n";
 				echo "</div>\n"; // header
 				echo "<ul id='saturday'>\n"; // horizontal menu
 				foreach($applications as $app)

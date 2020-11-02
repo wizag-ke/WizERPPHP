@@ -123,6 +123,7 @@ function get_all_mappings()
  */
 function update_mapping($id, $module, $transaction_id)
 {
+    
     $sql = "UPDATE ".TB_PREF."module_transaction_type SET module=".db_escape($module)
     .",transaction_id=".db_escape($transaction_id)
     ." WHERE id = ".db_escape($id);
@@ -136,7 +137,7 @@ function update_mapping($id, $module, $transaction_id)
  */
 function get_mapping($id)
 {
-    $sql = "SELECT maps.*, trans.description as transaction_description FROM "
+    $sql = "SELECT maps.*, trans.description as transaction_description, trans.dr_ac as dr_ac, trans.cr_ac as cr_ac FROM "
     .TB_PREF."module_transaction_type as maps " .
     "LEFT JOIN ".TB_PREF."transaction_types as trans on maps.transaction_id=trans.id  " .
     "WHERE maps.id=".db_escape($id);
@@ -157,6 +158,27 @@ function delete_mapping($id)
 {
     $sql="DELETE FROM ".TB_PREF."module_transaction_type WHERE id=".db_escape($id);
 	db_query($sql,"The mapping could not be deleted");
+}
+
+/**
+ * Checks if a mapping exists in the database
+ * 
+ * It is used to prevent saving duplicate mappings in the database. Check its usage in the mappings.php
+ * 
+ * @param string
+ * 
+ * @return boolean
+ */
+function check_mappings_not_exist($module)
+{
+    $all_mappings = get_all_mappings();
+    while ($myrow = db_fetch($all_mappings))
+    {
+        if($myrow["module"] === $module)
+        display_error(_("The selected mapping already exists. Please edit the existing one"));
+        return false;
+    }
+    return true;
 }
 
 

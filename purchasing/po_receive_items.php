@@ -26,8 +26,12 @@ page(_($help_context = "Receive Purchase Order Items"), false, false, "", $js);
 
 //---------------------------------------------------------------------------------------------------------------
 
+
+
 if (isset($_GET['AddedID']))
 {
+	// print_r("['AddedID'] is set as : " . $_GET['AddedID']);
+
 	$grn = $_GET['AddedID'];
 	$trans_type = ST_SUPPRECEIVE;
 
@@ -50,6 +54,7 @@ if (isset($_GET['AddedID']))
 
 if ((!isset($_GET['PONumber']) || $_GET['PONumber'] == 0) && !isset($_SESSION['PO']))
 {
+	print_r("po number is not set or po number is set as 0 AND po number is not set on session");
 	die (_("This page can only be opened if a purchase order has been selected. Please select a purchase order first."));
 }
 
@@ -75,7 +80,10 @@ function display_po_receive_items()
 
 			alt_table_row_color($k);
 
-    		$qty_outstanding = $ln_itm->quantity - $ln_itm->qty_received;
+			$qty_outstanding = $ln_itm->quantity - $ln_itm->qty_received;
+			
+			// print_r($ln_itm);
+			// print_r("<br>");
 
  			if (!isset($_POST['Update']) && !isset($_POST['ProcessGoodsReceived']) && $ln_itm->receive_qty == 0)
     	  	{   //If no quantites yet input default the balance to be received
@@ -257,8 +265,9 @@ function process_receive_po()
 	$grn->reference = $_POST['ref'];
 	$grn->Location = $_POST['Location'];
 	$grn->ex_rate = input_num('_ex_rate', null);
-
 	$grn_no = add_grn($grn);
+
+	// print_r($_SESSION['PO']);
 
 	new_doc_date($_POST['DefaultReceivedDate']);
 	unset($_SESSION['PO']->line_items);
@@ -271,18 +280,27 @@ function process_receive_po()
 
 if (isset($_GET['PONumber']) && $_GET['PONumber'] > 0 && !isset($_POST['Update']))
 {
+
+	// print_r($_GET['PONumber']);
+
 	create_new_po(ST_PURCHORDER, $_GET['PONumber']);
 	$_SESSION['PO']->trans_type = ST_SUPPRECEIVE;
 	$_SESSION['PO']->reference = $Refs->get_next(ST_SUPPRECEIVE, 
 		array('date' => Today(), 'supplier' => $_SESSION['PO']->supplier_id));
 	copy_from_cart();
+
+	// print_r($_SESSION['PO']);
 }
 
 //--------------------------------------------------------------------------------------------------
 
+
+
 if (isset($_POST['Update']) || isset($_POST['ProcessGoodsReceived']))
 {
 
+
+	// print_r("isset post update");
 	/* if update quantities button is hit page has been called and ${$line->line_no} would have be
  	set from the post to the quantity to be received in this receival*/
 	foreach ($_SESSION['PO']->line_items as $line)
@@ -308,6 +326,8 @@ if (isset($_POST['Update']) || isset($_POST['ProcessGoodsReceived']))
 
 //--------------------------------------------------------------------------------------------------
 
+// print_r($_POST);
+
 if (isset($_POST['ProcessGoodsReceived']))
 {
 	process_receive_po();
@@ -319,7 +339,10 @@ start_form();
 
 edit_grn_summary($_SESSION['PO'], true);
 display_heading(_("Items to Receive"));
-display_po_receive_items();
+// if(!isset($_GET['AddedID']))
+// {
+	display_po_receive_items();
+// }
 
 echo '<br>';
 submit_center_first('Update', _("Update"), '', true);

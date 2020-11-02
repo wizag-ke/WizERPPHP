@@ -56,12 +56,14 @@ function display_transfer_items($title, &$order)
 	display_heading($title);
     div_start('items_table');
 	start_table(TABLESTYLE, "width='80%'");
-	$th = array(_("Item Code"), _("Item Description"), _("Quantity"), _("Unit"), '');
+	$th = array(_("Item Code"), _("Item Description"), _("Quantity"), _("Quantity in Origin"), _("Quantity in Destination"), _("Unit"), '');
 	if (!$order->fixed_asset && count($order->line_items)) $th[] = '';
 	table_header($th);
 	$k = 0;  //row colour counter
 
 	$low_stock = $order->check_qoh($_POST['FromStockLocation'], $_POST['AdjDate'], true);
+	error_log("Check low stock");
+	error_log(print_r($low_stock, TRUE));
 	$id = find_submit('Edit');
 	foreach ($order->line_items as $line_no=>$stock_item)
 	{
@@ -78,7 +80,10 @@ function display_transfer_items($title, &$order)
 			else
 				view_stock_status_cell($stock_item->stock_id);
     		label_cell($stock_item->item_description);
+			// label_cell(400);
     		qty_cell($stock_item->quantity, false, get_qty_dec($stock_item->stock_id));
+			label_cell(get_qoh_on_date($stock_item->stock_id, $_POST['FromStockLocation']));
+			label_cell(get_qoh_on_date($stock_item->stock_id, $_POST['ToStockLocation']));
     		label_cell($stock_item->units);
 
 	     	if (!$order->fixed_asset)
