@@ -177,17 +177,17 @@ $installed_extensions = array (
     'active' => false,
     'path' => 'themes/studio',
   ),
-  55 => 
+  58 => 
   array (
-    'package' => 'item_pack_conversion',
-    'name' => 'item_pack_conversion',
+    'package' => 'internal_grn',
+    'name' => 'internal_grn',
     'version' => '-',
     'available' => '',
     'type' => 'extension',
-    'path' => 'modules/item_pack_conversion',
+    'path' => 'modules/internal_grn',
     'active' => 1,
   ),
-  56 => 
+  60 => 
   array (
     'package' => 'transaction_types',
     'name' => 'transaction_types',
@@ -197,14 +197,14 @@ $installed_extensions = array (
     'path' => 'modules/transaction_types',
     'active' => 1,
   ),
-  57 => 
+  61 => 
   array (
-    'package' => 'internal_grn',
-    'name' => 'internal_grn',
+    'package' => 'item_pack_conversion',
+    'name' => 'item_pack_conversion',
     'version' => '-',
     'available' => '',
     'type' => 'extension',
-    'path' => 'modules/internal_grn',
+    'path' => 'modules/item_pack_conversion',
     'active' => 1,
   ),
 );

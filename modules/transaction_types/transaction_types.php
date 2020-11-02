@@ -124,16 +124,6 @@ if ($Mode=='UPDATE_ITEM')
     }
 }
 
-if ($Mode == 'RESET')
-{
-	$selected_id = -1;
-	// $sav = get_post('show_inactive');
-	// $sav2 = get_post('fixed_asset');
-	unset($_POST);
-	// $_POST['show_inactive'] = $sav;
-	// $_POST['fixed_asset'] = $sav2;
-}
-
 $result = get_all_transaction_types();
 
 start_form();

@@ -29,7 +29,6 @@ class hooks_item_pack_conversion extends hooks {
 		$security_areas['SA_ADDITEMPACKCONVERSION'] = array(SS_ITEMPACKCONVERSION|104, _("Add item pack conversion"));
 		$security_areas['SA_UOMMASTER'] = array(SS_ITEMPACKCONVERSION|105, _("View and Add to UOM Master"));
 		$security_areas['SA_UOMSTOCKLINK'] = array(SS_ITEMPACKCONVERSION|106, _("View and Add to UOM Stocklink"));
-		// $security_areas['SS_TRANSACTIONTYPEMAPPING'] = array(SS_TRANSACTIONTYPE|104, _("Add Transaction Type Mapping"));
 		return array($security_areas, $security_sections);
 	}
     

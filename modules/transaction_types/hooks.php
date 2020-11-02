@@ -44,7 +44,7 @@ class hooks_transaction_types extends hooks {
 	function deactivate_extension($company, $check_only=true) {
         global $db_connections;
 
-        $updates = array('remove.sql' => array('inquiry'));
+		$updates = array('remove.sql' => array('transaction_type'));
 
         return $this->update_databases($company, $updates, $check_only);
     }

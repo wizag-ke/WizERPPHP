@@ -8,8 +8,9 @@ CREATE TABLE IF NOT EXISTS `0_uom_master` (
 DROP TABLE IF EXISTS `0_item_pack_conversion`;
 CREATE TABLE IF NOT EXISTS `0_item_pack_conversion` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
-    `from` int(11) NOT NULL,
-    `to` int(11) NOT NULL,    
+    `from_uom` int(11) NOT NULL,
+    `to_uom` int(11) NOT NULL,  
+    `factor` int(11) NOT NULL, 
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB;
 
