@@ -28,20 +28,20 @@ if ($Mode == 'Delete')
     // $Mode = 'RESET';
 }
 
-check_uom_not_exist_in_uom_master("Module");
-
 if ($Mode=='ADD_ITEM')
 {
-    //initialise no input errors assumed initially before we test
     $input_error = 0;
 
+    if(!check_uom_is_unique($_POST['uom']))
+    {
+        $input_error = 1;
+    }
     if (strlen($_POST['uom']) == 0) 
     {
         $input_error = 1;
         display_error(_("The unit of measure field is empty."));
         set_focus('uom');
     }
-
     if($input_error != 1)
     {
         add_uom($_POST['uom']);

@@ -15,20 +15,18 @@ function add_uom($uom)
         display_notification(_('UOM saved'));
  }
 
- function check_uom_not_exist_in_uom_master($uom)
+ function check_uom_is_unique($uom)
 {
     $all_uoms = get_all_uoms();
     while ($myrow = db_fetch($all_uoms))
     {
-        print_r($myrow['uom']);
-        print_r("<br>");
-        // if($myrow["module"] === $module)
-        // {
-        //     display_error(_("The selected mapping already exists. Please edit the existing one"));
-        //     return false;
-        // }
+        if($myrow['uom'] === $uom)
+        {
+            display_error(_("The selected unit of measure already exists."));
+            return false;
+        }
     }
-    // return true;
+    return true;
 }
 
 function get_all_uoms()
