@@ -20,13 +20,7 @@ include_once($path_to_root . "/modules/item_pack_conversion/includes/item_pack_c
 
 page(_("UOM Master"), false, false, "", $js);
 
-if ($Mode == 'Delete')
-{
-    print_r("Delete Item");
-    // delete_transaction_type($selected_id);
-    // display_notification(_('Selected transaction type has been deleted'));
-    // $Mode = 'RESET';
-}
+
 
 if ($Mode=='ADD_ITEM')
 {
@@ -70,8 +64,36 @@ if ($Mode=='UPDATE_ITEM')
     }
 }
 
+if ($Mode == 'Delete')
+{
+    delete_uom($selected_id);
+    display_notification(_('UOM deleted'));
+    $Mode = 'RESET';
+}
+
+if ($Mode == 'RESET')
+{
+	$selected_id = -1;
+	// $sav = get_post('show_inactive');
+	// $sav2 = get_post('fixed_asset');
+	unset($_POST);
+	// $_POST['show_inactive'] = $sav;
+	// $_POST['fixed_asset'] = $sav2;
+}
+
+$result = get_all_uoms();
 start_form();
 start_table(TABLESTYLE);
+$th = array (_('Unit of measure'), '', '');
+table_header($th);
+
+while ($myrow = db_fetch($result))
+{
+	label_cell($myrow["uom"], "nowrap");
+ 	edit_button_cell("Edit".$myrow['id'], _("Edit"));
+ 	delete_button_cell("Delete".$myrow['id'], _("Delete"));
+	end_row();
+}
 end_table(1);
 start_table();
 text_row(_("UOM:"), 'uom', null, 50, 100);

@@ -36,4 +36,10 @@ function get_all_uoms()
 	return db_query($sql, "could not get all UOMs");
 }
 
+function delete_uom($id)
+{
+    $sql="DELETE FROM ".TB_PREF."uom_master WHERE id=".db_escape($id);
+	db_query($sql,"The UOM could not be deleted");
+}
+
 ?>
