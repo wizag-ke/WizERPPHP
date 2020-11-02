@@ -57,10 +57,9 @@ if ($Mode=='UPDATE_ITEM')
 
     if($input_error != 1)
     {
-        print_r("Update UOM");
-        // update_transaction_type($selected_id, $_POST['transcation_code'], $_POST['description'], $_POST['dr_ac'], $_POST['cr_ac'], $_POST['module']);
-        // display_notification(_('Selected UOM has been updated'));
-        // $Mode = 'RESET';
+        update_uom($selected_id, $_POST['uom']);
+        display_notification(_('Selected UOM has been updated'));
+        $Mode = 'RESET';
     }
 }
 
@@ -96,6 +95,14 @@ while ($myrow = db_fetch($result))
 }
 end_table(1);
 start_table();
+if ($selected_id != -1)
+{
+ 	if ($Mode == 'Edit') {
+		$myrow = get_uom($selected_id);
+		$_POST['uom']  = $myrow["uom"];
+	}
+	hidden('selected_id', $selected_id);
+}
 text_row(_("UOM:"), 'uom', null, 50, 100);
 end_table(1);
 submit_add_or_update_center($selected_id == -1, '', 'both');

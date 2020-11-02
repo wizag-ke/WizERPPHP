@@ -36,10 +36,31 @@ function get_all_uoms()
 	return db_query($sql, "could not get all UOMs");
 }
 
+/**
+ * Gets a single uom from the database for updating
+ */
+function get_uom($id)
+{
+    $sql = "SELECT uoms.* FROM "
+    .TB_PREF."uom_master as uoms 
+    WHERE uoms.id=".db_escape($id);
+
+	$result = db_query($sql, "could not get uom");
+	return db_fetch($result);
+}
+
 function delete_uom($id)
 {
     $sql="DELETE FROM ".TB_PREF."uom_master WHERE id=".db_escape($id);
 	db_query($sql,"The UOM could not be deleted");
+}
+
+function update_uom($id, $uom)
+{
+    $sql = "UPDATE ".TB_PREF."uom_master SET uom=".db_escape($uom)
+    ." WHERE id = ".db_escape($id);
+
+    db_query($sql, "could not update uom");	
 }
 
 ?>
