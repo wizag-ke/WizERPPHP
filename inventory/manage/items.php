@@ -391,7 +391,8 @@ function item_settings(&$stock_id, $new_item)
 		stock_item_types_list_row(_("Item Type:"), 'mb_flag', null, $fresh_item);
 
 	
-	stock_units_list_row(_('Units of Measure:'), 'units', null, $new_item);
+
+	stock_units_list_row(_('Units of Measure:'), 'units', null, !$_POST['units']);
 
 	check_row(_("Editable description:"), 'editable');
 
