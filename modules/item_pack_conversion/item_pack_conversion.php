@@ -18,22 +18,21 @@ simple_page_mode();
 add_access_extensions();
 include_once($path_to_root . "/modules/item_pack_conversion/includes/item_pack_conversion_db.inc");
 
-
 page(_("Add item Pack Conversion"), false, false, "", $js);
 
 if ($Mode=='ADD_ITEM')
 {
     $input_error = 0;
-    if(!check_if_conversion_unique($_POST['from'], $_POST['to']))
-    {
-        $input_error = 1;
-    }
-
     if (strlen($_POST['factor']) == 0) 
     {
         $input_error = 1;
         display_error(_("The factor field is empty."));
         set_focus('factor');
+    }
+
+    if(!check_if_conversion_unique($_POST['from'], $_POST['to']))
+    {
+        $input_error = 1;
     }
 
     if($input_error != 1)
@@ -43,42 +42,64 @@ if ($Mode=='ADD_ITEM')
     }
 }
 
+if ($Mode=='UPDATE_ITEM')
+{
+    $input_error = 0;
+    if (strlen($_POST['factor']) == 0) 
+    {
+        $input_error = 1;
+        display_error(_("The factor field is empty."));
+        set_focus('factor');
+    }
+
+    // if(!check_if_conversion_unique($_POST['from'], $_POST['to']))
+    // {
+    //     $input_error = 1;
+    // }
+
+    if($input_error != 1)
+    {
+        error_log('Can update');
+        update_item_pack_conversion($selected_id, $_POST['from'], $_POST['to'], $_POST['factor']);
+        display_notification(_('Selected item pack conversion has been updated'));
+        $Mode = 'RESET';
+    }
+}
+
+
+$result = get_all_item_pack_conversions();
+
 start_form();
 
-// start_table(TABLESTYLE);
+start_table(TABLESTYLE);
 
-// $th = array (_('Transaction Code'), _('Description'), _('Debit Account'), _('Credit Account'), _('Module'), 
-// 	 '','');
-// table_header($th);
+$th = array (_('Convert From'), _('Convert to'), _('Factor'), '', '');
+table_header($th);
 
-// while ($myrow = db_fetch($result))
-// {
-// 	label_cell($myrow["code"], "nowrap");
-// 	label_cell($myrow["description"], "nowrap");
-// 	label_cell($myrow["debit"], "nowrap");
-// 	label_cell($myrow["credit"], "nowrap");
-// 	label_cell($myrow["module"], "nowrap");
-//  	edit_button_cell("Edit".$myrow['id'], _("Edit"));
-//  	delete_button_cell("Delete".$myrow['id'], _("Delete"));
-// 	end_row();
-// }
+while ($myrow = db_fetch($result))
+{
+	label_cell($myrow["uom_from"], "nowrap");
+	label_cell($myrow["uom_to"], "nowrap");
+	label_cell($myrow["factor"], "nowrap");
+ 	edit_button_cell("Edit".$myrow['id'], _("Edit"));
+ 	delete_button_cell("Delete".$myrow['id'], _("Delete"));
+	end_row();
+}
 
-// end_table(1);
+end_table(1);
 start_table();
 
-// if ($selected_id != -1)
-// {
-//  	if ($Mode == 'Edit') {
-// 		$myrow = get_transaction_type($selected_id);
+if ($selected_id != -1)
+{
+ 	if ($Mode == 'Edit') {
+		$myrow = get_item_pack_conversion($selected_id);
 
-// 		$_POST['transcation_code']  = $myrow["code"];
-// 		$_POST['description']  = $myrow["description"];
-// 		$_POST['dr_ac']  = $myrow["dr_ac"];
-// 		$_POST['cr_ac']  = $myrow["cr_ac"];
-// 		$_POST['module']  = $myrow["module"];
-// 	}
-// 	hidden('selected_id', $selected_id);
-// }
+		$_POST['from']  = $myrow["from_uom"];
+		$_POST['to']  = $myrow["to_uom"];
+		$_POST['factor']  = $myrow["factor"];
+	}
+	hidden('selected_id', $selected_id);
+}
 
 gl_all_uoms_list_row(_("From:"), 'from', $_POST['from']);
 gl_all_uoms_list_row(_("To:"), 'to', $_POST['to']);

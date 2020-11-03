@@ -113,16 +113,44 @@ function add_item_pack_conversion($from, $to, $factor)
         display_notification(_('Item pack conversion saved'));
  }
 
+function update_item_pack_conversion($id, $from, $to, $factor)
+{
+    $sql = "UPDATE ".TB_PREF."item_pack_conversion 
+    SET from_uom=". db_escape($from) .
+    ", to_uom=" . db_escape($to) .
+    ", factor=" . db_escape($factor) .
+    " WHERE id = ".db_escape($id);
+
+    db_query($sql, "Could not update item pack conversion");	
+}
+
  /**
   * Gets all uom conversions
   */
 
   function get_all_item_pack_conversions()
   {
-      $sql = "SELECT ipcs.* FROM "
-      .TB_PREF."item_pack_conversion as ipcs";
+      $sql = "SELECT ipc.*, uom1.uom AS uom_from, uom2.uom AS uom_to FROM "
+      .TB_PREF."item_pack_conversion AS ipc
+      LEFT JOIN " . TB_PREF ."uom_master as uom1 on ipc.from_uom=uom1.id
+      LEFT JOIN " . TB_PREF ."uom_master as uom2 on ipc.to_uom = uom2.id";
       return db_query($sql, "could not get all item pack conversions");
   }
+
+  /**
+ * Gets a single uom from the database for updating
+ */
+function get_item_pack_conversion($id)
+{
+    $sql = "SELECT ipc.*, uom1.uom AS uom_from, uom2.uom AS uom_to FROM "
+    .TB_PREF."item_pack_conversion AS ipc
+    LEFT JOIN " . TB_PREF ."uom_master as uom1 on ipc.from_uom=uom1.id
+    LEFT JOIN " . TB_PREF ."uom_master as uom2 on ipc.to_uom = uom2.id
+    WHERE ipc.id=".db_escape($id);
+
+	$result = db_query($sql, "could not get uom");
+	return db_fetch($result);
+}
 
   function get_conversion_by_from_and_to($from, $to)
   {
@@ -141,17 +169,12 @@ function add_item_pack_conversion($from, $to, $factor)
    function check_if_conversion_unique($from, $to)
    {
        $conversions = get_conversion_by_from_and_to($from, $to);
-    //    error_log(gettype($conversions));
-       while ($myrow = db_fetch($conversions))
+       error_log($conversions->num_rows);
+       if($conversions->num_rows > 0)
        {
-        //    error_log($myrow['from_uom'] . " => " . $myrow['to_uom']);
-        error_log("We are here");
+            display_error(_("The selected conversion already exists."));
+            return false;
        }
-    //    if(count($conversions) > 0)
-    //    {
-    //         display_error(_("The selected conversion already exists."));
-    //         return false;
-    //    }
-    //    return true;
+       return true;
    }
 ?>
