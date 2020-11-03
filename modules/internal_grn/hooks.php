@@ -13,7 +13,7 @@ class hooks_internal_grn extends hooks {
 		switch($app->id) {
 			case 'stock':
 				$app->add_rapp_function(2, _('Enter Internal GRN'), 
-					$path_to_root.'/modules/internal_grn/internal_grn.php', 'SS_TRANSACTIONTYPE');
+					$path_to_root.'/modules/internal_grn/internal_grn.php', 'SS_ADDINTERNALGRN');
 				break;
 			// case 'stock':
 			// 	$app->add_rapp_function(2, _('Mappings'),

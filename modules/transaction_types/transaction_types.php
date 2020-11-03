@@ -10,7 +10,7 @@
     See the License here <http://www.gnu.org/licenses/gpl-3.0.html>.
 ***********************************************************************/
 // Page 2: security
-$page_security = 'SS_TRANSACTIONTYPE';
+$page_security = 'SS_ADDTRANSACTIONTYPE';
 
 $path_to_root = "../..";
 include_once($path_to_root . "/includes/session.inc");
@@ -29,7 +29,7 @@ add_access_extensions();
 
 include_once($path_to_root . "/modules/transaction_types/includes/transaction_types_db.inc");
 
-page(_("Add Transaction Type"), false, false, "", $js);
+page(_("Transaction Types"), false, false, "", $js);
 
 if ($Mode == 'Delete')
 {
@@ -122,6 +122,12 @@ if ($Mode=='UPDATE_ITEM')
         display_notification(_('Selected transaction type has been updated'));
         $Mode = 'RESET';
     }
+}
+
+if ($Mode == 'RESET')
+{
+	$selected_id = -1;
+	unset($_POST);
 }
 
 $result = get_all_transaction_types();

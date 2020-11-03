@@ -10,7 +10,7 @@
     See the License here <http://www.gnu.org/licenses/gpl-3.0.html>.
 ***********************************************************************/
 // Page 2: security
-$page_security = 'SS_TRANSACTIONTYPE';
+$page_security = 'SS_ADDINTERNALGRN';
 
 $path_to_root = "../..";
 include_once($path_to_root . "/includes/ui/items_cart.inc");

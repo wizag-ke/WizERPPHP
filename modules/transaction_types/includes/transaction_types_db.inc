@@ -175,8 +175,11 @@ function check_mappings_not_exist($module)
     while ($myrow = db_fetch($all_mappings))
     {
         if($myrow["module"] === $module)
-        display_error(_("The selected mapping already exists. Please edit the existing one"));
-        return false;
+        {
+            display_error(_("The selected mapping already exists. Please edit the existing one"));
+            return false;
+        }
+            
     }
     return true;
 }
