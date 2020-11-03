@@ -95,9 +95,8 @@ function all_uoms_list_cells($label, $name, $selected_id=null)
 
 function all_uoms_list($name, $selected_id=null)
 {
-    $sql = "SELECT uoms.id, uoms.uom FROM ".TB_PREF."uom_master as uoms";
-		// size and max of box tag
-    return combo_input($name, $selected_id, $sql, 'uoms.id', 'uoms.uom', array('size' => 8));
+    $sql = "SELECT uoms.abbr , uoms.name FROM ".TB_PREF."item_units as uoms";
+    return combo_input($name, $selected_id, $sql, 'uoms.abbr', 'uoms.name', array('size' => 8));
 }
 
 function add_item_pack_conversion($from, $to, $factor)

@@ -317,10 +317,6 @@ if (isset($_POST['delete']) && strlen($_POST['delete']) > 1)
 function item_settings(&$stock_id, $new_item) 
 {
 
-	// var_dump($stock_id);
-	// print_r("<br>");
-	// print_r($new_item);
-	// print_r("<br>");
 	global $SysPrefs, $path_to_root, $page_nested, $depreciation_methods;
 
 	start_outer_table(TABLESTYLE2);

@@ -22,9 +22,3 @@ CREATE TABLE IF NOT EXISTS `0_uom_stock_link` (
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB;
 
-
-ALTER TABLE `0_stock_master` 
-    MODIFY `depreciation_start` date NOT NULL DEFAULT '2020-01-01' AFTER `depreciation_factor`,
-    MODIFY `depreciation_date` date NOT NULL DEFAULT '2020-01-01' AFTER `depreciation_start`,
-    ADD `uom_id` int(11) NOT NULL;
-
