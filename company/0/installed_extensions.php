@@ -177,17 +177,17 @@ $installed_extensions = array (
     'active' => false,
     'path' => 'themes/studio',
   ),
-  26 => 
+  58 => 
   array (
-    'package' => 'FrontHrm',
-    'name' => 'FrontHrm',
+    'package' => 'internal_grn',
+    'name' => 'internal_grn',
     'version' => '-',
     'available' => '',
     'type' => 'extension',
-    'path' => 'modules/FrontHrm',
-    'active' => 0,
+    'path' => 'modules/internal_grn',
+    'active' => 1,
   ),
-  39 => 
+  60 => 
   array (
     'package' => 'transaction_types',
     'name' => 'transaction_types',
@@ -197,14 +197,14 @@ $installed_extensions = array (
     'path' => 'modules/transaction_types',
     'active' => 1,
   ),
-  40 => 
+  61 => 
   array (
-    'package' => 'internal_grn',
-    'name' => 'internal_grn',
+    'package' => 'item_pack_conversion',
+    'name' => 'item_pack_conversion',
     'version' => '-',
     'available' => '',
     'type' => 'extension',
-    'path' => 'modules/internal_grn',
+    'path' => 'modules/item_pack_conversion',
     'active' => 1,
   ),
 );

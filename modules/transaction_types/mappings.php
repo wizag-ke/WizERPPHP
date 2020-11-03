@@ -49,6 +49,16 @@ if ($Mode == 'Delete')
     $Mode = 'RESET';
 }
 
+if ($Mode == 'RESET')
+{
+	$selected_id = -1;
+	// $sav = get_post('show_inactive');
+	// $sav2 = get_post('fixed_asset');
+	unset($_POST);
+	// $_POST['show_inactive'] = $sav;
+	// $_POST['fixed_asset'] = $sav2;
+}
+
 
 
 $result = get_all_mappings();
