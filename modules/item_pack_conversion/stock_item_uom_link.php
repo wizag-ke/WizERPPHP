@@ -33,6 +33,24 @@ if ($Mode=='ADD_ITEM')
     if($input_error != 1)
     {
         add_stock_uom_link($_POST['stock_code'], $_POST['uom_id']);
+        display_notification(_('Stock to uom link saved'));
+        $Mode = 'RESET';
+    }
+}
+
+if ($Mode=='UPDATE_ITEM')
+{
+    $input_error = 0;
+
+    if(!check_if_updated_stock_uom_link_unique($selected_id, $_POST['stock_code'], $_POST['uom_id']))
+    {
+        $input_error = 1;
+    }
+
+    if($input_error != 1)
+    {
+        update_stock_uom_link($selected_id, $_POST['stock_code'], $_POST['uom_id']);
+        display_notification(_('Stock to uom link updated'));
         $Mode = 'RESET';
     }
 }
@@ -57,6 +75,17 @@ while ($myrow = db_fetch($result))
 
 end_table(1);
 start_table();
+
+if ($selected_id != -1)
+{
+ 	if ($Mode == 'Edit') {
+		$myrow = get_stock_link($selected_id);
+		$_POST['stock_code']  = $myrow["stock_code"];
+		$_POST['uom_id']  = $myrow["uom_id"];
+	}
+	hidden('selected_id', $selected_id);
+}
+
 stock_items_list_row_conversion(_("Item:"), 'stock_code', $_POST['stock_code']);
 gl_all_uoms_list_row(_("UOM:"), 'uom_id', $_POST['uom_id']);
 end_table(1);

@@ -171,9 +171,6 @@ function delete_item_pack_conversion($id)
 
 function add_stock_uom_link($stock_code, $uom_id)
 {
-    error_log($stock_code);
-    error_log($uom_id);
-
     $sql = "insert into ". TB_PREF."uom_stock_link
     (stock_code, uom_id) values
      (". 
@@ -213,4 +210,43 @@ function get_all_stock_link()
     return db_query($sql, "Could not get all stock link conversions");   
 }
 
+function get_stock_link($id)
+{
+    $sql = "SELECT link.*, stk.description AS descrp, uom1.uom AS uom1 FROM "
+    .TB_PREF."uom_stock_link AS link
+    LEFT JOIN " . TB_PREF ."stock_master as stk on link.stock_code=stk.stock_id
+    LEFT JOIN " . TB_PREF ."uom_master as uom1 on link.uom_id = uom1.id
+    WHERE link.id=".db_escape($id);
+    
+    $result = db_query($sql, "Could not get the stock link conversions");
+	return db_fetch($result);
+}
+
+function update_stock_uom_link($id, $stock_code, $uom_id)
+{
+    $sql = "UPDATE ".TB_PREF."uom_stock_link 
+    SET stock_code=". db_escape($stock_code) .
+    ", uom_id=" . db_escape($uom_id) .
+    " WHERE id = ".db_escape($id);
+
+    db_query($sql, "Could not update stock uom link");	
+}
+
+
+function check_if_updated_stock_uom_link_unique($id, $stock_code, $uom_id)
+{
+    $sql = "SELECT link.*, stk.description AS descrp, uom1.uom AS uom1 FROM "
+    .TB_PREF."uom_stock_link AS link
+    LEFT JOIN " . TB_PREF ."stock_master as stk on link.stock_code=stk.stock_id
+    LEFT JOIN " . TB_PREF ."uom_master as uom1 on link.uom_id = uom1.id
+    WHERE link.stock_code=".db_escape($stock_code) . " AND link.uom_id = " . db_escape($uom_id) . "AND link.id NOT IN (" . db_escape($id) . ")";
+
+    $link = db_query($sql, "Could not get Stock link");
+    if($link->num_rows > 0)
+    {
+        display_error(_("Stock link already exists."));
+        return false;
+    }
+    return true;
+}
 ?>
