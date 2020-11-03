@@ -31,9 +31,9 @@ function all_uoms_list_cells($label, $name, $selected_id=null)
 
 function all_uoms_list($name, $selected_id=null)
 {
-    $sql = "SELECT uoms.id, uoms.uom FROM ".TB_PREF."uom_master as uoms";
+    $sql = "SELECT uoms.abbr , uoms.name FROM ".TB_PREF."item_units as uoms";
 		// size and max of box tag
-    return combo_input($name, $selected_id, $sql, 'uoms.id', 'uoms.uom', array('size' => 8));
+    return combo_input($name, $selected_id, $sql, 'uoms.abbr', 'uoms.name', array('size' => 8));
 }
 
 function stock_items_list_row_conversion($label, $name, $selected_id=null, $all_option=false, $submit_on_change=false)

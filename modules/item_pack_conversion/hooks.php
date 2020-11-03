@@ -15,13 +15,14 @@ class hooks_item_pack_conversion extends hooks {
 				$app->add_rapp_function(2, _('Item Pack Conversion'), 
 					$path_to_root.'/modules/item_pack_conversion/item_pack_conversion.php', 'SA_ADDITEMPACKCONVERSION');
 			case 'stock':
-				$app->add_rapp_function(2, _('UOM Master'),
-				$path_to_root.'/modules/item_pack_conversion/uom_master.php', 'SA_UOMMASTER');
-			case 'stock':
 				$app->add_rapp_function(2, _('UOM Stock Link'),
 				$path_to_root.'/modules/item_pack_conversion/stock_item_uom_link.php', 'SA_UOMSTOCKLINK');
 		}
 	}
+
+			// case 'stock':
+			// 	$app->add_rapp_function(2, _('UOM Master'),
+			// 	$path_to_root.'/modules/item_pack_conversion/uom_master.php', 'SA_UOMMASTER');
 	
 	function install_access()
 	{

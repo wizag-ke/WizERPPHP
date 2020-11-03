@@ -71,7 +71,6 @@ function add_item_pack_conversion($from, $to, $factor)
           (from_uom, to_uom, factor) values
            (". db_escape($from) . ", " . db_escape($to) . ", " . db_escape($factor) . ")";
 
-    // error_log($sql);
 
     if (db_query($sql,"Item pack conversion saved"))
         display_notification(_('Item pack conversion saved'));
@@ -94,10 +93,10 @@ function update_item_pack_conversion($id, $from, $to, $factor)
 
 function get_all_item_pack_conversions()
 {
-    $sql = "SELECT ipc.*, uom1.uom AS uom_from, uom2.uom AS uom_to FROM "
+    $sql = "SELECT ipc.*, uom1.name AS uom_from, uom2.name AS uom_to FROM "
     .TB_PREF."item_pack_conversion AS ipc
-    LEFT JOIN " . TB_PREF ."uom_master as uom1 on ipc.from_uom=uom1.id
-    LEFT JOIN " . TB_PREF ."uom_master as uom2 on ipc.to_uom = uom2.id";
+    LEFT JOIN " . TB_PREF ."item_units as uom1 on ipc.from_uom = uom1.abbr
+    LEFT JOIN " . TB_PREF ."item_units as uom2 on ipc.to_uom = uom2.abbr";
     return db_query($sql, "could not get all item pack conversions");
 }
 
@@ -106,10 +105,10 @@ function get_all_item_pack_conversions()
  */
 function get_item_pack_conversion($id)
 {
-    $sql = "SELECT ipc.*, uom1.uom AS uom_from, uom2.uom AS uom_to FROM "
+    $sql = "SELECT ipc.*, uom1.name AS uom_from, uom2.name AS uom_to FROM "
     .TB_PREF."item_pack_conversion AS ipc
-    LEFT JOIN " . TB_PREF ."uom_master as uom1 on ipc.from_uom=uom1.id
-    LEFT JOIN " . TB_PREF ."uom_master as uom2 on ipc.to_uom = uom2.id
+    LEFT JOIN " . TB_PREF ."item_units as uom1 on ipc.from_uom=uom1.abbr
+    LEFT JOIN " . TB_PREF ."item_units as uom2 on ipc.to_uom = uom2.abbr
     WHERE ipc.id=".db_escape($id);
 
 	$result = db_query($sql, "could not get uom");
@@ -203,19 +202,19 @@ function get_stock_link_stock_and_uom($stock_code, $uom_id)
 
 function get_all_stock_link()
 {
-    $sql = "SELECT link.*, stk.description AS descrp, uom1.uom AS uom1 FROM "
+    $sql = "SELECT link.*, stk.description AS descrp, uom1.name AS uom1 FROM "
     .TB_PREF."uom_stock_link AS link
     LEFT JOIN " . TB_PREF ."stock_master as stk on link.stock_code=stk.stock_id
-    LEFT JOIN " . TB_PREF ."uom_master as uom1 on link.uom_id = uom1.id";
+    LEFT JOIN " . TB_PREF ."item_units as uom1 on link.uom_id = uom1.abbr";
     return db_query($sql, "Could not get all stock link conversions");   
 }
 
 function get_stock_link($id)
 {
-    $sql = "SELECT link.*, stk.description AS descrp, uom1.uom AS uom1 FROM "
+    $sql = "SELECT link.*, stk.description AS descrp, uom1.name AS uom1 FROM "
     .TB_PREF."uom_stock_link AS link
     LEFT JOIN " . TB_PREF ."stock_master as stk on link.stock_code=stk.stock_id
-    LEFT JOIN " . TB_PREF ."uom_master as uom1 on link.uom_id = uom1.id
+    LEFT JOIN " . TB_PREF ."item_units as uom1 on link.uom_id = uom1.abbr
     WHERE link.id=".db_escape($id);
     
     $result = db_query($sql, "Could not get the stock link conversions");
@@ -234,10 +233,10 @@ function update_stock_uom_link($id, $stock_code, $uom_id)
 
 function check_if_updated_stock_uom_link_unique($id, $stock_code, $uom_id)
 {
-    $sql = "SELECT link.*, stk.description AS descrp, uom1.uom AS uom1 FROM "
+    $sql = "SELECT link.*, stk.description AS descrp, uom1.name AS uom1 FROM "
     .TB_PREF."uom_stock_link AS link
     LEFT JOIN " . TB_PREF ."stock_master as stk on link.stock_code=stk.stock_id
-    LEFT JOIN " . TB_PREF ."uom_master as uom1 on link.uom_id = uom1.id
+    LEFT JOIN " . TB_PREF ."item_units as uom1 on link.uom_id = uom1.abbr
     WHERE link.stock_code=".db_escape($stock_code) . " AND link.uom_id = " . db_escape($uom_id) . "AND link.id NOT IN (" . db_escape($id) . ")";
 
     $link = db_query($sql, "Could not get Stock link");
