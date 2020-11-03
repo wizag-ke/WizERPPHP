@@ -884,14 +884,14 @@ function stock_items_list_cells($label, $name, $selected_id=null, $all_option=fa
 		array_merge(array('cells'=>true, 'show_inactive'=>$all), $opts), $editkey);
 
 }
-/*
+
 function stock_items_list_row($label, $name, $selected_id=null, $all_option=false, $submit_on_change=false)
 {
 	echo "<tr>\n";
 	stock_items_list_cells($label, $name, $selected_id, $all_option, $submit_on_change);
 	echo "</tr>\n";
 }
-*/
+
 //---------------------------------------------------------------------------------------------------
 //
 // Select item via foreign code.

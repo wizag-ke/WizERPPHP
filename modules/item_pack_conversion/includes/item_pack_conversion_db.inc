@@ -70,7 +70,6 @@ function gl_all_uoms_list_row($label, $name, $selected_id=null)
 {
 	echo "<tr><td class='label'>$label</td>";
 	all_uoms_list_cells(null, $name, $selected_id);
-	// all_transaction_list_cells(null, transaction_id, null);
 	echo "</tr>\n";
 }
 
@@ -79,7 +78,6 @@ function gl_all_uoms_list_row($label, $name, $selected_id=null)
  */
 function all_uoms_list_cells($label, $name, $selected_id=null)
 {
-    // var_dump("Label => " . $label . ", Name => " . $name . ", Selected => " . $selected_id);
 
 	if ($label != null)
 		echo "<td>$label</td>\n";
@@ -128,14 +126,14 @@ function update_item_pack_conversion($id, $from, $to, $factor)
   * Gets all uom conversions
   */
 
-  function get_all_item_pack_conversions()
-  {
-      $sql = "SELECT ipc.*, uom1.uom AS uom_from, uom2.uom AS uom_to FROM "
-      .TB_PREF."item_pack_conversion AS ipc
-      LEFT JOIN " . TB_PREF ."uom_master as uom1 on ipc.from_uom=uom1.id
-      LEFT JOIN " . TB_PREF ."uom_master as uom2 on ipc.to_uom = uom2.id";
-      return db_query($sql, "could not get all item pack conversions");
-  }
+function get_all_item_pack_conversions()
+{
+    $sql = "SELECT ipc.*, uom1.uom AS uom_from, uom2.uom AS uom_to FROM "
+    .TB_PREF."item_pack_conversion AS ipc
+    LEFT JOIN " . TB_PREF ."uom_master as uom1 on ipc.from_uom=uom1.id
+    LEFT JOIN " . TB_PREF ."uom_master as uom2 on ipc.to_uom = uom2.id";
+    return db_query($sql, "could not get all item pack conversions");
+}
 
   /**
  * Gets a single uom from the database for updating
@@ -152,55 +150,75 @@ function get_item_pack_conversion($id)
 	return db_fetch($result);
 }
 
-  function get_conversion_by_from_and_to($from, $to)
-  {
+function get_conversion_by_from_and_to($from, $to)
+{
+$sql = "SELECT ipcs.* FROM "
+.TB_PREF."item_pack_conversion as ipcs 
+WHERE ipcs.from_uom =".db_escape($from). " AND ipcs.to_uom = " . db_escape($to);
+
+return db_query($sql, "could not get uom");
+}
+
+/**
+ * Checks if a similar converions has already been entered into the database
+ *
+ */
+
+function check_if_conversion_unique($from, $to)
+{
+    $conversions = get_conversion_by_from_and_to($from, $to);
+    error_log($conversions->num_rows);
+    if($conversions->num_rows > 0)
+    {
+        display_error(_("The selected conversion already exists."));
+        return false;
+    }
+    return true;
+}
+
+function get_conversion_by_id_from_and_to($id, $from, $to)
+{
     $sql = "SELECT ipcs.* FROM "
     .TB_PREF."item_pack_conversion as ipcs 
-    WHERE ipcs.from_uom =".db_escape($from). " AND ipcs.to_uom = " . db_escape($to);
+    WHERE ipcs.from_uom =".db_escape($from). " AND ipcs.to_uom = " . db_escape($to) . " AND ipcs.id NOT  IN (" . db_escape($id) . ")";
 
-	return db_query($sql, "could not get uom");
-  }
+    return db_query($sql, "could not get uom");
+}
 
-  /**
-   * Checks if a similar converions has already been entered into the database
-   *
-   */
+function check_if_updated_unique($id, $from, $to)
+{
+    $conversions = get_conversion_by_id_from_and_to($id, $from, $to);
+    if($conversions->num_rows > 0)
+    {
+        display_error(_("Conversion already exists."));
+        return false;
+    }
+    return true;
+}
 
-   function check_if_conversion_unique($from, $to)
-   {
-       $conversions = get_conversion_by_from_and_to($from, $to);
-       error_log($conversions->num_rows);
-       if($conversions->num_rows > 0)
-       {
-            display_error(_("The selected conversion already exists."));
-            return false;
-       }
-       return true;
-   }
+function delete_item_pack_conversion($id)
+{
+    $sql="DELETE FROM ".TB_PREF."item_pack_conversion WHERE id=".db_escape($id);
+    db_query($sql,"The conversion entry not be deleted");
+}
 
-   function get_conversion_by_id_from_and_to($id, $from, $to)
-   {
-     $sql = "SELECT ipcs.* FROM "
-     .TB_PREF."item_pack_conversion as ipcs 
-     WHERE ipcs.from_uom =".db_escape($from). " AND ipcs.to_uom = " . db_escape($to) . " AND ipcs.id NOT  IN (" . db_escape($id) . ")";
- 
-     return db_query($sql, "could not get uom");
-   }
+function stock_items_list_row_conversion($label, $name, $selected_id=null, $all_option=false, $submit_on_change=false)
+{
+    error_log("stock_items_list_row_conversion");
+	echo "<tr><td class='label'>$label</td>";
+	all_stock_items_list_cells(null, $name, $selected_id);
+	echo "</tr>\n";
+}
 
-   function check_if_updated_unique($id, $from, $to)
-   {
-       $conversions = get_conversion_by_id_from_and_to($id, $from, $to);
-       if($conversions->num_rows > 0)
-       {
-            display_error(_("Conversion already exists."));
-            return false;
-       }
-       return true;
-   }
+function all_stock_items_list_cells($label, $name, $selected_id=null)
+{
+    error_log("stock_items_list_cells");
 
-   function delete_item_pack_conversion($id)
-   {
-        $sql="DELETE FROM ".TB_PREF."item_pack_conversion WHERE id=".db_escape($id);
-        db_query($sql,"The conversion entry not be deleted");
-   }
+	if ($label != null)
+		echo "<td>$label</td>\n";
+	echo "<td>";
+	echo stock_items_list($name, $selected_id, false, false, array('search_box' => false));
+	echo "</td>\n";
+}
+
 ?>
