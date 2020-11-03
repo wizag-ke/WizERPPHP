@@ -124,6 +124,12 @@ if ($Mode=='UPDATE_ITEM')
     }
 }
 
+if ($Mode == 'RESET')
+{
+	$selected_id = -1;
+	unset($_POST);
+}
+
 $result = get_all_transaction_types();
 
 start_form();

@@ -177,4 +177,30 @@ function get_item_pack_conversion($id)
        }
        return true;
    }
+
+   function get_conversion_by_id_from_and_to($id, $from, $to)
+   {
+     $sql = "SELECT ipcs.* FROM "
+     .TB_PREF."item_pack_conversion as ipcs 
+     WHERE ipcs.from_uom =".db_escape($from). " AND ipcs.to_uom = " . db_escape($to) . " AND ipcs.id NOT  IN (" . db_escape($id) . ")";
+ 
+     return db_query($sql, "could not get uom");
+   }
+
+   function check_if_updated_unique($id, $from, $to)
+   {
+       $conversions = get_conversion_by_id_from_and_to($id, $from, $to);
+       if($conversions->num_rows > 0)
+       {
+            display_error(_("Conversion already exists."));
+            return false;
+       }
+       return true;
+   }
+
+   function delete_item_pack_conversion($id)
+   {
+        $sql="DELETE FROM ".TB_PREF."item_pack_conversion WHERE id=".db_escape($id);
+        db_query($sql,"The conversion entry not be deleted");
+   }
 ?>

@@ -23,6 +23,13 @@ page(_("Add item Pack Conversion"), false, false, "", $js);
 if ($Mode=='ADD_ITEM')
 {
     $input_error = 0;
+
+    if($_POST['from'] === $_POST['to'])
+    {
+        $input_error = 1;
+        display_error(_("Cannot convert to the same uom."));
+        set_focus('to');       
+    }
     if (strlen($_POST['factor']) == 0) 
     {
         $input_error = 1;
@@ -45,6 +52,13 @@ if ($Mode=='ADD_ITEM')
 if ($Mode=='UPDATE_ITEM')
 {
     $input_error = 0;
+    if($_POST['from'] === $_POST['to'])
+    {
+        $input_error = 1;
+        display_error(_("Cannot convert to the same uom."));
+        set_focus('to');       
+    }
+    
     if (strlen($_POST['factor']) == 0) 
     {
         $input_error = 1;
@@ -52,10 +66,10 @@ if ($Mode=='UPDATE_ITEM')
         set_focus('factor');
     }
 
-    // if(!check_if_conversion_unique($_POST['from'], $_POST['to']))
-    // {
-    //     $input_error = 1;
-    // }
+    if(!check_if_updated_unique($selected_id, $_POST['from'], $_POST['to']))
+    {
+        $input_error = 1;
+    }
 
     if($input_error != 1)
     {
@@ -64,6 +78,20 @@ if ($Mode=='UPDATE_ITEM')
         display_notification(_('Selected item pack conversion has been updated'));
         $Mode = 'RESET';
     }
+}
+
+
+if ($Mode == 'Delete')
+{
+    delete_item_pack_conversion($selected_id);
+    display_notification(_('Selected conversion has been deleted'));
+    $Mode = 'RESET';
+}
+
+if ($Mode == 'RESET')
+{
+	$selected_id = -1;
+	unset($_POST);
 }
 
 

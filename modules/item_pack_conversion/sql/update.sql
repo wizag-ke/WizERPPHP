@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS `0_item_pack_conversion` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
     `from_uom` int(11) NOT NULL,
     `to_uom` int(11) NOT NULL,  
-    `factor` int(11) NOT NULL, 
+    `factor` DOUBLE NOT NULL, 
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB;
 
