@@ -17,6 +17,8 @@ simple_page_mode();
 add_access_extensions();
 
 include_once($path_to_root . "/modules/item_pack_conversion/includes/item_pack_conversion_db.inc");
+include_once($path_to_root . "/modules/item_pack_conversion/includes/item_pack_conversion_ui.inc");
+
 
 page(_("UOM Master"), false, false, "", $js);
 

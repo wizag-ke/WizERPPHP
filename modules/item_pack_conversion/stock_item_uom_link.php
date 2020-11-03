@@ -17,6 +17,7 @@ simple_page_mode();
 // part 2  must include this function for extension access levels.
 add_access_extensions();
 include_once($path_to_root . "/modules/item_pack_conversion/includes/item_pack_conversion_db.inc");
+include_once($path_to_root . "/modules/item_pack_conversion/includes/item_pack_conversion_ui.inc");
 
 page(_("Stock item to UOM link"), false, false, "", $js);
 
