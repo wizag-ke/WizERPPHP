@@ -21,6 +21,22 @@ include_once($path_to_root . "/modules/item_pack_conversion/includes/item_pack_c
 
 page(_("Stock item to UOM link"), false, false, "", $js);
 
+if ($Mode=='ADD_ITEM')
+{
+    $input_error = 0;
+
+    if(!check_if_stock_uom_link_unique($_POST['stock_code'], $_POST['uom_id']))
+    {
+        $input_error = 1;
+    }
+
+    if($input_error != 1)
+    {
+        add_stock_uom_link($_POST['stock_code'], $_POST['uom_id']);
+        $Mode = 'RESET';
+    }
+}
+
 
 start_form();
 start_table();

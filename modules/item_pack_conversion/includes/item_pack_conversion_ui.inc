@@ -38,7 +38,7 @@ function all_uoms_list($name, $selected_id=null)
 
 function stock_items_list_row_conversion($label, $name, $selected_id=null, $all_option=false, $submit_on_change=false)
 {
-    error_log("stock_items_list_row_conversion");
+    // error_log("stock_items_list_row_conversion");
 	echo "<tr><td class='label'>$label</td>";
 	all_stock_items_list_cells(null, $name, $selected_id);
 	echo "</tr>\n";
@@ -46,7 +46,7 @@ function stock_items_list_row_conversion($label, $name, $selected_id=null, $all_
 
 function all_stock_items_list_cells($label, $name, $selected_id=null)
 {
-    error_log("stock_items_list_cells");
+    // error_log("stock_items_list_cells");
 
 	if ($label != null)
 		echo "<td>$label</td>\n";

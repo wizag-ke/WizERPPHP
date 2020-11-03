@@ -75,7 +75,7 @@ if ($Mode=='UPDATE_ITEM')
 
     if($input_error != 1)
     {
-        error_log('Can update');
+        // error_log('Can update');
         update_item_pack_conversion($selected_id, $_POST['from'], $_POST['to'], $_POST['factor']);
         display_notification(_('Selected item pack conversion has been updated'));
         $Mode = 'RESET';
