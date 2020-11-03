@@ -17,6 +17,8 @@ simple_page_mode();
 // part 2  must include this function for extension access levels.
 add_access_extensions();
 include_once($path_to_root . "/modules/item_pack_conversion/includes/item_pack_conversion_db.inc");
+include_once($path_to_root . "/modules/item_pack_conversion/includes/item_pack_conversion_ui.inc");
+
 
 page(_("Add item Pack Conversion"), false, false, "", $js);
 
@@ -73,13 +75,12 @@ if ($Mode=='UPDATE_ITEM')
 
     if($input_error != 1)
     {
-        error_log('Can update');
+        // error_log('Can update');
         update_item_pack_conversion($selected_id, $_POST['from'], $_POST['to'], $_POST['factor']);
         display_notification(_('Selected item pack conversion has been updated'));
         $Mode = 'RESET';
     }
 }
-
 
 if ($Mode == 'Delete')
 {
