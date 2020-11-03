@@ -733,19 +733,6 @@ function send_email_to_first_approver($trans_type, $trans_no)
         $mail->addReplyTo('info@example.com', 'Information');
         $mail->addCC('cc@example.com');
         $mail->addBCC('bcc@example.com');
-
-        // Attachments
-        // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-        // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-
-        // $body = 'Hi '. $user_name .',' . 
-        //         '<br>' .
-        //         '<p>Please follow the link below and approve the quotation</p>' .
-        //         '<br>' .
-        //         '<a class="btn btn-info" href="'. $quotation_url .'">View</a>' .
-        //         '<br>' .
-        //         '<br>' .
-		// 		'<h3>WizERP</h3>';
 				
 		$body = 
 
@@ -778,7 +765,6 @@ function send_email_to_first_approver($trans_type, $trans_no)
 					'<a class="btn btn-info" href="'. $quotation_url .'">View</a>' .
 				'</body>' .
 				'</html>';
-
 
         // Content
         $mail->isHTML(true);                                  // Set email format to HTML
