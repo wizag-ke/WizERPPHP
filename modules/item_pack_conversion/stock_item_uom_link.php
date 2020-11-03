@@ -33,7 +33,6 @@ if ($Mode=='ADD_ITEM')
     if($input_error != 1)
     {
         add_stock_uom_link($_POST['stock_code'], $_POST['uom_id']);
-        display_notification(_('Stock to uom link saved'));
         $Mode = 'RESET';
     }
 }
@@ -53,6 +52,19 @@ if ($Mode=='UPDATE_ITEM')
         display_notification(_('Stock to uom link updated'));
         $Mode = 'RESET';
     }
+}
+
+if ($Mode == 'Delete')
+{
+    delete_stock_uom_link($selected_id);
+    display_notification(_('Selected link has been deleted'));
+    $Mode = 'RESET';
+}
+
+if ($Mode == 'RESET')
+{
+	$selected_id = -1;
+	unset($_POST);
 }
 
 

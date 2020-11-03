@@ -82,7 +82,6 @@ if ($Mode=='UPDATE_ITEM')
     }
 }
 
-
 if ($Mode == 'Delete')
 {
     delete_item_pack_conversion($selected_id);

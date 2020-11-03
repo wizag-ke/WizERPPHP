@@ -232,7 +232,6 @@ function update_stock_uom_link($id, $stock_code, $uom_id)
     db_query($sql, "Could not update stock uom link");	
 }
 
-
 function check_if_updated_stock_uom_link_unique($id, $stock_code, $uom_id)
 {
     $sql = "SELECT link.*, stk.description AS descrp, uom1.uom AS uom1 FROM "
@@ -248,5 +247,11 @@ function check_if_updated_stock_uom_link_unique($id, $stock_code, $uom_id)
         return false;
     }
     return true;
+}
+
+function delete_stock_uom_link($id)
+{
+    $sql="DELETE FROM ".TB_PREF."uom_stock_link WHERE id=".db_escape($id);
+    db_query($sql,"The stock link not be deleted");   
 }
 ?>
