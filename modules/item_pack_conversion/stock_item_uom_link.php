@@ -38,7 +38,24 @@ if ($Mode=='ADD_ITEM')
 }
 
 
+$result = get_all_stock_link();
+
 start_form();
+start_table(TABLESTYLE);
+
+$th = array (_('Stock Description'), _('Unit of measure'), '', '');
+table_header($th);
+
+while ($myrow = db_fetch($result))
+{
+	label_cell($myrow["descrp"], "nowrap");
+	label_cell($myrow["uom1"], "nowrap");
+ 	edit_button_cell("Edit".$myrow['id'], _("Edit"));
+ 	delete_button_cell("Delete".$myrow['id'], _("Delete"));
+	end_row();
+}
+
+end_table(1);
 start_table();
 stock_items_list_row_conversion(_("Item:"), 'stock_code', $_POST['stock_code']);
 gl_all_uoms_list_row(_("UOM:"), 'uom_id', $_POST['uom_id']);

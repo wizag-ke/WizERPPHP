@@ -204,4 +204,13 @@ function get_stock_link_stock_and_uom($stock_code, $uom_id)
     return db_query($sql, "Could not get stock link");
 }
 
+function get_all_stock_link()
+{
+    $sql = "SELECT link.*, stk.description AS descrp, uom1.uom AS uom1 FROM "
+    .TB_PREF."uom_stock_link AS link
+    LEFT JOIN " . TB_PREF ."stock_master as stk on link.stock_code=stk.stock_id
+    LEFT JOIN " . TB_PREF ."uom_master as uom1 on link.uom_id = uom1.id";
+    return db_query($sql, "Could not get all stock link conversions");   
+}
+
 ?>
