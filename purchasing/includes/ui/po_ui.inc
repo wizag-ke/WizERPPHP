@@ -448,7 +448,7 @@ function po_item_controls(&$order, &$rowcounter, $line_no=-1)
 	}
 	else
 	{
-		submit_cells('EnterLine', _("Add Item"), "colspan=2 align='center'",
+		submit_cells('EnterLine', _("Add"), "colspan=2 align='center'",
 		    _('Add new item to document'), true);
 	}
 

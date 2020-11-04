@@ -148,7 +148,7 @@ function display_order_summary($title, &$order, $editable_items=false)
 
 	$th = array(_("Item Code"), _("Item Description"), _("Quantity"),
 		_("Delivered"),
-		_("Unit"), $order->tax_included ? _("Price after Tax") : _("Price before Tax"), _("Discount %"), _("Total"), "");
+		_("Unit"), _("UOM"), $order->tax_included ? _("Price after Tax") : _("Price before Tax"), _("Discount %"), _("Total"), "");
 
 	if ($order->trans_no == 0) {
 	unset( $th[3] );
@@ -189,6 +189,9 @@ function display_order_summary($title, &$order, $editable_items=false)
 				qty_cell($stock_item->qty_done, false, $dec);
 
 			label_cell($stock_item->units);
+			label_cell("Hello Mr Man");
+			// gl_all_uoms_list_row(_("To:"), 'to', $_POST['to']);
+
 			amount_cell($stock_item->price);
 
 			percent_cell($stock_item->discount_percent * 100);
@@ -541,6 +544,8 @@ function sales_order_item_controls(&$order, &$rowcounter, $line_no=-1)
 
 	label_cell($units, '', 'units');
 
+	all_uoms_list_cells(null, 'to', $_POST['to']);
+
 	amount_cells(null, 'price');
 
 	small_amount_cells(null, 'Disc', percent_format($_POST['Disc']), null, null, user_percent_dec());
@@ -560,7 +565,7 @@ function sales_order_item_controls(&$order, &$rowcounter, $line_no=-1)
 	}
 	else
 	{
-		submit_cells('AddItem', _("Add Item"), "colspan=2 align='center'",
+		submit_cells('AddItem', _("Add"), "colspan=2 align='center'",
 		    _('Add new item to document'), true);
 	}
 

@@ -282,7 +282,7 @@ function gl_edit_item_controls(&$order, $dim, $sub_accounts, $Index=null)
  		set_focus('amount');
 	} 
 	else 
-		submit_cells('AddItem', _("Add Item"), "colspan=2",
+		submit_cells('AddItem', _("Add"), "colspan=2",
 		    _('Add new line to journal'), true);
 
 	end_row();

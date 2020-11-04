@@ -294,7 +294,7 @@ function credit_edit_item_controls(&$order, $rowcounter, $line_no=-1)
 	}
 	else
 	{
-		submit_cells('AddItem', _("Add Item"), "colspan=2",
+		submit_cells('AddItem', _("Add"), "colspan=2",
 		    _('Add new item to document'), true);
 	}
 

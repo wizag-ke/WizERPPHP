@@ -141,6 +141,7 @@ function hidden($name, $value=null, $echo=true)
 
 
 // submit('ProcessOrder', _("Place Quotation"), true, _('Check entered data and save document'), 'default', false);
+// submit('AddItem', _("Add"), true, _('Add new item to document'), true);
 function submit($name, $value, $echo=true, $title=false, $atype=false, $icon=false)
 {
 	global $path_to_root;
@@ -261,9 +262,13 @@ function submit_add_or_update_row($add=true, $right=true, $extra="", $title=fals
 	echo "</td></tr>\n";
 }
 
+// submit_cells('AddItem', _("Add"), "colspan=2", _('Add new item to document'), true);
+
 function submit_cells($name, $value, $extra="", $title=false, $async=false)
 {
 	echo "<td $extra>";
+
+	// submit('AddItem', _("Add"), true, _('Add new item to document'), true);
 	submit($name, $value, true, $title, $async);
 	echo "</td>\n";
 }

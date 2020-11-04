@@ -33,6 +33,8 @@ include_once($path_to_root . "/reporting/includes/reporting.inc");
 include_once($path_to_root . "/admin/db/users_db.inc");
 include_once($path_to_root . "/includes/ui.inc");
 include_once($path_to_root . "/admin/db/approvals_db.inc");
+include_once($path_to_root . "/modules/item_pack_conversion/includes/item_pack_conversion_db.inc");
+include_once($path_to_root . "/modules/item_pack_conversion/includes/item_pack_conversion_ui.inc");
 require $path_to_root . '/vendor/autoload.php';
 
 set_page_security( @$_SESSION['Items']->trans_type,
