@@ -512,9 +512,18 @@ function sales_order_item_controls(&$order, &$rowcounter, $line_no=-1)
             if (!isset($_POST['stock_id'])) {   // Check if stock_id dosesn't exist
 				$_POST['stock_id'] = last_sales_order_detail($order, 'stk_code');  //get the last sales stock id.
 			}
-            sales_items_list_cells(null,'stock_id', $_POST['stock_id'], false, true, true);
+			// sales_items_list_cells(null,'stock_id', $_POST['stock_id'], false, true, true);
+			sales_items_list_cells(null,'stock_id', $_POST['stock_id']);
+
+
+			// error_log("if order not fixed asset");
+			// error_log(print_r($_POST, true));   
         }
-        if (list_updated('stock_id')) {            
+        if (list_updated('stock_id')) {     
+			// error_log("list updated");
+			// error_log(print_r($_POST));  
+			
+			
             $Ajax->activate('price');
             $Ajax->activate('units');
             $Ajax->activate('qty');
@@ -549,7 +558,19 @@ function sales_order_item_controls(&$order, &$rowcounter, $line_no=-1)
 	qty_cells(null, 'qty', $_POST['qty'], null, null, $dec);
 
 
-	all_uoms_list_cells(null, 'to', $units);
+	all_uoms_list_cells(null, 'units_list', $units, true);
+
+	if (list_updated('units_list')) {     
+		error_log("Unit List");
+	}	
+
+
+
+	if (list_updated('units'))
+	{
+		error_log(print_r($POST, true));
+		error_log("Updated");
+	}
 
 	amount_cells(null, 'price');
 
