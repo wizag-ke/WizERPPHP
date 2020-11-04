@@ -140,7 +140,7 @@ function print_document_link($doc_no, $link_text, $link=true, $type_no,
 //	Universal link to any kind of report.
 //
 function print_link($link_text, $rep, $pars = array(), $dir = '', 
-	$icon=false, $class='printlink', $id='')
+	$icon=false, $class='printlink styled_link', $id='')
 {
 	// print_r("print_link");
 	global $path_to_root, $SysPrefs;

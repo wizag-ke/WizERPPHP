@@ -148,7 +148,7 @@ function display_order_summary($title, &$order, $editable_items=false)
 
 	$th = array(_("Item Code"), _("Item Description"), _("Quantity"),
 		_("Delivered"),
-		_("Unit"), _("Quantity per UOM"), _("UOM"), $order->tax_included ? _("Price after Tax") : _("Price before Tax"), _("Discount %"), _("Total"), "");
+		_("Unit"), _("Location"), _("Qty on Hand"), _("UOM Qty"), _("UOM"), $order->tax_included ? _("Price after Tax") : _("Price before Tax"), _("Discount %"), _("Total"), "");
 
 	if ($order->trans_no == 0) {
 	unset( $th[3] );
@@ -189,6 +189,8 @@ function display_order_summary($title, &$order, $editable_items=false)
 				qty_cell($stock_item->qty_done, false, $dec);
 
 			label_cell($stock_item->units);
+			label_cell("Location");
+			label_cell("Quantity on hand");
 			qty_cell($stock_item->qty_dispatched, false, $dec);
 			
 			label_cell($stock_item->units);
@@ -512,18 +514,9 @@ function sales_order_item_controls(&$order, &$rowcounter, $line_no=-1)
             if (!isset($_POST['stock_id'])) {   // Check if stock_id dosesn't exist
 				$_POST['stock_id'] = last_sales_order_detail($order, 'stk_code');  //get the last sales stock id.
 			}
-			// sales_items_list_cells(null,'stock_id', $_POST['stock_id'], false, true, true);
-			sales_items_list_cells(null,'stock_id', $_POST['stock_id']);
-
-
-			// error_log("if order not fixed asset");
-			// error_log(print_r($_POST, true));   
+			sales_items_list_cells(null,'stock_id', $_POST['stock_id'], false, true, true);
         }
         if (list_updated('stock_id')) {     
-			// error_log("list updated");
-			// error_log(print_r($_POST));  
-			
-			
             $Ajax->activate('price');
             $Ajax->activate('units');
             $Ajax->activate('qty');
@@ -554,23 +547,23 @@ function sales_order_item_controls(&$order, &$rowcounter, $line_no=-1)
 
 	label_cell($units, '', 'units');
 
+	// Locations Here
+	// all_uoms_list_cells(null, 'units_list', $units, true);
+	locations_list_cells(null, 'location_id', null, false, true, $order->fixed_asset);
+	if (list_updated('location_id')) {  
+		error_log("Location changed");
+	}	
 
-	qty_cells(null, 'qty', $_POST['qty'], null, null, $dec);
+	// print_r('')
+
+
+	label_cell(get_qoh_on_date($_POST['stock_id']), '', 'quantity_on_hand');
 
 
 	all_uoms_list_cells(null, 'units_list', $units, true);
 
 	if (list_updated('units_list')) {     
-		error_log("Unit List");
 	}	
-
-
-
-	if (list_updated('units'))
-	{
-		error_log(print_r($POST, true));
-		error_log("Updated");
-	}
 
 	amount_cells(null, 'price');
 

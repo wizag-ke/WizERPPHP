@@ -685,7 +685,8 @@ function locations_list($name, $selected_id=null, $all_option=false, $submit_on_
 		array(
 			'spec_option' => $all_option === true ? _("All Locations") : $all_option,
 			'spec_id' => ALL_TEXT,
-			'select_submit'=> $submit_on_change
+			'select_submit'=> $submit_on_change,
+			'editable' => 30
 		) );
 }
 
