@@ -82,8 +82,8 @@
 				echo "<script type='text/javascript' src='$path_to_root/themes/".user_theme()."/js/script.js'></script>\n";
 				$applications = $_SESSION['App']->applications;
 				$local_path_to_root = $path_to_root;
-				$img = "<img src='$local_path_to_root/themes/".user_theme()."/images/login.gif' width='14' height='14' border='0' alt='"._('Logout')."'>&nbsp;&nbsp;";
-				$himg = "<img src='$local_path_to_root/themes/".user_theme()."/images/help.gif' width='14' height='14' border='0' alt='"._('Help')."'>&nbsp;&nbsp;";
+				$img = "<img src='$local_path_to_root/themes/".user_theme()."/images/sign-out-alt-solid.svg' width='14' height='14' border='0' alt='"._('Logout')."'>&nbsp;&nbsp;";
+				$himg = "<img src='$local_path_to_root/themes/".user_theme()."/images/question-circle-solid.svg' width='14' height='14' border='0' alt='"._('Help')."'>&nbsp;&nbsp;";
 				echo "<div id='header'>\n";
 				echo "<ul>\n";
 				$logo = "$path_to_root/themes/".user_theme()."/images/erp.png";

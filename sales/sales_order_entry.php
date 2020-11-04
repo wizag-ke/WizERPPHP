@@ -842,10 +842,6 @@ $customer_error = display_order_header($_SESSION['Items'], !$_SESSION['Items']->
 if ($customer_error == "") {
 	start_table(TABLESTYLE, "width='80%'", 10);
 	echo "<tr><td>";
-
-	// $orderitems = _("Sales Quotation Items");
-	// $_SESSION['Items'] = new Cart(ST_SALESQUOTE, array(0));
-
 	display_order_summary($orderitems, $_SESSION['Items'], true);
 	echo "</td></tr>";
 	echo "<tr><td>";
@@ -854,13 +850,8 @@ if ($customer_error == "") {
 	end_table(1);
 
 	if ($_SESSION['Items']->trans_no == 0) {
-
-		// submit_center_first('ProcessOrder', "Place Quotation",
 		submit_center_first('ProcessOrder', $porder,
 			_('Check entered data and save document'), 'default');
-		
-		// submit_center_last('CancelOrder', Cancel Quotation,
-		// 	_('Cancels document entry or removes sales order when editing an old document'));
 		submit_center_last('CancelOrder', $cancelorder,
 	   		_('Cancels document entry or removes sales order when editing an old document'));
 		submit_js_confirm('CancelOrder', _('You are about to void this Document.\nDo you want to continue?'));

@@ -109,7 +109,7 @@ a:visited {
 
 /* Content */
 .fa-content {
-  width: 77%;
+  width: 85%;
   margin: 0;
   padding: 7px 10px 5px 0;
   float: right;
@@ -753,7 +753,7 @@ div.note_msg {
   content: "*";
   position: absolute;
   left: 10px;
-  color: #e94f31;
+  /* color: #e94f31; */
 }
 #cssmenu ul ul a:hover {
   background-color: var(--header_color);

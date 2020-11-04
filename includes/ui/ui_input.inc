@@ -140,7 +140,7 @@ function hidden($name, $value=null, $echo=true)
 */
 
 
-// submit('ProcessOrder', "Place Quotation", true, $title, $async, $icon);
+// submit('ProcessOrder', _("Place Quotation"), true, _('Check entered data and save document'), 'default', false);
 function submit($name, $value, $echo=true, $title=false, $atype=false, $icon=false)
 {
 	global $path_to_root;
@@ -196,12 +196,13 @@ function submit_center($name, $value, $echo=true, $title=false, $async=false, $i
 	if ($echo) echo "</center>";
 }
 
-// submit_center_first('ProcessOrder', "Place Quotation",
+// submit_center_first('ProcessOrder', _("Place Quotation"),_('Check entered data and save document'), 'default');
+
 function submit_center_first($name, $value, $title=false, $async=false, $icon=false)
 {
 	echo "<center>";
 
-	// submit('ProcessOrder', "Place Quotation", true, $title, $async, $icon);
+	// submit('ProcessOrder', _("Place Quotation"), true, _('Check entered data and save document'), 'default', false);
 	submit($name, $value, true, $title, $async, $icon);
 	echo "&nbsp;";
 }
@@ -692,8 +693,8 @@ function date_cells($label, $name, $title = null, $check=null, $inc_days=0,
 	}
 	if (user_use_date_picker())
 	{
-		$calc_image = (file_exists("$path_to_root/themes/".user_theme()."/images/cal.gif")) ? 
-			"$path_to_root/themes/".user_theme()."/images/cal.gif" : "$path_to_root/themes/default/images/cal.gif";
+		$calc_image = (file_exists("$path_to_root/themes/".user_theme()."/images/calendar-alt-solid.svg")) ? 
+			"$path_to_root/themes/".user_theme()."/images/calendar-alt-solid.svg" : "$path_to_root/themes/default/images/calendar-alt-solid.svg";
 		$post_label = "<a tabindex='-1' href=\"javascript:date_picker(document.getElementsByName('$name')[0]);\">"
 		. "	<img src='$calc_image' style='vertical-align:middle;padding-bottom:4px;width:16px;height:16px;border:0;' alt='"._('Click Here to Pick up the date')."'></a>\n";
 	}	
