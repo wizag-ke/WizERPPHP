@@ -148,7 +148,7 @@ function display_order_summary($title, &$order, $editable_items=false)
 
 	$th = array(_("Item Code"), _("Item Description"), _("Quantity"),
 		_("Delivered"),
-		_("Unit"), _("UOM"), $order->tax_included ? _("Price after Tax") : _("Price before Tax"), _("Discount %"), _("Total"), "");
+		_("Unit"), _("Quantity per UOM"), _("UOM"), $order->tax_included ? _("Price after Tax") : _("Price before Tax"), _("Discount %"), _("Total"), "");
 
 	if ($order->trans_no == 0) {
 	unset( $th[3] );
@@ -189,8 +189,9 @@ function display_order_summary($title, &$order, $editable_items=false)
 				qty_cell($stock_item->qty_done, false, $dec);
 
 			label_cell($stock_item->units);
-			label_cell("Hello Mr Man");
-			// gl_all_uoms_list_row(_("To:"), 'to', $_POST['to']);
+			qty_cell($stock_item->qty_dispatched, false, $dec);
+			
+			label_cell($stock_item->units);
 
 			amount_cell($stock_item->price);
 
@@ -509,7 +510,7 @@ function sales_order_item_controls(&$order, &$rowcounter, $line_no=-1)
             stock_disposable_fa_list_cells(null,'stock_id', null, _('[Select item]'), true, $order->line_items);
         else {
             if (!isset($_POST['stock_id'])) {   // Check if stock_id dosesn't exist
-				$_POST['stock_id'] = last_sales_order_detail($order, 'stk_code');  //get the llast sales stock id.
+				$_POST['stock_id'] = last_sales_order_detail($order, 'stk_code');  //get the last sales stock id.
 			}
             sales_items_list_cells(null,'stock_id', $_POST['stock_id'], false, true, true);
         }
@@ -544,7 +545,11 @@ function sales_order_item_controls(&$order, &$rowcounter, $line_no=-1)
 
 	label_cell($units, '', 'units');
 
-	all_uoms_list_cells(null, 'to', $_POST['to']);
+
+	qty_cells(null, 'qty', $_POST['qty'], null, null, $dec);
+
+
+	all_uoms_list_cells(null, 'to', $units);
 
 	amount_cells(null, 'price');
 
