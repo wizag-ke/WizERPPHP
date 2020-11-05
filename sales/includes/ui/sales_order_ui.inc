@@ -148,7 +148,7 @@ function display_order_summary($title, &$order, $editable_items=false)
 
 	$th = array(_("Item Code"), _("Item Description"), _("Quantity"),
 		_("Delivered"),
-		_("Unit"), _("Location"), _("Qty on Hand"), _("UOM Qty"), _("UOM"), $order->tax_included ? _("Price after Tax") : _("Price before Tax"), _("Discount %"), _("Total"), "");
+		_("Unit"), _("Location"), _("Available"), _("UOM Qty"), _("UOM"), $order->tax_included ? _("Price after Tax") : _("Price before Tax"), _("Discount %"), _("Total"), "");
 
 	if ($order->trans_no == 0) {
 	unset( $th[3] );
@@ -547,18 +547,14 @@ function sales_order_item_controls(&$order, &$rowcounter, $line_no=-1)
 
 	label_cell($units, '', 'units');
 
-	// Locations Here
-	// all_uoms_list_cells(null, 'units_list', $units, true);
 	locations_list_cells(null, 'location_id', null, false, true, $order->fixed_asset);
+	$quantity_on_hand = get_qoh_on_date($_POST['stock_id']);
 	if (list_updated('location_id')) {  
-		error_log("Location changed");
+		$quantity_on_hand = get_qoh_on_date($_POST['stock_id'], $_POST['location_id']);
 	}	
 
-	// print_r('')
-
-
-	label_cell(get_qoh_on_date($_POST['stock_id']), '', 'quantity_on_hand');
-
+	// label_cell(get_qoh_on_date($_POST['stock_id']), '', 'quantity_on_hand');
+	label_cell($quantity_on_hand);
 
 	all_uoms_list_cells(null, 'units_list', $units, true);
 
