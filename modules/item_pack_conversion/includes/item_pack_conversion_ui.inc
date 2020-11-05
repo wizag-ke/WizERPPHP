@@ -4,7 +4,7 @@
 /**
  * Retrieves all the uoms and populates a combo box
  */
-function gl_all_uoms_list_row($label, $name, $selected_id=null)
+function gl_all_uoms_list_row($label, $name, $selected_id=null, $editable = false)
 {
 	echo "<tr><td class='label'>$label</td>";
 	all_uoms_list_cells(null, $name, $selected_id, false);
@@ -41,22 +41,26 @@ function all_uoms_list($name, $selected_id=null, $editable = false)
 	);
 }
 
-function stock_items_list_row_conversion($label, $name, $selected_id=null, $all_option=false, $submit_on_change=false)
+function stock_items_list_row_conversion($label, $name, $selected_id=null, $all_option=false, $submit_on_change=false, $editable =false)
 {
     // error_log("stock_items_list_row_conversion");
 	echo "<tr><td class='label'>$label</td>";
-	all_stock_items_list_cells(null, $name, $selected_id);
+	all_stock_items_list_cells(null, $name, $selected_id, $editable);
 	echo "</tr>\n";
 }
 
-function all_stock_items_list_cells($label, $name, $selected_id=null)
+function all_stock_items_list_cells($label, $name, $selected_id=null, $editable =false)
 {
     // error_log("stock_items_list_cells");
 
 	if ($label != null)
 		echo "<td>$label</td>\n";
 	echo "<td>";
-	echo stock_items_list($name, $selected_id, false, false, array('search_box' => false));
+	echo stock_items_list($name, $selected_id, false, false, 
+	array(
+		'search_box' => false,
+		'editable' => $editable
+	));
 	echo "</td>\n";
 }
 

@@ -64,23 +64,24 @@ function update_uom($id, $uom)
 }
 
 
-function add_item_pack_conversion($from, $to, $factor)
+function add_item_pack_conversion($stock_code, $from, $to, $factor)
 {
     // error_log("add_item_pack_conversion");
     $sql = "insert into ". TB_PREF."item_pack_conversion
-          (from_uom, to_uom, factor) values
-           (". db_escape($from) . ", " . db_escape($to) . ", " . db_escape($factor) . ")";
+          (stock_code, from_uom, to_uom, factor) values
+           (". db_escape($stock_code) . ", ". db_escape($from) . ", " . db_escape($to) . ", " . db_escape($factor) . ")";
 
 
     if (db_query($sql,"Item pack conversion saved"))
         display_notification(_('Item pack conversion saved'));
  }
 
-function update_item_pack_conversion($id, $from, $to, $factor)
+function update_item_pack_conversion($id, $stock_code, $from, $to, $factor)
 {
     $sql = "UPDATE ".TB_PREF."item_pack_conversion 
     SET from_uom=". db_escape($from) .
     ", to_uom=" . db_escape($to) .
+    ", stock_code=" . db_escape($stock_code) .
     ", factor=" . db_escape($factor) .
     " WHERE id = ".db_escape($id);
 
@@ -115,11 +116,11 @@ function get_item_pack_conversion($id)
 	return db_fetch($result);
 }
 
-function get_conversion_by_from_and_to($from, $to)
+function get_conversion_by_from_and_to($stock_id, $from, $to)
 {
     $sql = "SELECT ipcs.* FROM "
     .TB_PREF."item_pack_conversion as ipcs 
-    WHERE ipcs.from_uom =".db_escape($from). " AND ipcs.to_uom = " . db_escape($to);
+    WHERE ipcs.from_uom =" . db_escape($from) . " AND ipcs.to_uom = " . db_escape($to) . " AND ipcs.stock_code = " . db_escape($stock_id);
 
     return db_query($sql, "could not get uom");
 }
@@ -129,9 +130,9 @@ function get_conversion_by_from_and_to($from, $to)
  *
  */
 
-function check_if_conversion_unique($from, $to)
+function check_if_conversion_unique($stock_id, $from, $to)
 {
-    $conversions = get_conversion_by_from_and_to($from, $to);
+    $conversions = get_conversion_by_from_and_to($stock_id, $from, $to);
     // error_log($conversions->num_rows);
     if($conversions->num_rows > 0)
     {
@@ -141,18 +142,18 @@ function check_if_conversion_unique($from, $to)
     return true;
 }
 
-function get_conversion_by_id_from_and_to($id, $from, $to)
+function get_conversion_by_id_from_and_to($id, $stock_code, $from, $to)
 {
     $sql = "SELECT ipcs.* FROM "
     .TB_PREF."item_pack_conversion as ipcs 
-    WHERE ipcs.from_uom =".db_escape($from). " AND ipcs.to_uom = " . db_escape($to) . " AND ipcs.id NOT  IN (" . db_escape($id) . ")";
+    WHERE ipcs.from_uom =".db_escape($from). " AND ipcs.to_uom = " . db_escape($to). " AND ipcs.stock_code = " . db_escape($stock_code) . " AND ipcs.id NOT  IN (" . db_escape($id) . ")";
 
     return db_query($sql, "could not get uom");
 }
 
-function check_if_updated_unique($id, $from, $to)
+function check_if_updated_unique($id, $stock_code, $from, $to)
 {
-    $conversions = get_conversion_by_id_from_and_to($id, $from, $to);
+    $conversions = get_conversion_by_id_from_and_to($id, $stock_code, $from, $to);
     if($conversions->num_rows > 0)
     {
         display_error(_("Conversion already exists."));
@@ -252,5 +253,10 @@ function delete_stock_uom_link($id)
 {
     $sql="DELETE FROM ".TB_PREF."uom_stock_link WHERE id=".db_escape($id);
     db_query($sql,"The stock link not be deleted");   
+}
+
+function convert_uom($from, $to, $quantity)
+{
+    return 24;
 }
 ?>

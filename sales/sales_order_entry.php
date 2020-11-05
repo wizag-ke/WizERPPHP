@@ -18,7 +18,6 @@ use PHPMailer\PHPMailer\PHPMailer;
 //	Entry/Modify Sales Order
 //	Entry Direct Delivery
 //	Entry Direct Invoice
-//
 
 $path_to_root = "..";
 $page_security = 'SA_SALESORDER';

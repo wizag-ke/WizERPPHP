@@ -514,6 +514,7 @@ function sales_order_item_controls(&$order, &$rowcounter, $line_no=-1)
             if (!isset($_POST['stock_id'])) {   // Check if stock_id dosesn't exist
 				$_POST['stock_id'] = last_sales_order_detail($order, 'stk_code');  //get the last sales stock id.
 			}
+			// _("Item Code"), _("Item Description")
 			sales_items_list_cells(null,'stock_id', $_POST['stock_id'], false, true, true);
         }
         if (list_updated('stock_id')) {     
@@ -535,6 +536,7 @@ function sales_order_item_controls(&$order, &$rowcounter, $line_no=-1)
 		$_POST['Disc'] = percent_format($order->default_discount * 100);
 	}
 
+	// _("Quantity")
 	if ($order->fixed_asset) {
 		label_cell(1, '', 'qty');
 		hidden('qty', 1);
@@ -545,28 +547,44 @@ function sales_order_item_controls(&$order, &$rowcounter, $line_no=-1)
 		qty_cell($line_no==-1 ? 0 :$order->line_items[$line_no]->qty_done, false, $dec);
 	}
 
+	// _("Unit")
 	label_cell($units, '', 'units');
 
+	// _("Location")
 	locations_list_cells(null, 'location_id', null, false, true, $order->fixed_asset);
+
+	// _("Available")
 	$quantity_on_hand = get_qoh_on_date($_POST['stock_id']);
 	if (list_updated('location_id')) {  
 		$quantity_on_hand = get_qoh_on_date($_POST['stock_id'], $_POST['location_id']);
 	}	
-
-	// label_cell(get_qoh_on_date($_POST['stock_id']), '', 'quantity_on_hand');
 	label_cell($quantity_on_hand);
 
-	all_uoms_list_cells(null, 'units_list', $units, true);
-
-	if (list_updated('units_list')) {     
+	// _("UOM Qty")
+	if (list_updated('units_list')) {
+		// $uom_quantity = convert_uom($from, $to, $quantity);
+		// label_cell(25);
 	}	
+	else{
+		label_cell($quantity_on_hand);
+	}
 
+
+	$myvariable = 10;
+	// _("UOM")
+	all_uoms_list_cells(null, 'units_list', null, true);
+
+
+
+
+	// $order->tax_included ? _("Price after Tax") : _("Price before Tax")
 	amount_cells(null, 'price');
 
+	// _("Discount %")
 	small_amount_cells(null, 'Disc', percent_format($_POST['Disc']), null, null, user_percent_dec());
 
+	// _("Total")
 	$line_total = input_num('qty') * input_num('price') * (1 - input_num('Disc') / 100);
-
 	amount_cell($line_total, false, '','line_total');
 
 	if ($id!=-1)

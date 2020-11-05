@@ -12,6 +12,7 @@ include_once($path_to_root . "/includes/ui.inc");
 include_once($path_to_root . "/includes/data_checks.inc");
 include_once($path_to_root . "/admin/db/company_db.inc");
 
+
 simple_page_mode();
 
 // part 2  must include this function for extension access levels.
@@ -25,7 +26,7 @@ if ($Mode=='ADD_ITEM')
 {
     $input_error = 0;
 
-    if(!check_if_stock_uom_link_unique($_POST['stock_code'], $_POST['uom_id']))
+    if(!check_if_stock_uom_link_unique($_POST[], $_POST['stock_code'], $_POST['uom_id']))
     {
         $input_error = 1;
     }
@@ -98,7 +99,9 @@ if ($selected_id != -1)
 	hidden('selected_id', $selected_id);
 }
 
-stock_items_list_row_conversion(_("Item:"), 'stock_code', $_POST['stock_code']);
+// $label, $name, $selected_id=null, $all_option=false, $submit_on_change=false, $editable =false
+stock_items_list_row_conversion(_("Item:"), 'stock_code', $_POST['stock_code'], false, false, true);
+
 gl_all_uoms_list_row(_("UOM:"), 'uom_id', $_POST['uom_id']);
 end_table(1);
 submit_add_or_update_center($selected_id == -1, '', 'both');

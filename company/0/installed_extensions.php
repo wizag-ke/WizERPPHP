@@ -185,7 +185,7 @@ $installed_extensions = array (
     'available' => '',
     'type' => 'extension',
     'path' => 'modules/internal_grn',
-    'active' => 1,
+    'active' => 0,
   ),
   60 => 
   array (
@@ -195,7 +195,7 @@ $installed_extensions = array (
     'available' => '',
     'type' => 'extension',
     'path' => 'modules/transaction_types',
-    'active' => 1,
+    'active' => 0,
   ),
   61 => 
   array (

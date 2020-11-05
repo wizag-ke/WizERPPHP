@@ -25,7 +25,7 @@ if ($Mode=='ADD_ITEM')
 {
     $input_error = 0;
 
-    if($_POST['from'] === $_POST['to'])
+    if(get_item($_POST['stock_code'])['units'] === $_POST['to'])
     {
         $input_error = 1;
         display_error(_("Cannot convert to the same uom."));
@@ -38,14 +38,14 @@ if ($Mode=='ADD_ITEM')
         set_focus('factor');
     }
 
-    if(!check_if_conversion_unique($_POST['from'], $_POST['to']))
+    if(!check_if_conversion_unique($_POST['stock_code'], get_item($_POST['stock_code'])['units'], $_POST['to']))
     {
         $input_error = 1;
     }
 
     if($input_error != 1)
     {
-        add_item_pack_conversion($_POST['from'], $_POST['to'], $_POST['factor']);
+        add_item_pack_conversion($_POST['stock_code'], get_item($_POST['stock_code'])['units'], $_POST['to'], $_POST['factor']);
         $Mode = 'RESET';
     }
 }
@@ -53,7 +53,7 @@ if ($Mode=='ADD_ITEM')
 if ($Mode=='UPDATE_ITEM')
 {
     $input_error = 0;
-    if($_POST['from'] === $_POST['to'])
+    if(get_item($_POST['stock_code'])['units'] === $_POST['to'])
     {
         $input_error = 1;
         display_error(_("Cannot convert to the same uom."));
@@ -67,15 +67,14 @@ if ($Mode=='UPDATE_ITEM')
         set_focus('factor');
     }
 
-    if(!check_if_updated_unique($selected_id, $_POST['from'], $_POST['to']))
+    if(!check_if_updated_unique($selected_id,$_POST['stock_code'], get_item($_POST['stock_code'])['units'], $_POST['to']))
     {
         $input_error = 1;
     }
 
     if($input_error != 1)
     {
-        error_log('Can update');
-        update_item_pack_conversion($selected_id, $_POST['from'], $_POST['to'], $_POST['factor']);
+        update_item_pack_conversion($selected_id,$_POST['stock_code'],  get_item($_POST['stock_code'])['units'], $_POST['to'], $_POST['factor']);
         display_notification(_('Selected item pack conversion has been updated'));
         $Mode = 'RESET';
     }
@@ -102,12 +101,14 @@ start_form();
 
 start_table(TABLESTYLE);
 
-$th = array (_('Convert From'), _('Convert to'), _('Factor'), '', '');
+$th = array (_('Stock Code'), _('Stock Item'), _('Convert From'), _('Convert to'), _('Factor'), '', '');
 table_header($th);
 
 while ($myrow = db_fetch($result))
 {
-	label_cell($myrow["uom_from"], "nowrap");
+    label_cell($myrow["stock_code"], "nowrap");
+    label_cell(get_item($myrow["stock_code"])['description'], "nowrap");
+	label_cell(get_item($myrow['stock_code'])['units'], "nowrap");
 	label_cell($myrow["uom_to"], "nowrap");
 	label_cell($myrow["factor"], "nowrap");
  	edit_button_cell("Edit".$myrow['id'], _("Edit"));
@@ -123,14 +124,25 @@ if ($selected_id != -1)
  	if ($Mode == 'Edit') {
 		$myrow = get_item_pack_conversion($selected_id);
 
-		$_POST['from']  = $myrow["from_uom"];
+		$_POST['stock_code']  = $myrow["stock_code"];
+		$_POST['from']  = get_item($myrow['stock_code'])['units'];
 		$_POST['to']  = $myrow["to_uom"];
 		$_POST['factor']  = $myrow["factor"];
 	}
 	hidden('selected_id', $selected_id);
 }
 
-gl_all_uoms_list_row(_("From:"), 'from', $_POST['from']);
+stock_items_list_row_conversion(_("Item:"), 'stock_code', $_POST['stock_code'], false, false, true);
+
+
+if (list_updated('stock_code')) {
+    $Ajax->activate('default_uom');
+}	
+
+$default_uom = get_item($_POST['stock_code'])['units'];
+label_row('Default Unit of measure', $default_uom, $params="", '', 0, 'default_uom');
+
+// gl_all_uoms_list_row(_("From:"), 'from', $_POST['from'], true);
 gl_all_uoms_list_row(_("To:"), 'to', $_POST['to']);
 text_row(_("Conversion Factor:"), 'factor', null, 20, 100);
 end_table(1);

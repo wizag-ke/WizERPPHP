@@ -28,6 +28,9 @@ $new_role = get_post('role')=='' || get_post('cancel') || get_post('clone');
 // is properly placed under related section regardless of 
 // unique extension number, with order inside sections preserved.
 //
+
+error_log(print_r($_POST, true));
+
 function comp_areas($area1, $area2) 
 {
 	$sec_comp = ($area1[0]&0xff00)-($area2[0]&0xff00);
@@ -47,6 +50,7 @@ function sort_areas($areas)
 if (list_updated('role')) {
 	$Ajax->activate('details');
 	$Ajax->activate('controls');
+	error_log(print_r($_POST, true));
 }
 
 function clear_data()
