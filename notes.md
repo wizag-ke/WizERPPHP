@@ -54,6 +54,7 @@ View the app names in applications folder
   on stock_movements.php show column of internal grn
   check why remove does not work in item pack conversion
   Make tables wider
+  disable themes check after login
 
 
 

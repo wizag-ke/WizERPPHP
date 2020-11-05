@@ -26,7 +26,7 @@ if ($Mode=='ADD_ITEM')
 {
     $input_error = 0;
 
-    if(!check_if_stock_uom_link_unique($_POST[], $_POST['stock_code'], $_POST['uom_id']))
+    if(!check_if_stock_uom_link_unique($_POST['stock_code'], $_POST['uom_id']))
     {
         $input_error = 1;
     }
