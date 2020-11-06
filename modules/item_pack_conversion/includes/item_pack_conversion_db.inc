@@ -125,6 +125,8 @@ function get_conversion_by_from_and_to($stock_id, $from, $to)
     return db_query($sql, "could not get uom");
 }
 
+// function get_stock_default_uom
+
 /**
  * Checks if a similar converions has already been entered into the database
  *
@@ -255,8 +257,31 @@ function delete_stock_uom_link($id)
     db_query($sql,"The stock link not be deleted");   
 }
 
-function convert_uom($from, $to, $quantity)
+function get_conversion_factor($stock_id, $from, $to)
 {
-    return 24;
+    $sql = "SELECT ipc.* FROM "
+    . TB_PREF . "item_pack_conversion AS ipc " .
+    "WHERE ipc.stock_code = " . db_escape($stock_id) . " AND ipc.from_uom = " . db_escape($from) . "AND ipc.to_uom = " . db_escape($to) . "LIMIT 1";
+    return db_query($sql, "could not get all item pack conversions");
+}
+
+
+/**
+ * Converts the unit of measure from the default one to a desired measure
+ */
+function convert_uom($from, $to, $quantity, $stock_id)
+{
+    // error_log(get_unit_dec($stock_id));
+    error_log($from);
+    error_log($to);
+    error_log($quantity);
+    error_log($stock_id);
+    // error_log(print_r(get_conversion_factor($stock_id, $from, $to), true));
+    $result = get_conversion_factor($stock_id, $from, $to);
+    $factor = db_fetch($result)['factor'];
+    error_log($factor);
+    return $quantity * $factor
+    // return 24;
+
 }
 ?>

@@ -10,6 +10,8 @@
     See the License here <http://www.gnu.org/licenses/gpl-3.0.html>.
 ***********************************************************************/
 include_once($path_to_root . "/sales/includes/cart_class.inc");
+include_once($path_to_root . "/modules/item_pack_conversion/includes/item_pack_conversion_db.inc");
+
 
 //--------------------------------------------------------------------------------
 function add_to_order(&$order, $new_item, $new_item_qty, $price, $discount, $description='')
@@ -558,24 +560,21 @@ function sales_order_item_controls(&$order, &$rowcounter, $line_no=-1)
 	if (list_updated('location_id')) {  
 		$quantity_on_hand = get_qoh_on_date($_POST['stock_id'], $_POST['location_id']);
 	}	
-	label_cell($quantity_on_hand);
 
+	label_cell($quantity_on_hand);
+	
+	$uom_quantity = 0;
 	// _("UOM Qty")
-	if (list_updated('units_list')) {
-		// $uom_quantity = convert_uom($from, $to, $quantity);
+	if (list_updated('unit_of_measure')) {
+		$my_quantity = 1;
+		// error_log(print_r($_POST, true));
+		$uom_quantity = convert_uom(get_item($_POST['stock_id'])['units'], $_POST['unit_of_measure'], 20, $_POST['stock_id']);
 		// label_cell(25);
 	}	
-	else{
-		label_cell($quantity_on_hand);
-	}
+	label_cell($uom_quantity);
 
-
-	$myvariable = 10;
 	// _("UOM")
-	all_uoms_list_cells(null, 'units_list', null, true);
-
-
-
+	all_uoms_list_cells(null, 'unit_of_measure', null, true);
 
 	// $order->tax_included ? _("Price after Tax") : _("Price before Tax")
 	amount_cells(null, 'price');

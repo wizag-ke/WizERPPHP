@@ -74,4 +74,3 @@ function get_unit_dec($stock_id)
 	$row = db_fetch_row($result);
 	return $row[0];
 }
-

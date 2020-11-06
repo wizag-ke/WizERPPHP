@@ -30,13 +30,14 @@ function all_uoms_list_cells($label, $name, $selected_id=null, $editable = false
  * Populates a combo box with a list of uoms
  */
 
-function all_uoms_list($name, $selected_id=null, $editable = false)
+function all_uoms_list($name, $selected_id=null, $submit_on_change=false, $editable = false)
 {
     $sql = "SELECT uoms.abbr , uoms.name FROM ".TB_PREF."item_units as uoms";
 		// size and max of box tag
 	return combo_input($name, $selected_id, $sql, 'uoms.abbr', 'uoms.name', 
 	array(
 		'editable' => $editable,
+		'select_submit' => $true
 	)
 	);
 }
