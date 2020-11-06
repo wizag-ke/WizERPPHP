@@ -25,6 +25,13 @@ if ($Mode=='ADD_ITEM')
 {
     $input_error = 0;
 
+    if(get_item($_POST['stock_code'])['units'] === '')
+    {
+        $input_error = 1;
+        display_error(_("Default UOM is not set for this item."));
+        set_focus('to');  
+    }
+
     if(get_item($_POST['stock_code'])['units'] === $_POST['to'])
     {
         $input_error = 1;
